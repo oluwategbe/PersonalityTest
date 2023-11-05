@@ -1,0 +1,58 @@
+.test{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .testhero{
+    height: calc(100vh - 5rem);
+    padding-top: 4rem;
+    background: linear-gradient(180deg, rgba(9,9,121,1) 50%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 100%);
+    width: 100%;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    .text{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+      h1{
+        font-size: 36px;
+        color: white;
+      }
+      h2{
+        font-size: 20px;
+        color: white;
+      }
+    }
+    .cards{
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      padding: 2rem 10rem;
+
+      .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #c0bcbc;
+        color: white;
+        padding: 2rem;
+        border-radius: 1rem;
+        flex: 1;
+        gap: 1rem;
+
+        h2{
+          font-size: 20px;
+          font-weight: 500;
+        }
+        p{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
