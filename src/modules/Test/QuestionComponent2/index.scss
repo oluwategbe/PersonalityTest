@@ -1,0 +1,61 @@
+.question {
+  /* Add styling for the question container if needed */
+}
+
+.radio-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+  input[type="radio"] {
+    display: none;
+  }
+
+  span{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid blue;
+    background: #000;
+  }
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+label {
+  cursor: pointer;
+}
+
+.size-1 {
+  font-size: 1.5em;
+}
+
+.size-2 {
+  font-size: 1.4em;
+}
+
+.size-3 {
+  font-size: 1.3em;
+}
+
+.size-4 {
+  font-size: 1.2em;
+}
+
+.size-5 {
+  font-size: 1.1em;
+}
+
+.size-6 {
+  font-size: 1em;
+}
+
+.size-7 {
+  font-size: 0.9em;
+}

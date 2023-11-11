@@ -1,6 +1,7 @@
 import "./index.scss";
 import Layout from "./../../components/layout/index";
 import { GrTest } from "react-icons/gr";
+import Questions from "./Questions";
 
 const Test = () => {
   return (
@@ -9,7 +10,7 @@ const Test = () => {
         <div className="testhero">
           <div className="text">
             <h1>Free Personality Test</h1>
-            <h2>Based of the Myers Briggs test</h2>
+            <h2>Based off the Myers-Briggs Type Indicator</h2>
           </div>
           <div className="cards">
             <div className="card">
@@ -29,6 +30,7 @@ const Test = () => {
             </div>
           </div>
         </div>
+        <Questions />
       </div>
     </Layout>
   );
