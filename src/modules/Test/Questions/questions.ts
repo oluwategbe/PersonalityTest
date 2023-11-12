@@ -10,7 +10,7 @@ export const eiQuestions = [
   {title: "You enjoy participating in group activities"},
   {title: "You avoid leadership roles in group settings"},
   {title: "You feel comfortable just walking up to someone you find interesting and striking up a conversation"},
-  {title: "You usually prefer to be around others rather than on your own"},
+  // {title: "You usually prefer to be around others rather than on your own"},
   {title: "In your social circle, you are often the one who contacts your friends and initiates activities"},
   {title: "After a long and exhausting week, a lively social event is just what you need"},
   {title: "You would love a job that requires you to work alone most of the time"},

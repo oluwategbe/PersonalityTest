@@ -2,23 +2,30 @@ import * as React from "react";
 // import QuestionComponent from "../QuestionComponent";
 import "./index.scss";
 import { eiQuestions } from "./questions";
-import QuestionComponent2 from "../QuestionComponent2";
+import QuestionComponent from "../QuestionComponent";
 
 const Questions = () => {
-  const [scores, setScores] = React.useState(0);
+  const [scores, setScores] = React.useState({});
+
+  const handleSubmit = () => {
+    const totalScore = Object.values(scores).reduce(
+      (acc, score) => acc + score,
+      0
+    );
+    console.log("Total Scores:", totalScore);
+  };
 
   return (
-    <div>
-      <h1>Questions</h1>
+    <div className="questions">
       {eiQuestions?.map((q) => (
-        <QuestionComponent2
+        <QuestionComponent
           question={q}
           key={q?.title}
           setScores={setScores}
           scores={scores}
         />
       ))}
-      {/* <button onClick={handleSubmit}>Submit</button> */}
+      <button onClick={handleSubmit}>Submit</button>
     </div>
   );
 };
