@@ -5,6 +5,7 @@ import Step1 from "./Step1";
 import Step2 from "./Step2";
 import Step3 from "./Step3";
 import Step4 from "./Step4/index";
+import { getPersonality } from "../../../utils/getPersonality";
 
 const Questions = () => {
   const [eiScores, setEIScores] = React.useState({});
@@ -39,6 +40,13 @@ const Questions = () => {
     console.log("Total SI Scores:", totalSIScore);
     console.log("Total TF Scores:", totalTFScore);
     console.log("Total JP Scores:", totalJPScore);
+    const personality = getPersonality(
+      totalEIScore,
+      totalSIScore,
+      totalTFScore,
+      totalJPScore
+    );
+    console.log(personality);
   };
 
   return (
