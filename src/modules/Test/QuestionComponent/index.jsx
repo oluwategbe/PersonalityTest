@@ -10,6 +10,7 @@ const QuestionComponent = ({ question, setEIScores, eiScores }) => {
   const handleClick = (value, title, classValue) => {
     setEIScores({ ...eiScores, [title]: value });
     setSelectedOption(value);
+    // console.log(eiScores);
     setSelectedClass(classValue);
   };
 
@@ -34,7 +35,10 @@ const QuestionComponent = ({ question, setEIScores, eiScores }) => {
               />
               <span
                 className={`span-${i}  ${
-                  selectedClass === `span-${i}` ? "selected" : ""
+                  selectedClass === `span-${i}` ||
+                  eiScores[question?.title] === value
+                    ? "selected"
+                    : ""
                 }`}
               ></span>
             </label>

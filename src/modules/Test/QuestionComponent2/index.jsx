@@ -34,7 +34,10 @@ const QuestionComponent2 = ({ question, setSIScores, siScores }) => {
               />
               <span
                 className={`span-${i}  ${
-                  selectedClass === `span-${i}` ? "selected" : ""
+                  selectedClass === `span-${i}` ||
+                  siScores[question?.title] === value
+                    ? "selected"
+                    : ""
                 }`}
               ></span>
             </label>

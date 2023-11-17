@@ -34,7 +34,10 @@ const QuestionComponent4 = ({ question, setJPScores, jpScores }) => {
               />
               <span
                 className={`span-${i}  ${
-                  selectedClass === `span-${i}` ? "selected" : ""
+                  selectedClass === `span-${i}` ||
+                  jpScores[question?.title] === value
+                    ? "selected"
+                    : ""
                 }`}
               ></span>
             </label>

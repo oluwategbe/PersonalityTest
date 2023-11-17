@@ -34,7 +34,10 @@ const QuestionComponent3 = ({ question, setTFScores, tfScores }) => {
               />
               <span
                 className={`span-${i}  ${
-                  selectedClass === `span-${i}` ? "selected" : ""
+                  selectedClass === `span-${i}` ||
+                  tfScores[question?.title] === value
+                    ? "selected"
+                    : ""
                 }`}
               ></span>
             </label>

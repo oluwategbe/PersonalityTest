@@ -12,6 +12,10 @@ const Questions = () => {
   const [tfScores, setTFScores] = React.useState({});
   const [jpScores, setJPScores] = React.useState({});
   const [step, setStep] = React.useState(1);
+  // console.log(eiScores);
+  // console.log(siScores);
+  // console.log(tfScores);
+  // console.log(jpScores);
 
   const handleSubmit = () => {
     const totalEIScore = Object.values(eiScores).reduce(
