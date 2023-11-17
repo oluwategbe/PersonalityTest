@@ -2,13 +2,13 @@
 import * as React from "react";
 import "./index.scss";
 
-const QuestionComponent = ({ question, setEIScores, eiScores }) => {
+const QuestionComponent4 = ({ question, setJPScores, jpScores }) => {
   const options = [100, 83, 66, 50, 33, 16, 0];
   const [selectedOption, setSelectedOption] = React.useState(null);
   const [selectedClass, setSelectedClass] = React.useState(null);
 
   const handleClick = (value, title, classValue) => {
-    setEIScores({ ...eiScores, [title]: value });
+    setJPScores({ ...jpScores, [title]: value });
     setSelectedOption(value);
     setSelectedClass(classValue);
   };
@@ -46,4 +46,4 @@ const QuestionComponent = ({ question, setEIScores, eiScores }) => {
   );
 };
 
-export default QuestionComponent;
+export default QuestionComponent4;

@@ -4,4 +4,37 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  .buttonContainer{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 0 2rem;
+    width: 100%;
+
+    button{
+      border: none;
+      cursor: pointer;
+      padding: 1rem 2rem;
+      border-radius: 1rem;
+      flex:1
+    }
+    .btnBlack{
+      background-color: black;
+      color: white;
+    }
+    .btnYellow{
+      background-color: yellowgreen;
+      color: white;
+    }
+    .half{
+      width: 50%;
+      flex: 0.45;
+    }
+    .disabledButton{
+      background-color: #e2e2e2;
+      color: rgb(85, 85, 85);
+    }
+  }
 }

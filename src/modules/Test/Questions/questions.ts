@@ -6,14 +6,14 @@ const jp= "judging/perceiving";
 export const eiQuestions = [
   {title: "You have a lot of friends"},
   {title: "Many group activities tend to be dull without you"},
-  {title: "At social events, you rarely try to introduce yourself to new people and mostly talk to the ones you already know"},
-  {title: "You enjoy participating in group activities"},
-  {title: "You avoid leadership roles in group settings"},
+  {title: "At social events, you mostly try to introduce yourself to new people and barely talk to the ones you already know"},
+  // {title: "You enjoy participating in group activities"},
+  {title: "You love taking up leadership roles in group settings"},
   {title: "You feel comfortable just walking up to someone you find interesting and striking up a conversation"},
-  // {title: "You usually prefer to be around others rather than on your own"},
+  {title: "You usually prefer to be around others rather than on your own"},
   {title: "In your social circle, you are often the one who contacts your friends and initiates activities"},
   {title: "After a long and exhausting week, a lively social event is just what you need"},
-  {title: "You would love a job that requires you to work alone most of the time"},
+  {title: "You would love a job that requires you to work with many people most of the time"},
   {title: "You dont like drawing / tend to avoid drawing attention to yourself"},
 ]
 
