@@ -23,7 +23,7 @@ export const siQuestions = [
   {title: "You have always been fascinated by the question of what, if anything, happens after death"},
   {title: "You spend a lot of your free time exploring various random topics that pique your interest"},
   {title: "You become interested when the discussion gets highly theoretical"},
-  {title: "You are very intrigued by things labeled as controversial"},
+  {title: "You know at first glance how someone is feeling"},
   {title: "You are definitely an artistic type of person"},
   {title: "You believe that pondering abstract philosophical questions is a good use of time"},
   {title: "You are interested in discussing various interpretations and analysis of creative works"},

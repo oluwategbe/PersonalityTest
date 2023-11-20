@@ -1,8 +1,15 @@
 /* eslint-disable react/prop-types */
 import * as React from "react";
-import "./index.scss";
+import "../Questions/index.scss";
 
-const QuestionComponent = ({ question, setEIScores, eiScores }) => {
+const QuestionComponent = ({
+  question,
+  setEIScores,
+  eiScores,
+  isActive,
+  index,
+  setActiveIndex,
+}) => {
   const options = [100, 83, 66, 50, 33, 16, 0];
   const [selectedOption, setSelectedOption] = React.useState(null);
   const [selectedClass, setSelectedClass] = React.useState(null);
@@ -10,12 +17,12 @@ const QuestionComponent = ({ question, setEIScores, eiScores }) => {
   const handleClick = (value, title, classValue) => {
     setEIScores({ ...eiScores, [title]: value });
     setSelectedOption(value);
-    // console.log(eiScores);
     setSelectedClass(classValue);
+    setActiveIndex(index + 1);
   };
 
   return (
-    <div className="question">
+    <div className={`question ${isActive ? "active" : "blurred"}`}>
       <p>{question?.title}</p>
       <div className="radio-buttons">
         <label className="large">Agree</label>

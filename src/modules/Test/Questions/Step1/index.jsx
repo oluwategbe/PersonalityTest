@@ -1,17 +1,33 @@
 /* eslint-disable react/prop-types */
+import React from "react";
 import QuestionComponent from "../../QuestionComponent";
 import { eiQuestions } from "../questions";
 
-const Step1 = ({ setEIScores, eiScores, setStep }) => {
+const Step1 = ({ setEIScores, eiScores, setStep, answered }) => {
+  const arr = Array(eiQuestions.length - 1).fill(false);
+  const trueArr = Array(eiQuestions.length).fill(true);
+  const [answeredQuestions, setAnsweredQuestions] = React.useState(
+    answered === 10 ? trueArr : [true, ...arr]
+  );
+
+  const handleAnswer = (index) => {
+    const updatedQuestions = answeredQuestions.map((answered, i) =>
+      i === index ? true : answered
+    );
+    setAnsweredQuestions(updatedQuestions);
+  };
+
   return (
     <div>
-      {eiQuestions?.map((q) => (
+      {eiQuestions?.map((q, index) => (
         <QuestionComponent
           question={q}
-          key={q?.title}
+          key={index}
           setEIScores={setEIScores}
           eiScores={eiScores}
-          setStep={setStep}
+          isActive={answeredQuestions[index]}
+          index={index}
+          setActiveIndex={handleAnswer}
         />
       ))}
       <div className="buttonContainer">

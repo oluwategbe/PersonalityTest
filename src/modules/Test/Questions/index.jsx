@@ -13,11 +13,6 @@ const Questions = () => {
   const [tfScores, setTFScores] = React.useState({});
   const [jpScores, setJPScores] = React.useState({});
   const [step, setStep] = React.useState(1);
-  // console.log(eiScores);
-  // console.log(siScores);
-  // console.log(tfScores);
-  // console.log(jpScores);
-
   const handleSubmit = () => {
     const totalEIScore = Object.values(eiScores).reduce(
       (acc, score) => acc + score,
@@ -56,6 +51,7 @@ const Questions = () => {
           setEIScores={setEIScores}
           eiScores={eiScores}
           setStep={setStep}
+          answered={Object.values(eiScores).length}
         />
       )}
       {step === 2 && (
@@ -63,6 +59,7 @@ const Questions = () => {
           setSIScores={setSIScores}
           siScores={siScores}
           setStep={setStep}
+          answered={Object.values(siScores).length}
         />
       )}
       {step === 3 && (
@@ -70,6 +67,7 @@ const Questions = () => {
           setTFScores={setTFScores}
           tfScores={tfScores}
           setStep={setStep}
+          answered={Object.values(tfScores).length}
         />
       )}
       {step === 4 && (
@@ -77,29 +75,10 @@ const Questions = () => {
           setJPScores={setJPScores}
           jpScores={jpScores}
           setStep={setStep}
+          answered={Object.values(jpScores).length}
           handleSubmit={handleSubmit}
         />
       )}
-      {/* <div className={""}>
-        {step === 4 && (
-          <>
-            <button
-              onClick={() => setStep((prev) => prev - 1)}
-              type="button"
-              className="btnWhite"
-            >
-              Previous
-            </button>
-            <button
-              // type="submit"
-              onClick={handleSubmit}
-              className="btnYellow"
-            >
-              Submit
-            </button>
-          </>
-        )}
-      </div> */}
     </div>
   );
 };
