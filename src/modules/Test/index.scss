@@ -5,7 +5,6 @@
   flex-direction: column;
 
   .testhero{
-    height: calc(100vh - 5rem);
     padding-top: 4rem;
     background: linear-gradient(180deg, rgba(9,9,121,1) 50%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 100%);
     width: 100%;
@@ -32,7 +31,8 @@
       display: flex;
       gap: 2rem;
       align-items: center;
-      padding: 2rem 10rem;
+      justify-content: center;
+      padding: 2rem;
 
       .card{
         display: flex;
@@ -40,7 +40,7 @@
         align-items: center;
         background: #c0bcbc;
         color: white;
-        padding: 2rem;
+        padding: 1.5rem;
         border-radius: 1rem;
         flex: 1;
         gap: 1rem;
