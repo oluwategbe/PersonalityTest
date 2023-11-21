@@ -5,6 +5,7 @@ import Step2 from "../components/Steps/Step2";
 import Step3 from "../components/Steps/Step3";
 import Step4 from "../components/Steps/Step4";
 import { getPersonality } from "../../../utils/getPersonality";
+import { useNavigate } from "react-router-dom";
 
 const Questions = () => {
   const [eiScores, setEIScores] = React.useState({});
@@ -12,6 +13,7 @@ const Questions = () => {
   const [tfScores, setTFScores] = React.useState({});
   const [jpScores, setJPScores] = React.useState({});
   const [step, setStep] = React.useState(1);
+  const navigate = useNavigate();
   const handleSubmit = () => {
     const totalEIScore = Object.values(eiScores).reduce(
       (acc, score) => acc + score,
@@ -29,18 +31,20 @@ const Questions = () => {
       (acc, score) => acc + score,
       0
     );
-    console.log(Object.values(eiScores).length);
-    console.log("Total EI Scores:", totalEIScore);
-    console.log("Total SI Scores:", totalSIScore);
-    console.log("Total TF Scores:", totalTFScore);
-    console.log("Total JP Scores:", totalJPScore);
     const personality = getPersonality(
       totalEIScore,
       totalSIScore,
       totalTFScore,
       totalJPScore
     );
-    console.log(personality);
+    navigate(`/results/${personality}`, {
+      state: {
+        totalEIScore,
+        totalSIScore,
+        totalTFScore,
+        totalJPScore,
+      },
+    });
   };
 
   return (

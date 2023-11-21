@@ -1,0 +1,20 @@
+.resultsPage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 5rem);
+  background: #e0e0e0;
+  
+  .modal{
+    height: 400px;
+    width: 400px;
+    background: white;
+    overflow: scroll;
+
+    img{
+      height: 20px;
+      width: 20px;
+
+    }
+  }
+}

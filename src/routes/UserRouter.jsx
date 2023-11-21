@@ -12,6 +12,10 @@ const paths = [
     path: "/test",
     element: lazy(() => import("../modules/Test")),
   },
+  {
+    path: "/results/:personality",
+    element: lazy(() => import("../modules/Test/Results")),
+  },
 ];
 
 function UserRouter() {
