@@ -4,7 +4,7 @@ import { jpQuestions } from "../../Questions/questions";
 import "../../index.scss";
 import React from "react";
 
-const Step4 = ({ setJPScores, jpScores, setStep, answered, handleSubmit }) => {
+const Step4 = ({ setJPScores, jpScores, setStep, answered }) => {
   const arr = Array(jpQuestions.length - 1).fill(false);
   const trueArr = Array(jpQuestions.length).fill(true);
   const [answeredQuestions, setAnsweredQuestions] = React.useState(
@@ -26,6 +26,14 @@ const Step4 = ({ setJPScores, jpScores, setStep, answered, handleSubmit }) => {
     }
   };
 
+  const handleNext = () => {
+    setStep((prev) => prev + 1);
+    // const webPartElement = document.getElementsByClassName(`quest-0`);
+    // if (webPartElement) {
+    //   webPartElement[0].scrollIntoView({ behavior: "smooth", block: "start" });
+    // }
+  };
+
   return (
     <div>
       {jpQuestions?.map((q, index) => (
@@ -44,14 +52,14 @@ const Step4 = ({ setJPScores, jpScores, setStep, answered, handleSubmit }) => {
           Previous
         </button>
         <button
-          onClick={handleSubmit}
+          onClick={handleNext}
           type="button"
           className={`btnYellow ${
             Object.values(jpScores).length < 10 ? "disabledButton" : ""
           }`}
           disabled={Object.values(jpScores).length < 10}
         >
-          Submit
+          Next{" "}
         </button>
       </div>
     </div>

@@ -4,6 +4,7 @@ import Step1 from "../components/Steps/Step1";
 import Step2 from "../components/Steps/Step2";
 import Step3 from "../components/Steps/Step3";
 import Step4 from "../components/Steps/Step4";
+import Step5 from "../components/Steps/Step5";
 import { getPersonality } from "../../../utils/getPersonality";
 import { useNavigate } from "react-router-dom";
 
@@ -12,6 +13,7 @@ const Questions = () => {
   const [siScores, setSIScores] = React.useState({});
   const [tfScores, setTFScores] = React.useState({});
   const [jpScores, setJPScores] = React.useState({});
+  const [gender, setGender] = React.useState("Male");
   const [step, setStep] = React.useState(1);
   const navigate = useNavigate();
   const handleSubmit = () => {
@@ -43,6 +45,7 @@ const Questions = () => {
         totalSIScore,
         totalTFScore,
         totalJPScore,
+        gender,
       },
     });
   };
@@ -77,6 +80,15 @@ const Questions = () => {
         <Step4
           setJPScores={setJPScores}
           jpScores={jpScores}
+          setStep={setStep}
+          answered={Object.values(jpScores).length}
+          handleSubmit={handleSubmit}
+        />
+      )}
+      {step === 5 && (
+        <Step5
+          gender={gender}
+          setGender={setGender}
           setStep={setStep}
           answered={Object.values(jpScores).length}
           handleSubmit={handleSubmit}
