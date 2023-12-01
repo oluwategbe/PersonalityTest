@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./index.scss";
 import Layout from "../../../components/layout";
 import { useLocation } from "react-router-dom";
@@ -43,7 +43,7 @@ const Results = () => {
                 title="Energy"
                 desc="This trait describes how you gain energy, your preference in interacting with people and the environment"
                 leftTitle="Extraverted"
-                leftScore={extrovertScore}
+                leftScore={extrovertScore || 50}
                 rightTitle="Introverted"
                 rightScore={100 - extrovertScore}
               />
@@ -72,6 +72,12 @@ const Results = () => {
                 rightScore={100 - perceivingScore}
               />
             </div>
+          </div>
+          <div className="more">
+            <h2>Wanna learn more about your Personality?</h2>
+            <Link to={`/personalities/${personality}`}>
+              <button>Read More</button>
+            </Link>
           </div>
         </div>
       </div>
