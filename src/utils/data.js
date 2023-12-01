@@ -828,56 +828,157 @@ export const personalityData = [
     personality: "ENFP",
     title: "Campaigner",
     group: "Diplomats",
-    pic: "/images/enfj-protagonist-s2-male.png",
-    male: "/images/enfj-protagonist-s2-male.png",
-    female: "/images/enfj-protagonist-s2-female.png",
-    short_desc: "",
-    long_desc: "",
-    fact: "ENFJs are sometimes referred to as The Giver because of their desire to inspire others to become better versions of themselves.",
-    fact2: "",
+    pic: "/images/enfp-campaigner-s2-female.png",
+    male: "/images/enfp-campaigner-s2-male.png",
+    female: "/images/enfp-campaigner-s2-female.png",
+    short_desc:
+      "Free-spirited, charismatic individuals who place great value on personal freedom and happiness.",
+    long_desc:
+      "ENFPs are lively, creative, and sociable individuals who thrive on meaningful connections and authentic experiences. They are enthusiastic, charismatic, and independent, valuing personal freedom and happiness for themselves and others. Campaigners are excellent communicators, adept at bringing out the best in people, but they might overlook details due to their focus on the bigger picture. Their outgoing nature masks their rich inner world, filled with curiosity and imagination. While sociable and devoted to relationships, ENFPs possess introspective qualities, often contemplating life's deeper meaning and connections. They are energetic, service-oriented leaders with strong problem-solving skills, seeking careers offering flexibility and innovation.",
+    fact: "ENFPs are sometimes referred to as The Champion because of their lively, upbeat approach to life, they stand out in any crowd.",
+    fact2:
+      "ENFPs are also creative, so they typically do best in situations where they have the freedom to create and innovate.",
     strengths: [
       {
-        title: "Outgoing",
-        desc: "",
+        title: "Warm and Enthusiastic",
+        desc: "Known for their warmth and infectious enthusiasm, Campaigners energize those around them.",
       },
       {
-        title: "Outgoing",
-        desc: "",
+        title: "Empathetic and Caring",
+        desc: "Their empathetic nature allows them to deeply understand and care for others' feelings.",
       },
       {
-        title: "Outgoing",
-        desc: "",
+        title: "Strong People Skills",
+        desc: "Possessing excellent communication abilities, they foster meaningful connections easily.",
+      },
+      {
+        title: "Fun and Spontaneous",
+        desc: "Campaigners bring fun and spontaneity to any situation, making moments enjoyable.",
       },
     ],
     weaknesses: [
       {
-        title: "Outgoing",
-        desc: "",
+        title: "People-Pleasing",
+        desc: "Uncomfortable with conflict, Campaigners may compromise to avoid disapproval or conflict.",
       },
       {
-        title: "Outgoing",
-        desc: "",
+        title: "Disorganization",
+        desc: "Practical tasks might be neglected, causing stress due to disorganization in daily life.",
       },
       {
-        title: "Outgoing",
-        desc: "",
+        title: "Overly Accommodating",
+        desc: "Their desire to help can lead to overcommitment, neglecting their own needs.",
+      },
+      {
+        title: "Overly Optimistic and Naive",
+        desc: "While optimistic, they may trust too easily, overlooking necessary skepticism.",
       },
     ],
     career: {
-      pic: "/images/ENFJcareer.svg",
-      summary: "",
-      jobs: [{ job: "Counselor" }, { job: "Psychologist" }, { job: "Writer" }],
+      pic: "/images/ENFPcareer.svg",
+      summary:
+        "ENFPs thrive in flexible jobs that align with their core values and allow them to utilize their talents. They're driven by the desire to help others and create community, excelling in roles that are people-oriented and avoid routine tasks. Though adaptable and innovative, they struggle with detailed, repetitive work, finding fulfillment in careers fostering creativity and enabling close interaction with people. It's crucial to consider their personality strengths and weaknesses while selecting a career path.",
+      jobs: [
+        { job: "Counselor" },
+        { job: "Psychologist" },
+        { job: "Actor" },
+        { job: "Politician" },
+        { job: "Nurse" },
+      ],
     },
     rarity: {
-      text: "ENFJ is one of the less common types in the population, especially for men.",
-      desc: "They make up about 2.2% of the general population.",
+      text: "ENFP is a moderately common personality type.",
+      desc: "They make up about 8.2% of the general population.",
     },
-    celebrities: [{ name: "Barack" }],
+    celebrities: [
+      { name: "Robert Downey Jr" },
+      { name: "Mark Twain" },
+      { name: "Bill Clinton" },
+      { name: "Will Smith" },
+      { name: "Michael Scott (The Office)" },
+      { name: "Kim Nam-joon (BTS)" },
+    ],
   },
   {
-    personality: "ENFJ",
-    title: "Protagonist",
-    group: "Diplomats",
+    personality: "ISTJ",
+    title: "Logistician",
+    group: "Sentinels",
+    pic: "/images/istj-logistician-s2-female.png",
+    male: "/images/istj-logistician-s2-male.png",
+    female: "/images/istj-logistician-s2-female.png",
+    short_desc:
+      "Traditional, practical and reliable individuals who are organized",
+    long_desc:
+      "ISTJs are practical and detail-oriented individuals, known for their reliability, integrity, and adherence to tradition. Their reserved and orderly nature makes them dependable contributors who prioritize stability and structure in their personal and professional lives. While they may appear serious and formal, ISTJs value loyalty, hard work, and uphold old-fashioned values. They seek security and peace, embodying a strong sense of responsibility and a commitment to maintaining societal order.",
+    fact: "ISTJs are sometimes referred to as The Inspector because of their organization skills and composure.",
+    fact2:
+      "The ISTJ can be considered an intimidating personality type to approach, especially without a prior relationship.",
+    strengths: [
+      {
+        title: "Organization",
+        desc: "ISTJs enjoy structure and order, meticulously planning and paying attention to detail.",
+      },
+      {
+        title: "Responsibility",
+        desc: "Known for a logical and steady approach to achieving goals, they are reliable and focused.",
+      },
+      {
+        title: "Honesty",
+        desc: "Integrity is central to their personality, often preferring honesty over emotional manipulation",
+      },
+      {
+        title: "Calmness and Practicality",
+        desc: "Displaying rationality, they make clear decisions, focusing on effectiveness over empathy.",
+      },
+    ],
+    weaknesses: [
+      {
+        title: "Stubborness",
+        desc: "Their love for order and rules might make them inflexible and resistant to change.",
+      },
+      {
+        title: "Seemingly Insensitive",
+        desc: "Due to their directness, they may come across as insensitive or cold to others.",
+      },
+      {
+        title: "Self-Blame",
+        desc: "ISTJs tend to blame themselves excessively when things go wrong.",
+      },
+      {
+        title: "Judgmental Stance",
+        desc: "Dismissing opinions that don't align with their factual basis, lacking respect for differing views.",
+      },
+    ],
+    career: {
+      pic: "/images/ISTJcareer.svg",
+      summary:
+        "ISTJs thrive in structured environments with clear schedules and practical, real-world applications for learning. They excel in careers that emphasize order, stability, and precision, such as accounting, law, and military service. Their preference for stability and reliability drives them towards roles that uphold established traditions and rules, like police officers, judges, and data analysts. While they often work well independently, when part of a team, they value clearly defined roles and responsibilities within a structured work environment.",
+      jobs: [
+        { job: "Accountant" },
+        { job: "Computer Programmer" },
+        { job: "Doctor" },
+        { job: "Lawyer" },
+        { job: "Military Leader" },
+        { job: "Police Officer or Detective" },
+      ],
+    },
+    rarity: {
+      text: "According to the most recent global sample, ISTJ is the most common type in the population.",
+      desc: "They make up about 15.9% of the general population.",
+    },
+    celebrities: [
+      { name: "Denzel Washington" },
+      { name: "George Washington" },
+      { name: "George Bush" },
+      { name: "Eddard Stark (Game of Thrones)" },
+      { name: "Stannis Baratheon (Game of Thrones)" },
+      { name: "Henry Ford" },
+    ],
+  },
+  {
+    personality: "ISTJ",
+    title: "Logistician",
+    group: "Sentinels",
     pic: "/images/enfj-protagonist-s2-male.png",
     male: "/images/enfj-protagonist-s2-male.png",
     female: "/images/enfj-protagonist-s2-female.png",
@@ -916,12 +1017,82 @@ export const personalityData = [
     career: {
       pic: "/images/ENFJcareer.svg",
       summary: "",
-      jobs: [{ job: "Counselor" }, { job: "Psychologist" }, { job: "Writer" }],
+      jobs: [
+        { job: "Counselor" },
+        { job: "Psychologist" },
+        { job: "Writer" },
+        { job: "Writer" },
+      ],
     },
     rarity: {
       text: "ENFJ is one of the less common types in the population, especially for men.",
       desc: "They make up about 2.2% of the general population.",
     },
-    celebrities: [{ name: "Barack" }],
+    celebrities: [
+      { name: "Barack" },
+      { name: "Barack" },
+      { name: "Barack" },
+      { name: "Barack" },
+    ],
+  },
+  {
+    personality: "ISTJ",
+    title: "Logistician",
+    group: "Sentinels",
+    pic: "/images/enfj-protagonist-s2-male.png",
+    male: "/images/enfj-protagonist-s2-male.png",
+    female: "/images/enfj-protagonist-s2-female.png",
+    short_desc: "",
+    long_desc: "",
+    fact: "ENFJs are sometimes referred to as The Giver because of their desire to inspire others to become better versions of themselves.",
+    fact2: "",
+    strengths: [
+      {
+        title: "Outgoing",
+        desc: "",
+      },
+      {
+        title: "Outgoing",
+        desc: "",
+      },
+      {
+        title: "Outgoing",
+        desc: "",
+      },
+    ],
+    weaknesses: [
+      {
+        title: "Outgoing",
+        desc: "",
+      },
+      {
+        title: "Outgoing",
+        desc: "",
+      },
+      {
+        title: "Outgoing",
+        desc: "",
+      },
+    ],
+    career: {
+      pic: "/images/ENFJcareer.svg",
+      summary: "",
+      jobs: [
+        { job: "Counselor" },
+        { job: "Psychologist" },
+        { job: "Writer" },
+        { job: "Writer" },
+      ],
+    },
+    rarity: {
+      text: "ENFJ is one of the less common types in the population, especially for men.",
+      desc: "They make up about 2.2% of the general population.",
+    },
+    celebrities: [
+      { name: "Barack" },
+      { name: "Barack" },
+      { name: "Barack" },
+      { name: "Barack" },
+    ],
   },
 ];
