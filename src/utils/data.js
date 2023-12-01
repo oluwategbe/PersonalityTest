@@ -140,7 +140,7 @@ export const minidata = [
   {
     personality: "INFJ",
     title: "Advocate",
-    group: "Diplomats",
+    group: "Advocate",
     pic: "/images/infj-advocate-p-s2-v1-male.png",
   },
   {
@@ -296,7 +296,7 @@ export const personalityData = [
       ],
     },
     rarity: {
-      text: "INTJ is one of the rarest types in the population.",
+      text: "INTJ is one of the rarest types in the world.",
       desc: "They make up about 2.6% of the general population.",
     },
     celebrities: [
@@ -381,7 +381,7 @@ export const personalityData = [
       ],
     },
     rarity: {
-      text: "INTP is one of the less common types in the population.",
+      text: "INTP is one of the less common types in the world.",
       desc: "They make up about 4.8% of the general population.",
     },
     celebrities: [
@@ -476,7 +476,7 @@ export const personalityData = [
       ],
     },
     rarity: {
-      text: "ENTJ is one of the least common types in the population, and the rarest type among women.",
+      text: "ENTJ is one of the least common types in the world, and the rarest type among women.",
       desc: "They make up about 1.8% of the general population.",
     },
     celebrities: [
@@ -562,13 +562,12 @@ export const personalityData = [
       ],
     },
     rarity: {
-      text: "ENTP is one of the rarer types in the population.",
+      text: "ENTP is one of the rarer types in the world.",
       desc: "They make up about 4.3% of the general population.",
     },
     celebrities: [
       { name: "Leonardo da Vinci" },
       { name: "Niccolo Machiavelli" },
-      { name: "Barack Obama" },
       { name: "Walt Disney" },
       { name: "Thomas Edison" },
       { name: "Celine Dion" },
@@ -576,5 +575,353 @@ export const personalityData = [
       { name: "Tyrion Lannister (Game of Thrones)" },
       { name: "Jim Halpert (The Office)" },
     ],
+  },
+  {
+    personality: "INFJ",
+    title: "Advocate",
+    group: "Diplomats",
+    pic: "/images/infj-advocate-p-s2-v1-male.png",
+    male: "/images/infj-advocate-p-s2-v1-male.png",
+    female: "/images/infj-advocate-p-s2-v1-female.png",
+    short_desc:
+      "Highly creative idealists, developing brilliant ideas from their imagination.",
+    long_desc:
+      "INFJs are quiet yet inspiring idealists who possess deep insight and strong convictions. Visionaries with a profound way of seeing the world, they prioritize making a difference and seeking fulfillment rather than pursuing material success. These creative and empathetic individuals value deep connections and aim to help the world become a better place through their authenticity and altruism. Though they may feel different from others, their commitment to justice and compassion drives them to use their strengths in creativity and sensitivity to uplift others and address societal injustices. They possess a unique ability to understand others' emotions and motivations, often guiding and supporting them with original solutions, while remaining private and selective about sharing their innermost thoughts and feelings.",
+    fact: "INFJs are sometimes referred to as The Counselor because of their intuitive and caring nature, and their desire to help others",
+    fact2:
+      "An INFJ's intuition is usually one of their strongest qualities. They have uncanny insight into people and situations.",
+    strengths: [
+      {
+        title: "Creative & Artistic",
+        desc: "Advocates embrace their creativity and constantly seek opportunities to express themselves in unconventional ways.",
+      },
+      {
+        title: "Insightful",
+        desc: "They delve beneath superficiality, possessing an uncanny ability to understand people's true motivations and needs.",
+      },
+      {
+        title: "Principled & Idealistic",
+        desc: "Driven by a sense of purpose, they chase after their ideals with energy and enthusiasm, fueled by the beauty of their visions.",
+      },
+      {
+        title: "Altruistic",
+        desc: "They prioritize the greater good, using their strengths to make the world a better place, sensitive to the needs of others.",
+      },
+      {
+        title: "Values Deep Relationships",
+        desc: "Advocates value close and meaningful connections with others, fostering deep, authentic relationships.",
+      },
+    ],
+    weaknesses: [
+      {
+        title: "Sensitive to Criticism",
+        desc: "They may become defensive or dismissive when their cherished principles are challenged.",
+      },
+      {
+        title: "Reluctant to Open Up",
+        desc: "While valuing honesty, they struggle to open up and be vulnerable, sometimes creating distance in relationships.",
+      },
+      {
+        title: "Perfectionistic",
+        desc: "Idealism may lead to fixating on imperfections, making it difficult to appreciate situations or relationships.",
+      },
+      {
+        title: "Avoidance of Confrontation",
+        desc: "Advocates dislike confrontation and may avoid it, causing difficulties in resolving conflicts.",
+      },
+    ],
+    career: {
+      pic: "/images/INFJcareer.svg",
+      summary:
+        "Advocates (INFJs) seek careers aligned with their values and a sense of purpose, finding fulfillment in jobs that help and connect with people. They excel in roles such as counselors, teachers, therapists, and healthcare professionals, thriving in service-oriented professions. Many are passionate communicators drawn to writing, art, and music, finding creative outlets in storytelling and artistic pursuits. Nonprofits and socially impactful organizations also attract Advocates, allowing them to channel their creativity into meaningful change. Their deep convictions and creativity shine in careers that support their values, making a positive impact in the world. INFJs excel in careers that combine creativity with a sense of purpose, thriving in roles that align with their deeply held convictions. They're high achievers, known for their dedication and positive approach in the workplace. However, strict routines and managerial roles that demand authority may pose challenges for them due to their introverted nature and preference for sensitivity over strict adherence.",
+      jobs: [
+        { job: "Artist" },
+        { job: "Lawyer" },
+        { job: "Actor" },
+        { job: "Religious worker" },
+        { job: "Musician" },
+        { job: "Counselor" },
+        { job: "Psychologist" },
+        { job: "Writer" },
+        { job: "Teacher" },
+      ],
+    },
+    rarity: {
+      text: "INFJ is one of the rarest types in the world. The rarest personality type among men.",
+      desc: "They make up about 2.3% of the general population.",
+    },
+    celebrities: [
+      { name: "Martin Luther King" },
+      { name: "Nelson Mandela" },
+      { name: "Mother Theresa" },
+      { name: "Lady Gaga" },
+      { name: "Morgan Freeman" },
+      { name: "Oprah Winfrey" },
+      { name: "Taylor Swift" },
+      { name: "Michael Scofield (Prison Break)" },
+      { name: "Jon Snow (Game of Thrones)" },
+    ],
+  },
+  {
+    personality: "INFP",
+    title: "Mediator",
+    group: "Diplomats",
+    pic: "/images/infp-mediator-s2-male.png",
+    male: "/images/infp-mediator-s2-male.png",
+    female: "/images/infp-mediator-c-s2-v1-female.png",
+    short_desc:
+      "Intuitive, quiet reserved individuals who are highly altruistic.",
+    long_desc:
+      "INFPs are introspective and reserved individuals who thrive in careers aligned with their values and visions. With a dominant function of introverted feeling and an auxiliary function of extraverted intuition, they are deeply intuitive, imaginative, and guided by idealism. These compassionate souls are driven by a desire to make the world a better place, exploring their own purpose while embracing their artistic and creative nature. INFPs seek deep, soulful relationships and often find solace in their vibrant inner worlds. Their empathetic and nonjudgmental nature makes them excellent listeners, and they are passionate about helping others on their personal journeys.",
+    fact: "INFPs are sometimes referred to as The Healer because of their altruistic character and their desire to make the world a better place.",
+    fact2:
+      "INFPs are reflective and often spiritual, and often interested in having meaningful conversations about values, ethics, people, and personal growth.",
+    strengths: [
+      {
+        title: "Loyal and devoted",
+        desc: "They are deeply committed and reliable in relationships, demonstrating unwavering loyalty.",
+      },
+      {
+        title: "Sensitive to feelings",
+        desc: "They are highly attuned to emotions, showing understanding and empathy towards others' feelings.",
+      },
+      {
+        title: "Caring",
+        desc: "They exhibit genuine care and curiosity about people's lives and well-being.",
+      },
+      {
+        title: "Value close relationships",
+        desc: "They possess the ability to grasp complex concepts and overarching patterns effortlessly.",
+      },
+      {
+        title: "Generous",
+        desc: "They share blessings, gives credit, and actively supports and uplifts others.",
+      },
+    ],
+    weaknesses: [
+      {
+        title: "Can be overly idealistic",
+        desc: "They set high standards and expectations, occasionally bordering on impracticality.",
+      },
+      {
+        title: "Tends to take everything personally",
+        desc: "They often internalize situations, interpreting events as reflections of themselves.",
+      },
+      {
+        title: "Difficult to get to know",
+        desc: "Their reserved nature may pose challenges in forming quick, open connections.",
+      },
+    ],
+    career: {
+      pic: "/images/INFPcareer.svg",
+      summary:
+        "Mediators (INFPs) seek careers that offer fulfillment beyond financial stability, aspiring for meaningful work aligned with their passions and values. Ideal roles involve minimal social stress and a sense of purpose, though their pursuit of perfection can lead to job dissatisfaction or feeling stuck. Their creativity and empathy enable success across various fields, especially in writing, arts, counseling, or service-oriented professions. While preferring solitary work, they excel in expressing themselves through writing and advocating for their beliefs, valuing introspection and considering diverse.",
+      jobs: [
+        { job: "Artist" },
+        { job: "Architect" },
+        { job: "Counselor" },
+        { job: "Psychologist" },
+        { job: "Writer" },
+        { job: "Physical Therapist" },
+      ],
+    },
+    rarity: {
+      text: "INFP is one of the rarer types in the world.",
+      desc: "They make up about 6.3% of the general population.",
+    },
+    celebrities: [
+      { name: "William Shakespeare" },
+      { name: "Alicia Keys" },
+      { name: "Johnny Depp" },
+      { name: "Princess Diana" },
+      { name: "Bob Marley" },
+      { name: "Keanu Reeves" },
+      { name: "Andrew Garfield" },
+      { name: "Nicolas Cage" },
+    ],
+  },
+  {
+    personality: "ENFJ",
+    title: "Protagonist",
+    group: "Diplomats",
+    pic: "/images/enfj-protagonist-s2-male.png",
+    male: "/images/enfj-protagonist-s2-male.png",
+    female: "/images/enfj-protagonist-s2-female.png",
+    short_desc:
+      "People-focused individuals, who inspire others to become better.",
+    long_desc:
+      "Protagonists (ENFJs) are charismatic and visionary leaders, driven by a sense of purpose to positively impact others' lives. They excel in inspiring and guiding people toward personal growth, often found in leadership roles like politicians, coaches, or teachers. Their strong empathy, intuition, and focus on values make them catalysts for human development. While energized and forward-thinking, they may overcommit and struggle to assert their own needs, prioritizing others' well-being. ENFJs are people-centric, empathetic individuals who thrive on feedback, valuing connections and envisioning a better future for all.",
+    fact: "ENFJs are sometimes referred to as The Giver because of their desire to inspire others to become better versions of themselves.",
+    fact2:
+      "ENFJs are loyal, reliable, and genuinely kind for no other reason than wanting something better for themselves and for others.",
+    strengths: [
+      {
+        title: "Outgoing and warm-hearted",
+        desc: "They create welcoming atmospheres and enjoy social connections.",
+      },
+      {
+        title: "Empathetic",
+        desc: "They deeply understand and feel others' emotions, offering comfort and support.",
+      },
+      {
+        title: "Wide social circle",
+        desc: "They thrive on diverse connections and excel at networking.",
+      },
+      {
+        title: "Encouraging",
+        desc: "They inspire and motivate others, fostering growth and progress.",
+      },
+      {
+        title: "Organized",
+        desc: "They manage tasks efficiently, maintaining structure and clarity.",
+      },
+      {
+        title: "Charismatic",
+        desc: " Inspiring and determined, often assuming leadership roles.",
+      },
+    ],
+    weaknesses: [
+      {
+        title: "Approval-seeking",
+        desc: "They may seek validation or approval from others excessively.",
+      },
+      {
+        title: "Overly sensitive",
+        desc: "They are highly responsive emotionally, which can lead to vulnerability.",
+      },
+      {
+        title: "Indecisive",
+        desc: "They might face challenges in making definitive choices or decisions.",
+      },
+      {
+        title: "Self-sacrificing",
+        desc: "They often prioritize others' needs above their own well-being.",
+      },
+      {
+        title: "Condescending",
+        desc: "While teaching and sharing beliefs, they might come across as patronizing.",
+      },
+    ],
+    career: {
+      pic: "/images/ENFJcareer.svg",
+      summary:
+        "Protagonists (ENFJs) excel in careers where they can help others and utilize their creative drive. Their emotional intelligence and social adeptness make them thrive in people-oriented fields like human resources, teaching, counseling, or public relations. These altruistic individuals often find themselves in leadership roles, whether in nonprofit organizations, startups, or established corporate entities. They excel at understanding and meeting people's needs, bringing sincerity and innovation to roles in sales, customer service, marketing, or product development. ENFJs shine in roles that involve extensive interaction, where they can leverage their communication skills to foster harmony, resolve conflicts, and guide others toward realizing their potential. They intuitively navigate tensions, demonstrating a knack for creating cohesive environments in various settings.",
+      jobs: [
+        { job: "Human resources manager" },
+        { job: "Counselor" },
+        { job: "Psychologist" },
+        { job: "Writer" },
+      ],
+    },
+    rarity: {
+      text: "ENFJ is one of the less common types in the population, especially for men.",
+      desc: "They make up about 2.2% of the general population.",
+    },
+    celebrities: [
+      { name: "Barack Obama" },
+      { name: "Jennifer Lawrence" },
+      { name: "Maya Angelou" },
+      { name: "Deanerys Targaryen (Game of Thrones)" },
+    ],
+  },
+  {
+    personality: "ENFP",
+    title: "Campaigner",
+    group: "Diplomats",
+    pic: "/images/enfj-protagonist-s2-male.png",
+    male: "/images/enfj-protagonist-s2-male.png",
+    female: "/images/enfj-protagonist-s2-female.png",
+    short_desc: "",
+    long_desc: "",
+    fact: "ENFJs are sometimes referred to as The Giver because of their desire to inspire others to become better versions of themselves.",
+    fact2: "",
+    strengths: [
+      {
+        title: "Outgoing",
+        desc: "",
+      },
+      {
+        title: "Outgoing",
+        desc: "",
+      },
+      {
+        title: "Outgoing",
+        desc: "",
+      },
+    ],
+    weaknesses: [
+      {
+        title: "Outgoing",
+        desc: "",
+      },
+      {
+        title: "Outgoing",
+        desc: "",
+      },
+      {
+        title: "Outgoing",
+        desc: "",
+      },
+    ],
+    career: {
+      pic: "/images/ENFJcareer.svg",
+      summary: "",
+      jobs: [{ job: "Counselor" }, { job: "Psychologist" }, { job: "Writer" }],
+    },
+    rarity: {
+      text: "ENFJ is one of the less common types in the population, especially for men.",
+      desc: "They make up about 2.2% of the general population.",
+    },
+    celebrities: [{ name: "Barack" }],
+  },
+  {
+    personality: "ENFJ",
+    title: "Protagonist",
+    group: "Diplomats",
+    pic: "/images/enfj-protagonist-s2-male.png",
+    male: "/images/enfj-protagonist-s2-male.png",
+    female: "/images/enfj-protagonist-s2-female.png",
+    short_desc: "",
+    long_desc: "",
+    fact: "ENFJs are sometimes referred to as The Giver because of their desire to inspire others to become better versions of themselves.",
+    fact2: "",
+    strengths: [
+      {
+        title: "Outgoing",
+        desc: "",
+      },
+      {
+        title: "Outgoing",
+        desc: "",
+      },
+      {
+        title: "Outgoing",
+        desc: "",
+      },
+    ],
+    weaknesses: [
+      {
+        title: "Outgoing",
+        desc: "",
+      },
+      {
+        title: "Outgoing",
+        desc: "",
+      },
+      {
+        title: "Outgoing",
+        desc: "",
+      },
+    ],
+    career: {
+      pic: "/images/ENFJcareer.svg",
+      summary: "",
+      jobs: [{ job: "Counselor" }, { job: "Psychologist" }, { job: "Writer" }],
+    },
+    rarity: {
+      text: "ENFJ is one of the less common types in the population, especially for men.",
+      desc: "They make up about 2.2% of the general population.",
+    },
+    celebrities: [{ name: "Barack" }],
   },
 ];

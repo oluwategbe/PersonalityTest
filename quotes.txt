@@ -13,8 +13,19 @@
 “Your personality is the only permanent thing in your, ultimately, temporary life…that’s all the more reason to cherish it.” —Isabella Koldras
 
 
+Rarity chart
+
+How Rare is the INTJ Personality?
+According to psychologist David Keirsey, developer of the Keirsey Temperament Sorter, approximately 1% to 4% of the population has an INTJ personality type. (The rarest personality type is INFJ.)
+
+
+
 The Basics of Myers & Briggs' Personality Theory
 The Myers-Briggs system describes a person’s personality through four opposing personality functions, variously known as dichotomies, preferences or scales. The first three preferences are based on the writings of Jung; Katherine Cook Briggs added the final preference, Judging versus Perceiving, based on her own observations.
+
+The Myers-Briggs Type Indicator® (MBTI®) assessment is one of the world’s most popular personality tools—because it works. Used by more than 88 percent of Fortune 500 companies in 115 countries, and available in 29 languages, it has become the go-to framework for people development globally. With more than 70 years of science-based, research-based insight, the MBTI assessment is a robust tool for self-awareness and improvement. It provides positive language for understanding and valuing individual differences. With practical insight that’s easy to understand and implement, the MBTI assessment has helped thousands of organizations and millions of people around the world improve how they communicate, learn, and work.
+
+Now, there are tonnes of personality questionnaires and tests available online but the Myers-Briggs Personality Type Indicator is probably the most widely used personality test in the world.  
 
 Extraversion vs. Introversion: How do you gain energy? Extraverts like to be with others and gain energy from people and the environment. Introverts gain energy from alone-time and need periods of quiet reflection throughout the day.
 
@@ -24,9 +35,12 @@ Thinking vs. Feeling: How do you make decisions? Thinkers look for the logically
 
 Judging vs. Perceiving: How do you organize your environment? Judgers prefer structure and like things to be clearly regulated, whereas Perceivers like things to be open and flexible and are reluctant to commit themselves.
 
-- gender, to determine avatar
-Energy: % of introversion
+How do you direct and receive energy—by focusing on the outside world, interacting with people and taking action, or by focusing on your inner world and reflecting on ideas, memories, and experiences?
+How do you take in information—by focusing on what you perceive using your five senses or by seeing the big picture and looking for relationships and patterns? 
+How do you decide and come to conclusions—by logically analyzing the situation or by considering what’s important to the people involved?
+How do you approach the outside world—in a planned, orderly way or a more flexible, spontaneous way? 
 
+Energy: % of introversion
 
 on the other hand, is x
 not a test because there are no correct or incorrect responses, and it does not 
@@ -41,17 +55,3 @@ and expend their resources.
 3. Thinking or Feeling: People’s preferred method of decision-making.
 4. Judging and Perceiving: How people view themselves in relation to the 
 outside world.
-
-ISTJ – Introverted Sensing with Thinking 
-b) ISFJ – Introverted Sensing with Feeling 
-c) INFJ – Introverted Intuition with Feeling 
-d) INTJ – Introverted Intuition with Thinking 
-e) ISTP – Introverted Thinking with Sensing
-f) ISFP – Introverted Feeling with Sensing 
-g) INFP – Introverted Feeling with Intuition 
-h) INTP – Introverted Thinking with Intuition 
-i) ESTP – Extraverted Sensing with Thinking 
-j) ESFP – Extraverted Sensing with Feeling 
-k) ENFP – Extraverted Intuition with Feeling 
-l) ENTP – Extraverted Intuition with Thinking 
-m) ESTJ – Extraverted Thinking with Sensing 
