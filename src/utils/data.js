@@ -657,7 +657,6 @@ export const personalityData = [
       { name: "Lady Gaga" },
       { name: "Morgan Freeman" },
       { name: "Oprah Winfrey" },
-      { name: "Taylor Swift" },
       { name: "Michael Scofield (Prison Break)" },
       { name: "Jon Snow (Game of Thrones)" },
     ],
@@ -1069,7 +1068,7 @@ export const personalityData = [
       "Traditionally-inclined indivudlas with a sense of doing what is right and socially acceptable.",
     long_desc:
       "ESTJs embody traditional values like organization, honesty, and dedication. They prioritize doing what's socially acceptable and lead by advocating for their beliefs. Driven by practicality and a keen eye for detail, they excel in structured environments, taking charge in leadership roles that emphasize results and adherence to rules. Assertive and dedicated, they thrive on bringing order and structure to their surroundings, valuing predictability and logical processes.",
-    fact: "ENSJs are sometimes referred to as The Supervisor because they tend to take charge and make sure things are done correctly.",
+    fact: "ESTJs are sometimes referred to as The Supervisor because they tend to take charge and make sure things are done correctly.",
     fact2:
       "Individuals with this personality type tend to place a high value on tradition, rules, and security. Though the paths towards “good” and “right” are difficult, they are glad to take their place as the leaders of the pack.",
     strengths: [
@@ -1147,161 +1146,425 @@ export const personalityData = [
     pic: "/images/istp-virtuoso-s2-female.png",
     male: "/images/esfj-consul-s2-male.png",
     female: "/images/esfj-consul-s2-female.png",
-    short_desc: "",
-    long_desc: "",
-    fact: "ENSJs are sometimes referred to as The Supervisor because they tend to take charge and make sure things are done correctly.",
-    fact2: "",
+    short_desc:
+      "Altruistic individuals who have a sense of duty to those around them. ",
+    long_desc:
+      "ESFJs, or Consuls, are caring and social individuals who prioritize community connections. They're known for their generosity, reliability, and strong sense of duty to family and friends. Altruistic and driven by a clear sense of right and wrong, they seek harmony, value tradition, and excel in supporting others practically. Popular for their warmth and attentiveness, ESFJs actively listen, remember details, and work to restore harmony in social settings. They thrive on teamwork, organization, and practical assistance, driven by their desire to lead and help others in cooperative environments.",
+    fact: "ESFJs are sometimes referred to as The Provider or Caregiver because they are sensitive to the needs of others.",
+    fact2:
+      "ESFJs value loyalty and tradition, and usually make their family and friends their top priority. They are generous with their time, effort, and emotions. ",
     strengths: [
       {
-        title: "Practical",
-        desc: "",
+        title: "Strong Sense of Duty",
+        desc: "They feel a strong responsibility to meet social expectations and obligations.",
       },
       {
-        title: "Practical",
-        desc: "",
+        title: "Strong Practical Skills",
+        desc: "Exceptional at managing daily tasks and caring for their close ones.",
       },
       {
-        title: "Practical",
-        desc: "",
+        title: "Very Loyal",
+        desc: "Highly value stability, making them loyal and reliable in relationships and groups.",
       },
       {
-        title: "Practical",
-        desc: "",
+        title: "Good at Connecting with Others",
+        desc: "Social, outgoing, and adept at social interactions and community involvement.",
       },
       {
-        title: "Practical",
-        desc: "",
+        title: "Sensitive and Warm",
+        desc: "They seek harmony, care deeply about others' feelings, and are strong team players.",
       },
     ],
     weaknesses: [
       {
-        title: "Insensitive",
-        desc: "",
+        title: "Inflexible",
+        desc: "They are cautious about unconventional ideas, may resist change or innovation.",
       },
       {
-        title: "Insensitive",
-        desc: "",
+        title: "Vulnerable to Criticism",
+        desc: "They are conflict-averse and sensitive to criticism, becoming defensive when criticized.",
       },
       {
-        title: "Insensitive",
-        desc: "",
+        title: "Needy for Approval",
+        desc: "They require reassurance and appreciation, sometimes seeking excessive attention.",
       },
       {
-        title: "Insensitive",
-        desc: "",
-      },
-      {
-        title: "Insensitive",
-        desc: "",
+        title: "Too Selfless",
+        desc: "They neglect personal needs while overly attending to others', sometimes becoming overwhelming.",
       },
     ],
     career: {
-      pic: "/images/ENTJcareer.svg",
-      summary: "",
+      pic: "/images/ESFJcareer.svg",
+      summary:
+        "Consuls, known for their practical sense and social vigor, thrive in careers where they can organize and bring structure. They excel as administrators, personal accountants, and in roles involving direct human interaction, like medical care, social work, and teaching. Their altruistic nature drives them toward careers where they can make a meaningful impact, such as religious work and counseling. ESFJs' caregiving nature suits roles in social services and healthcare, where their dependability shines in supporting and caring for others, making them ideal for nursing or teaching careers.",
       jobs: [
-        { job: "Politician" },
-        { job: "Politician" },
-        { job: "Politician" },
-        { job: "Politician" },
-        { job: "Politician" },
-        { job: "Politician" },
+        { job: "Nursing" },
+        { job: "Teaching" },
+        { job: "Social Work" },
+        { job: "Counselling" },
+        { job: "Physician" },
+        { job: "Secretary" },
+        { job: "Accountancy" },
       ],
     },
     rarity: {
-      text: "ENTJ is one of the common types of personality.",
-      desc: "They make up about 9% of the general population.",
+      text: "ESFJ is one of the rarer types of personality.",
+      desc: "They make up about 5.7% of the general population.",
     },
     celebrities: [
-      { name: "John" },
-      { name: "John" },
-      { name: "John" },
-      { name: "John" },
-      { name: "John" },
-      { name: "John" },
-      { name: "John" },
-      { name: "John" },
+      { name: "Joe Biden" },
+      { name: "Ariana Grande" },
+      { name: "Taylor Swift" },
+      { name: "Bill Clinton" },
+      { name: "Steve Harvey" },
+      { name: "Jennifer Lopez" },
+      { name: "Sansa Stark (Game of Thrones)" },
+      { name: "Cersei Lannister (Game of Thrones)" },
+      { name: "Monica (Friends)" },
     ],
   },
   {
-    personality: "ESFJ",
-    title: "Executive",
+    personality: "ISTP",
+    title: "Virtuoso",
     group: "Explorers",
-    pic: "/images/estj-executive-s2-male.png",
-    male: "/images/estj-executive-s2-male.png",
-    female: "/images/estj-executive-s2-female.png",
-    short_desc: "",
-    long_desc: "",
-    fact: "ENSJs are sometimes referred to as The Supervisor because they tend to take charge and make sure things are done correctly.",
-    fact2: "",
+    pic: "/images/istp-virtuoso-s2-female.png",
+    male: "/images/istp-virtuoso-s2-male.png",
+    female: "/images/istp-virtuoso-s2-female.png",
+    short_desc:
+      "Highly logical individuals who love to experiment and learn how things work.",
+    long_desc:
+      "ISTPs are enigmatic and rational problem-solvers, driven by logic and practicality. They excel in understanding mechanics, troubleshooting, and hands-on exploration. With a knack for dismantling and improving things, they thrive on practical experiences and learning through trial and error. Their adaptability, quick response to emergencies, and keen observation skills make them adept problem-solvers. They're reserved yet action-oriented, preferring diverse experiences over routines, and are deeply interested in understanding the workings of the world around them.",
+    fact: "ISTPs are sometimes referred to as The Craftsman because of their desire to have a hands-on approach to solving problems.",
+    fact2:
+      "ISTPs are curious about the mechanics of the world around them and typically have a unique ability to manipulate the tools in their environments.",
     strengths: [
       {
-        title: "Practical",
-        desc: "",
+        title: "Logical Learners",
+        desc: "They learn best through hands-on experiences and practical applications.",
       },
       {
-        title: "Practical",
-        desc: "",
+        title: "Action-Oriented",
+        desc: "These individuals are proactive and prefer to dive into tasks directly.",
       },
       {
-        title: "Practical",
-        desc: "",
+        title: "Realistic and Practical",
+        desc: "They possess a grounded perspective and excel in practical endeavors.",
       },
       {
-        title: "Practical",
-        desc: "",
+        title: "Easygoing",
+        desc: "Carry themselves confidently while maintaining a relaxed demeanor.",
       },
       {
-        title: "Practical",
-        desc: "",
+        title: "Creative and Adaptable",
+        desc: "Easily generate novel ideas and adapt quickly to new situations.",
+      },
+    ],
+    weaknesses: [
+      {
+        title: "Hard to Get to Know",
+        desc: "They tend to be reserved, making it challenging to form connections.",
+      },
+      {
+        title: "Insensitive",
+        desc: "While striving for empathy, their logical approach may sometimes seem insensitive.",
+      },
+      {
+        title: "Stubbornness and Bluntness",
+        desc: "If criticized, they may respond with bluntness and irritation.",
+      },
+      {
+        title: "Easily Bored",
+        desc: "They thrive on novelty, which can lead to challenges with long-term focus.",
+      },
+      {
+        title: "Dislike Commitment",
+        desc: "Long-term commitments feel oppressive; they prefer day-by-day approaches.",
+      },
+    ],
+    career: {
+      pic: "/images/ISTPcareer.svg",
+      summary:
+        "Virtuosos, marked by their versatility and penchant for unpredictability, thrive in careers that offer diversity and action. Born problem-solvers, they excel in hands-on professions like mechanics, engineering, design, and forensic science. They favor jobs involving crisis response, such as firefighters, paramedics, detectives, pilots, or police officers, as structured environments leave them feeling bored. Their chief desire is freedom – they seek careers allowing independence, avoiding rigid commitments and preferring entrepreneurial paths or flexible freelance work. ISTPs, introverted and logical, flourish in solitary roles with autonomy, favoring practical, hands-on work that has real-world applications.",
+      jobs: [
+        { job: "Engineering" },
+        { job: "Scientist" },
+        { job: "Software Developer" },
+        { job: "Pilot" },
+        { job: "Carpentry" },
+        { job: "Forensic science" },
+      ],
+    },
+    rarity: {
+      text: "ISTP is a relatively rare personality type",
+      desc: "They make up about 9.8% of the general population.",
+    },
+    celebrities: [
+      { name: "Michael Jordan" },
+      { name: "Tom Cruise" },
+      { name: "James Bond" },
+      { name: "Arya Stark (Game of Thrones)" },
+      { name: "Indiana Jones" },
+      { name: "Billie Eilish" },
+      { name: "Snoop Dogg" },
+      { name: "Bruce Lee" },
+    ],
+  },
+  {
+    personality: "ISFP",
+    title: "Adventurer",
+    group: "Explorers",
+    pic: "/images/isfp-adventurer-s2-male.png",
+    male: "/images/isfp-adventurer-s2-male.png",
+    female: "/images/isfp-adventurer-s2-female.png",
+    short_desc:
+      "Flexible artists with a strong aesthetic sense and natural talent.",
+    long_desc:
+      "ISFPs, known as Adventurers, are spontaneous, fun-loving individuals who embrace life's experiences and value living in the moment. Driven by curiosity and a passion for self-expression, they're adaptable and open-minded, finding joy in everyday adventures. Their flexibility and tolerance make them appreciative of diverse perspectives, always open to rethinking opinions and giving second chances. With a deep aesthetic sense and a talent for the arts, ISFPs seek and create beauty in their surroundings. They're gentle caretakers who exude warmth and enthusiasm, often enjoying life's offerings with a quiet yet cheerful demeanor.",
+    fact: "ISFPs are sometimes referred to as The Artist or The Composer because of their desire to experiment and come up with ideas that no one has thought of before.",
+    fact2:
+      "ISFPs are introverts that do not seem like introverts. It is because even if they have difficulties connecting to other people at first, they become warm, approachable, and friendly eventually. ",
+    strengths: [
+      {
+        title: "Considerate",
+        desc: "They embrace others as they are, fostering a friendly and caring environment.",
+      },
+      {
+        title: "Diligent & Practical",
+        desc: "They are proactive doers who thrive in hands-on learning and projects.",
+      },
+      {
+        title: "Charming & Sensitive",
+        desc: "They are relatable and empathetic, fostering harmony and popularity.",
+      },
+      {
+        title: "Artistic",
+        desc: "They express creativity tangibly, exploring ideas with a visual touch.",
+      },
+      {
+        title: "Imaginative",
+        desc: "They use creativity and insight to craft bold ideas that speak to people's hearts.",
+      },
+    ],
+    weaknesses: [
+      {
+        title: "Fiercely Independent",
+        desc: "They dislike rigid rules and traditions that hinder their expression.",
+      },
+      {
+        title: "Avoidant of Commitment",
+        desc: "They dislike long-term plans which could cause strain in relationships.",
+      },
+      {
+        title: "Overly Competitive",
+        desc: "Small things can escalate into intense competitions, impacting long-term success.",
+      },
+      {
+        title: "Easily Stressed",
+        desc: "Emotional overwhelm can lead to a loss of charm and creativity for them.",
+      },
+      {
+        title: "Indecisiveness",
+        desc: "They tend to delay decisions and prefer practical learning over abstract theories.",
+      },
+    ],
+    career: {
+      pic: "/images/ISFPcareer.svg",
+      summary:
+        "Adventurers, driven by creative freedom and a passion for self-expression, thrive in careers that allow artistic outlets. They excel as trendsetting artists, musicians, designers, or photographers, favoring imaginative work over rigid, 9-to-5 roles. They loathe routine and seek flexibility, often excelling in immersive, engaging jobs or as solo athletes. While they excel in the present, this focus on tangibles might hinder long-term planning, affecting careers that require extensive certifications or prolonged focus like psychology or teaching. However, they find success in freelance or consulting roles, bringing beauty and innovation to various industries while enjoying personal freedom and autonomy.",
+      jobs: [
+        { job: "Artist" },
+        { job: "Musician" },
+        { job: "Chef" },
+        { job: "Designer" },
+        { job: "Psychologist" },
+        { job: "Fashion Designer" },
+      ],
+    },
+    rarity: {
+      text: "ISFP is one of the common types of personality.",
+      desc: "They make up about 6.6% of the general population.",
+    },
+    celebrities: [
+      { name: "Rihanna" },
+      { name: "Jungkook (BTS)" },
+      { name: "Michael Jackson" },
+      { name: "Jesse Pinkman (Breaking Bad)" },
+      { name: "David Beckham" },
+      { name: "Wolfgang Amadeus Mozart" },
+      { name: "Marilyn Monroe" },
+    ],
+  },
+  {
+    personality: "ESTP",
+    title: "Entrepreneur",
+    group: "Explorers",
+    pic: "/images/estp-entrepreneur-s2-male.png",
+    male: "/images/estp-entrepreneur-s2-male.png",
+    female: "/images/estp-entrepreneur-s2-female.png",
+    short_desc:
+      "Spontaneous, energetic individuals who are quick-thinkers and enjoy living on the edge.",
+    long_desc:
+      "Entrepreneurs, or ESTPs, are vibrant, action-oriented individuals thriving in dynamic environments. They're perceptive problem-solvers who enjoy immediate challenges over long-term plans. Their outgoing nature makes them the life of the party, adept at adapting to keep interactions lively. They prefer hands-on learning to formal education and excel in crisis situations with their quick reflexes and practical approach. These energetic, adaptable individuals thrive in roles involving interaction and quick decision-making, like sales, contributing to a lively environment without disrupting the natural flow of life.",
+    fact: "ESTPs are sometimes referred to as The Persuader or The Doer because of their energetic lifestyles and quick decision-making.",
+    fact2:
+      "Energetic, spirited, and lively, individuals with the ESTP personality type embrace life enthusiastically, tackling challenges directly and enjoying an active, vibrant approach to living.",
+    strengths: [
+      {
+        title: "Influential",
+        desc: "They possess a knack for swaying opinions and rallying others to their cause.",
+      },
+      {
+        title: "Action-oriented",
+        desc: "Entrepreneurs are driven by a desire to take decisive action and make things happen.",
+      },
+      {
+        title: "Adaptable and resourceful",
+        desc: "They are quick to adapt and find inventive solutions to challenges.",
+      },
+      {
+        title: "Bold",
+        desc: "They love actionable ideas and drilling into details for practical use.",
+      },
+      {
+        title: "Sociable",
+        desc: "Natural leaders in social interactions and adept at making the most of networking opportunities.",
       },
     ],
     weaknesses: [
       {
         title: "Insensitive",
-        desc: "",
+        desc: "Facts and reality often supersede emotions, making emotionally charged situations uncomfortable.",
       },
       {
-        title: "Insensitive",
-        desc: "",
+        title: "Impatient",
+        desc: "Moving at their own pace, they struggle with slowing down or focusing on single details.",
       },
       {
-        title: "Insensitive",
-        desc: "",
+        title: "Risk-prone",
+        desc: "Impatience can lead them to embrace risks without considering long-term consequences.",
       },
       {
-        title: "Insensitive",
-        desc: "",
+        title: "May Miss the Bigger Picture",
+        desc: "Focused on solving immediate problems, potentially neglecting broader perspectives.",
       },
       {
-        title: "Insensitive",
-        desc: "",
+        title: "Defiant",
+        desc: "Dislike being confined by rules and repetitive tasks, preferring action-oriented environments.",
       },
     ],
     career: {
-      pic: "/images/ENTJcareer.svg",
-      summary: "",
+      pic: "/images/ESTPcareer.svg",
+      summary:
+        "Entrepreneurs, known as ESTPs, thrive in dynamic, people-focused careers that require quick decision-making and social finesse. They excel in sales, negotiations, and competitive environments, thriving when they trust their instincts. Highly independent, they avoid rigid structures and excel in roles like emergency responders or sports-related positions, where their action-oriented nature shines. Their strong people skills make them successful in sales, marketing, and fast-paced, high-stakes jobs.",
       jobs: [
-        { job: "Politician" },
-        { job: "Politician" },
-        { job: "Politician" },
-        { job: "Politician" },
-        { job: "Politician" },
-        { job: "Politician" },
+        { job: "Entrepreneur (obviously)" },
+        { job: "Marketer" },
+        { job: "Paramedic" },
+        { job: "Chef" },
+        { job: "Pilot" },
+        { job: "Musician" },
       ],
     },
     rarity: {
-      text: "ENTJ is one of the common types of personality.",
-      desc: "They make up about 9% of the general population.",
+      text: "ESTP is one of the common types of personality.",
+      desc: "They make up about 6.1% of the general population.",
     },
     celebrities: [
-      { name: "John" },
-      { name: "John" },
-      { name: "John" },
-      { name: "John" },
-      { name: "John" },
-      { name: "John" },
-      { name: "John" },
-      { name: "John" },
+      { name: "Donald Trump" },
+      { name: "Ernest Hemingway" },
+      { name: "Eddie Murphy" },
+      { name: "Madonna" },
+      { name: "Mike Tyson" },
+      { name: "Park Ji-min (BTS)" },
+      { name: "Samuel L. Jackson" },
+      { name: "Jamie Lannister (Game of Thrones)" },
+      { name: "Thomas Edison" },
+    ],
+  },
+  {
+    personality: "ESFP",
+    title: "Entertainer",
+    group: "Explorers",
+    pic: "/images/esfp-entertainer-s2-male.png",
+    male: "/images/esfp-entertainer-s2-male.png",
+    female: "/images/esfp-entertainer-s2-female.png",
+    short_desc:
+      "Enthusiastic, fun-loving individuals who have a very strong asthetic sense and are very social.",
+    long_desc:
+      "ESFPs are lively entertainers, thriving in the spotlight and making every moment fun. They're warm, talkative, and love sharing experiences with others. Their spontaneity and flair for engaging people stem from their focus on the present. They enjoy being the center of attention, have a knack for fun, and often express themselves creatively. While they're great at supporting others emotionally, they might avoid addressing conflicts involving them directly. Their focus on immediate enjoyment sometimes leads to neglecting long-term responsibilities, but their vibrant, spontaneous energy brings laughter and excitement wherever they go.",
+    fact: "ESFPs are sometimes referred to as The Performer because of their love of the spotlight and their energetic nature.",
+    fact2:
+      "ESFPs genuinely enjoy spending time with others and getting to know them, and have a knack for making people happy, even in the most frustrating situations.",
+    strengths: [
+      {
+        title: "Optimistic and Gregarious",
+        desc: "Entertainers exude positivity and thrive in social settings, enjoying interactions with others.",
+      },
+      {
+        title: "Spontaneous",
+        desc: "They live in the moment, embracing spontaneity and new experiences.",
+      },
+      {
+        title: "Bold and Original",
+        desc: "Unafraid to step out of comfort zones, they experiment with styles and stand out in unique ways.",
+      },
+      {
+        title: "Practical and Observant",
+        desc: "They prefer experiencing the world tangibly, noticing real things and changes.",
+      },
+      {
+        title: "Excellent People Skills",
+        desc: "They are talkative, witty, and skilled at engaging with others to find happiness in social connections.",
+      },
+    ],
+    weaknesses: [
+      {
+        title: "Sensitive",
+        desc: "Emotional vulnerability to criticism can lead to negative reactions and make them feel cornered.",
+      },
+      {
+        title: "Conflict-Averse",
+        desc: "They tend to avoid conflicts and prioritize fun over resolving issues.",
+      },
+      {
+        title: "Easily Bored",
+        desc: "They seek constant excitement, sometimes engaging in risky behaviors or self-indulgence.",
+      },
+      {
+        title: "Poor Long-Term Planners",
+        desc: "They rarely make detailed future plans, preferring to live in the moment.",
+      },
+      {
+        title: "Impulsive",
+        desc: "They act on immediate impulses without considering long-term consequences.",
+      },
+    ],
+    career: {
+      pic: "/images/ESFPcareer.svg",
+      summary:
+        "Entertainers thrive in careers where they connect with people, reflecting and adapting to different moods and situations effortlessly. They excel in roles like event planning, sales, counseling, and social work, using their vibrant energy to uplift others. Their passionate and resourceful nature also makes them well-suited for high-stakes fields like emergency medical care. Creative professions such as music, fashion, and design are perfect outlets for their artistic energy. However, jobs lacking human interaction or emphasizing data-driven decisions can be draining for Entertainers, who prefer freedom, novelty, and lively environments.",
+      jobs: [
+        { job: "Counsellor" },
+        { job: "Event Planner" },
+        { job: "Social Worker" },
+        { job: "Fashion designer" },
+        { job: "Artist" },
+        { job: "Musician" },
+      ],
+    },
+    rarity: {
+      text: "ESFP is one of the common types of personality.",
+      desc: "They make up about 6% of the general population.",
+    },
+    celebrities: [
+      { name: "Adele" },
+      { name: "Marilyn Monroe" },
+      { name: "Jamie Foxx" },
+      { name: "Miley Cyrus" },
+      { name: "Adam Levine" },
+      { name: "Penny (The big bang theory)" },
+      { name: "Serena Williams" },
+      { name: "Pablo Picasso" },
     ],
   },
 ];
