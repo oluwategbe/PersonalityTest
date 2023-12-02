@@ -814,7 +814,7 @@ export const personalityData = [
       ],
     },
     rarity: {
-      text: "ENFJ is one of the less common types in the population, especially for men.",
+      text: "ENFJ is one of the less common types in the world, especially among men.",
       desc: "They make up about 2.2% of the general population.",
     },
     celebrities: [
@@ -963,7 +963,7 @@ export const personalityData = [
       ],
     },
     rarity: {
-      text: "According to the most recent global sample, ISTJ is the most common type in the population.",
+      text: "According to the most recent global sample, ISTJ is the most common type in the world.",
       desc: "They make up about 15.9% of the general population.",
     },
     celebrities: [
@@ -982,57 +982,80 @@ export const personalityData = [
     pic: "/images/isfj-defender-p-s2-v1-female.png",
     male: "/images/isfj-defender-p-s2-v1-male.png",
     female: "/images/isfj-defender-p-s2-v1-female.png",
-    short_desc: "",
-    long_desc: "",
-    fact: "ENFJs are sometimes referred to as The Giver because of their desire to inspire others to become better versions of themselves.",
-    fact2: "",
+    short_desc:
+      "Warm, kind-hearted and hardworking individuals, with a deep sense of responsibility to their loved ones.",
+    long_desc:
+      "ISFJs are dedicated, warm-hearted individuals known for their reliability and commitment to supporting others. They work diligently behind the scenes, attentive to practical details and focused on meeting responsibilities. Their loyalty is unwavering, extending not only to loved ones but also to their communities, employers, and traditions. ISFJs excel in problem-solving, seeking to improve the lives of those around them while valuing established norms and structures. While their steadfastness and caring nature are commendable, they can struggle with change and may sometimes feel overworked due to their selfless dedication. Overall, ISFJs are compassionate, conscientious caretakers who prioritize harmony, cooperation, and bringing out the best in others.",
+    fact: "ENFJs are sometimes referred to as The Protector because of their caring nature and desire to support everyone around them.",
+    fact2:
+      "Although individuals with this personality type are introverted and often reserved, they excel at keenly observing people and events in their surroundings. They prioritize others' experiences and are highly attentive despite their quiet nature.",
     strengths: [
       {
-        title: "Outgoing",
-        desc: "",
+        title: "Reliable",
+        desc: "Known for their steadiness, Defenders ensure tasks are completed meticulously.",
       },
       {
-        title: "Outgoing",
-        desc: "",
+        title: "Practical and Observant",
+        desc: "They possess a practical approach and are keen observers, noticing subtle details.",
       },
       {
-        title: "Outgoing",
-        desc: "",
+        title: "Sensitive and Supportive",
+        desc: "They enjoy helping others, seeking win-win situations, and lending support.",
+      },
+      {
+        title: "Hardworking",
+        desc: "They take pride in their work, forming emotional connections to their efforts.",
       },
     ],
     weaknesses: [
       {
-        title: "Outgoing",
-        desc: "",
+        title: "Avoids Confrontation and Change",
+        desc: "They dislike confrontation and change, valuing tradition and stability.",
       },
       {
-        title: "Outgoing",
-        desc: "",
+        title: "Neglects Own Needs and Overcommits",
+        desc: "They may overlook personal needs, leading to overcommitment and overwhelm.",
       },
       {
-        title: "Outgoing",
-        desc: "",
+        title: "Overly Humble and Sensitive",
+        desc: "They downplay efforts and are sensitive to criticism, internalizing negative opinions.",
+      },
+      {
+        title: "Represses Feelings",
+        desc: "They tend to keep negative emotions internal, leading to potential relationship misunderstandings.",
+      },
+      {
+        title: "Reluctant to Change",
+        desc: "They struggle with breaking from tradition, waiting until drastic measures are needed before altering course.",
       },
     ],
     career: {
-      pic: "/images/ENFJcareer.svg",
-      summary: "",
+      pic: "/images/ISFJcareer.svg",
+      summary:
+        "Defenders are the dependable backbone of workplaces, renowned for their unwavering work ethic and genuine desire to assist others. Their humility shines as they thrive in collaborative, team-oriented environments rather than competitive ones. They find fulfillment in careers enabling others' growth, such as teaching, therapy, medicine, and social work. Their knack for customer service and problem-solving extends to roles in human resources, IT support, hospitality, retail, and administration. ISFJs excel in careers that harness their empathy, making them well-suited for mental health, healthcare, managerial, administrative, and detail-oriented roles, where they shine in planning and fostering teamwork toward shared objectives.",
       jobs: [
+        { job: "Accountant" },
+        { job: "Banker" },
         { job: "Counselor" },
-        { job: "Psychologist" },
-        { job: "Writer" },
-        { job: "Writer" },
+        { job: "Nurse" },
+        { job: "Teacher" },
+        { job: "Social worker" },
       ],
     },
     rarity: {
-      text: "ENFJ is one of the less common types in the population, especially for men.",
-      desc: "They make up about 2.2% of the general population.",
+      text: "ISFJ is one of the most common types in the world.",
+      desc: "They make up about 8.4% of the general population.",
     },
     celebrities: [
-      { name: "Barack" },
-      { name: "Barack" },
-      { name: "Barack" },
-      { name: "Barack" },
+      { name: "Mother Teresa" },
+      { name: "Beyonce" },
+      { name: "Queen Elizabeth II" },
+      { name: "Vin Diesel" },
+      { name: "Halle Berry" },
+      { name: "Selena Gomez" },
+      { name: "Catelyn Stark (Game of Thrones)" },
+      { name: "Captain America" },
+      { name: "Pam Beesly (The OFfice)" },
     ],
   },
   {
@@ -1042,57 +1065,243 @@ export const personalityData = [
     pic: "/images/estj-executive-s2-male.png",
     male: "/images/estj-executive-s2-male.png",
     female: "/images/estj-executive-s2-female.png",
+    short_desc:
+      "Traditionally-inclined indivudlas with a sense of doing what is right and socially acceptable.",
+    long_desc:
+      "ESTJs embody traditional values like organization, honesty, and dedication. They prioritize doing what's socially acceptable and lead by advocating for their beliefs. Driven by practicality and a keen eye for detail, they excel in structured environments, taking charge in leadership roles that emphasize results and adherence to rules. Assertive and dedicated, they thrive on bringing order and structure to their surroundings, valuing predictability and logical processes.",
+    fact: "ENSJs are sometimes referred to as The Supervisor because they tend to take charge and make sure things are done correctly.",
+    fact2:
+      "Individuals with this personality type tend to place a high value on tradition, rules, and security. Though the paths towards “good” and “right” are difficult, they are glad to take their place as the leaders of the pack.",
+    strengths: [
+      {
+        title: "Practical and Realistic",
+        desc: "Executives are grounded and dependable, focused on realistic outcomes.",
+      },
+      {
+        title: "Confident",
+        desc: "They are self-confident, dependable, and dedicated to seeing tasks through.",
+      },
+      {
+        title: "Hardworking and Traditional",
+        desc: "They embrace hard work and uphold traditional values, demonstrating strong leadership.",
+      },
+      {
+        title: "Strong Leadership Skills",
+        desc: "Excellent at organizing and distributing tasks, making them confident leaders.",
+      },
+    ],
+    weaknesses: [
+      {
+        title: "Insensitive and Judgmental",
+        desc: "They may come across as insensitive or judgmental due to a strong adherence to principles.",
+      },
+      {
+        title: "Inflexible and Stubborn",
+        desc: "They may be reluctanct to embrace new ideas or unconventional solutions due to a fixation on proven methods.",
+      },
+      {
+        title: "Difficulty Expressing Emotion",
+        desc: "They struggle with expressing emotions or empathy, focusing heavily on facts and efficiency.",
+      },
+      {
+        title: "Difficulty Relaxing",
+        desc: "They find it hard to relax and let go, concerned about maintaining dignity even in informal situations.",
+      },
+      {
+        title: "Argumentative and Bossy",
+        desc: "They have the tendency to be argumentative or bossy, asserting their views strongly.",
+      },
+    ],
+    career: {
+      pic: "/images/ENTJcareer.svg",
+      summary:
+        "Executives thrive in structured careers that align with their organizational prowess and respect for tradition. They excel in roles that demand loyalty, such as law enforcement, military service, and respected organizations. Esteemed for their leadership, they shine in management, displaying efficiency, organization, and dedication. Their adherence to rules and meticulousness make them ideal for roles in auditing, finance, and sales. ESTJs excel in leadership, academic, and work settings, emphasizing adherence to rules and authority, making them well-suited for managerial and law enforcement careers.",
+      jobs: [
+        { job: "Politician" },
+        { job: "Military Officer" },
+        { job: "Teacher" },
+        { job: "Judge" },
+        { job: "Banker" },
+        { job: "Accountant" },
+        { job: "Business manager" },
+        { job: "Lawyer" },
+      ],
+    },
+    rarity: {
+      text: "ENTJ is one of the common types of personality.",
+      desc: "They make up about 9% of the general population.",
+    },
+    celebrities: [
+      { name: "John D Rockefeller" },
+      { name: "Judge Judy" },
+      { name: "Dwight Schrute (The Office)" },
+      { name: "Robb Stark (Game of Thrones)" },
+      { name: "Billy Graham" },
+      { name: "Darth Vader (Star Wars)" },
+    ],
+  },
+  {
+    personality: "ESFJ",
+    title: "Consul",
+    group: "Sentinels",
+    pic: "/images/istp-virtuoso-s2-female.png",
+    male: "/images/esfj-consul-s2-male.png",
+    female: "/images/esfj-consul-s2-female.png",
     short_desc: "",
     long_desc: "",
-    fact: "ENFJs are sometimes referred to as The Giver because of their desire to inspire others to become better versions of themselves.",
+    fact: "ENSJs are sometimes referred to as The Supervisor because they tend to take charge and make sure things are done correctly.",
     fact2: "",
     strengths: [
       {
-        title: "Outgoing",
+        title: "Practical",
         desc: "",
       },
       {
-        title: "Outgoing",
+        title: "Practical",
         desc: "",
       },
       {
-        title: "Outgoing",
+        title: "Practical",
+        desc: "",
+      },
+      {
+        title: "Practical",
+        desc: "",
+      },
+      {
+        title: "Practical",
         desc: "",
       },
     ],
     weaknesses: [
       {
-        title: "Outgoing",
+        title: "Insensitive",
         desc: "",
       },
       {
-        title: "Outgoing",
+        title: "Insensitive",
         desc: "",
       },
       {
-        title: "Outgoing",
+        title: "Insensitive",
+        desc: "",
+      },
+      {
+        title: "Insensitive",
+        desc: "",
+      },
+      {
+        title: "Insensitive",
         desc: "",
       },
     ],
     career: {
-      pic: "/images/ENFJcareer.svg",
+      pic: "/images/ENTJcareer.svg",
       summary: "",
       jobs: [
-        { job: "Counselor" },
-        { job: "Psychologist" },
-        { job: "Writer" },
-        { job: "Writer" },
+        { job: "Politician" },
+        { job: "Politician" },
+        { job: "Politician" },
+        { job: "Politician" },
+        { job: "Politician" },
+        { job: "Politician" },
       ],
     },
     rarity: {
-      text: "ENFJ is one of the less common types in the population, especially for men.",
-      desc: "They make up about 2.2% of the general population.",
+      text: "ENTJ is one of the common types of personality.",
+      desc: "They make up about 9% of the general population.",
     },
     celebrities: [
-      { name: "Barack" },
-      { name: "Barack" },
-      { name: "Barack" },
-      { name: "Barack" },
+      { name: "John" },
+      { name: "John" },
+      { name: "John" },
+      { name: "John" },
+      { name: "John" },
+      { name: "John" },
+      { name: "John" },
+      { name: "John" },
+    ],
+  },
+  {
+    personality: "ESFJ",
+    title: "Executive",
+    group: "Explorers",
+    pic: "/images/estj-executive-s2-male.png",
+    male: "/images/estj-executive-s2-male.png",
+    female: "/images/estj-executive-s2-female.png",
+    short_desc: "",
+    long_desc: "",
+    fact: "ENSJs are sometimes referred to as The Supervisor because they tend to take charge and make sure things are done correctly.",
+    fact2: "",
+    strengths: [
+      {
+        title: "Practical",
+        desc: "",
+      },
+      {
+        title: "Practical",
+        desc: "",
+      },
+      {
+        title: "Practical",
+        desc: "",
+      },
+      {
+        title: "Practical",
+        desc: "",
+      },
+      {
+        title: "Practical",
+        desc: "",
+      },
+    ],
+    weaknesses: [
+      {
+        title: "Insensitive",
+        desc: "",
+      },
+      {
+        title: "Insensitive",
+        desc: "",
+      },
+      {
+        title: "Insensitive",
+        desc: "",
+      },
+      {
+        title: "Insensitive",
+        desc: "",
+      },
+      {
+        title: "Insensitive",
+        desc: "",
+      },
+    ],
+    career: {
+      pic: "/images/ENTJcareer.svg",
+      summary: "",
+      jobs: [
+        { job: "Politician" },
+        { job: "Politician" },
+        { job: "Politician" },
+        { job: "Politician" },
+        { job: "Politician" },
+        { job: "Politician" },
+      ],
+    },
+    rarity: {
+      text: "ENTJ is one of the common types of personality.",
+      desc: "They make up about 9% of the general population.",
+    },
+    celebrities: [
+      { name: "John" },
+      { name: "John" },
+      { name: "John" },
+      { name: "John" },
+      { name: "John" },
+      { name: "John" },
+      { name: "John" },
+      { name: "John" },
     ],
   },
 ];
