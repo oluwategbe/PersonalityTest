@@ -1,0 +1,64 @@
+.singlePersonality{
+  .singlePersonalityHero{
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url("/images/personality2.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    color: white;
+    .heroText{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      h1{
+        color: white;
+        font-size: 48px;
+        font-weight: 700;
+      }
+      .line{
+        background: white;
+        height: 1px;
+        width: 300px;
+      }
+      h3{
+        font-size: 20px;
+      }
+
+    }
+    .pic{
+  
+      img{
+        max-height: 300px;
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+  }
+  .summary{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 15%;
+    gap: 1rem;
+    .header{
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      h2{
+        font-size: 18px;
+      }
+      .line{
+        background: #000;
+        height: 1px;
+        width: 200px;
+      }
+    }
+    p{
+      font-size: 12px;
+      text-align: justify;
+      line-height: 20px;
+    }
+  }
+}
