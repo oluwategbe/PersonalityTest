@@ -1,8 +1,13 @@
 import PersonalityCard from "../../components/PersonalityCard";
 import Layout from "../../components/layout";
+import { personalityData } from "../../utils/data";
 import "./index.scss";
 
 const Personalities = () => {
+  const analysts = personalityData?.filter((p) => p?.group === "Analysts");
+  const diplomats = personalityData?.filter((p) => p?.group === "Diplomats");
+  const sentinels = personalityData?.filter((p) => p?.group === "Sentinels");
+  const explorers = personalityData?.filter((p) => p?.group === "Explorers");
   return (
     <Layout>
       <div className="personalities">
@@ -21,8 +26,53 @@ const Personalities = () => {
           </p>
         </div>
         <div className="personalities">
-          <div className="analysts">
-            <PersonalityCard title="Architect" />
+          <div className="analysts group">
+            {analysts?.map((p) => (
+              <PersonalityCard
+                key={p?.personality}
+                title={p?.title}
+                personality={p?.personality}
+                desc={p?.short_desc}
+                picture={p?.pic}
+                color="purple"
+              />
+            ))}
+          </div>
+          <div className="diplomats group">
+            {diplomats?.map((p) => (
+              <PersonalityCard
+                key={p?.personality}
+                title={p?.title}
+                personality={p?.personality}
+                desc={p?.short_desc}
+                picture={p?.pic}
+                color="green"
+              />
+            ))}
+          </div>
+          <div className="sentinels group">
+            {sentinels?.map((p) => (
+              <PersonalityCard
+                key={p?.personality}
+                title={p?.title}
+                personality={p?.personality}
+                desc={p?.short_desc}
+                picture={p?.pic}
+                color="#058a89"
+              />
+            ))}
+          </div>
+          <div className="explorers group">
+            {explorers?.map((p) => (
+              <PersonalityCard
+                key={p?.personality}
+                title={p?.title}
+                personality={p?.personality}
+                desc={p?.short_desc}
+                picture={p?.pic}
+                color="#e9b422"
+              />
+            ))}
           </div>
         </div>
       </div>

@@ -297,7 +297,7 @@ export const personalityData = [
     },
     rarity: {
       text: "INTJ is one of the rarest types in the world.",
-      desc: "They make up about 2.6% of the general population.",
+      desc: "They make up about 3% of the general population.",
     },
     celebrities: [
       { name: "Mark Zuckerberg" },
@@ -382,7 +382,7 @@ export const personalityData = [
     },
     rarity: {
       text: "INTP is one of the less common types in the world.",
-      desc: "They make up about 4.8% of the general population.",
+      desc: "They make up about 6% of the general population.",
     },
     celebrities: [
       { name: "Bill Gates" },
@@ -477,7 +477,7 @@ export const personalityData = [
     },
     rarity: {
       text: "ENTJ is one of the least common types in the world, and the rarest type among women.",
-      desc: "They make up about 1.8% of the general population.",
+      desc: "They make up about 2% of the general population.",
     },
     celebrities: [
       { name: "Malcolm X" },
@@ -563,7 +563,7 @@ export const personalityData = [
     },
     rarity: {
       text: "ENTP is one of the rarer types in the world.",
-      desc: "They make up about 4.3% of the general population.",
+      desc: "They make up about 5% of the general population.",
     },
     celebrities: [
       { name: "Leonardo da Vinci" },
@@ -648,7 +648,7 @@ export const personalityData = [
     },
     rarity: {
       text: "INFJ is one of the rarest types in the world. The rarest personality type among men.",
-      desc: "They make up about 2.3% of the general population.",
+      desc: "They make up about 2% of the general population.",
     },
     celebrities: [
       { name: "Martin Luther King" },
@@ -726,7 +726,7 @@ export const personalityData = [
     },
     rarity: {
       text: "INFP is one of the rarer types in the world.",
-      desc: "They make up about 6.3% of the general population.",
+      desc: "They make up about 7% of the general population.",
     },
     celebrities: [
       { name: "William Shakespeare" },
@@ -814,7 +814,7 @@ export const personalityData = [
     },
     rarity: {
       text: "ENFJ is one of the less common types in the world, especially among men.",
-      desc: "They make up about 2.2% of the general population.",
+      desc: "They make up about 2% of the general population.",
     },
     celebrities: [
       { name: "Barack Obama" },
@@ -887,7 +887,7 @@ export const personalityData = [
     },
     rarity: {
       text: "ENFP is a moderately common personality type.",
-      desc: "They make up about 8.2% of the general population.",
+      desc: "They make up about 8% of the general population.",
     },
     celebrities: [
       { name: "Robert Downey Jr" },
@@ -963,7 +963,7 @@ export const personalityData = [
     },
     rarity: {
       text: "According to the most recent global sample, ISTJ is the most common type in the world.",
-      desc: "They make up about 15.9% of the general population.",
+      desc: "They make up about 17% of the general population.",
     },
     celebrities: [
       { name: "Denzel Washington" },
@@ -1043,7 +1043,7 @@ export const personalityData = [
     },
     rarity: {
       text: "ISFJ is one of the most common types in the world.",
-      desc: "They make up about 8.4% of the general population.",
+      desc: "They make up about 9% of the general population.",
     },
     celebrities: [
       { name: "Mother Teresa" },
@@ -1065,7 +1065,7 @@ export const personalityData = [
     male: "/images/estj-executive-s2-male.png",
     female: "/images/estj-executive-s2-female.png",
     short_desc:
-      "Traditionally-inclined indivudlas with a sense of doing what is right and socially acceptable.",
+      "Traditionally-inclined individuals with a sense of doing what is right and socially acceptable.",
     long_desc:
       "ESTJs embody traditional values like organization, honesty, and dedication. They prioritize doing what's socially acceptable and lead by advocating for their beliefs. Driven by practicality and a keen eye for detail, they excel in structured environments, taking charge in leadership roles that emphasize results and adherence to rules. Assertive and dedicated, they thrive on bringing order and structure to their surroundings, valuing predictability and logical processes.",
     fact: "ESTJs are sometimes referred to as The Supervisor because they tend to take charge and make sure things are done correctly.",
@@ -1143,7 +1143,7 @@ export const personalityData = [
     personality: "ESFJ",
     title: "Consul",
     group: "Sentinels",
-    pic: "/images/istp-virtuoso-s2-female.png",
+    pic: "/images/esfj-consul-s2-female.png",
     male: "/images/esfj-consul-s2-male.png",
     female: "/images/esfj-consul-s2-female.png",
     short_desc:
@@ -1209,7 +1209,7 @@ export const personalityData = [
     },
     rarity: {
       text: "ESFJ is one of the rarer types of personality.",
-      desc: "They make up about 5.7% of the general population.",
+      desc: "They make up about 6% of the general population.",
     },
     celebrities: [
       { name: "Joe Biden" },
@@ -1296,7 +1296,7 @@ export const personalityData = [
     },
     rarity: {
       text: "ISTP is a relatively rare personality type",
-      desc: "They make up about 9.8% of the general population.",
+      desc: "They make up about 10% of the general population.",
     },
     celebrities: [
       { name: "Michael Jordan" },
@@ -1382,7 +1382,7 @@ export const personalityData = [
     },
     rarity: {
       text: "ISFP is one of the common types of personality.",
-      desc: "They make up about 6.6% of the general population.",
+      desc: "They make up about 7% of the general population.",
     },
     celebrities: [
       { name: "Rihanna" },
@@ -1554,7 +1554,7 @@ export const personalityData = [
     },
     rarity: {
       text: "ESFP is one of the common types of personality.",
-      desc: "They make up about 6% of the general population.",
+      desc: "They make up about 7% of the general population.",
     },
     celebrities: [
       { name: "Adele" },
