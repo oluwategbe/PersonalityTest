@@ -1,0 +1,67 @@
+.letterCards{
+  display: flex;
+  flex-direction: column;
+  // background: #000;
+  height: 100vh;
+  gap: 1rem;
+
+  &::before{
+    
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 3px 5px 10px 0px rgb(196 196 196 / 40%);
+    background: rgb(250 250 250 / 11%);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1;
+    width: 50%;
+    transition: width 0.3s;
+    position: relative;
+    justify-content: center;
+    
+    p{
+      opacity: 0;
+      transition: opacity 0.3s;
+      position: absolute;
+    }
+    &:hover{
+      width: 60%;
+    }
+    &:hover p{
+      opacity: 1;
+      position: relative;
+    }
+  }
+  .circle{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(#f00, #f0f);
+    border-radius: 50%;
+    left: 10%;
+    top: 5%;
+  }
+  .circle2{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background: linear-gradient(#2196f3, #e91e63);
+    border-radius: 50%;
+    right: 7%;
+    bottom: 15%;
+  }
+  .ei{
+    position: relative;
+  }
+  .ns{
+    align-self: flex-end;
+  }
+  .jp{
+    align-self: flex-end;
+  }
+}

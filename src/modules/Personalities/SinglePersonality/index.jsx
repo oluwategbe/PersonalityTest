@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import "./index.scss";
 import { personalityData } from "./../../../utils/data";
 import Layout from "./../../../components/layout/index";
+import Cards from "./Cards";
 
 const SinglePersonality = () => {
   const { personality } = useParams();
@@ -25,6 +26,9 @@ const SinglePersonality = () => {
             <div className="line"></div>
           </div>
           <p>{data?.long_desc}</p>
+        </div>
+        <div className="cards">
+          <Cards personality={personality} />
         </div>
       </div>
     </Layout>
