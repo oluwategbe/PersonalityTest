@@ -66,4 +66,75 @@
     padding: 6rem 15%;
     position: relative;
   }
+  .strengths{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 15%;
+    gap: 2rem;
+    h1{
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .section{
+      display: flex;
+      align-items: flex-start;
+
+      .each{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1rem;
+        align-self: stretch;
+
+        h2{
+          font-size: 16px;
+          font-weight: 700;
+        }
+        .strength-child{
+          display: flex;
+          gap: 0.5rem;
+          align-items: center;
+          svg{
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+          }
+
+          .point{
+            display: flex;
+            flex-direction: column;
+
+            h3{
+              font-size: 12px;
+              position: relative;
+              display: flex;
+              align-items: center;
+              width: fit-content;
+
+              &::after{
+                position: absolute;
+                right: -55px;
+                content: "";
+                width: 50px;
+                height: 2px;
+                background: #000;
+              }
+            }
+            p{
+              font-size: 11px;
+            }
+          }
+        }
+      }
+
+      .strength{
+        background: #cdffdc;
+      }
+      .weakness{
+        background: #ffd2d2;
+      }
+    }
+  }
 }
