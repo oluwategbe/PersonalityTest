@@ -300,14 +300,41 @@ export const personalityData = [
       desc: "They make up about 3% of the general population.",
     },
     celebrities: [
-      { name: "Mark Zuckerberg" },
-      { name: "Walter White (Breaking Bad)" },
-      { name: "Tywin Lannister (Game of Thrones)" },
-      { name: "Stephen Hawking" },
-      { name: "Hillary Clinton" },
-      { name: "Sir Isaac Newton" },
-      { name: "Michelle Obama" },
-      { name: "Sir Isaac Newton" },
+      {
+        name: "Mark Zuckerberg",
+        pic: "/images/mark.jpeg",
+        bio: "An American businessman, computer programmer, and philanthropist.",
+      },
+      {
+        name: "Walter White (Breaking Bad)",
+        pic: "/images/walter.jpeg",
+        bio: "The fictional antihero protagonist of the American crime drama television series Breaking Bad",
+      },
+      {
+        name: "Tywin Lannister (Game of Thrones)",
+        pic: "/images/tywin.jpeg",
+        bio: "The head of House Lannister and Hand of the King for three different kings in Game of Thrones",
+      },
+      {
+        name: "Stephen Hawking",
+        pic: "/images/hawking.jpeg",
+        bio: "English theoretical physicist and cosmologist",
+      },
+      {
+        name: "Hillary Clinton",
+        pic: "/images/hillary.jpeg",
+        bio: "Former United States Secretary of State",
+      },
+      {
+        name: "Sir Isaac Newton",
+        pic: "/images/newton.jpeg",
+        bio: "An English polymath active as a mathematician, physicist, astronomer, alchemist, theologian, and author",
+      },
+      {
+        name: "Michelle Obama",
+        pic: "/images/michelle.jpeg",
+        bio: "Former First Lady of the United States",
+      },
     ],
   },
   {
@@ -385,15 +412,51 @@ export const personalityData = [
       desc: "They make up about 6% of the general population.",
     },
     celebrities: [
-      { name: "Bill Gates" },
-      { name: "Albert Einstein" },
-      { name: "Tiger Woods" },
-      { name: "Avicii" },
-      { name: "Sheldon Cooper (The Big Bang Theory)" },
-      { name: "Aeomon Targaryan (Game of Thrones)" },
-      { name: "Abraham Lincoln" },
-      { name: "Socrates" },
-      { name: "Charles Darwin" },
+      {
+        name: "Bill Gates",
+        pic: "/images/gates.jpeg",
+        bio: "American businessman, investor, philanthropist, and writer best known for co-founding the software giant Microsoft",
+      },
+      {
+        name: "Albert Einstein",
+        pic: "/images/einstein.jpeg",
+        bio: "German-born theoretical physicist who is widely held to be one of the greatest and most influential scientists of all time.",
+      },
+      {
+        name: "Tiger Woods",
+        pic: "/images/woods.jpeg",
+        bio: "One of the greatest golfers of all time ",
+      },
+      {
+        name: "Avicii",
+        pic: "/images/avicii.jpeg",
+        bio: "Swedish DJ, remixer, and music producer",
+      },
+      {
+        name: "Sheldon Cooper (The Big Bang Theory)",
+        pic: "/images/sheldon.jpeg",
+        bio: "Fictional character in the CBS television series The Big Bang Theory ",
+      },
+      {
+        name: "Aeomon Targaryan (Game of Thrones)",
+        pic: "/images/aemon.jpeg",
+        bio: "Maester at Castle Black in Game of Thrones",
+      },
+      {
+        name: "Abraham Lincoln",
+        pic: "/images/lincoln.jpeg",
+        bio: "16th president of the United States",
+      },
+      {
+        name: "Socrates",
+        pic: "/images/socrates.jpeg",
+        bio: "Greek philosopher from Athens who is credited as the founder of Western philosophy",
+      },
+      {
+        name: "Charles Darwin",
+        pic: "/images/darwin.jpeg",
+        bio: "English naturalist, geologist and biologist, widely known for his contributions to evolutionary biology",
+      },
     ],
   },
   {
@@ -480,14 +543,46 @@ export const personalityData = [
       desc: "They make up about 2% of the general population.",
     },
     celebrities: [
-      { name: "Malcolm X" },
-      { name: "Napoleon Bonaparte" },
-      { name: "Margaret Thatcher" },
-      { name: "Kamala Harris" },
-      { name: "Steve Jobs" },
-      { name: "Franklin D. Roosevelt" },
-      { name: "Raymond Reddington (The Blacklist)" },
-      { name: "Doctor Strange (Doctor Strange)" },
+      {
+        name: "Malcolm X",
+        pic: "/images/malcolm.jpeg",
+        bio: "American Muslim minister and human rights activist who was a prominent figure during the civil rights movement.",
+      },
+      {
+        name: "Napoleon Bonaparte",
+        pic: "/images/napoleon.jpeg",
+        bio: " French emperor and military commander who rose to prominence during the French Revolution",
+      },
+      {
+        name: "Margaret Thatcher",
+        pic: "/images/thatcher.jpeg",
+        bio: "Former Prime Minister of the United Kingdom",
+      },
+      {
+        name: "Kamala Harris",
+        pic: "/images/kamala.jpeg",
+        bio: "Vice President of the United States",
+      },
+      {
+        name: "Steve Jobs",
+        pic: "/images/jobs.jpeg",
+        bio: "American businessman, inventor, and investor best known for co-founding the technology giant Apple Inc",
+      },
+      {
+        name: "Doctor Strange (Doctor Strange)",
+        pic: "/images/strange.jpeg",
+        bio: "Comic book character in Marvel",
+      },
+      {
+        name: "Franklin D. Roosevelt",
+        pic: "/images/roosevelt.jpeg",
+        bio: " American politician and statesman who served as the 32nd president of the United States",
+      },
+      {
+        name: "Raymond Reddington (The Blacklist)",
+        pic: "/images/reddington.jpeg",
+        bio: "Main character in the NBC series The Blacklist.",
+      },
     ],
   },
   {
@@ -566,14 +661,46 @@ export const personalityData = [
       desc: "They make up about 5% of the general population.",
     },
     celebrities: [
-      { name: "Leonardo da Vinci" },
-      { name: "Niccolo Machiavelli" },
-      { name: "Walt Disney" },
-      { name: "Thomas Edison" },
-      { name: "Celine Dion" },
-      { name: "Captain Jack Sparrow (Pirates of the Caribbean)" },
-      { name: "Tyrion Lannister (Game of Thrones)" },
-      { name: "Jim Halpert (The Office)" },
+      {
+        name: "Leonardo da Vinci",
+        pic: "/images/vinci.jpeg",
+        bio: "Italian polymath of the High Renaissance who was active as a painter, draughtsman, engineer, scientist, theorist, sculptor, and architect.",
+      },
+      {
+        name: "Niccolo Machiavelli",
+        pic: "/images/machiavelli.jpeg",
+        bio: " Italian diplomat, author, philosopher and historian who lived during the Renaissance.",
+      },
+      {
+        name: "Walt Disney",
+        pic: "/images/disney.jpeg",
+        bio: "A pioneer of the American animation industry, he introduced several developments in the production of cartoons.",
+      },
+      {
+        name: "Thomas Edison",
+        pic: "/images/edison.jpeg",
+        bio: "American inventor and businessman",
+      },
+      {
+        name: "Celine Dion",
+        pic: "/images/dion.jpeg",
+        bio: "Canadian singer. Referred to as the 'Queen of Power Ballads'",
+      },
+      {
+        name: "Captain Jack Sparrow (Pirates of the Caribbean)",
+        pic: "/images/sparrow.jpeg",
+        bio: "Fictional character and the main protagonist of the Pirates of the Caribbean film series and franchise.",
+      },
+      {
+        name: "Tyrion Lannister (Game of Thrones)",
+        pic: "/images/tyrion.jpeg",
+        bio: "Fictional character in the series Game of Thrones",
+      },
+      {
+        name: "Jim Halpert (The Office)",
+        pic: "/images/jim.jpeg",
+        bio: "Fictional character in the U.S. version of the television sitcom The Office",
+      },
     ],
   },
   {
@@ -1131,12 +1258,36 @@ export const personalityData = [
       desc: "They make up about 9% of the general population.",
     },
     celebrities: [
-      { name: "John D Rockefeller" },
-      { name: "Judge Judy" },
-      { name: "Dwight Schrute (The Office)" },
-      { name: "Robb Stark (Game of Thrones)" },
-      { name: "Billy Graham" },
-      { name: "Darth Vader (Star Wars)" },
+      {
+        name: "John D Rockefeller",
+        pic: "/images/rockefeller.jpeg",
+        bio: "American business magnate and philanthropist",
+      },
+      {
+        name: "Judge Judy",
+        pic: "/images/judy.jpeg",
+        bio: "American jurist and television personality who was best known for the show Judge Judy",
+      },
+      {
+        name: "Dwight Schrute (The Office)",
+        pic: "/images/dwight.jpeg",
+        bio: "A fictional character on the American television series The Office.",
+      },
+      {
+        name: "Robb Stark (Game of Thrones)",
+        pic: "/images/robb.jpeg",
+        bio: "King Robb Stark was the eldest son of Lord Eddard Stark of Winterfell in the series Game of Thrones",
+      },
+      {
+        name: "Billy Graham",
+        pic: "/images/billy.jpeg",
+        bio: "An American evangelist and a civil rights advocate.",
+      },
+      {
+        name: "Darth Vader (Star Wars)",
+        pic: "/images/darth.jpeg",
+        bio: "A ruthless cyborg in the show Star Wars",
+      },
     ],
   },
   {

@@ -1,6 +1,6 @@
-import React from "react";
 import "./index.scss";
 
+// eslint-disable-next-line react/prop-types
 const Cards = ({ personality }) => {
   const [firstLetter, secondLetter, thirdLetter, fourthLetter] = [
     ...personality,
