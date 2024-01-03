@@ -778,14 +778,46 @@ export const personalityData = [
       desc: "They make up about 2% of the general population.",
     },
     celebrities: [
-      { name: "Martin Luther King" },
-      { name: "Nelson Mandela" },
-      { name: "Mother Theresa" },
-      { name: "Lady Gaga" },
-      { name: "Morgan Freeman" },
-      { name: "Oprah Winfrey" },
-      { name: "Michael Scofield (Prison Break)" },
-      { name: "Jon Snow (Game of Thrones)" },
+      {
+        name: "Martin Luther King",
+        pic: "/images/luther.jpeg",
+        bio: "American Baptist minister, activist, and political philosopher who was one of the most prominent leaders in the civil rights movement",
+      },
+      {
+        name: "Nelson Mandela",
+        pic: "/images/mandela.jpeg",
+        bio: "South African anti-apartheid activist and politician who served as the first president of South Africa ",
+      },
+      {
+        name: "Mother Teresa",
+        pic: "/images/teresa.jpeg",
+        bio: "Albanian-Indian Catholic nun and the founder of the Missionaries of Charity.",
+      },
+      {
+        name: "Lady Gaga",
+        pic: "/images/gaga.jpeg",
+        bio: "American singer, songwriter, and actress",
+      },
+      {
+        name: "Morgan Freeman",
+        pic: "/images/freeman.jpeg",
+        bio: "American actor and film producer",
+      },
+      {
+        name: "Oprah Winfrey",
+        pic: "/images/oprah.jpeg",
+        bio: "American talk show host, television producer, actress, author, and media proprietor",
+      },
+      {
+        name: "Michael Scofield (Prison Break)",
+        pic: "/images/scofield.jpeg",
+        bio: "Fictional character and one of the two main protagonists of the American television series Prison Break",
+      },
+      {
+        name: "Jon Snow (Game of Thrones)",
+        pic: "/images/snow.jpeg",
+        bio: "Fictional character in Game of Thrones",
+      },
     ],
   },
   {
@@ -856,14 +888,46 @@ export const personalityData = [
       desc: "They make up about 7% of the general population.",
     },
     celebrities: [
-      { name: "William Shakespeare" },
-      { name: "Alicia Keys" },
-      { name: "Johnny Depp" },
-      { name: "Princess Diana" },
-      { name: "Bob Marley" },
-      { name: "Keanu Reeves" },
-      { name: "Andrew Garfield" },
-      { name: "Nicolas Cage" },
+      {
+        name: "William Shakespeare",
+        pic: "/images/shakespeare.jpeg",
+        bio: " English playwright, poet and actor. He is widely regarded as the greatest writer in the English language",
+      },
+      {
+        name: "Alicia Keys",
+        pic: "/images/alicia.jpeg",
+        bio: "American singer and songwriter",
+      },
+      {
+        name: "Johnny Depp",
+        pic: "/images/depp.jpeg",
+        bio: "American actor and musician mainly known for acting as Captain Jack Sparrow in Pirates of the Carribean",
+      },
+      {
+        name: "Princess Diana",
+        pic: "/images/diana.jpeg",
+        bio: "Princess of Wales, was a member of the British royal family",
+      },
+      {
+        name: "Bob Marley",
+        pic: "/images/marley.jpeg",
+        bio: "Jamaican singer, musician, and songwriter. Considered one of the pioneers of reggae",
+      },
+      {
+        name: "Keanu Reeves",
+        pic: "/images/reeves.jpeg",
+        bio: "Canadian actor",
+      },
+      {
+        name: "Andrew Garfield",
+        pic: "/images/garfield.jpeg",
+        bio: "English and American actor",
+      },
+      {
+        name: "Nicolas Cage",
+        pic: "/images/cage.jpeg",
+        bio: "American actor and film producer",
+      },
     ],
   },
   {
@@ -944,10 +1008,26 @@ export const personalityData = [
       desc: "They make up about 2% of the general population.",
     },
     celebrities: [
-      { name: "Barack Obama" },
-      { name: "Jennifer Lawrence" },
-      { name: "Maya Angelou" },
-      { name: "Deanerys Targaryen (Game of Thrones)" },
+      {
+        name: "Barack Obama",
+        pic: "/images/obama.jpeg",
+        bio: "American politician who served as the 44th president of the United States",
+      },
+      {
+        name: "Jennifer Lawrence",
+        pic: "/images/lawrence.jpeg",
+        bio: "American actress. She is known for starring in the Hunger Games",
+      },
+      {
+        name: "Maya Angelou",
+        pic: "/images/angelou.jpeg",
+        bio: "American memoirist, poet, and civil rights activist",
+      },
+      {
+        name: "Deanerys Targaryen (Game of Thrones)",
+        pic: "/images/deanerys.jpeg",
+        bio: "Fictional character in the series Game of Thrones",
+      },
     ],
   },
   {
@@ -1017,12 +1097,36 @@ export const personalityData = [
       desc: "They make up about 8% of the general population.",
     },
     celebrities: [
-      { name: "Robert Downey Jr" },
-      { name: "Mark Twain" },
-      { name: "Bill Clinton" },
-      { name: "Will Smith" },
-      { name: "Michael Scott (The Office)" },
-      { name: "Kim Nam-joon (BTS)" },
+      {
+        name: "Robert Downey Jr",
+        pic: "/images/downey.jpeg",
+        bio: "American actor largely known for acting as Iron man",
+      },
+      {
+        name: "Mark Twain",
+        pic: "/images/twain.jpeg",
+        bio: "American writer, humorist, essayist, entrepreneur, publisher, and lecturer",
+      },
+      {
+        name: "Bill Clinton",
+        pic: "/images/clinton.jpeg",
+        bio: "American politician who served as the 42nd president of the United States",
+      },
+      {
+        name: "Will Smith",
+        pic: "/images/smith.jpeg",
+        bio: "American actor, rapper and film producer.",
+      },
+      {
+        name: "Michael Scott (The Office)",
+        pic: "/images/scott.jpeg",
+        bio: "Fictional character in the NBC sitcom The Office",
+      },
+      {
+        name: "Kim Nam-joon (BTS)",
+        pic: "/images/namjoon.jpeg",
+        bio: "South Korean rapper, songwriter, and record producer. He is the leader of South Korean boy band BTS.",
+      },
     ],
   },
   {
@@ -1093,12 +1197,36 @@ export const personalityData = [
       desc: "They make up about 17% of the general population.",
     },
     celebrities: [
-      { name: "Denzel Washington" },
-      { name: "George Washington" },
-      { name: "George Bush" },
-      { name: "Eddard Stark (Game of Thrones)" },
-      { name: "Stannis Baratheon (Game of Thrones)" },
-      { name: "Henry Ford" },
+      {
+        name: "Denzel Washington",
+        pic: "/images/denzel.jpeg",
+        bio: "American actor, producer and director",
+      },
+      {
+        name: "George Washington",
+        pic: "/images/george.jpeg",
+        bio: "American Founding Father, military officer, politician and statesman who served as the first president of the United States",
+      },
+      {
+        name: "George Bush",
+        pic: "/images/bush.jpeg",
+        bio: "American politician, diplomat, and businessman who served as the 41st president of the United States",
+      },
+      {
+        name: "Eddard Stark (Game of Thrones)",
+        pic: "/images/eddard.jpeg",
+        bio: "Head of House Stark in the series Game of Thrones",
+      },
+      {
+        name: "Stannis Baratheon (Game of Thrones)",
+        pic: "/images/stannis.jpeg",
+        bio: "Lord of Dragonstone in the series Game of Thrones",
+      },
+      {
+        name: "Henry Ford",
+        pic: "/images/ford.jpeg",
+        bio: "American industrialist and business magnate. He was the founder of Ford Motor Company",
+      },
     ],
   },
   {
@@ -1173,15 +1301,46 @@ export const personalityData = [
       desc: "They make up about 9% of the general population.",
     },
     celebrities: [
-      { name: "Mother Teresa" },
-      { name: "Beyonce" },
-      { name: "Queen Elizabeth II" },
-      { name: "Vin Diesel" },
-      { name: "Halle Berry" },
-      { name: "Selena Gomez" },
-      { name: "Catelyn Stark (Game of Thrones)" },
-      { name: "Captain America" },
-      { name: "Pam Beesly (The OFfice)" },
+      {
+        name: "Beyonce",
+        pic: "/images/beyonce.jpeg",
+        bio: "American singer, songwriter and businesswoman",
+      },
+      {
+        name: "Queen Elizabeth II",
+        pic: "/images/elizabeth.jpeg",
+        bio: "Queen of the United Kingdom and other Commonwealth realms from 6 February 1952 until her death in 2022",
+      },
+      {
+        name: "Vin Diesel",
+        pic: "/images/diesel.jpeg",
+        bio: "American actor and film producer. One of the world's highest-grossing actors, he is best known for portraying Dominic Toretto in the Fast & Furious franchise",
+      },
+      {
+        name: "Halle Berry",
+        pic: "/images/halle.jpeg",
+        bio: " American actress",
+      },
+      {
+        name: "Selena Gomez",
+        pic: "/images/selena.jpeg",
+        bio: "American singer, actress, businesswoman, and producer",
+      },
+      {
+        name: "Catelyn Stark (Game of Thrones)",
+        pic: "/images/catelyn.jpeg",
+        bio: "Fictional character in the series Game of Thrones",
+      },
+      {
+        name: "Captain America",
+        pic: "/images/captain.jpeg",
+        bio: "Fictional superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics",
+      },
+      {
+        name: "Pam Beesly (The OFfice)",
+        pic: "/images/pam.jpeg",
+        bio: "Fictional character on the U.S. television sitcom The Office",
+      },
     ],
   },
   {
@@ -1363,15 +1522,46 @@ export const personalityData = [
       desc: "They make up about 6% of the general population.",
     },
     celebrities: [
-      { name: "Joe Biden" },
-      { name: "Ariana Grande" },
-      { name: "Taylor Swift" },
-      { name: "Bill Clinton" },
-      { name: "Steve Harvey" },
-      { name: "Jennifer Lopez" },
-      { name: "Sansa Stark (Game of Thrones)" },
-      { name: "Cersei Lannister (Game of Thrones)" },
-      { name: "Monica (Friends)" },
+      {
+        name: "Joe Biden",
+        pic: "/images/biden.jpeg",
+        bio: "American politician who is the 46th president of the United States",
+      },
+      {
+        name: "Ariana Grande",
+        pic: "/images/ariana.jpeg",
+        bio: "American singer, songwriter, and actress",
+      },
+      {
+        name: "Taylor Swift",
+        pic: "/images/swift.jpeg",
+        bio: " American singer-songwriter. Her songwriting, artistry, and entrepreneurship have influenced the music industry and popular culture",
+      },
+      {
+        name: "Steve Harvey",
+        pic: "/images/harvey.jpeg",
+        bio: "American television host, producer, actor, and comedian",
+      },
+      {
+        name: "Jennifer Lopez",
+        pic: "/images/lopez.jpeg",
+        bio: "American singer and actress. Often considered a Latin pop culture icon",
+      },
+      {
+        name: "Sansa Stark (Game of Thrones)",
+        pic: "/images/sansa.jpeg",
+        bio: "Eldest daughter of Eddard Stark of Winterfell and his wife Catelyn in the series Game of Thrones",
+      },
+      {
+        name: "Cersei Lannister (Game of Thrones)",
+        pic: "/images/cersei.jpeg",
+        bio: "Widow of King Robert Baratheon and Queen of the Seven Kingdoms in the series Game of Thrones",
+      },
+      {
+        name: "Monica (Friends)",
+        pic: "/images/monica.jpeg",
+        bio: "Fictional character, one of the six main characters who appears on the American sitcom Friends",
+      },
     ],
   },
   {
@@ -1450,14 +1640,46 @@ export const personalityData = [
       desc: "They make up about 10% of the general population.",
     },
     celebrities: [
-      { name: "Michael Jordan" },
-      { name: "Tom Cruise" },
-      { name: "James Bond" },
-      { name: "Arya Stark (Game of Thrones)" },
-      { name: "Indiana Jones" },
-      { name: "Billie Eilish" },
-      { name: "Snoop Dogg" },
-      { name: "Bruce Lee" },
+      {
+        name: "Michael Jordan",
+        pic: "/images/jordan.jpeg",
+        bio: "American businessman and former professional basketball player",
+      },
+      {
+        name: "Tom Cruise",
+        pic: "/images/cruise.jpeg",
+        bio: "American actor. Regarded as a Hollywood icon, he has received various accolades, including an Honorary Palme d'Or and three Golden Globe Awards",
+      },
+      {
+        name: "James Bond",
+        pic: "/images/bond.jpeg",
+        bio: "Fictional character in the series James Bond",
+      },
+      {
+        name: "Arya Stark (Game of Thrones)",
+        pic: "/images/arya.jpeg",
+        bio: "Third child of Eddard Stark and Catelyn Stark in the series Game of Thrones",
+      },
+      {
+        name: "Indiana Jones",
+        pic: "/images/indiana.jpeg",
+        bio: "Fictional character in the show Indiana Jones",
+      },
+      {
+        name: "Billie Eilish",
+        pic: "/images/eilish.jpeg",
+        bio: "American singer and songwriter",
+      },
+      {
+        name: "Snoop Dogg",
+        pic: "/images/snoop.jpeg",
+        bio: "American rapper and actor",
+      },
+      {
+        name: "Bruce Lee",
+        pic: "/images/lee.jpeg",
+        bio: "Hong Kong-American martial artist and actor whose career spanned Hong Kong and the United States",
+      },
     ],
   },
   {
@@ -1536,13 +1758,41 @@ export const personalityData = [
       desc: "They make up about 7% of the general population.",
     },
     celebrities: [
-      { name: "Rihanna" },
-      { name: "Jungkook (BTS)" },
-      { name: "Michael Jackson" },
-      { name: "Jesse Pinkman (Breaking Bad)" },
-      { name: "David Beckham" },
-      { name: "Wolfgang Amadeus Mozart" },
-      { name: "Marilyn Monroe" },
+      {
+        name: "Rihanna",
+        pic: "/images/rihanna.jpeg",
+        bio: "Barbadian singer, businesswoman, actress, and songwriter. She is widely regarded as one of the most prominent singers of the 21st century",
+      },
+      {
+        name: "Jungkook (BTS)",
+        pic: "/images/jungkook.jpeg",
+        bio: "South Korean singer. He rose to prominence as a member and vocalist of the South Korean boy band BTS",
+      },
+      {
+        name: "Michael Jackson",
+        pic: "/images/mj.jpeg",
+        bio: " American singer, songwriter, dancer, and philanthropist. Known as the 'King of Pop'",
+      },
+      {
+        name: "Jesse Pinkman (Breaking Bad)",
+        pic: "/images/pinkman.jpeg",
+        bio: "Fictional character in the American crime drama television series Breaking Bad",
+      },
+      {
+        name: "David Beckham",
+        pic: "/images/beckham.jpeg",
+        bio: "English former professional footballer, the current president and co-owner of Inter Miami and co-owner of Salford City",
+      },
+      {
+        name: "Wolfgang Amadeus Mozart",
+        pic: "/images/mozart.jpeg",
+        bio: "Prolific and influential composer of the Classical period",
+      },
+      {
+        name: "Marilyn Monroe",
+        pic: "/images/monroe.jpeg",
+        bio: "American actress and model",
+      },
     ],
   },
   {
@@ -1621,15 +1871,46 @@ export const personalityData = [
       desc: "They make up about 6.1% of the general population.",
     },
     celebrities: [
-      { name: "Donald Trump" },
-      { name: "Ernest Hemingway" },
-      { name: "Eddie Murphy" },
-      { name: "Madonna" },
-      { name: "Mike Tyson" },
-      { name: "Park Ji-min (BTS)" },
-      { name: "Samuel L. Jackson" },
-      { name: "Jamie Lannister (Game of Thrones)" },
-      { name: "Thomas Edison" },
+      {
+        name: "Donald Trump",
+        pic: "/images/trump.jpeg",
+        bio: "American politician, media personality, and businessman who served as the 45th president of the United States",
+      },
+      {
+        name: "Ernest Hemingway",
+        pic: "/images/ernest.jpeg",
+        bio: " American novelist, short-story writer, and journalist",
+      },
+      {
+        name: "Eddie Murphy",
+        pic: "/images/eddie.jpeg",
+        bio: "American actor, comedian, and singer",
+      },
+      {
+        name: "Madonna",
+        pic: "/images/madonna.jpeg",
+        bio: "American singer, songwriter, and actress. Known as the 'Queen of Pop'",
+      },
+      {
+        name: "Mike Tyson",
+        pic: "/images/tyson.jpeg",
+        bio: "American former professional boxer who competed from 1985 to 2005",
+      },
+      {
+        name: "Park Ji-min (BTS)",
+        pic: "/images/park.jpeg",
+        bio: "South Korean singer, songwriter and dancer. In 2013, he made his debut as a member of the South Korean boy band BTS",
+      },
+      {
+        name: "Samuel L. Jackson",
+        pic: "/images/jackson.jpeg",
+        bio: "American actor. One of the most widely recognized actors of his generation",
+      },
+      {
+        name: "Jamie Lannister (Game of Thrones)",
+        pic: "/images/jamie.jpeg",
+        bio: "Eldest son of Tywin Lannister in the series Game of Thrones",
+      },
     ],
   },
   {
@@ -1708,14 +1989,41 @@ export const personalityData = [
       desc: "They make up about 7% of the general population.",
     },
     celebrities: [
-      { name: "Adele" },
-      { name: "Marilyn Monroe" },
-      { name: "Jamie Foxx" },
-      { name: "Miley Cyrus" },
-      { name: "Adam Levine" },
-      { name: "Penny (The big bang theory)" },
-      { name: "Serena Williams" },
-      { name: "Pablo Picasso" },
+      {
+        name: "Adele",
+        pic: "/images/adele.jpeg",
+        bio: "English singer-songwriter. She is known for her mezzo-soprano vocals and sentimental songwriting",
+      },
+      {
+        name: "Jamie Foxx",
+        pic: "/images/foxx.jpeg",
+        bio: "American actor, comedian, and singer",
+      },
+      {
+        name: "Miley Cyrus",
+        pic: "/images/cyrus.jpeg",
+        bio: "American singer, songwriter, and actress. Dubbed the 'Pop Chameleon', she has been recognized for her musical versatility and continual artistic reinventions",
+      },
+      {
+        name: "Adam Levine",
+        pic: "/images/levine.jpeg",
+        bio: "American musician who serves as the lead vocalist, rhythm guitarist, and sole continuous member of the pop rock band Maroon 5",
+      },
+      {
+        name: "Penny (The big bang theory)",
+        pic: "/images/penny.jpeg",
+        bio: "Fictional character from the American CBS sitcom The Big Bang Theory",
+      },
+      {
+        name: "Serena Williams",
+        pic: "/images/serena.jpeg",
+        bio: "American former professional tennis player. Widely regarded as one of the greatest tennis players of all time",
+      },
+      {
+        name: "Pablo Picasso",
+        pic: "/images/picasso.jpeg",
+        bio: "Spanish painter, sculptor, printmaker, ceramicist, and theatre designer who spent most of his adult life in France",
+      },
     ],
   },
 ];
