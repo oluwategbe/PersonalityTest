@@ -5,6 +5,7 @@ import Layout from "./../../../components/layout/index";
 import Cards from "./Cards";
 import { PiCodesandboxLogo, PiBoundingBoxLight } from "react-icons/pi";
 import Carouse from "./Carousel";
+import ReactECharts from "echarts-for-react";
 
 const SinglePersonality = () => {
   const { personality } = useParams();
@@ -15,8 +16,53 @@ const SinglePersonality = () => {
     { group: "Sentinels", color: "#c5f2f4" },
     { group: "Explorers", color: "#fff9d9" },
   ];
+  const rarity = data?.rarity?.value;
   const factColor = groupColors?.find((g) => g?.group === data?.group);
-
+  const option = {
+    tooltip: {
+      trigger: "item",
+    },
+    legend: {
+      left: "left",
+      orient: "vertical",
+      textStyle: {
+        color: "#fff",
+      },
+    },
+    series: [
+      {
+        name: "Rarity",
+        type: "pie",
+        radius: ["30%", "80%"],
+        avoidLabelOverlap: false,
+        itemStyle: {
+          borderRadius: 5,
+          borderWidth: 0,
+          emphasis: {
+            shadowBlur: 10,
+            shadowOffsetX: 0,
+            shadowColor: "rgba(0, 0, 0, 0.5)",
+          },
+        },
+        label: {
+          show: false,
+          position: "center",
+        },
+        emphasis: {
+          label: {
+            show: true,
+            fontSize: "12",
+            fontWeight: "bold",
+          },
+        },
+        color: ["#0059ff", "#ffb3b3"],
+        data: [
+          { value: rarity, name: data?.title },
+          { value: 100 - rarity, name: "Other personalities" },
+        ],
+      },
+    ],
+  };
   return (
     <Layout>
       <div className="singlePersonality">
@@ -48,9 +94,18 @@ const SinglePersonality = () => {
         </div>
         <div className="rarity">
           <h1>Rarity</h1>
+          <h3>Rarity</h3>
           <div>
-            <h2>{data?.rarity?.text}</h2>
-            <h4>{data?.rarity?.desc}</h4>
+            <div>
+              <h2>{data?.rarity?.text}</h2>
+              <h4>{data?.rarity?.desc}</h4>
+            </div>
+            <div className="chart">
+              <ReactECharts
+                option={option}
+                style={{ height: "300px", width: "100%" }}
+              />
+            </div>
           </div>
         </div>
         <div className="strengths">

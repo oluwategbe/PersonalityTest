@@ -298,6 +298,7 @@ export const personalityData = [
     rarity: {
       text: "INTJ is one of the rarest types in the world.",
       desc: "They make up about 3% of the general population.",
+      value: 3,
     },
     celebrities: [
       {
@@ -410,6 +411,7 @@ export const personalityData = [
     rarity: {
       text: "INTP is one of the less common types in the world.",
       desc: "They make up about 6% of the general population.",
+      value: 6,
     },
     celebrities: [
       {
@@ -539,8 +541,9 @@ export const personalityData = [
       ],
     },
     rarity: {
-      text: "ENTJ is one of the least common types in the world, and the rarest type among women.",
+      text: "ENTJ is one of the rarest types in the world, and the rarest type among women.",
       desc: "They make up about 2% of the general population.",
+      value: 2,
     },
     celebrities: [
       {
@@ -659,6 +662,7 @@ export const personalityData = [
     rarity: {
       text: "ENTP is one of the rarer types in the world.",
       desc: "They make up about 5% of the general population.",
+      value: 5,
     },
     celebrities: [
       {
@@ -776,6 +780,7 @@ export const personalityData = [
     rarity: {
       text: "INFJ is one of the rarest types in the world. The rarest personality type among men.",
       desc: "They make up about 2% of the general population.",
+      value: 2,
     },
     celebrities: [
       {
@@ -884,8 +889,9 @@ export const personalityData = [
       ],
     },
     rarity: {
-      text: "INFP is one of the rarer types in the world.",
+      text: "INFP is one of the less common types in the world.",
       desc: "They make up about 7% of the general population.",
+      value: 7,
     },
     celebrities: [
       {
@@ -1004,8 +1010,9 @@ export const personalityData = [
       ],
     },
     rarity: {
-      text: "ENFJ is one of the less common types in the world, especially among men.",
+      text: "ENFJ is one of the rarest types in the world, especially among men.",
       desc: "They make up about 2% of the general population.",
+      value: 2,
     },
     celebrities: [
       {
@@ -1095,6 +1102,7 @@ export const personalityData = [
     rarity: {
       text: "ENFP is a moderately common personality type.",
       desc: "They make up about 8% of the general population.",
+      value: 8,
     },
     celebrities: [
       {
@@ -1195,6 +1203,7 @@ export const personalityData = [
     rarity: {
       text: "According to the most recent global sample, ISTJ is the most common type in the world.",
       desc: "They make up about 17% of the general population.",
+      value: 17,
     },
     celebrities: [
       {
@@ -1299,6 +1308,7 @@ export const personalityData = [
     rarity: {
       text: "ISFJ is one of the most common types in the world.",
       desc: "They make up about 9% of the general population.",
+      value: 9,
     },
     celebrities: [
       {
@@ -1415,6 +1425,7 @@ export const personalityData = [
     rarity: {
       text: "ENTJ is one of the common types of personality.",
       desc: "They make up about 9% of the general population.",
+      value: 9,
     },
     celebrities: [
       {
@@ -1520,6 +1531,7 @@ export const personalityData = [
     rarity: {
       text: "ESFJ is one of the rarer types of personality.",
       desc: "They make up about 6% of the general population.",
+      value: 6,
     },
     celebrities: [
       {
@@ -1638,6 +1650,7 @@ export const personalityData = [
     rarity: {
       text: "ISTP is a relatively rare personality type",
       desc: "They make up about 10% of the general population.",
+      value: 10,
     },
     celebrities: [
       {
@@ -1756,6 +1769,7 @@ export const personalityData = [
     rarity: {
       text: "ISFP is one of the common types of personality.",
       desc: "They make up about 7% of the general population.",
+      value: 7,
     },
     celebrities: [
       {
@@ -1869,6 +1883,7 @@ export const personalityData = [
     rarity: {
       text: "ESTP is one of the common types of personality.",
       desc: "They make up about 6.1% of the general population.",
+      value: 6.1,
     },
     celebrities: [
       {
@@ -1987,6 +2002,7 @@ export const personalityData = [
     rarity: {
       text: "ESFP is one of the common types of personality.",
       desc: "They make up about 7% of the general population.",
+      value: 7,
     },
     celebrities: [
       {
