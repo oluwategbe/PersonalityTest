@@ -82,12 +82,12 @@ const SinglePersonality = () => {
             <div className="line"></div>
           </div>
           <p>{data?.long_desc}</p>
-        </div>
-        <div
-          className="fact"
-          style={{ borderLeft: `5px solid ${factColor?.color}` }}
-        >
-          <p>{data?.fact}</p>
+          <div
+            className="fact"
+            style={{ borderLeft: `7px solid ${factColor?.color}` }}
+          >
+            <p>{data?.fact}</p>
+          </div>
         </div>
         <div className="cards">
           <Cards personality={personality} />
@@ -136,12 +136,12 @@ const SinglePersonality = () => {
               ))}
             </div>
           </div>
-        </div>
-        <div
-          className="fact"
-          style={{ borderLeft: `5px solid ${factColor?.color}` }}
-        >
-          <p>{data?.fact2}</p>
+          <div
+            className="fact"
+            style={{ borderLeft: `7px solid ${factColor?.color}` }}
+          >
+            <p>{data?.fact2}</p>
+          </div>
         </div>
         <div className="careers">
           <h1>

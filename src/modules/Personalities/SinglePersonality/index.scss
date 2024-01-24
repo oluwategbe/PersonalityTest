@@ -1,7 +1,7 @@
 .singlePersonality{
   .singlePersonalityHero{
     height: 80vh;
-    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url("/images/personality2.jpg");
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("/images/personality2.jpg");
     background-size: cover;
     display: flex;
     align-items: center;
@@ -40,29 +40,41 @@
   .summary{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 3rem 15%;
+    height: 100vh;
     gap: 1rem;
+    background: #636363;
+    color: #ffffff;
     .header{
       display: flex;
       align-items: center;
       gap: 0.5rem;
       h2{
-        font-size: 18px;
+        font-size: 20px;
       }
       .line{
-        background: #000;
+        background: #ffffff;
         height: 1px;
         width: 200px;
       }
     }
     p{
-      font-size: 12px;
+      font-size: 14px;
       text-align: justify;
       line-height: 20px;
     }
+    .fact{
+      // background: #c4c3c3;
+      color: #fffefe;
+      box-shadow: 3px 5px 10px 0px rgba(255, 255, 255, 0.726);
+    }
   }
   .cards{
-    background: #f1f1f1;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("/images/personality5.jpg");
+    background-size: cover;
+    background-blend-mode: saturation;
+    background-attachment: fixed;
     padding: 6rem 15%;
     position: relative;
   }
@@ -105,11 +117,17 @@
   .fact{
     display: flex;
     padding: 2rem;
-    margin: 1rem 15%;
+    margin: 2rem 0;
     display: flex;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("/images/pattern2.jpeg");
     // border: 2px solid black;
     box-shadow: 3px 5px 10px 0px rgb(196 196 196 / 40%);
     // justify-content: center;
+
+    p{
+      font-size: 15px;
+      font-weight: 600;
+    }
   }
   .strengths{
     display: flex;
