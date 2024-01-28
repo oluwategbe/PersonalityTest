@@ -3,7 +3,7 @@ import "./index.scss";
 import { personalityData } from "./../../../utils/data";
 import Layout from "./../../../components/layout/index";
 import Cards from "./Cards";
-import { PiCodesandboxLogo, PiBoundingBoxLight } from "react-icons/pi";
+import { MdCircle } from "react-icons/md";
 import Carouse from "./Carousel";
 import ReactECharts from "echarts-for-react";
 
@@ -11,7 +11,7 @@ const SinglePersonality = () => {
   const { personality } = useParams();
   const data = personalityData?.find((p) => p?.personality === personality);
   const groupColors = [
-    { group: "Analysts", color: "#e7dfea" },
+    { group: "Analysts", color: "#7b3894" },
     { group: "Diplomats", color: "#d4eec8" },
     { group: "Sentinels", color: "#c5f2f4" },
     { group: "Explorers", color: "#fff9d9" },
@@ -26,7 +26,8 @@ const SinglePersonality = () => {
       left: "left",
       orient: "vertical",
       textStyle: {
-        color: "#fff",
+        fontSize: "16",
+        color: "#222222",
       },
     },
     series: [
@@ -51,7 +52,7 @@ const SinglePersonality = () => {
         emphasis: {
           label: {
             show: true,
-            fontSize: "12",
+            fontSize: "14",
             fontWeight: "bold",
           },
         },
@@ -77,8 +78,9 @@ const SinglePersonality = () => {
           </div>
         </div>
         <div className="summary">
+          <h3>Summary</h3>
           <div className="header">
-            <h2>{personality} in a nutshell</h2>
+            <h1>{personality} in a nutshell</h1>
             <div className="line"></div>
           </div>
           <p>{data?.long_desc}</p>
@@ -93,9 +95,12 @@ const SinglePersonality = () => {
           <Cards personality={personality} />
         </div>
         <div className="rarity">
-          <h1>Rarity</h1>
+          <div className="header">
+            <h1>How frequent is {data?.personality}</h1>
+            <div className="line"></div>
+          </div>
           <h3>Rarity</h3>
-          <div>
+          <div className="rarityText">
             <div>
               <h2>{data?.rarity?.text}</h2>
               <h4>{data?.rarity?.desc}</h4>
@@ -103,33 +108,37 @@ const SinglePersonality = () => {
             <div className="chart">
               <ReactECharts
                 option={option}
-                style={{ height: "300px", width: "100%" }}
+                style={{ height: "400px", width: "100%" }}
               />
             </div>
           </div>
         </div>
         <div className="strengths">
-          <h1>Strengths and Weaknesses</h1>
+          <h1>
+            <span style={{ color: "#05abdd" }}>Strengths</span> and{" "}
+            <span style={{ color: "#f02005" }}>Weaknesses</span>
+            <div className="line"></div>
+          </h1>
           <div className="section">
             <div className="strength each">
-              <h2>Strengths</h2>
+              <h3>Strengths</h3>
               {data?.strengths?.map((s, id) => (
                 <div className="strength-child" key={id}>
-                  <PiCodesandboxLogo />
+                  <MdCircle />
                   <div className="point">
-                    <h3>{s?.title}</h3>
+                    <h4>{s?.title}</h4>
                     <p>{s?.desc}</p>
                   </div>
                 </div>
               ))}
             </div>
             <div className="weakness each">
-              <h2>Weaknesses</h2>
+              <h3>Weaknesses</h3>
               {data?.weaknesses?.map((s, id) => (
                 <div className="strength-child" key={id}>
-                  <PiBoundingBoxLight />
+                  <MdCircle />
                   <div className="point">
-                    <h3>{s?.title}</h3>
+                    <h4>{s?.title}</h4>
                     <p>{s?.desc}</p>
                   </div>
                 </div>
@@ -144,13 +153,17 @@ const SinglePersonality = () => {
           </div>
         </div>
         <div className="careers">
-          <h1>
-            {data?.personality} ({data?.title}) Careers
-          </h1>
+          <div className="header">
+            <h1>
+              {data?.personality} ({data?.title}) Careers
+            </h1>
+            <div className="line"></div>
+          </div>
+          <h3>Careers</h3>
           <p>{data?.career?.summary}</p>
           <img src={data?.career?.pic} alt="Careers" />
-          <div>
-            <h3>Popular {data?.title} careers:</h3>
+          <div className="opportunities">
+            <h4>Popular {data?.title} jobs:</h4>
             <ul>
               {data?.career?.jobs?.map((job, i) => (
                 <li key={i}>{job?.job}</li>
@@ -159,7 +172,11 @@ const SinglePersonality = () => {
           </div>
         </div>
         <div className="celebs">
-          <h1>{data?.title}s you may know</h1>
+          <h3>Celebrities</h3>
+          <div className="header">
+            <h1>{data?.title}s you may know</h1>
+            <div className="line"></div>
+          </div>
           <Carouse data={data?.celebrities} />
         </div>
       </div>

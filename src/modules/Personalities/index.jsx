@@ -11,7 +11,7 @@ const Personalities = () => {
   return (
     <Layout>
       <div className="personalities">
-        <div className="hero">
+        <div className="personalityHero">
           <h1>Myers & Briggs&apos; 16 Personality Types</h1>
           <p>
             In order to better understand people’s common similarities and
@@ -23,10 +23,14 @@ const Personalities = () => {
             day-to-day lives. Each of these preferences is represented by a
             letter, and together these preferences, denoted by four letters,
             make up your Myers Briggs personality type.
+            <br />
+            <br />
+            The 16 personalities grouped accordingly are listed below:
           </p>
         </div>
         <div className="personalities">
           <div className="analysts group">
+            <h4>Analysts</h4>
             {analysts?.map((p) => (
               <PersonalityCard
                 key={p?.personality}
@@ -35,10 +39,12 @@ const Personalities = () => {
                 desc={p?.short_desc}
                 picture={p?.pic}
                 color="purple"
+                box="#ae6ca8"
               />
             ))}
           </div>
           <div className="diplomats group">
+            <h4>Diplomats</h4>
             {diplomats?.map((p) => (
               <PersonalityCard
                 key={p?.personality}
@@ -47,10 +53,12 @@ const Personalities = () => {
                 desc={p?.short_desc}
                 picture={p?.pic}
                 color="green"
+                box="#8fc9a6"
               />
             ))}
           </div>
           <div className="sentinels group">
+            <h4>Sentinels</h4>
             {sentinels?.map((p) => (
               <PersonalityCard
                 key={p?.personality}
@@ -59,10 +67,12 @@ const Personalities = () => {
                 desc={p?.short_desc}
                 picture={p?.pic}
                 color="#058a89"
+                box="#66d4c0"
               />
             ))}
           </div>
           <div className="explorers group">
+            <h4>Explorers</h4>
             {explorers?.map((p) => (
               <PersonalityCard
                 key={p?.personality}
@@ -70,7 +80,8 @@ const Personalities = () => {
                 personality={p?.personality}
                 desc={p?.short_desc}
                 picture={p?.pic}
-                color="#e9b422"
+                color="#966f03"
+                box="#dcc366"
               />
             ))}
           </div>

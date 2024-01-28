@@ -1,9 +1,9 @@
 .personalities{
   display: flex;
   align-items: center;
-  background: #fdf5f5;
+  background: #f7f7f7;
   flex-direction: column;
-  .hero{
+  .personalityHero{
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -12,12 +12,16 @@
     align-items: center;
     width: 80%;
     margin-top: 4rem;
-    
+    border: 1px solid #dbe5e6;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom: none;
     h1{
-      font-size: 18px;
+      font-size: 22px;
     }
     p{
-      font-size: 11px;
+      font-size: 14px;
+      text-align: justify;
     }
   }
   .personalities{
@@ -34,16 +38,56 @@
     }
 
     .analysts{
-      background-color: #e7dfea;
+      background-color: #d799ee;
+      position: relative;
+      h4{
+        position: absolute;
+        top: -5%;
+        left: 5%;
+        font-size: 170px;
+        letter-spacing: 40px;
+        z-index: 0;
+        color: #e1d7e6;
+      }
     }
     .diplomats{
-      background-color: #d4eec8;
+      background-color: #a8ee88;
+      position: relative;
+      h4{
+        position: absolute;
+        top: -5%;
+        left: 5%;
+        font-size: 170px;
+        letter-spacing: 50px;
+        z-index: 0;
+        color: #dfe7db;
+      }
     }
     .sentinels{
-      background-color: #c5f2f4;
+      background-color: #79e8ee;
+      position: relative;
+      h4{
+        position: absolute;
+        top: -5%;
+        left: 5%;
+        font-size: 170px;
+        letter-spacing: 40px;
+        z-index: 0;
+        color: #cce9eb;
+      }
     }
     .explorers{
-      background-color: #fff9d9;
+      background-color: #f3df6c;
+      position: relative;
+      h4{
+        position: absolute;
+        top: -5%;
+        left: 5%;
+        font-size: 170px;
+        letter-spacing: 40px;
+        z-index: 0;
+        color: #ffffff;
+      }
     }
   }
 }
