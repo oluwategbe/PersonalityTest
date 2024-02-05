@@ -163,7 +163,7 @@ const SinglePersonality = () => {
           <p>{data?.career?.summary}</p>
           <img src={data?.career?.pic} alt="Careers" />
           <div className="opportunities">
-            <h4>Popular {data?.title} jobs:</h4>
+            <h4>Popular {data?.personality} jobs:</h4>
             <ul>
               {data?.career?.jobs?.map((job, i) => (
                 <li key={i}>{job?.job}</li>

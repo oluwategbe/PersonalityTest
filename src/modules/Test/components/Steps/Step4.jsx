@@ -20,7 +20,7 @@ const Step4 = ({ setJPScores, jpScores, setStep, answered }) => {
 
   const handlePrevious = () => {
     setStep((prev) => prev - 1);
-    const webPartElement = document.getElementsByClassName(`quest-0`);
+    const webPartElement = document.getElementsByClassName(`topContainer`);
     if (webPartElement) {
       webPartElement[0].scrollIntoView({ behavior: "smooth", block: "start" });
     }
@@ -28,14 +28,14 @@ const Step4 = ({ setJPScores, jpScores, setStep, answered }) => {
 
   const handleNext = () => {
     setStep((prev) => prev + 1);
-    // const webPartElement = document.getElementsByClassName(`quest-0`);
-    // if (webPartElement) {
-    //   webPartElement[0].scrollIntoView({ behavior: "smooth", block: "start" });
-    // }
+    const webPartElement = document.getElementsByClassName(`topContainer`);
+    if (webPartElement) {
+      webPartElement[0].scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
 
   return (
-    <div>
+    <>
       {jpQuestions?.map((q, index) => (
         <JPQuestions
           question={q}
@@ -62,7 +62,7 @@ const Step4 = ({ setJPScores, jpScores, setStep, answered }) => {
           Next{" "}
         </button>
       </div>
-    </div>
+    </>
   );
 };
 

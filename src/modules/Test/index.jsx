@@ -16,17 +16,23 @@ const Test = () => {
             <div className="card">
               <GrTest />
               <h2>Complete the test</h2>
-              <p>Answer the questions honestly to find out your personality</p>
+              <p>Answer the questions honestly to find out your personality.</p>
             </div>
             <div className="card">
               <GrTest />
               <h2>View Detailed results</h2>
-              <p>Answer the questions honestly to find out your personality</p>
+              <p>
+                Complete the test and view your personality based on your
+                provided answers.
+              </p>
             </div>
             <div className="card">
               <GrTest />
-              <h2>Complete the test</h2>
-              <p>Answer the questions honestly to find out your personality</p>
+              <h2>Check out other personalities</h2>
+              <p>
+                Explore the summary, rarity, careers and known celebrities of
+                other personalities.
+              </p>
             </div>
           </div>
         </div>

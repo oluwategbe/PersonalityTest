@@ -7,6 +7,7 @@ import Step4 from "../components/Steps/Step4";
 import Step5 from "../components/Steps/Step5";
 import { getPersonality } from "../../../utils/getPersonality";
 import { useNavigate } from "react-router-dom";
+import Steps from "./Steps";
 
 const Questions = () => {
   const [eiScores, setEIScores] = React.useState({});
@@ -52,48 +53,53 @@ const Questions = () => {
 
   return (
     <div className="questions">
-      {step === 1 && (
-        <Step1
-          setEIScores={setEIScores}
-          eiScores={eiScores}
-          setStep={setStep}
-          answered={Object.values(eiScores).length}
-        />
-      )}
-      {step === 2 && (
-        <Step2
-          setSIScores={setSIScores}
-          siScores={siScores}
-          setStep={setStep}
-          answered={Object.values(siScores).length}
-        />
-      )}
-      {step === 3 && (
-        <Step3
-          setTFScores={setTFScores}
-          tfScores={tfScores}
-          setStep={setStep}
-          answered={Object.values(tfScores).length}
-        />
-      )}
-      {step === 4 && (
-        <Step4
-          setJPScores={setJPScores}
-          jpScores={jpScores}
-          setStep={setStep}
-          answered={Object.values(jpScores).length}
-          handleSubmit={handleSubmit}
-        />
-      )}
-      {step === 5 && (
-        <Step5
-          gender={gender}
-          setGender={setGender}
-          setStep={setStep}
-          answered={Object.values(jpScores).length}
-          handleSubmit={handleSubmit}
-        />
-      )}
+      <div className="topContainer">
+        <Steps step={step} />
+      </div>
+      <div className="steps">
+        {step === 1 && (
+          <Step1
+            setEIScores={setEIScores}
+            eiScores={eiScores}
+            setStep={setStep}
+            answered={Object.values(eiScores).length}
+          />
+        )}
+        {step === 2 && (
+          <Step2
+            setSIScores={setSIScores}
+            siScores={siScores}
+            setStep={setStep}
+            answered={Object.values(siScores).length}
+          />
+        )}
+        {step === 3 && (
+          <Step3
+            setTFScores={setTFScores}
+            tfScores={tfScores}
+            setStep={setStep}
+            answered={Object.values(tfScores).length}
+          />
+        )}
+        {step === 4 && (
+          <Step4
+            setJPScores={setJPScores}
+            jpScores={jpScores}
+            setStep={setStep}
+            answered={Object.values(jpScores).length}
+            handleSubmit={handleSubmit}
+          />
+        )}
+        {step === 5 && (
+          <Step5
+            gender={gender}
+            setGender={setGender}
+            setStep={setStep}
+            answered={Object.values(jpScores).length}
+            handleSubmit={handleSubmit}
+          />
+        )}
+      </div>
     </div>
   );
 };

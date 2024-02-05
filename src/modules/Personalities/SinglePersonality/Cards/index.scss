@@ -2,36 +2,51 @@
   display: flex;
   flex-direction: column;
   // background: #000;
-  height: 80vh;
+  height: fit-content;
   gap: 1rem;
   color: rgb(255, 255, 255);
 
   .card{
     display: flex;
     flex-direction: column;
-    padding: 2rem;
     border-radius: 20px;
     box-shadow: 3px 5px 10px 0px rgba(172, 172, 172, 0.904);
     background: rgba(0, 0, 0, 0.521);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(10px);
     z-index: 1;
-    width: 50%;
-    transition: width 0.3s;
+    width: 45%;
+    transition: display 0.3s ease-in-out;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out;
     position: relative;
     justify-content: center;
-    
-    p{
-      opacity: 0;
-      transition: opacity 0.3s;
-      position: absolute;
+    .h2Box{
+      padding: 1rem;
+      border-bottom: 1px solid grey;
+      border-radius: 20px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      h2{
+        font-size: 20px;
+        font-weight: 600;
+        position: relative;
+      }
     }
-    &:hover{
-      width: 60%;
+    h2:hover .pBox{
+      display: flex;
     }
-    &:hover p{
-      opacity: 1;
-      position: relative;
+    .pBox{
+      padding: 1rem;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      transition: display 1s ease;
+      p{
+        opacity: 1;
+        transition: opacity 0.5s;
+        font-size: 16px;
+        text-align: justify;
+      }
     }
   }
   .circle{
@@ -54,11 +69,35 @@
   }
   .ei{
     position: relative;
+    box-shadow: 3px 5px 10px 0px rgb(255 251 0 / 90%);
+    background: rgb(255 249 0 / 20%);
+
+    &:hover{
+      background: rgb(255 249 0 / 50%);
+    }
   }
   .ns{
     align-self: flex-end;
+    background: rgb(127 245 195 / 20%);
+    box-shadow: 3px 5px 10px 0px rgb(0 255 102 / 90%);
+    &:hover{
+      background: rgb(0 255 102 / 50%);
+    }
+  }
+  .tf{
+    position: relative;
+    box-shadow: 3px 5px 10px 0px rgb(0 110 255 / 90%);
+    background: rgb(0 127 255 / 20%);
+    &:hover{
+      background: rgb(0 127 255 / 50%);
+    }
   }
   .jp{
     align-self: flex-end;
+    box-shadow: 3px 5px 10px 0px rgb(255 0 0 / 90%);
+    background: rgb(255 0 0 / 20%);
+    &:hover{
+      background: rgb(255 0 0 / 50%);
+    }
   }
 }

@@ -20,21 +20,21 @@ const Step2 = ({ setSIScores, siScores, setStep, answered }) => {
 
   const handleNext = () => {
     setStep((prev) => prev + 1);
-    const webPartElement = document.getElementsByClassName(`quest-0`);
+    const webPartElement = document.getElementsByClassName(`topContainer`);
     if (webPartElement) {
       webPartElement[0].scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
   const handlePrevious = () => {
     setStep((prev) => prev - 1);
-    const webPartElement = document.getElementsByClassName(`quest-0`);
+    const webPartElement = document.getElementsByClassName(`topContainer`);
     if (webPartElement) {
       webPartElement[0].scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
   return (
-    <div>
+    <>
       {siQuestions?.map((q, index) => (
         <SIQuestions
           question={q}
@@ -61,7 +61,7 @@ const Step2 = ({ setSIScores, siScores, setStep, answered }) => {
           Next{" "}
         </button>
       </div>
-    </div>
+    </>
   );
 };
 

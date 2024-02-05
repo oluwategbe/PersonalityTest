@@ -20,7 +20,7 @@ const Step3 = ({ setTFScores, tfScores, setStep, answered }) => {
 
   const handleNext = () => {
     setStep((prev) => prev + 1);
-    const webPartElement = document.getElementsByClassName(`quest-0`);
+    const webPartElement = document.getElementsByClassName(`topContainer`);
     if (webPartElement) {
       webPartElement[0].scrollIntoView({ behavior: "smooth", block: "start" });
     }
@@ -28,14 +28,14 @@ const Step3 = ({ setTFScores, tfScores, setStep, answered }) => {
 
   const handlePrevious = () => {
     setStep((prev) => prev - 1);
-    const webPartElement = document.getElementsByClassName(`quest-0`);
+    const webPartElement = document.getElementsByClassName(`topContainer`);
     if (webPartElement) {
       webPartElement[0].scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
   return (
-    <div>
+    <>
       {tfQuestions?.map((q, index) => (
         <TFQuestions
           question={q}
@@ -62,7 +62,7 @@ const Step3 = ({ setTFScores, tfScores, setStep, answered }) => {
           Next{" "}
         </button>
       </div>
-    </div>
+    </>
   );
 };
 

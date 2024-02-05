@@ -4,7 +4,7 @@ import "../../Questions/index.scss";
 const Step5 = ({ gender, setGender, setStep, handleSubmit }) => {
   const handlePrevious = () => {
     setStep((prev) => prev - 1);
-    const webPartElement = document.getElementsByClassName(`quest-0`);
+    const webPartElement = document.getElementsByClassName(`topContainer`);
     if (webPartElement) {
       webPartElement[0].scrollIntoView({ behavior: "smooth", block: "start" });
     }

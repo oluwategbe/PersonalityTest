@@ -19,14 +19,14 @@ const Step1 = ({ setEIScores, eiScores, setStep, answered }) => {
 
   const handleNext = () => {
     setStep((prev) => prev + 1);
-    const webPartElement = document.getElementsByClassName(`quest-0`);
+    const webPartElement = document.getElementsByClassName(`topContainer`);
     if (webPartElement) {
       webPartElement[0].scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
   return (
-    <div>
+    <>
       {eiQuestions?.map((q, index) => (
         <EIQuestions
           question={q}
@@ -50,7 +50,7 @@ const Step1 = ({ setEIScores, eiScores, setStep, answered }) => {
           Next{" "}
         </button>
       </div>
-    </div>
+    </>
   );
 };
 
