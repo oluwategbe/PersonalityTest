@@ -12,13 +12,15 @@ const ScoreCard = ({
 }) => {
   const [left, setLeft] = React.useState(0);
   const [right, setRight] = React.useState(0);
-
   React.useEffect(() => {
     if (isNaN(leftScore)) {
       setLeft(50);
     }
     if (isNaN(rightScore)) {
       setRight(50);
+    } else {
+      setLeft(leftScore);
+      setRight(rightScore);
     }
   }, [leftScore, rightScore]);
 

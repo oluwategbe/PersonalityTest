@@ -14,7 +14,7 @@ const Personalities = () => {
         <div className="personalityHero">
           <h1>Myers & Briggs&apos; 16 Personality Types</h1>
           <p>
-            In order to better understand people’s common similarities and
+            In order to better understand people&apos;s common similarities and
             differences, Isabel Briggs Myers and her mother Katharine Briggs
             built on the work of psychologist Carl Jung to develop a system of
             categorizing human behavior. They landed on four key dimensions that

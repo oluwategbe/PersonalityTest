@@ -14,8 +14,8 @@ const PersonalityCard = ({ title, personality, desc, picture, color, box }) => {
       <Link to={`/personalities/${personality}`}>
         <img src={picture} alt={title} />
         <h2 style={{ color: `${color}` }}>{title}</h2>
-        <h3>{personality}</h3>
-        <p>{desc}</p>
+        <h3 style={{ color: `${color}` }}>{personality}</h3>
+        <p style={{ color: `${color}` }}>{desc}</p>
       </Link>
     </div>
   );

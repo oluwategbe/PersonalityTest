@@ -36,7 +36,7 @@
       bottom: -30%;
       display: flex;
       gap: 2rem;
-      align-items: center;
+      align-items: stretch;
       justify-content: center;
       transform: translateY(-50%);
       width: 70%;
@@ -46,36 +46,43 @@
         flex-direction: column;
         align-items: center;
         border: none;
-        color: black;
+        color: #4e4e4e;
         padding: 1rem;
         border-radius: 1rem;
         flex: 1;
         gap: 0.7rem;
         transition: background 0.3s ease;
         text-align: center;
-
+        svg{
+          font-size: 40px;
+          color: #4e4e4e;
+        }
         &:nth-child(1){
           background: #a1c5f9;
-          box-shadow: 3px 5px 10px 0px rgb(56 116 149 / 90%);
+          box-shadow: 2px 2px 7px 0px rgb(56 116 149 / 90%);
           &:hover{
             background: #75a9f1;
+          }
+          svg{
+            path{
+              stroke: #4e4e4e
+            }
           }
         }
         &:nth-child(2){
           background: #f4adad;
-          box-shadow: 3px 5px 10px 0px rgb(173 133 133 / 90%);
+          box-shadow: 2px 2px 7px 0px rgb(173 133 133 / 90%);
           &:hover{
             background: #fd8f8f;
           }
         }
         &:nth-child(3){
           background: #bfffbf;
-          box-shadow: 3px 5px 10px 0px rgb(150 203 176 / 90%);
+          box-shadow: 2px 2px 7px 0px rgb(150 203 176 / 90%);
           &:hover{
             background: #94ff94;
           }
         }
-
         h2{
           font-size: 18px;
           font-weight: 500;

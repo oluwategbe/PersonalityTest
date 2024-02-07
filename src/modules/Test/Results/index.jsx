@@ -17,6 +17,7 @@ const Results = () => {
   const intuitionScore = (totalSIScore / 10).toFixed(0);
   const feelingScore = (totalTFScore / 10).toFixed(0);
   const perceivingScore = (totalJPScore / 10).toFixed(0);
+  console.log(gender);
   return (
     <Layout>
       <div className="resultsPage">
@@ -31,7 +32,7 @@ const Results = () => {
             <div className="imgBox">
               <img
                 src={
-                  gender === "male"
+                  gender?.toLowerCase() === "male"
                     ? personalityData?.male
                     : personalityData?.female
                 }

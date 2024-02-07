@@ -1,6 +1,8 @@
 import "./index.scss";
 import Layout from "./../../components/layout/index";
 import { GrTest } from "react-icons/gr";
+import { TbReportAnalytics } from "react-icons/tb";
+import { FaPeopleGroup } from "react-icons/fa6";
 import Questions from "./Questions";
 
 const Test = () => {
@@ -19,7 +21,7 @@ const Test = () => {
               <p>Answer the questions honestly to find out your personality.</p>
             </div>
             <div className="card">
-              <GrTest />
+              <TbReportAnalytics />
               <h2>View Detailed results</h2>
               <p>
                 Complete the test and view your personality based on your
@@ -27,7 +29,7 @@ const Test = () => {
               </p>
             </div>
             <div className="card">
-              <GrTest />
+              <FaPeopleGroup />
               <h2>Check out other personalities</h2>
               <p>
                 Explore the summary, rarity, careers and known celebrities of

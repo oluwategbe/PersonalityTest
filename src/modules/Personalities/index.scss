@@ -17,10 +17,10 @@
     border-top-right-radius: 0.5rem;
     border-bottom: none;
     h1{
-      font-size: 22px;
+      font-size: 20px;
     }
     p{
-      font-size: 14px;
+      font-size: 16px;
       text-align: justify;
     }
   }
@@ -30,11 +30,11 @@
 
     .group{
       display: flex;
-      align-items: center;
+      align-items: stretch;
       justify-content: center;
       gap: 2rem;
       height: 80vh;
-      padding: 0 5%;
+      padding: 2% 5%;
     }
 
     .analysts{
@@ -47,7 +47,7 @@
         font-size: 170px;
         letter-spacing: 40px;
         z-index: 0;
-        color: #e1d7e6;
+        color: #dec0f0;
       }
     }
     .diplomats{
@@ -60,7 +60,7 @@
         font-size: 170px;
         letter-spacing: 50px;
         z-index: 0;
-        color: #dfe7db;
+        color: #d2e2ca;
       }
     }
     .sentinels{
@@ -73,7 +73,7 @@
         font-size: 170px;
         letter-spacing: 40px;
         z-index: 0;
-        color: #cce9eb;
+        color: #b7e4e7;
       }
     }
     .explorers{
@@ -86,7 +86,7 @@
         font-size: 170px;
         letter-spacing: 40px;
         z-index: 0;
-        color: #ffffff;
+        color: #faf5df;
       }
     }
   }

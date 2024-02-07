@@ -1,5 +1,3 @@
- shorten the length of the descriptions of the ones that have descriptions and create short descriptions for those that dont have. Dont remove the descriptions. let there be a heading and a description
-
 	You don’t have to be someone else to achieve greatness in life. Celebrate your personality and uniqueness, because that’s what makes a legend
 
 “Personality is not the clothes you wear but the mind you carry, the kindness you have inside, owning a soft clean good heart, pious intentions, excellent calm nature, and a genuinely good soul from within is a proper definition of personality”
@@ -21,19 +19,20 @@ How Rare is the INTJ Personality?
 According to psychologist David Keirsey, developer of the Keirsey Temperament Sorter, approximately 1% to 4% of the population has an INTJ personality type. (The rarest personality type is INFJ.)
 
 
-
 The Basics of Myers & Briggs' Personality Theory
 The Myers-Briggs system describes a person’s personality through four opposing personality functions, variously known as dichotomies, preferences or scales. The first three preferences are based on the writings of Jung; Katherine Cook Briggs added the final preference, Judging versus Perceiving, based on her own observations.
 
 The Myers-Briggs Type Indicator® (MBTI®) assessment is one of the world’s most popular personality tools—because it works. Used by more than 88 percent of Fortune 500 companies in 115 countries, and available in 29 languages, it has become the go-to framework for people development globally. With more than 70 years of science-based, research-based insight, the MBTI assessment is a robust tool for self-awareness and improvement. It provides positive language for understanding and valuing individual differences. With practical insight that’s easy to understand and implement, the MBTI assessment has helped thousands of organizations and millions of people around the world improve how they communicate, learn, and work.
 
+by Isabel Briggs Myers and Katharine Cook Briggs!
+
 Now, there are tonnes of personality questionnaires and tests available online but the Myers-Briggs Personality Type Indicator is probably the most widely used personality test in the world.  
 
-Extraversion vs. Introversion: How do you gain energy? Extraverts like to be with others and gain energy from people and the environment. Introverts gain energy from alone-time and need periods of quiet reflection throughout the day.
+Extraversion vs. Introversion: How do you gain (direct and receive )energy? Extraverts like to be with others and gain energy from people and the environment. Introverts gain energy from alone-time and need periods of quiet reflection throughout the day.
 
-Sensing vs. Intuition: How do you collect information? Sensors gather facts from their immediate environment and rely on the things they can see, feel and hear. Intuitives look more at the overall context and think about patterns, meaning, and connections.
+Sensing vs. Intuition: How do you obtain (take in) information? Sensors gather facts from their immediate environment and rely on the things they can see, feel and hear. Intuitives look more at the overall context and think about patterns, meaning, and connections.
 
-Thinking vs. Feeling: How do you make decisions? Thinkers look for the logically correct solution, whereas Feelers make decisions based on their emotions, values, and the needs of others.
+Thinking vs. Feeling: How do you make decisions (come to conclusions) ? Thinkers look for the logically correct solution, whereas Feelers make decisions based on their emotions, values, and the needs of others.
 
 Judging vs. Perceiving: How do you organize your environment? Judgers prefer structure and like things to be clearly regulated, whereas Perceivers like things to be open and flexible and are reluctant to commit themselves.
 

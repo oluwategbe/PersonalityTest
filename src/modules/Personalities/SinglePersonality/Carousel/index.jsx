@@ -25,7 +25,7 @@ const Carouse = ({ data }) => {
     <Carousel
       className="carousel"
       swipeable={true}
-      // draggable={true}
+      draggable={false}
       // showDots={true}
       responsive={responsive}
       ssr={true}

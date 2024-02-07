@@ -5,19 +5,21 @@ import { AiOutlineDoubleRight } from "react-icons/ai";
 const Hero = () => {
   return (
     <div className="hero">
-      <div className="quote">
-        <h1>
-          “Your personality is the only permanent thing in your, ultimately,
-          temporary life…that’s all the more reason to cherish it.”
-        </h1>
-        <h5>— Isabella Koldras</h5>
+      <div className="heroBox">
+        <div className="quote">
+          <h1>
+            “Your personality is the only permanent thing in your, ultimately,
+            temporary life…that&apos;s all the more reason to cherish it.”
+          </h1>
+          <h5>— Isabella Koldras</h5>
+        </div>
+        <Link to={"/test"}>
+          <button>
+            Take the test
+            <AiOutlineDoubleRight />
+          </button>
+        </Link>
       </div>
-      <Link to={"/test"}>
-        <button>
-          Take the test
-          <AiOutlineDoubleRight />
-        </button>
-      </Link>
     </div>
   );
 };

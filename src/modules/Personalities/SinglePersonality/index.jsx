@@ -3,7 +3,7 @@ import "./index.scss";
 import { personalityData } from "./../../../utils/data";
 import Layout from "./../../../components/layout/index";
 import Cards from "./Cards";
-import { MdCircle } from "react-icons/md";
+import { MdCircle, MdSquare } from "react-icons/md";
 import Carouse from "./Carousel";
 import ReactECharts from "echarts-for-react";
 
@@ -166,7 +166,10 @@ const SinglePersonality = () => {
             <h4>Popular {data?.personality} jobs:</h4>
             <ul>
               {data?.career?.jobs?.map((job, i) => (
-                <li key={i}>{job?.job}</li>
+                <li key={i}>
+                  <MdSquare style={{ color: `${factColor?.color}` }} />
+                  {job?.job}
+                </li>
               ))}
             </ul>
           </div>

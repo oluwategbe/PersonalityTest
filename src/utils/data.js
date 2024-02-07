@@ -297,8 +297,8 @@ export const personalityData = [
     },
     rarity: {
       text: "INTJ is one of the rarest types in the world.",
-      desc: "They make up about 3% of the general population.",
-      value: 3,
+      desc: "They make up about 2% of the general population.",
+      value: 2,
     },
     celebrities: [
       {
@@ -779,8 +779,8 @@ export const personalityData = [
     },
     rarity: {
       text: "INFJ is one of the rarest types in the world. The rarest personality type among men.",
-      desc: "They make up about 2% of the general population.",
-      value: 2,
+      desc: "They make up about 1% of the general population.",
+      value: 1,
     },
     celebrities: [
       {
@@ -890,8 +890,8 @@ export const personalityData = [
     },
     rarity: {
       text: "INFP is one of the less common types in the world.",
-      desc: "They make up about 7% of the general population.",
-      value: 7,
+      desc: "They make up about 6% of the general population.",
+      value: 6,
     },
     celebrities: [
       {
@@ -1202,8 +1202,8 @@ export const personalityData = [
     },
     rarity: {
       text: "According to the most recent global sample, ISTJ is the most common type in the world.",
-      desc: "They make up about 17% of the general population.",
-      value: 17,
+      desc: "They make up about 15% of the general population.",
+      value: 15,
     },
     celebrities: [
       {
@@ -1424,8 +1424,8 @@ export const personalityData = [
     },
     rarity: {
       text: "ENTJ is one of the common types of personality.",
-      desc: "They make up about 9% of the general population.",
-      value: 9,
+      desc: "They make up about 8% of the general population.",
+      value: 8,
     },
     celebrities: [
       {
@@ -1883,7 +1883,7 @@ export const personalityData = [
     rarity: {
       text: "ESTP is one of the common types of personality.",
       desc: "They make up about 6.1% of the general population.",
-      value: 6.1,
+      value: 6,
     },
     celebrities: [
       {
@@ -2043,3 +2043,81 @@ export const personalityData = [
     ],
   },
 ];
+
+export const chartOptions = {
+  tooltip: {
+    trigger: "item",
+  },
+  legend: {
+    // left: "left",
+    orient: "vertical",
+    textStyle: {
+      fontSize: "14",
+      color: "#222222",
+    },
+  },
+  series: [
+    {
+      name: "Rarity",
+      type: "pie",
+      radius: ["30%", "80%"],
+      avoidLabelOverlap: false,
+      itemStyle: {
+        borderRadius: 5,
+        borderWidth: 0,
+        emphasis: {
+          shadowBlur: 10,
+          shadowOffsetX: 0,
+          shadowColor: "rgba(0, 0, 0, 0.5)",
+        },
+      },
+      label: {
+        show: false,
+        position: "center",
+      },
+      emphasis: {
+        label: {
+          show: true,
+          fontSize: "14",
+          fontWeight: "bold",
+        },
+      },
+      color: [
+        "#5656ff",
+        "#56cfff",
+        "#56ffa8",
+        "#deff56",
+        "#ffc256",
+        "#ff5656",
+        "#b756ff",
+        "#ff56f3",
+        "#7d3a3a",
+        "#844392",
+        "#435092",
+        "#439273",
+        "#8d9243",
+        "#c8c7fd",
+        "#c7fdee",
+        "#fdc7f9",
+      ],
+      data: [
+        { value: 2, name: "INTJ (Architect)" },
+        { value: 6, name: "INTP (Logician)" },
+        { value: 2, name: "ENTJ (Commander)" },
+        { value: 5, name: "ENTP (Debater)" },
+        { value: 1, name: "INFJ (Advocate)" },
+        { value: 6, name: "INFP (Mediator)" },
+        { value: 2, name: "ENFJ (Protagonist)" },
+        { value: 8, name: "ENFP (Campaigner)" },
+        { value: 15, name: "ISTJ (Logistician)" },
+        { value: 9, name: "ISFJ (Defender)" },
+        { value: 8, name: "ESTJ (Executive)" },
+        { value: 6, name: "ESFJ (Consul)" },
+        { value: 10, name: "ISTP (Virtuoso)" },
+        { value: 7, name: "ISFP (Adventurer)" },
+        { value: 6, name: "ESTP (Entrepreneur)" },
+        { value: 7, name: "ESFP (Entertainer)" },
+      ],
+    },
+  ],
+};

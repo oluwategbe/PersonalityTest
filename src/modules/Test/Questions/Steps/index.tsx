@@ -26,7 +26,7 @@ const Steps = ({ step }) => {
           background: `${
             step === 2 || step === 3 || step === 4 || step === 5
               ? "#000000"
-              : "#CECCCC"
+              : "#ffffff"
           }`,
           color: `${
             step === 2 || step === 3 || step === 4 || step === 5
@@ -47,7 +47,7 @@ const Steps = ({ step }) => {
       <span
         style={{
           background: `${
-            step === 3 || step === 4 || step === 5 ? "#000000" : "#CECCCC"
+            step === 3 || step === 4 || step === 5 ? "#000000" : "#ffffff"
           }`,
           color: `${
             step === 3 || step === 4 || step === 5 ? "#ffffff" : "#000000"
@@ -63,7 +63,7 @@ const Steps = ({ step }) => {
       />
       <span
         style={{
-          background: `${step === 4 || step === 5 ? "#000000" : "#CECCCC"}`,
+          background: `${step === 4 || step === 5 ? "#000000" : "#ffffff"}`,
           color: `${step === 4 || step === 5 ? "#ffffff" : "#000000"}`,
         }}
       >
@@ -76,7 +76,7 @@ const Steps = ({ step }) => {
       />
       <span
         style={{
-          background: `${step === 5 ? "#000000" : "#CECCCC"}`,
+          background: `${step === 5 ? "#000000" : "#ffffff"}`,
           color: `${step === 5 ? "#ffffff" : "#000000"}`,
         }}
       >

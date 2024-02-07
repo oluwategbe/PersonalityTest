@@ -70,9 +70,9 @@
       gap: 0.5rem;
       z-index: 1;
       .line{
-        background: #535353;
+        background: #aaaaaa;
         height: 1px;
-        width: 150px;
+        width: 120px;
         z-index: 1;
       }
     }
@@ -102,17 +102,18 @@
     position: relative;
     background: #ffffff;
     color: #222222;
-    // background: #353535;
-    // color: #e9e7e7;
     .header{
       display: flex;
       align-items: center;
       gap: 0.5rem;
       z-index: 1;
+      h1{
+        color: #4e4e4e;
+      }
       .line{
-        background: #222222;
+        background: #c4c4c4;
         height: 1px;
-        width: 150px;
+        width: 120px;
         z-index: 1;
       }
     }
@@ -123,7 +124,7 @@
       font-size: 170px;
       letter-spacing: 40px;
       z-index: 0;
-      color: #e6e5e5;
+      color: #eeeeee;
     }
     .rarityText{
       display: flex;
@@ -142,7 +143,7 @@
       }
       h4{
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 500;
       }
     }
   }
@@ -175,9 +176,9 @@
       align-items: center;
       gap: 0.5rem;
       .line{
-        background: #222222;
+        background: #c4c4c4;
         height: 1px;
-        width: 150px;
+        width: 120px;
         z-index: 1;
       }
     }
@@ -202,7 +203,6 @@
         align-self: stretch;
         position: relative;
         border: 1px solid #acb7b8;
-
         h2{
           font-size: 16px;
           font-weight: 700;
@@ -223,53 +223,62 @@
             flex-direction: column;
             gap: 0.5rem;
             h4{
-              font-size: 16px;
+              font-size: 18px;
               position: relative;
               display: flex;
               align-items: center;
               width: fit-content;
             }
             p{
-              font-size: 14px;
+              font-size: 16px;
             }
           }
         }
       }
 
       .strength{
-        background: #92d4fa;
+        background: #ccebfd;
         color: #003342;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
+        border-right: none;
+        transition: background 0.3s ease;
+        &:hover{
+          background: #b1e3ff;
+        }
         .svg{
           background: #003342;
         }
         h3{
           position: absolute;
-          top: 30%;
+          top: 35%;
           left: 5%;
           font-size: 75px;
           letter-spacing: 7px;
           z-index: 0;
-          color: #b6e4ff;
+          color: #f8f9fa;
         }
       }
       .weakness{
-        background: #ffe3c7;
+        background: #fde9d4;
         color: #a11300;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
+        transition: background 0.3s ease;
+        &:hover{
+          background: #fdd6bf;
+        }
         .svg{
           background: #a11300;
         }
         h3{
           position: absolute;
-          top: 30%;
+          top: 35%;
           left: 5%;
           font-size: 70px;
           letter-spacing: 5px;
           z-index: 0;
-          color: #f3bb8f;;
+          color: #ecc3a3;;
         }
       }
     }
@@ -294,17 +303,20 @@
       font-size: 170px;
       letter-spacing: 40px;
       z-index: 0;
-      color: #e6e6e6;
+      color: #eeecec;
     }
     .header{
       display: flex;
       align-items: center;
       gap: 0.5rem;
       z-index: 1;
+      h1{
+        color: #525252;
+      }
       .line{
-        background: #222222;
+        background: #c4c4c4;
         height: 1px;
-        width: 150px;
+        width: 120px;
         z-index: 1;
       }
     }
@@ -325,6 +337,15 @@
       }
       ul{
         font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        li{
+          list-style: none;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
       }
     }
 
@@ -354,9 +375,9 @@
       gap: 0.5rem;
       z-index: 1;
       .line{
-        background: #222222;
+        background: #a3a2a2;
         height: 1px;
-        width: 150px;
+        width: 120px;
         z-index: 1;
       }
     }
@@ -367,6 +388,10 @@
       padding: 1rem;
       button{
         background: #b67f7f;
+        transition: background 0.3s ease;
+        &:hover{
+          background: #af2121;
+        }
         &:first-of-type{
           left: 0;
         }
@@ -376,6 +401,7 @@
       }
       ul{
         display: flex;
+        align-items: stretch;
         // gap: 1rem;
         li{
           cursor: grab;
@@ -386,7 +412,7 @@
             justify-content: center;
             gap: 0.5rem;
             text-align: center;
-
+            padding: 1rem;
             img{
               height: 150px;
               width: 150px;
