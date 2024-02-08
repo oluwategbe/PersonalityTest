@@ -64,6 +64,81 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="breakDown">
+        <h1>Breakdown</h1>
+        <section className="section eiSection">
+          <div className="bLeft">
+            <h2>Extroversion</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              error cumque ipsum eaque corrupti hic quos tempora unde quaerat
+              quam.
+            </p>
+          </div>
+          <div className="bRight">
+            <h2>Introversion</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              error cumque ipsum eaque corrupti hic quos tempora unde quaerat
+              quam.
+            </p>
+          </div>
+        </section>
+        <section className="section snSection">
+          <div className="bLeft">
+            <h2>Sensing</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              error cumque ipsum eaque corrupti hic quos tempora unde quaerat
+              quam.
+            </p>
+          </div>
+          <div className="bRight">
+            <h2>Intuition</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              error cumque ipsum eaque corrupti hic quos tempora unde quaerat
+              quam.
+            </p>
+          </div>
+        </section>
+        <section className="section tfSection">
+          <div className="bLeft">
+            <h2>Thinking</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              error cumque ipsum eaque corrupti hic quos tempora unde quaerat
+              quam.
+            </p>
+          </div>
+          <div className="bRight">
+            <h2>Feeling</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              error cumque ipsum eaque corrupti hic quos tempora unde quaerat
+              quam.
+            </p>
+          </div>
+        </section>
+        <section className="section jpSection">
+          <div className="bLeft">
+            <h2>Judging</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              error cumque ipsum eaque corrupti hic quos tempora unde quaerat
+              quam.
+            </p>
+          </div>
+          <div className="bRight">
+            <h2>Perceiving</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              error cumque ipsum eaque corrupti hic quos tempora unde quaerat
+              quam.
+            </p>
+          </div>
+        </section>
+      </div>
       <div className="totalRarity">
         <h1>Rarity</h1>
         <p>
