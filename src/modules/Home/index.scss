@@ -47,4 +47,15 @@
   justify-content: center;
   gap: 1rem;
   padding: 2rem 4rem;
+
+  h1{
+    font-size: 18px;
+  }
+  p{
+    font-size: 14px;
+    span{
+      font-weight: 700;
+      color: #8855ff;
+    }
+  }
 }

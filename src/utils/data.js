@@ -778,7 +778,7 @@ export const personalityData = [
       ],
     },
     rarity: {
-      text: "INFJ is one of the rarest types in the world. The rarest personality type among men.",
+      text: "INFJ is the rarest personality type in the world and alse the rarest type among men.",
       desc: "They make up about 1% of the general population.",
       value: 1,
     },
@@ -2049,8 +2049,8 @@ export const chartOptions = {
     trigger: "item",
   },
   legend: {
-    // left: "left",
-    orient: "vertical",
+    left: "left",
+    orient: "horizontal",
     textStyle: {
       fontSize: "14",
       color: "#222222",

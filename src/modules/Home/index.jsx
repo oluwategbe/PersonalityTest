@@ -61,7 +61,8 @@ const Home = () => {
       <div className="totalRarity">
         <h1>Rarity</h1>
         <p>
-          The rarest personality type is <span>INFJ.</span>{" "}
+          The rarest personality type is <span>INFJ (Advocate)</span>, while the
+          most common type is <span>ISTJ (Logistician)</span>{" "}
         </p>
         <ReactECharts
           option={chartOptions}
