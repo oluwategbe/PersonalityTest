@@ -3,6 +3,7 @@ import Layout from "./../../components/layout/index";
 import Hero from "./components/Hero";
 import "./index.scss";
 import ReactECharts from "echarts-for-react";
+import { FaRegSquare } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -10,33 +11,39 @@ const Home = () => {
       <Hero />
       <div className="homepage">
         <div className="briefSummary">
-          <h1>Summary</h1>
+          <h1>How it works</h1>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
-            velit maxime hic architecto aperiam reprehenderit, tempore fuga
-            totam quos magnam autem maiores, nesciunt minima repudiandae commodi
-            provident! Sequi sapiente, beatae aut placeat odit unde. Officiis
-            sapiente deserunt, necessitatibus exercitationem sequi quis odio,
-            libero accusantium amet, in consequuntur blanditiis recusandae modi?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-            nesciunt sit ipsum consectetur expedita? Excepturi debitis maxime
-            eveniet dicta soluta sit officia dolores alias! Officia, doloribus
-            vitae? Accusamus debitis illo assumenda quos minus voluptatibus,
-            officia tempore adipisci excepturi maiores sequi doloremque natus
-            inventore. Hic expedita quia at quos voluptatibus dolorem. Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Labore amet
-            molestiae quis eos perferendis incidunt debitis! Omnis nihil error
-            quae pariatur voluptatem culpa amet voluptate, adipisci est aliquam,
-            earum porro voluptatum. Ullam quisquam quidem autem? Consequatur
-            iusto nobis voluptatum expedita. Facilis, aut illum. Praesentium
-            animi quibusdam tempore, possimus perferendis accusamus quo
-            consequatur. Alias eius soluta amet, ab architecto cum quam possimus
-            nobis expedita consequuntur deserunt fugiat voluptatem modi? Ratione
-            iure fugiat quasi delectus sint ipsa, atque quaerat repellat
-            molestias perferendis distinctio inventore vero quos? Quisquam in
-            sequi possimus minima voluptate accusantium voluptatem itaque iure
-            at, similique ipsam necessitatibus! Reprehenderit, aliquam!
+            The Myers-Briggs Personality Theory, developed by Isabel Briggs
+            Myers and Katharine Cook Briggs, categorizes individuals into 16
+            personality types based on four pairs of contrasting preferences:{" "}
+            <ul>
+              <li>
+                <FaRegSquare />
+                <span style={{ color: "#c68000" }}>Extraversion</span> vs{" "}
+                <span style={{ color: "#7a7aff" }}>Introversion</span>,{" "}
+              </li>
+              <li>
+                <FaRegSquare />
+                <span style={{ color: "#5ff95f" }}>Sensing</span> vs{" "}
+                <span style={{ color: "#d4b800" }}>Intuition</span>,{" "}
+              </li>
+              <li>
+                <FaRegSquare />
+                <span style={{ color: "#ff1313" }}>Thinking</span> vs{" "}
+                <span style={{ color: "#ff35ff" }}>Feeling</span>
+              </li>
+              <li>
+                <FaRegSquare />
+                <span style={{ color: "#00a400" }}>Judging</span> vs{" "}
+                <span style={{ color: "blue" }}>Perceiving</span>.
+              </li>
+            </ul>{" "}
+            By answering questions in the test, you can find out which
+            personality type you are. This helps you learn more about yourself,
+            like your strengths and weaknesses, what kind of jobs might suit
+            you, and even which famous people share your personality type.
           </p>
+          {/* <img src="/public/images/personality3.jpg" alt="" /> */}
         </div>
         <div className="right">
           <div className="classification">
@@ -49,11 +56,10 @@ const Home = () => {
             </p>
           </div>
           <div className="toNote">
-            <h1>Note:</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-              dolores, optio ullam fugiat nam id possimus quam quaerat. Facilis,
-              rerum.
+              NOTE: This is not necessarily a test because there are no correct
+              or incorrect responses, and it doesn&apos;t reveal every aspect of
+              an individual.
             </p>
           </div>
         </div>

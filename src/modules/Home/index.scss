@@ -2,12 +2,14 @@
   display: flex;
   padding: 2rem 4rem;
   gap: 2rem;
+  color: #505050;
   h1{
     font-size: 18px;
     font-weight: 600;
   }
   p{
     font-size: 14px;
+    line-height: 30px;
     text-align: justify;
   }
   .briefSummary{
@@ -21,12 +23,31 @@
     box-shadow: 0px 2px 15px 2px rgba(205, 205, 205,0.56);
     -webkit-box-shadow: 0px 2px 15px 2px rgba(205, 205, 205,0.56);
     -moz-box-shadow: 0px 2px 15px 2px rgba(205, 205, 205,0.56);
+    ul{
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 10px 0;
+      li{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+        font-size: 16px;
+        svg{
+          font-size: 10px;
+          color: #8855ff;
+        }
+      }
+    }
   }
   .right{
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    justify-content: space-between;
     .classification, .toNote{
       display: flex;
       flex-direction: column;
@@ -37,6 +58,12 @@
       box-shadow: 0px 2px 15px 2px rgba(205, 205, 205,0.56);
       -webkit-box-shadow: 0px 2px 15px 2px rgba(205, 205, 205,0.56);
       -moz-box-shadow: 0px 2px 15px 2px rgba(205, 205, 205,0.56);
+    }
+    .toNote{
+      p{
+        font-size: 18px;
+        font-weight: 500;
+      }
     }
   }
 }

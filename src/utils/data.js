@@ -2049,10 +2049,14 @@ export const chartOptions = {
     trigger: "item",
   },
   legend: {
+    // type: "scroll",
     left: "left",
-    orient: "horizontal",
+    // top: 0,
+    animation: true,
+    width: "80%",
+    orient: "vertical",
     textStyle: {
-      fontSize: "14",
+      fontSize: "12",
       color: "#222222",
     },
   },

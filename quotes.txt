@@ -18,16 +18,6 @@ Rarity chart
 How Rare is the INTJ Personality?
 According to psychologist David Keirsey, developer of the Keirsey Temperament Sorter, approximately 1% to 4% of the population has an INTJ personality type. (The rarest personality type is INFJ.)
 
-
-The Basics of Myers & Briggs' Personality Theory
-The Myers-Briggs system describes a person’s personality through four opposing personality functions, variously known as dichotomies, preferences or scales. The first three preferences are based on the writings of Jung; Katherine Cook Briggs added the final preference, Judging versus Perceiving, based on her own observations.
-
-The Myers-Briggs Type Indicator® (MBTI®) assessment is one of the world’s most popular personality tools—because it works. Used by more than 88 percent of Fortune 500 companies in 115 countries, and available in 29 languages, it has become the go-to framework for people development globally. With more than 70 years of science-based, research-based insight, the MBTI assessment is a robust tool for self-awareness and improvement. It provides positive language for understanding and valuing individual differences. With practical insight that’s easy to understand and implement, the MBTI assessment has helped thousands of organizations and millions of people around the world improve how they communicate, learn, and work.
-
-by Isabel Briggs Myers and Katharine Cook Briggs!
-
-Now, there are tonnes of personality questionnaires and tests available online but the Myers-Briggs Personality Type Indicator is probably the most widely used personality test in the world.  
-
 Extraversion vs. Introversion: How do you gain (direct and receive )energy? Extraverts like to be with others and gain energy from people and the environment. Introverts gain energy from alone-time and need periods of quiet reflection throughout the day.
 
 Sensing vs. Intuition: How do you obtain (take in) information? Sensors gather facts from their immediate environment and rely on the things they can see, feel and hear. Intuitives look more at the overall context and think about patterns, meaning, and connections.
@@ -41,14 +31,7 @@ How do you take in information—by focusing on what you perceive using your fiv
 How do you decide and come to conclusions—by logically analyzing the situation or by considering what’s important to the people involved?
 How do you approach the outside world—in a planned, orderly way or a more flexible, spontaneous way? 
 
-Energy: % of introversion
-
-on the other hand, is x
-not a test because there are no correct or incorrect responses, and it does not 
-disclose everything about an individual.
-
 ExtraversionIntroversion, Sensing-Intuition, Thinking-Feeling, and Judging-Perceiving
-
 
 1. Extroversion or Introversion: where people tend to concentrate their interest 
 and expend their resources.
