@@ -34,7 +34,7 @@
         align-items: center;
         gap: 10px;
         font-weight: 700;
-        font-size: 16px;
+        font-size: 20px;
         svg{
           font-size: 10px;
           color: #8855ff;
@@ -70,72 +70,226 @@
 .breakDown{
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1em;
   padding: 2rem 4rem;
   align-items: center;
   color: #505050;
+  h1{
+    font-size: 22px;
+    margin-bottom: 2rem;
+  }
+  h3{
+    font-size: 18px;
+  }
   section{
     display: flex;
     width: 80%;
-    gap: 2rem;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 3rem;
+    h2{
+      font-size: 20px;
+      font-weight: 200;
+    }
     .bLeft, .bRight{
       padding: 1rem;
-      border-radius: 20px;
       flex: 1;
       cursor: pointer;
+      border: 1px solid #686868;
+      border-top: none !important;
+      border-style: dashed;
+      height: 135px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      transition: all 0.5s ease-in-out;
+      &:hover{
+        flex: 2.5;
+        .box{
+          background: white;
+          color: #505050;
+        }
+        h2{
+          color: white;
+          transform: translateX(0%);
+          top: 10px;
+        }
+        p{
+          color: white;
+          visibility: visible;
+          width: calc(100% - 172px);
+          top: 55px;
+          opacity: 1;
+          position: absolute;
+          transition: all 1s ease-in-out, color 0.1s ease-in-out;
+          transition-delay: 0.2s;
+        }
+      }
+      h2{
+        position: absolute;
+        top: 55px;
+        transition: all 0.5s ease-in-out;
+        font-size: 24px;
+        font-weight: 400;
+      }
       p{
-        transform: scale(0);
-        transition: transform 2s ease;
+        opacity: 0;
+        text-align: justify;
+        visibility: hidden;
+        margin-top: -4px;
+      }
+      .box{
+        position: absolute;
+        top: 40px;
+        height: 60px;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+        font-size: 32px;
       }
     }
     .bLeft{
       text-align: right;
-      p{
-        transform: scale(0);
+      align-items: flex-end;
+      border-left: none;
+      h2{
+        left: 100%;
+        transform: translateX(-100%);
+        padding-right: 100px;
+      }
+      &:hover h2{
+        left: 32px;
       }
       &:hover p{
-        transform: scale(1);
+        right: 140px;
       }
     }
     .bRight{
-      p{
-        transform: scale(0);
+      border-right: none;
+      h2{
+        right: 100%;
+        transform: translateX(100%);
+        padding-left: 100px;
+      }
+      &:hover h2{
+        right: 32px;
       }
       &:hover p{
-        transform: scale(1);
+        left: 140px;
       }
     }
   }
   .eiSection{
     .bLeft{
-      background: #ffd689;
+      &:hover{
+        background: #ffa600;
+        h2{
+          color: #505050;
+        }
+        p{
+          color: #505050;
+        }
+      }
+      .box{
+        background: #ffa600;
+      }
+      h2{
+        color: #ffa600;
+      }
     }
     .bRight{
-      background: #c0c0ff;
+      &:hover{
+        background: #73abff;
+      }
+      .box{
+        background: #73abff;
+      }
+      h2{
+        color: #73abff;
+      }
     }
   }
   .snSection{
     .bLeft{
-      background: #a9f5a9;
+      &:hover{
+        background: #70ff70;
+        h2{
+          color: #505050;
+        }
+        p{
+          color: #505050;
+        }
+      }
+      .box{
+        background: #70ff70;
+      }
+      h2{
+        color: #70ff70;
+      }
     }
     .bRight{
-      background: #fffd73;
+      &:hover{
+        background: #c7c700;
+      }
+      .box{
+        background: #c7c700;
+      }
+      h2{
+        color: #c7c700;
+      }
     }
   }
   .tfSection{
     .bLeft{
-      background: #ff8f8f;
+      &:hover{
+        background: #4144ff;
+      }
+      .box{
+        background: #4144ff;
+      }
+      h2{
+        color: #4144ff;
+      }
     }
     .bRight{
-      background: #ff9aff;
+      &:hover{
+        background: #ff145a;
+      }
+      .box{
+        background: #ff145a;
+      }
+      h2{
+        color: #ff145a;
+      }
     }
   }
   .jpSection{
     .bLeft{
-      background: #a1ffa1;
+      &:hover{
+        background: #895fff;
+      }
+      .box{
+        background: #895fff;
+      }
+      h2{
+        color: #895fff;
+      }
     }
     .bRight{
-      background: #b0b8ff;
+      &:hover{
+        background: #009400;
+      }
+      .box{
+        background: #009400;
+      }
+      h2{
+        color: #009400;
+      }
     }
   }
 }

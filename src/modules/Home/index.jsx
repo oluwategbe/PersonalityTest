@@ -3,7 +3,7 @@ import Layout from "./../../components/layout/index";
 import Hero from "./components/Hero";
 import "./index.scss";
 import ReactECharts from "echarts-for-react";
-import { FaRegSquare } from "react-icons/fa";
+import { FaSquare } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -15,27 +15,23 @@ const Home = () => {
           <p>
             The Myers-Briggs Personality Theory, developed by Isabel Briggs
             Myers and Katharine Cook Briggs, categorizes individuals into 16
-            personality types based on four pairs of contrasting preferences:{" "}
+            personality types based on four pairs of contrasting preferences:
             <ul>
               <li>
-                <FaRegSquare />
-                <span style={{ color: "#c68000" }}>Extraversion</span> vs{" "}
-                <span style={{ color: "#7a7aff" }}>Introversion</span>,{" "}
+                <FaSquare />
+                <span>Extraversion</span> vs <span>Introversion</span>
               </li>
               <li>
-                <FaRegSquare />
-                <span style={{ color: "#5ff95f" }}>Sensing</span> vs{" "}
-                <span style={{ color: "#d4b800" }}>Intuition</span>,{" "}
+                <FaSquare />
+                <span>Sensing</span> vs <span>Intuition</span>
               </li>
               <li>
-                <FaRegSquare />
-                <span style={{ color: "#ff1313" }}>Thinking</span> vs{" "}
-                <span style={{ color: "#ff35ff" }}>Feeling</span>
+                <FaSquare />
+                <span>Thinking</span> vs <span>Feeling</span>
               </li>
               <li>
-                <FaRegSquare />
-                <span style={{ color: "#00a400" }}>Judging</span> vs{" "}
-                <span style={{ color: "blue" }}>Perceiving</span>.
+                <FaSquare />
+                <span>Judging</span> vs <span>Perceiving</span>
               </li>
             </ul>{" "}
             By answering questions in the test, you can find out which
@@ -66,75 +62,101 @@ const Home = () => {
       </div>
       <div className="breakDown">
         <h1>Breakdown</h1>
+        <h3>How do you direct and receive energy</h3>
         <section className="section eiSection">
           <div className="bLeft">
             <h2>Extroversion</h2>
+            <div className="box">E</div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              error cumque ipsum eaque corrupti hic quos tempora unde quaerat
-              quam.
+              Extraverts are fueled by social interaction and thrive in lively
+              environments. Known for their expressive and outgoing nature, they
+              enjoy group activities and easily exhibit enthusiasm, contrasting
+              with introverts&apos; preference for solitude.
             </p>
           </div>
+          <h2>or</h2>
           <div className="bRight">
+            <div className="box">I</div>
             <h2>Introversion</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              error cumque ipsum eaque corrupti hic quos tempora unde quaerat
-              quam.
+              Introverts thrive in quiet or small group settings, valuing
+              introspection and meaningful social connections. They recharge
+              alone and may feel drained by excessive socializing.
             </p>
           </div>
         </section>
+        <h3>How do you obtain information</h3>
         <section className="section snSection">
           <div className="bLeft">
             <h2>Sensing</h2>
+            <div className="box">S</div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              error cumque ipsum eaque corrupti hic quos tempora unde quaerat
-              quam.
+              Sensors rely on their senses for information, emphasizing
+              practicality and hands-on learning. They prioritize reality and
+              facts, enjoying tangible experiences and focusing on details. They
+              are very pragmatic and down-to-earth.
             </p>
           </div>
+          <h2>or</h2>
           <div className="bRight">
+            <div className="box">N</div>
             <h2>Intuition</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              error cumque ipsum eaque corrupti hic quos tempora unde quaerat
-              quam.
+              Intuitives value theories, patterns, and future prospects,
+              embracing creativity and imagination. They explore abstract
+              concepts and potential outcomes with curiosity and
+              open-mindedness, prioritizing future potentials over present
+              stability.
             </p>
           </div>
         </section>
+        <h3>How do you make decisions and cope with emotions</h3>
         <section className="section tfSection">
           <div className="bLeft">
             <h2>Thinking</h2>
+            <div className="box">T</div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              error cumque ipsum eaque corrupti hic quos tempora unde quaerat
-              quam.
+              Thinkers rely on logic and reason, prioritizing objective data and
+              facts. They maintain consistency and logic in their
+              decision-making, and often masking their emotions. They emphasize
+              objectivity and rationality, giving precedence to logic over
+              emotions.
             </p>
           </div>
+          <h2>or</h2>
           <div className="bRight">
+            <div className="box">F</div>
             <h2>Feeling</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              error cumque ipsum eaque corrupti hic quos tempora unde quaerat
-              quam.
+              Feelers prioritize decisions based on emotions and values,
+              considering how their choices impact people. They are sensitive
+              and empathetic, prioritizing social relationships, cooperation and
+              emotional well-being.
             </p>
           </div>
         </section>
+        <h3>How do you plan, organize and make decisions</h3>
         <section className="section jpSection">
           <div className="bLeft">
             <h2>Judging</h2>
+            <div className="box">J</div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              error cumque ipsum eaque corrupti hic quos tempora unde quaerat
-              quam.
+              Judgers value structure and organization, preferring planned
+              outcomes and disliking surprises. They are decisive, thorough, and
+              highly organized individuals who prioritize clarity,
+              predictability, and closure in decision-making.
             </p>
           </div>
+          <h2>or</h2>
           <div className="bRight">
+            <div className="box">P</div>
             <h2>Perceiving</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              error cumque ipsum eaque corrupti hic quos tempora unde quaerat
-              quam.
+              Perceivers value flexibility and openness, enjoying spontaneity
+              and the freedom to change course. They are very adaptable and
+              open-minded individuals. They excel in improvisation and seizing
+              opportunities, preferring a flexible and relaxed approach to
+              decision-making.
             </p>
           </div>
         </section>
