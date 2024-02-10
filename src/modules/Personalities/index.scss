@@ -27,65 +27,50 @@
   .personalities{
     display: flex;
     flex-direction: column;
-
     .group{
       display: flex;
       align-items: stretch;
       justify-content: center;
       gap: 2rem;
-      height: 80vh;
-      padding: 2% 5%;
-    }
-
-    .analysts{
-      background-color: #d799ee;
+      // height: 80vh;
+      padding: 5%;
       position: relative;
       h4{
         position: absolute;
-        top: -5%;
+        top: -1%;
         left: 5%;
         font-size: 170px;
         letter-spacing: 40px;
         z-index: 0;
+        font-weight: 600;
+        font-family: "Crackajack";
+      }
+    }
+
+    .analysts{
+      background-color: #d799ee;
+      h4{
+        font-size: 180px;
         color: #dec0f0;
       }
     }
     .diplomats{
       background-color: #a8ee88;
-      position: relative;
       h4{
-        position: absolute;
-        top: -5%;
-        left: 5%;
         font-size: 170px;
         letter-spacing: 50px;
-        z-index: 0;
         color: #d2e2ca;
       }
     }
     .sentinels{
       background-color: #79e8ee;
-      position: relative;
       h4{
-        position: absolute;
-        top: -5%;
-        left: 5%;
-        font-size: 170px;
-        letter-spacing: 40px;
-        z-index: 0;
         color: #b7e4e7;
       }
     }
     .explorers{
       background-color: #f3df6c;
-      position: relative;
       h4{
-        position: absolute;
-        top: -5%;
-        left: 5%;
-        font-size: 170px;
-        letter-spacing: 40px;
-        z-index: 0;
         color: #faf5df;
       }
     }

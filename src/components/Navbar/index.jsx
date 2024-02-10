@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <Link to="/">
-        <div className="logo">Personality App</div>
+        <div className="logo">PersonalitySphere</div>
       </Link>
       <div className="navItems">
         <ul>

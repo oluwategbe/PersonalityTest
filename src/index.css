@@ -4,6 +4,34 @@
   padding: 0;
   outline: none;
   box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Azonix";
+  src: url("/fonts/Azonix.otf") format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Crackajack";
+  src: url("/fonts/Crackajack.otf") format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("/fonts/Quicksand-Regular.otf") format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("/fonts/Quicksand-Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("/fonts/Quicksand-Bold.otf") format("opentype");
+  font-weight: 700;
 }
 button {
   padding: 1rem;
@@ -27,11 +55,11 @@ a {
   text-decoration: none;
 }
 h1 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
 }
 p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 30px;
   text-align: justify;
 }

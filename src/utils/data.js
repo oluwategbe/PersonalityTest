@@ -2049,7 +2049,7 @@ export const chartOptions = {
     trigger: "item",
   },
   title: {
-    text: "Rarity Chart for the 16 personalities",
+    text: "Rarity Chart for the 16 personalities (over 100%)",
     left: "center",
     top: "top",
     textStyle: {

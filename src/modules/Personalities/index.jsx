@@ -25,7 +25,7 @@ const Personalities = () => {
             make up your Myers Briggs personality type.
             <br />
             <br />
-            The 16 personalities grouped accordingly are listed below:
+            The 16 personalities grouped accordingly are shown below:
           </p>
         </div>
         <div className="personalities">

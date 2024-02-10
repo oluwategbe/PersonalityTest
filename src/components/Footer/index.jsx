@@ -18,6 +18,21 @@ const Footer = () => {
           </p>
         </div>
         <div className="quickLinks">
+          <h2>References</h2>
+          <Link target="_blank" to="https://www.16personalities.com/">
+            16 Personalities
+          </Link>
+          <Link
+            target="_blank"
+            to="https://www.truity.com/blog/page/16-personality-types-myers-briggs"
+          >
+            Truity
+          </Link>
+          <Link target="_blank" to="https://www.themyersbriggs.com/">
+            The Myers-Briggs Company
+          </Link>
+        </div>
+        <div className="quickLinks">
           <h2>Links</h2>
           <Link to="/">Home</Link>
           <Link to="/personalities">Personalities</Link>

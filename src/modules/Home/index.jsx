@@ -18,6 +18,7 @@ const Home = () => {
             The Myers-Briggs Personality Theory, developed by Isabel Briggs
             Myers and Katharine Cook Briggs, categorizes individuals into 16
             personality types based on four pairs of contrasting preferences:
+            <br />
             <ul>
               <li>
                 <FaSquare />
@@ -35,7 +36,7 @@ const Home = () => {
                 <FaSquare />
                 <span>Judging</span> vs <span>Perceiving</span>
               </li>
-            </ul>{" "}
+            </ul>
             By answering questions in the test, you can find out which
             personality type you are. This helps you learn more about yourself,
             like your strengths and weaknesses, what kind of jobs might suit
@@ -53,31 +54,34 @@ const Home = () => {
             <h1>What you&apos;ll learn</h1>
             <ul>
               <li>
-                <FaSquare /> <p>Your personality type</p>
+                <FaSquare />
+                <p>Your personality type.</p>
               </li>
               <li>
-                <FaSquare />{" "}
-                <p>Career opportunities centered around your personality</p>
+                <FaSquare />
+                <p>Career opportunities centered around your personality.</p>
               </li>
               <li>
-                <FaSquare /> <p>How rare your personality type is</p>
+                <FaSquare />
+                <p>How rare your personality type is.</p>
               </li>
               <li>
-                <FaSquare />{" "}
+                <FaSquare />
                 <p>
-                  Strengths and weakenesses associated with your personality
+                  Strengths and weakenesses associated with your personality.
                 </p>
               </li>
               <li>
-                <FaSquare /> <p>Celebrities with the same personality as you</p>
+                <FaSquare />
+                <p>Celebrities with the same personality as you.</p>
               </li>
             </ul>
           </div>
           <div className="toNote">
             <p>
-              NOTE: This is not necessarily a test because there are no correct
-              or incorrect responses, and it doesn&apos;t reveal every aspect of
-              an individual.
+              <span>NOTE:</span> This is not necessarily a test because there
+              are no correct or incorrect responses, and it doesn&apos;t reveal
+              every aspect of an individual.
             </p>
           </div>
         </div>
@@ -101,8 +105,7 @@ const Home = () => {
             <p>
               Extraverts are fueled by social interaction and thrive in lively
               environments. Known for their expressive and outgoing nature, they
-              enjoy group activities and easily exhibit enthusiasm, contrasting
-              with introverts&apos; preference for solitude.
+              enjoy group activities and easily exhibit enthusiasm.
             </p>
           </div>
           <h2>or</h2>
@@ -192,15 +195,14 @@ const Home = () => {
           </div>
         </section>
       </div>
-      <div className="takeTestSection">
-        <div className="takeTest">
-          <h3>Get Started Now</h3>
-          <Link to={"/test"}>
-            <button>
-              Take the test
-              <AiOutlineDoubleRight />
-            </button>
-          </Link>
+      <div className="takeTestSection2">
+        <div className="homeQuote">
+          <p>
+            “You don&apos;t have to be someone else to achieve greatness in
+            life. Celebrate your personality and uniqueness, because that’s what
+            makes a legend”
+          </p>
+          <h5>— Anonymous</h5>
         </div>
       </div>
       <div className="totalRarity">
@@ -217,8 +219,19 @@ const Home = () => {
         </p>
         <ReactECharts
           option={chartOptions}
-          style={{ height: "400px", width: "100%" }}
+          style={{ height: "500px", width: "100%" }}
         />
+      </div>
+      <div className="takeTestSection3">
+        <div className="takeTest">
+          <h3>Wanna discover your personality? Get Started Now</h3>
+          <Link to={"/test"}>
+            <button>
+              Take the test
+              <AiOutlineDoubleRight />
+            </button>
+          </Link>
+        </div>
       </div>
     </Layout>
   );
