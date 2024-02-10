@@ -2048,10 +2048,16 @@ export const chartOptions = {
   tooltip: {
     trigger: "item",
   },
+  title: {
+    text: "Rarity Chart for the 16 personalities",
+    left: "center",
+    top: "top",
+    textStyle: {
+      fontSize: 20,
+    },
+  },
   legend: {
-    // type: "scroll",
     left: "left",
-    // top: 0,
     animation: true,
     width: "80%",
     orient: "vertical",

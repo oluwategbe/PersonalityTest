@@ -1,9 +1,11 @@
+import { AiOutlineDoubleRight } from "react-icons/ai";
 import { chartOptions } from "../../utils/data";
 import Layout from "./../../components/layout/index";
 import Hero from "./components/Hero";
 import "./index.scss";
 import ReactECharts from "echarts-for-react";
 import { FaSquare } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -39,17 +41,37 @@ const Home = () => {
             like your strengths and weaknesses, what kind of jobs might suit
             you, and even which famous people share your personality type.
           </p>
-          {/* <img src="/public/images/personality3.jpg" alt="" /> */}
+          <Link to={"/test"}>
+            <button>
+              Take the test
+              <AiOutlineDoubleRight />
+            </button>
+          </Link>
         </div>
         <div className="right">
           <div className="classification">
-            <h1>Classification</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores,
-              ducimus officia id labore maxime, asperiores voluptate temporibus
-              tempore aliquid quaerat ipsam eum natus et possimus saepe qui
-              deserunt quidem? Atque.
-            </p>
+            <h1>What you&apos;ll learn</h1>
+            <ul>
+              <li>
+                <FaSquare /> <p>Your personality type</p>
+              </li>
+              <li>
+                <FaSquare />{" "}
+                <p>Career opportunities centered around your personality</p>
+              </li>
+              <li>
+                <FaSquare /> <p>How rare your personality type is</p>
+              </li>
+              <li>
+                <FaSquare />{" "}
+                <p>
+                  Strengths and weakenesses associated with your personality
+                </p>
+              </li>
+              <li>
+                <FaSquare /> <p>Celebrities with the same personality as you</p>
+              </li>
+            </ul>
           </div>
           <div className="toNote">
             <p>
@@ -60,9 +82,18 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="takeTestSection">
+        <div className="homeQuote">
+          <p>
+            “It&apos;s beauty that captures your attention; personality that
+            captures your heart.”
+          </p>
+          <h5>— Isabella Koldras</h5>
+        </div>
+      </div>
       <div className="breakDown">
-        <h1>Breakdown</h1>
-        <h3>How do you direct and receive energy</h3>
+        <h1>The Myers - Briggs preference pairs</h1>
+        <h3>How you direct and receive energy</h3>
         <section className="section eiSection">
           <div className="bLeft">
             <h2>Extroversion</h2>
@@ -85,7 +116,7 @@ const Home = () => {
             </p>
           </div>
         </section>
-        <h3>How do you obtain information</h3>
+        <h3>How you obtain information</h3>
         <section className="section snSection">
           <div className="bLeft">
             <h2>Sensing</h2>
@@ -110,7 +141,7 @@ const Home = () => {
             </p>
           </div>
         </section>
-        <h3>How do you make decisions and cope with emotions</h3>
+        <h3>How you make decisions and cope with emotions</h3>
         <section className="section tfSection">
           <div className="bLeft">
             <h2>Thinking</h2>
@@ -135,7 +166,7 @@ const Home = () => {
             </p>
           </div>
         </section>
-        <h3>How do you plan, organize and make decisions</h3>
+        <h3>How you plan, organize and make decisions</h3>
         <section className="section jpSection">
           <div className="bLeft">
             <h2>Judging</h2>
@@ -161,11 +192,28 @@ const Home = () => {
           </div>
         </section>
       </div>
+      <div className="takeTestSection">
+        <div className="takeTest">
+          <h3>Get Started Now</h3>
+          <Link to={"/test"}>
+            <button>
+              Take the test
+              <AiOutlineDoubleRight />
+            </button>
+          </Link>
+        </div>
+      </div>
       <div className="totalRarity">
         <h1>Rarity</h1>
         <p>
-          The rarest personality type is <span>INFJ (Advocate)</span>, while the
-          most common type is <span>ISTJ (Logistician)</span>{" "}
+          The rarest personality type is{" "}
+          <Link to={"/personalities/INFJ"}>
+            <span>INFJ (Advocate)</span>
+          </Link>
+          , while the most common type is{" "}
+          <Link to={"/personalities/ISTJ"}>
+            <span>ISTJ (Logistician)</span>
+          </Link>{" "}
         </p>
         <ReactECharts
           option={chartOptions}

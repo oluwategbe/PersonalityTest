@@ -1,17 +1,8 @@
 .homepage{
   display: flex;
-  padding: 2rem 4rem;
+  padding: 4rem;
   gap: 2rem;
   color: #505050;
-  h1{
-    font-size: 18px;
-    font-weight: 600;
-  }
-  p{
-    font-size: 14px;
-    line-height: 30px;
-    text-align: justify;
-  }
   .briefSummary{
     flex: 1.5;
     display: flex;
@@ -19,12 +10,11 @@
     flex-direction: column;
     gap: 1rem;
     border: 1px solid #ededed;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0px 2px 15px 2px rgba(205, 205, 205,0.56);
     -webkit-box-shadow: 0px 2px 15px 2px rgba(205, 205, 205,0.56);
     -moz-box-shadow: 0px 2px 15px 2px rgba(205, 205, 205,0.56);
     ul{
-      list-style: none;
       display: flex;
       flex-direction: column;
       gap: 12px;
@@ -34,7 +24,8 @@
         align-items: center;
         gap: 10px;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 16px;
+        text-transform: uppercase;
         svg{
           font-size: 10px;
           color: #8855ff;
@@ -54,10 +45,25 @@
       gap: 1rem;
       padding: 2rem;
       border: 1px solid #ededed;
-      border-radius: 20px;
+      border-radius: 10px;
       box-shadow: 0px 2px 15px 2px rgba(205, 205, 205,0.56);
       -webkit-box-shadow: 0px 2px 15px 2px rgba(205, 205, 205,0.56);
       -moz-box-shadow: 0px 2px 15px 2px rgba(205, 205, 205,0.56);
+    }
+    .classification{
+      ul{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        li{
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          svg{
+            color: #8855ff;
+          }
+        }
+      }
     }
     .toNote{
       p{
@@ -67,13 +73,33 @@
     }
   }
 }
+.homeQuote{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #272727;
+  color: white;
+  padding: 1rem;
+  // border-radius: 10px;
+  p{
+    font-size: 16px;
+  }
+  h5{
+    font-size: 10px;
+    text-align: end;
+    width: 60%;
+    // color: #949494;
+    color: #f1f1f1;
+  }
+}
 .breakDown{
   display: flex;
   flex-direction: column;
   gap: 1em;
-  padding: 2rem 4rem;
+  padding: 4rem;
   align-items: center;
   color: #505050;
+  background: #f5f5f5;
   h1{
     font-size: 22px;
     margin-bottom: 2rem;
@@ -98,7 +124,7 @@
       border: 1px solid #686868;
       border-top: none !important;
       border-style: dashed;
-      height: 135px;
+      height: 150px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -119,7 +145,7 @@
           color: white;
           visibility: visible;
           width: calc(100% - 172px);
-          top: 55px;
+          top: 50px;  
           opacity: 1;
           position: absolute;
           transition: all 1s ease-in-out, color 0.1s ease-in-out;
@@ -137,7 +163,9 @@
         opacity: 0;
         text-align: justify;
         visibility: hidden;
-        margin-top: -4px;
+        margin-top: -10px;
+        font-size: 16px;
+        line-height: 25px;
       }
       .box{
         position: absolute;
@@ -293,19 +321,38 @@
     }
   }
 }
+.takeTestSection{
+  background: white;
+  padding: 4rem;
+  .takeTest{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 3rem;
+    // margin: 4rem;
+    // background: #dfdfdf;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("/images/personality3.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+  }
+}
 .totalRarity{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  padding: 2rem 4rem;
-
+  padding: 4rem;
+  color: #505050;
+  background: #f5f5f5;
   h1{
     font-size: 18px;
   }
   p{
-    font-size: 14px;
+    font-size: 16px;
     span{
       font-weight: 700;
       color: #8855ff;
