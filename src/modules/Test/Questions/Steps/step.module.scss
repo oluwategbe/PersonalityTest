@@ -1,9 +1,9 @@
 .steps{
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
   align-items: center;
   width: 100%;
-
   span{
     height: 50px;
     width: 50px;
@@ -20,7 +20,7 @@
     }
   }
   div{
-    width: 120px;
+    width: 170px;
     height: 2px;
   }
 }

@@ -1,0 +1,36 @@
+.custom-select {
+  position: relative;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.selected-option {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid #acacac;
+  border-radius: 5px;
+  cursor: pointer;
+}
+label {
+  margin-bottom: 1rem;
+}
+.options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  background-color: #f1f1f1;
+}
+.options li {
+  padding: 1rem;
+  color: black;
+  cursor: pointer;
+}
+.options li:hover {
+  background-color: #dbdbdb;
+}

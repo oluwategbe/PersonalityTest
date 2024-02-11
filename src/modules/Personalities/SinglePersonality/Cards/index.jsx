@@ -7,7 +7,8 @@ const Cards = ({ personality }) => {
   ];
   return (
     <div className="letterCards">
-      <div className="circle"></div>
+      <h1>What the letters mean</h1>
+      {/* <div className="circle"></div> */}
       <div className="ei card">
         <div className="h2Box">
           <h2>
@@ -58,7 +59,7 @@ const Cards = ({ personality }) => {
           </p>
         </div>
       </div>
-      <div className="circle2"></div>
+      {/* <div className="circle2"></div> */}
     </div>
   );
 };

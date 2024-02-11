@@ -1,12 +1,13 @@
 .letterCards{
   display: flex;
   flex-direction: column;
-  // background: #000;
   height: fit-content;
   gap: 1rem;
   color: rgb(255, 255, 255);
-  // color: black;
-
+  h1{
+    margin-bottom: 3rem;
+    text-align: center;
+  }
   .card{
     display: flex;
     flex-direction: column;
@@ -45,7 +46,8 @@
       p{
         opacity: 1;
         transition: opacity 0.5s;
-        font-size: 16px;
+        font-size: 14px;
+        line-height: 20px;
         text-align: justify;
       }
     }

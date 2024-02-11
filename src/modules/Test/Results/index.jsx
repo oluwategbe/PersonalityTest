@@ -1,9 +1,11 @@
 import { Link, useParams } from "react-router-dom";
+// import * as React from "react";
 import "./index.scss";
 import Layout from "../../../components/layout";
 import { useLocation } from "react-router-dom";
 import { personalityTypes } from "../../../utils/data";
 import ScoreCard from "../../../components/ScoreCard";
+// import { FaSpinner } from "react-icons/fa";
 
 const Results = () => {
   const { personality } = useParams();
@@ -17,13 +19,27 @@ const Results = () => {
   const intuitionScore = (totalSIScore / 10).toFixed(0);
   const feelingScore = (totalTFScore / 10).toFixed(0);
   const perceivingScore = (totalJPScore / 10).toFixed(0);
-  console.log(gender);
+
+  // const [isLoading, setIsLoading] = React.useState(true);
+
+  // React.useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 2000);
+  //   return () => clearTimeout(timer);
+  // }, []);
+
   return (
     <Layout>
       <div className="resultsPage">
+        {/* {isLoading ? (
+          <div className="loading">
+            <FaSpinner className="spinner" />
+          </div>
+        ) : ( */}
         <div className="modal">
           <div className="title">
-            <h2>Your Personality Type is:</h2>
+            <h2>Congratulations! Your Personality Type is:</h2>
             <h1>
               {personality} - {personalityData?.title}
             </h1>
@@ -51,26 +67,26 @@ const Results = () => {
               <ScoreCard
                 title="Mind"
                 desc="This trait describes your preferred method of obtaining information from the environment"
-                leftTitle="Intuitive"
-                leftScore={intuitionScore}
-                rightTitle="Observant"
-                rightScore={100 - intuitionScore}
+                leftTitle="Sensing"
+                leftScore={100 - intuitionScore}
+                rightTitle="Intuitive"
+                rightScore={intuitionScore}
               />
               <ScoreCard
                 title="Nature"
                 desc="This trait describes how you make decisions and cope with emotions, people's values and the needs of others"
-                leftTitle="Feeling"
-                leftScore={feelingScore}
-                rightTitle="Thinking"
-                rightScore={100 - feelingScore}
+                leftTitle="Thinking"
+                leftScore={100 - feelingScore}
+                rightTitle="Feeling"
+                rightScore={feelingScore}
               />
               <ScoreCard
                 title="Tactics"
                 desc="This trait reflects your approach to work, planning, organization and decision-making"
-                leftTitle="Prospecting"
-                leftScore={perceivingScore}
-                rightTitle="Judging"
-                rightScore={100 - perceivingScore}
+                leftTitle="Judging"
+                leftScore={100 - perceivingScore}
+                rightTitle="Perceiving"
+                rightScore={perceivingScore}
               />
             </div>
           </div>
@@ -81,6 +97,7 @@ const Results = () => {
             </Link>
           </div>
         </div>
+        {/* )} */}
       </div>
     </Layout>
   );

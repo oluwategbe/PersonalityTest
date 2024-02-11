@@ -8,9 +8,9 @@ const Footer = () => {
     <div className="footer">
       <div className="foot">
         <div className="heading">
-          <h1>Personality App</h1>
+          <h1>PersonalitySphere</h1>
           <p>
-            Discover your essence with our interactive personality test. Uncover
+            Discover your personality with this interactive application. Uncover
             insights into your unique traits and preferences based on the
             renowned 16 personalities by MBTI. Embark on a journey of
             self-discovery and explore the fascinating world of personality

@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import CustomSelect from "../../../../components/CustomSelect";
 import "../../Questions/index.scss";
 import { FaRegFaceSmileBeam } from "react-icons/fa6";
 
@@ -12,7 +13,7 @@ const Step5 = ({ gender, setGender, setStep, handleSubmit }) => {
   };
 
   const handleChange = (e) => {
-    setGender(e.target.value);
+    setGender(e);
   };
 
   return (
@@ -21,14 +22,15 @@ const Step5 = ({ gender, setGender, setStep, handleSubmit }) => {
         N.B: This is just to determine your personality image{" "}
         <FaRegFaceSmileBeam />
       </h2>
-      <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+      {/* <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
         <label htmlFor="gender">Please select your gender:</label>
         <select onChange={handleChange}>
           <option value="male">Male</option>
           <option value="female">Female</option>
           <option value="others">Others</option>
         </select>
-      </div>
+      </div> */}
+      <CustomSelect options={["Male", "Female"]} onChange={handleChange} />
       <div className="buttonContainer">
         <button onClick={handlePrevious} type="button" className="btnBlack">
           Previous

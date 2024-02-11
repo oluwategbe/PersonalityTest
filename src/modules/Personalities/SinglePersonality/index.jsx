@@ -14,7 +14,7 @@ const SinglePersonality = () => {
     { group: "Analysts", color: "#7b3894" },
     { group: "Diplomats", color: "#d4eec8" },
     { group: "Sentinels", color: "#c5f2f4" },
-    { group: "Explorers", color: "#fff9d9" },
+    { group: "Explorers", color: "#ffed85" },
   ];
   const rarity = data?.rarity?.value;
   const factColor = groupColors?.find((g) => g?.group === data?.group);
@@ -68,13 +68,15 @@ const SinglePersonality = () => {
     <Layout>
       <div className="singlePersonality">
         <div className="singlePersonalityHero">
-          <div className="heroText">
-            <h1>{personality}</h1>
-            <div className="line"></div>
-            <h3 className="title">The {data?.title}</h3>
-          </div>
-          <div className="pic">
-            <img src={data?.pic} alt={data?.title} />
+          <div className="sHero">
+            <div className="heroText">
+              <h1>{personality}</h1>
+              <div className="line"></div>
+              <h2 className="title">The {data?.title}</h2>
+            </div>
+            <div className="pic">
+              <img src={data?.pic} alt={data?.title} />
+            </div>
           </div>
         </div>
         <div className="summary">
@@ -159,7 +161,7 @@ const SinglePersonality = () => {
             </h1>
             <div className="line"></div>
           </div>
-          <h3>Careers</h3>
+          {/* <h3>Careers</h3> */}
           <p>{data?.career?.summary}</p>
           <img src={data?.career?.pic} alt="Careers" />
           <div className="opportunities">

@@ -3,93 +3,102 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  padding: 0 10%;
   .testhero{
-    // padding-top: 4rem;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/images/personality3.jpg");
-    background-position: center;
-    background-size: cover;
-    width: 100%;
+    background: white;
     display: flex;
-    justify-content: center;
+    width: 100%;
     align-items: center;
-    height: 70vh;
-    // padding: 2rem;
-    position: relative;
-    margin-bottom: 3rem;
-    .text{
+    justify-content: center;
+    padding: 3rem 0;
+    .tHero{
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/images/personality3.jpg");
+      background-position: center;
+      background-size: cover;
+      width: 100%;
       display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      text-align: center;
-      h1{
-        font-size:24px;
-        color: white;
-      }
-      h2{
-        font-size: 16px;
-        color: white;
-      }
-    }
-    .cards{
-      position: absolute;
-      bottom: -30%;
-      display: flex;
-      gap: 2rem;
-      align-items: stretch;
       justify-content: center;
-      transform: translateY(-50%);
-      width: 70%;
-      cursor: pointer;
-      .card{
+      align-items: center;
+      height: 70vh;
+      border-radius: 20px;
+      position: relative;
+      .text{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        border: none;
-        color: #4e4e4e;
-        padding: 1rem;
-        border-radius: 1rem;
-        flex: 1;
-        gap: 0.7rem;
-        transition: background 0.3s ease;
+        gap: 1rem;
         text-align: center;
-        svg{
-          font-size: 40px;
-          color: #4e4e4e;
-        }
-        &:nth-child(1){
-          background: #a1c5f9;
-          box-shadow: 2px 2px 7px 0px rgb(56 116 149 / 90%);
-          &:hover{
-            background: #75a9f1;
-          }
-          svg{
-            path{
-              stroke: #4e4e4e
-            }
-          }
-        }
-        &:nth-child(2){
-          background: #f4adad;
-          box-shadow: 2px 2px 7px 0px rgb(173 133 133 / 90%);
-          &:hover{
-            background: #fd8f8f;
-          }
-        }
-        &:nth-child(3){
-          background: #bfffbf;
-          box-shadow: 2px 2px 7px 0px rgb(150 203 176 / 90%);
-          &:hover{
-            background: #94ff94;
-          }
+        h1{
+          font-size:24px;
+          color: white;
         }
         h2{
-          font-size: 18px;
-          font-weight: 500;
+          font-size: 16px;
+          color: white;
         }
-        p{
-          font-size: 14px;
+      }
+    }
+  }
+  .cards{
+    display: flex;
+    gap: 2rem;
+    align-items: stretch;
+    justify-content: center;
+    cursor: pointer;
+    .card{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: none;
+      color: #4e4e4e;
+      padding: 1rem;
+      border-radius: 1rem;
+      flex: 1;
+      gap: 0.7rem;
+      transition: background 0.3s ease;
+      text-align: center;
+      border: 1px solid #a0a0a0;
+      svg{
+        font-size: 40px;
+        color: #4e4e4e;
+      }
+      &:nth-child(1){
+        background: #a1c5f9;
+        color: #005bda;
+        &:hover{
+          background: #75a9f1;
         }
+        svg{
+          path{
+            stroke: #2a82fd
+          }
+        }
+      }
+      &:nth-child(2){
+        background: #f4adad;
+        color: #860101;
+        svg{
+          color: #b90000;
+        }
+        &:hover{
+          background: #fd8f8f;
+        }
+      }
+      &:nth-child(3){
+        background: #bfffbf;
+        color: #008800;
+        svg{
+          color: #008800;
+        }
+        &:hover{
+          background: #94ff94;
+        }
+      }
+      h2{
+        font-size: 18px;
+        font-weight: 500;
+      }
+      p{
+        font-size: 14px;
       }
     }
   }
