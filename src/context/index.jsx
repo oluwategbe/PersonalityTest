@@ -1,79 +1,21 @@
-import { createContext, useEffect, useState } from "react";
-import { queryKeys } from "../react-query/constants";
-import { getLoginToken, getStoredUser, setStoredUser } from "../storage";
-import { getDecodedJWT, isAuthenticated } from "../utils";
-import { useAuthenticatedUser } from "./hooks";
-import { useQueryClient } from "@tanstack/react-query";
+import * as React from "react";
 
-export const AuthContext = createContext({
-  user: undefined,
-  token: "",
-  isAuthenticated: false,
-  authenticate: () => {},
-  logout: () => {},
-  updateUser: () => {},
+export const ThemeContext = React.createContext({
+  theme: "",
+  setTheme: () => {},
 });
 
 // eslint-disable-next-line react/prop-types
-function AuthContextProvider({ children }) {
-  const [authToken, setAuthToken] = useState(undefined);
-  const [user, setUser] = useState(undefined);
-  const userDetails = useAuthenticatedUser();
-  const queryClient = useQueryClient();
-  useEffect(() => {
-    if (!isAuthenticated()) {
-      logout();
-    }
-  }, []);
-
-  useEffect(() => {
-    const data = getLoginToken();
-    if (data) {
-      setAuthToken(data);
-    }
-  }, []);
-
-  useEffect(() => {
-    const data = getStoredUser();
-    if (data) {
-      setUser(data);
-    }
-  }, []);
-
-  // console.log(userDetails, "check");
-
-  useEffect(() => {
-    if (userDetails) {
-      setUser(userDetails);
-    }
-  }, [userDetails]);
-
-  function logout() {
-    setUser(undefined);
-    setAuthToken(undefined);
-    localStorage.clear();
-    queryClient.invalidateQueries([queryKeys.user]);
-  }
-  function updateUser(data) {
-    setUser(data);
-  }
-  function authenticate(data) {
-    setAuthToken(data);
-    const decoded = getDecodedJWT(data);
-    setUser(decoded);
-    setStoredUser(decoded);
-  }
-
+function ThemeContextProvider({ children }) {
+  const [theme, setTheme] = React.useState("light");
   const value = {
-    user: user,
-    token: authToken,
-    isAuthenticated: !!authToken,
-    authenticate: authenticate,
-    logout: logout,
-    updateUser: updateUser,
+    theme: theme,
+    setTheme: setTheme,
   };
 
-  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+  return (
+    <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
+  );
 }
 
-export default AuthContextProvider;
+export default ThemeContextProvider;

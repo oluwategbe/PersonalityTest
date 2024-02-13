@@ -3,9 +3,12 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import "./index.scss";
 import * as React from "react";
 import { minidata } from "../../utils/data";
+import { FaSun, FaMoon } from "react-icons/fa";
+import { ThemeContext } from "./../../context/index";
 
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);
+  const { theme, setTheme } = React.useContext(ThemeContext);
 
   React.useEffect(() => {
     const handleClickOutside = (event) => {
@@ -14,16 +17,18 @@ const Navbar = () => {
         setOpen(false);
       }
     };
-
     document.addEventListener("click", handleClickOutside);
-
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
   }, []);
 
+  const handleClick = (title) => {
+    setTheme(title);
+  };
+
   return (
-    <div className="navbar">
+    <div className={`navbar ${theme === "dark" ? "dark" : ""}`}>
       <Link to="/">
         <div className="logo">PersonalitySphere</div>
       </Link>
@@ -53,6 +58,11 @@ const Navbar = () => {
           </div>
           <Link to="/test">Take the test</Link>
         </ul>
+      </div>
+      <div className={`themeBox ${theme === "dark" ? "bgDark" : ""}`}>
+        <FaSun onClick={() => handleClick("light")} />
+        <div className={`ball ${theme === "dark" ? "moveRight" : ""}`} />
+        <FaMoon onClick={() => handleClick("dark")} />
       </div>
     </div>
   );

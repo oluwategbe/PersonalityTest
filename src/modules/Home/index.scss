@@ -2,7 +2,7 @@
   display: flex;
   padding: 2rem 10%;
   gap: 2rem;
-  color: #505050;
+  color: var(--text-color-1);
   .briefSummary{
     flex: 1.5;
     display: flex;
@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
-    border: 1px solid #d3d3d3;
+    border: 1px solid var(--border-color-1);
     border-radius: 10px;
     // box-shadow: 0px 2px 15px 2px rgba(205, 205, 205,0.56);
     // -webkit-box-shadow: 0px 2px 15px 2px rgba(205, 205, 205,0.56);
@@ -30,7 +30,7 @@
         }
         svg{
           font-size: 10px;
-          color: #8855ff;
+          color: var(--primary-color);;
         }
       }
     }
@@ -46,7 +46,7 @@
       flex-direction: column;
       gap: 1rem;
       padding: 2rem;
-      border: 1px solid #d3d3d3;
+      border: 1px solid var(--border-color-1);
       border-radius: 10px;
       // box-shadow: 0px 2px 15px 2px rgba(205, 205, 205,0.56);
       // -webkit-box-shadow: 0px 2px 15px 2px rgba(205, 205, 205,0.56);
@@ -62,7 +62,7 @@
           align-items: center;
           gap: 10px;
           svg{
-            color: #8855ff;
+            color: var(--primary-color);;
             height: 10px;
             width: 20px;
           }
@@ -97,17 +97,16 @@
     font-size: 10px;
     text-align: end;
     width: 60%;
-    color: #f1f1f1;
   }
 }
 .breakDown{
   display: flex;
   flex-direction: column;
   gap: 1em;
-  padding: 4rem 10%;
+  padding: var(--section-padding);
   align-items: center;
-  color: #505050;
-  background: #f5f5f5;
+  color: var(--text-color-1);
+  background: var(--secondary-bg);
   h1{
     font-size: 24px;
     margin-bottom: 4rem;
@@ -130,31 +129,30 @@
       padding: 1rem;
       flex: 1;
       cursor: pointer;
-      border: 1px solid #686868;
+      border: 1px solid var(--border-color-1);
       border-top: none !important;
       border-style: dashed;
-      height: 160px;
+      height: 175px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       position: relative;
       transition: all 0.5s ease-in-out;
-      // background: white;
       &:hover{
         flex: 2.5;
         .box{
-          background: white;
-          color: #505050;
+          background: var(--bg);
+          color: var(--text-color-1);
         }
         h2{
-          color: white;
+          color: var(--text-color-2);
           transform: translateX(0%);
           top: 10px;
         }
         p{
-          color: white;
+          color: var(--text-color-2);
           visibility: visible;
-          width: calc(100% - 172px);
+          width: calc(100% - 120px);
           top: 55px;  
           opacity: 1;
           position: absolute;
@@ -179,7 +177,7 @@
       }
       .box{
         position: absolute;
-        top: 40px;
+        top: 50px;
         height: 60px;
         width: 60px;
         display: flex;
@@ -187,7 +185,7 @@
         justify-content: center;
         padding: 20px;
         border-radius: 10px;
-        color: white;
+        color: var(--text-color-2);
         font-size: 32px;
       }
     }
@@ -201,10 +199,10 @@
         padding-right: 100px;
       }
       &:hover h2{
-        left: 32px;
+        left: 19px;
       }
       &:hover p{
-        right: 140px;
+        right: 100px;
       }
     }
     .bRight{
@@ -215,10 +213,10 @@
         padding-left: 100px;
       }
       &:hover h2{
-        right: 32px;
+        right: 19px;
       }
       &:hover p{
-        left: 140px;
+        left: 100px;
       }
     }
   }
@@ -226,11 +224,8 @@
     .bLeft{
       &:hover{
         background: #ffa600;
-        h2{
-          color: #505050;
-        }
-        p{
-          color: #505050;
+        h2, p{
+          color: var(--text-color-1);
         }
       }
       .box{
@@ -256,11 +251,8 @@
     .bLeft{
       &:hover{
         background: #70ff70;
-        h2{
-          color: #505050;
-        }
-        p{
-          color: #505050;
+        h2, p{
+          color: var(--text-color-1);
         }
       }
       .box{
@@ -332,12 +324,12 @@
   }
 }
 .takeTestSection{
-  background: white;
-  padding: 4rem 10%;
+  background: var(--bg);
+  padding: var(--section-padding);
 }
 .takeTestSection3{
-  background: #f5f5f5;
-  padding: 4rem 10%;
+  background: var(--secondary-bg);
+  padding: var(--section-padding);
 }
 .takeTestSection2{
   background: #f5f5f5;
@@ -353,12 +345,12 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  padding: 3rem 10%;
+  padding: var(--section-padding);
   height: 40vh;
   background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("/images/personality3.jpg");
   background-position: center;
   background-size: cover;
-  color: #ffffff;
+  color: var(--text-color-2);
 }
 .totalRarity{
   display: flex;
@@ -366,9 +358,9 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  padding: 4rem 10%;
-  color: #505050;
-  background: white;
+  padding: var(--section-padding);
+  color: var(--text-color-1);
+  background: var(--bg);
   h1{
     font-size: 24px;
     margin-bottom: 1rem;
@@ -377,7 +369,7 @@
     font-size: 16px;
     span{
       font-weight: 700;
-      color: #8855ff;
+      color: var(--primary-color);;
     }
   }
 }

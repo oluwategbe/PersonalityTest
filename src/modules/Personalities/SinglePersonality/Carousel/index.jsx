@@ -31,9 +31,9 @@ const Carouse = ({ data }) => {
       ssr={true}
       infinite={true}
       autoPlay={true}
-      autoPlaySpeed={5000}
+      autoPlaySpeed={3500}
       keyBoardControl={true}
-      customTransition="all .5"
+      customTransition="all 1"
       transitionDuration={500}
       containerClass="carousel-container"
       // removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}

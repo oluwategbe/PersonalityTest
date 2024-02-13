@@ -10,8 +10,9 @@ const Personalities = () => {
   const explorers = personalityData?.filter((p) => p?.group === "Explorers");
   return (
     <Layout>
-      <div className="personalities">
+      <div className="personalitiesPage">
         <div className="personalityHero">
+          <div className="personalityHeroSection">
           <h1>Myers & Briggs&apos; 16 Personality Types</h1>
           <p>
             In order to better understand people&apos;s common similarities and
@@ -26,7 +27,7 @@ const Personalities = () => {
             <br />
             <br />
             The 16 personalities grouped accordingly are shown below:
-          </p>
+          </p></div>
         </div>
         <div className="personalities">
           <div className="analysts group">

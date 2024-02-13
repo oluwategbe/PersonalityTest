@@ -1,4 +1,5 @@
 import "./index.scss";
+import * as React from "react";
 import Layout from "./../../components/layout/index";
 import { GrTest } from "react-icons/gr";
 import { TbReportAnalytics } from "react-icons/tb";
@@ -6,6 +7,13 @@ import { FaPeopleGroup } from "react-icons/fa6";
 import Questions from "./Questions";
 
 const Test = () => {
+  React.useEffect(() => {
+    window.scrollTo({
+      behavior: "smooth",
+      top: 0,
+    });
+  }, []);
+
   return (
     <Layout>
       <div className="test">

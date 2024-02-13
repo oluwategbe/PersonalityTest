@@ -1,3 +1,4 @@
+// import * as React from "react";
 import { AiOutlineDoubleRight } from "react-icons/ai";
 import { chartOptions } from "../../utils/data";
 import Layout from "./../../components/layout/index";
@@ -19,24 +20,26 @@ const Home = () => {
             Myers and Katharine Cook Briggs, categorizes individuals into 16
             personality types based on four pairs of contrasting preferences:
             <br />
-            <ul>
-              <li>
-                <FaSquare />
-                <span>Extraversion</span> vs <span>Introversion</span>
-              </li>
-              <li>
-                <FaSquare />
-                <span>Sensing</span> vs <span>Intuition</span>
-              </li>
-              <li>
-                <FaSquare />
-                <span>Thinking</span> vs <span>Feeling</span>
-              </li>
-              <li>
-                <FaSquare />
-                <span>Judging</span> vs <span>Perceiving</span>
-              </li>
-            </ul>
+          </p>
+          <ul>
+            <li>
+              <FaSquare />
+              <span>Extraversion</span> vs <span>Introversion</span>
+            </li>
+            <li>
+              <FaSquare />
+              <span>Sensing</span> vs <span>Intuition</span>
+            </li>
+            <li>
+              <FaSquare />
+              <span>Thinking</span> vs <span>Feeling</span>
+            </li>
+            <li>
+              <FaSquare />
+              <span>Judging</span> vs <span>Perceiving</span>
+            </li>
+          </ul>
+          <p>
             By answering questions in the test, you can find out which
             personality type you are. This helps you learn more about yourself,
             like your strengths and weaknesses, what kind of jobs might suit
@@ -92,7 +95,7 @@ const Home = () => {
             “It&apos;s beauty that captures your attention; personality that
             captures your heart.”
           </p>
-          <h5>— Isabella Koldras</h5>
+          <h5>— Oscar Wilde</h5>
         </div>
       </div>
       <div className="breakDown">

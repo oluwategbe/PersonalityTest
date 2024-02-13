@@ -2075,11 +2075,6 @@ export const chartOptions = {
       itemStyle: {
         borderRadius: 5,
         borderWidth: 0,
-        emphasis: {
-          shadowBlur: 10,
-          shadowOffsetX: 0,
-          shadowColor: "rgba(0, 0, 0, 0.5)",
-        },
       },
       label: {
         show: false,
@@ -2090,6 +2085,11 @@ export const chartOptions = {
           show: true,
           fontSize: "14",
           fontWeight: "bold",
+        },
+        itemStyle: {
+          shadowBlur: 10,
+          shadowOffsetX: 0,
+          shadowColor: "rgba(0, 0, 0, 0.5)",
         },
       },
       color: [

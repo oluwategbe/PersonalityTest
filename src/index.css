@@ -6,6 +6,16 @@
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
 }
+:root {
+  --primary-color: #8855ff;
+  --bg: #fff;
+  --section-padding: 4rem 10%;
+  --secondary-bg: #f5f5f5;
+  --text-color-1: #4e4e4e;
+  --text-color-2: #fff;
+  --border-color-1: #d3d3d3;
+  --border-color-2: #e9e6e6;
+}
 @font-face {
   font-family: "Azonix";
   src: url("/fonts/Azonix.otf") format("opentype");
@@ -35,7 +45,7 @@
 button {
   padding: 1rem;
   border-radius: 10px;
-  background: #8855ff;
+  background: var(--primary-color);
   color: white;
   border: none;
   outline: none;

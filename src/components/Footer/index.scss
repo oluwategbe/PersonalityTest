@@ -22,10 +22,10 @@
   
       &:hover{
         transform: translateY(-5px);
-        color: #8855ff;
+        color: var(--primary-color);;
       }
       &:after {
-        background-color: #8855ff;
+        background-color: var(--primary-color);;
         bottom: 0px;
         content: "";
         height: 2px;

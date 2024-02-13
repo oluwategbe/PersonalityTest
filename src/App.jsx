@@ -1,7 +1,12 @@
+import ThemeContextProvider from "./context";
 import RoutesWrapper from "./routes";
 
 function App() {
-  return <RoutesWrapper />;
+  return (
+    <ThemeContextProvider>
+      <RoutesWrapper />
+    </ThemeContextProvider>
+  );
 }
 
 export default App;
