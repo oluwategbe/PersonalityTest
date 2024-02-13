@@ -71,7 +71,6 @@ const SinglePersonality = () => {
           <div className="sHero">
             <div className="heroText">
               <h1>{personality}</h1>
-              <div className="line"></div>
               <h2 className="title">The {data?.title}</h2>
             </div>
             <div className="pic">

@@ -7,10 +7,9 @@
       flex-direction: column;
       gap: 1rem;
       padding: 2rem 10%;
-      background: white;
+      background: var(--bg);
       align-items: center;
-      margin-top: 4rem;
-      border: 1px solid #dbe5e6;
+      border: 1px solid var(--border-color-1);
       border-top-left-radius: 0.5rem;
       border-top-right-radius: 0.5rem;
       border-bottom: none;
@@ -18,7 +17,6 @@
         font-size: 20px;
       }
       p{
-        font-size: 16px;
         text-align: justify;
       }
     }
@@ -31,14 +29,13 @@
       align-items: stretch;
       justify-content: center;
       gap: 2rem;
-      // height: 80vh;
       padding: 3% 10%;
       position: relative;
       h4{
         position: absolute;
-        top: -6%;
+        top: -8%;
         left: 10%;
-        font-size: 170px;
+        font-size: 160px;
         letter-spacing: 40px;
         z-index: 0;
         font-weight: 600;
@@ -49,14 +46,13 @@
     .analysts{
       background-color: #d799ee;
       h4{
-        font-size: 180px;
+        font-size: 190px;
         color: #dec0f0;
       }
     }
     .diplomats{
       background-color: #a8ee88;
       h4{
-        font-size: 170px;
         letter-spacing: 50px;
         color: #d2e2ca;
       }
