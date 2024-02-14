@@ -7,8 +7,8 @@ const PersonalityCard = ({ title, personality, desc, picture, color, box }) => {
     <div
       className="personalityCard"
       style={{
-        boxShadow: `4px 3px 14px 0px ${box}`,
-        WebkitBoxShadow: `4px 3px 14px 0px ${box}`,
+        boxShadow: `2px 2px 14px 0px ${box}`,
+        WebkitBoxShadow: `2px 2px 14px 0px ${box}`,
       }}
     >
       <Link to={`/personalities/${personality}`}>

@@ -15,7 +15,7 @@ const Questions = () => {
   const [tfScores, setTFScores] = React.useState({});
   const [jpScores, setJPScores] = React.useState({});
   const [gender, setGender] = React.useState("Male");
-  const [step, setStep] = React.useState(1);
+  const [step, setStep] = React.useState(5);
   const navigate = useNavigate();
   const handleSubmit = () => {
     const totalEIScore = Object.values(eiScores).reduce(
@@ -54,7 +54,7 @@ const Questions = () => {
   return (
     <div className="questions">
       <div className="topContainer">
-        <Steps step={step} />
+        <Steps step={step} setStep={setStep} />
       </div>
       <div className="steps">
         {step === 1 && (

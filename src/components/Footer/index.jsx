@@ -2,10 +2,12 @@ import { Link } from "react-router-dom";
 import "./index.scss";
 import * as React from "react";
 import { minidata } from "../../utils/data";
+import { ThemeContext } from "../../context";
 
 const Footer = () => {
+  const { theme } = React.useContext(ThemeContext);
   return (
-    <div className="footer">
+    <div className={`footer ${theme === "dark" ? "dark" : ""}`}>
       <div className="foot">
         <div className="heading">
           <h1>PersonalitySphere</h1>

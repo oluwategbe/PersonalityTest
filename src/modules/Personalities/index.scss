@@ -8,6 +8,7 @@
       gap: 1rem;
       padding: 2rem 10%;
       background: var(--bg);
+      color: var(--text-color-1);
       align-items: center;
       border: 1px solid var(--border-color-1);
       border-top-left-radius: 0.5rem;
@@ -42,7 +43,6 @@
         font-family: "Crackajack";
       }
     }
-
     .analysts{
       background-color: #d799ee;
       h4{
@@ -50,11 +50,22 @@
         color: #dec0f0;
       }
     }
+    .analysts.dark{
+      background-color: #421353;
+      h4{
+        color: #591f7a;
+      }
+    }
     .diplomats{
       background-color: #a8ee88;
       h4{
-        letter-spacing: 50px;
         color: #d2e2ca;
+      }
+    }
+    .diplomats.dark{
+      background-color: #326d17;
+      h4{
+        color: #3b8815;
       }
     }
     .sentinels{
@@ -63,10 +74,22 @@
         color: #b7e4e7;
       }
     }
+    .sentinels.dark{
+      background-color: #00666b;
+      h4{
+        color: #0e757c;
+      }
+    }
     .explorers{
       background-color: #f3df6c;
       h4{
         color: #faf5df;
+      }
+    }
+    .explorers.dark{
+      background-color: #ceb02e;
+      h4{
+        color: #e2c233;
       }
     }
   }

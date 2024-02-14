@@ -25,12 +25,11 @@
       transition: opacity 0.3s ease-in-out;
       position: relative;
       &:after {
-        background-color: #d0cfd1;
+        background-color: var(--border-color-1);
         bottom: -4px;
         content: "";
         height: 1px;
         left: 0px;
-        // position: absolute;
         transform: scaleX(0);
         transition: transform 2.5s ease 0s;
         width: 70%;
@@ -49,7 +48,7 @@
         font-weight: 600;
         width: 70%;
         text-align: center;
-        color: #4e4e4e;
+        color: var(--text-color-1);
       }
       .radio-buttons {
         display: flex;
@@ -147,7 +146,7 @@
     select{
       width: 300px;
       padding: 1rem;
-      color: black;
+      color: var(--text-color-1);
       border-radius: 5px;
       cursor: pointer;
       option{
@@ -177,7 +176,6 @@
       }
       .btnYellow{
         background-color: var(--primary-color);;
-        border: 1px solid #CECCCC;
         color: white;
         transition: background 0.3s ease;
         &:hover{
@@ -191,7 +189,6 @@
       .disabledButton{
         background-color: #e2e2e2;
         color: rgb(85, 85, 85);
-  
         &:hover{
           background-color: #e2e2e2;
           color: rgb(85, 85, 85);

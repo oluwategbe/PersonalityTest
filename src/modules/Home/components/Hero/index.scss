@@ -16,6 +16,7 @@
     flex-direction: column;
     justify-content: center;
     border: 1px solid var(--border-color-1);
+    color: var(--text-color-2);
     gap: 2rem;
     .quote{
       display: flex;
@@ -26,13 +27,11 @@
       h1{
         font-size: 24px;
         text-align: center;
-        color: var(--text-color-2);
       }
       h5{
         font-size: 12px;
         text-align: end;
         width: 100%;
-        color: var(--text-color-2);
       }
     }
     a{
@@ -43,5 +42,4 @@
       }
     }
   }
-
 }

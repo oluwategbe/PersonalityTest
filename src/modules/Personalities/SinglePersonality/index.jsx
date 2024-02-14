@@ -1,3 +1,4 @@
+import * as React from "react";
 import { useParams } from "react-router-dom";
 import "./index.scss";
 import { personalityData } from "./../../../utils/data";
@@ -6,9 +7,11 @@ import Cards from "./Cards";
 import { MdCircle, MdSquare } from "react-icons/md";
 import Carouse from "./Carousel";
 import ReactECharts from "echarts-for-react";
+import { ThemeContext } from "../../../context";
 
 const SinglePersonality = () => {
   const { personality } = useParams();
+  const { theme } = React.useContext(ThemeContext);
   const data = personalityData?.find((p) => p?.personality === personality);
   const groupColors = [
     { group: "Analysts", color: "#7b3894" },
@@ -19,15 +22,25 @@ const SinglePersonality = () => {
   const rarity = data?.rarity?.value;
   const factColor = groupColors?.find((g) => g?.group === data?.group);
   const option = {
+    title: {
+      text: `Rarity Chart for ${data?.personality} personality (over 100%)`,
+      left: "center",
+      top: "top",
+      textStyle: {
+        fontSize: 20,
+        color: theme === "light" ? "#4e4e4e" : "#a7a7a7",
+      },
+    },
     tooltip: {
       trigger: "item",
     },
     legend: {
       left: "left",
+      top: "center",
       orient: "vertical",
       textStyle: {
         fontSize: "16",
-        color: "#222222",
+        color: theme === "light" ? "#4e4e4e" : "#a7a7a7",
       },
     },
     series: [
@@ -66,7 +79,7 @@ const SinglePersonality = () => {
   };
   return (
     <Layout>
-      <div className="singlePersonality">
+      <div className={`singlePersonality ${theme === "dark" ? "dark" : ""}`}>
         <div className="singlePersonalityHero">
           <div className="sHero">
             <div className="heroText">
@@ -79,7 +92,7 @@ const SinglePersonality = () => {
           </div>
         </div>
         <div className="summary">
-          <h3>Summary</h3>
+          {/* <h3 className={`${theme === "dark" ? "dark" : ""}`}>Summary</h3> */}
           <div className="header">
             <h1>{personality} in a nutshell</h1>
             <div className="line"></div>
@@ -92,15 +105,17 @@ const SinglePersonality = () => {
             <p>{data?.fact}</p>
           </div>
         </div>
-        <div className="cards">
-          <Cards personality={personality} />
+        <div className={`cardSection ${theme === "dark" ? "dark" : ""}`}>
+          <div className="cards">
+            <Cards personality={personality} />
+          </div>
         </div>
         <div className="rarity">
           <div className="header">
             <h1>How frequent is {data?.personality}</h1>
             <div className="line"></div>
           </div>
-          <h3>Rarity</h3>
+          <h3 className={`${theme === "dark" ? "dark" : ""}`}>Rarity</h3>
           <div className="rarityText">
             <div>
               <h2>{data?.rarity?.text}</h2>
@@ -121,7 +136,7 @@ const SinglePersonality = () => {
             <div className="line"></div>
           </h1>
           <div className="section">
-            <div className="strength each">
+            <div className={`strength each ${theme === "dark" ? "dark" : ""}`}>
               <h3>Strengths</h3>
               {data?.strengths?.map((s, id) => (
                 <div className="strength-child" key={id}>
@@ -133,7 +148,7 @@ const SinglePersonality = () => {
                 </div>
               ))}
             </div>
-            <div className="weakness each">
+            <div className={`weakness each ${theme === "dark" ? "dark" : ""}`}>
               <h3>Weaknesses</h3>
               {data?.weaknesses?.map((s, id) => (
                 <div className="strength-child" key={id}>

@@ -1,10 +1,13 @@
+import * as React from "react";
 import { Link } from "react-router-dom";
 import "./index.scss";
 import { AiOutlineDoubleRight } from "react-icons/ai";
+import { ThemeContext } from "../../../../context";
 
 const Hero = () => {
+  const { theme } = React.useContext(ThemeContext);
   return (
-    <div className="hero">
+    <div className={`hero ${theme === "dark" ? "dark" : ""}`}>
       <div className="heroBox">
         <div className="quote">
           <h1>

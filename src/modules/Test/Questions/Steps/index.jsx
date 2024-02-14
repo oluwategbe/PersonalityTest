@@ -1,7 +1,7 @@
-import * as React from "react";
+/* eslint-disable react/prop-types */
 import styles from "./step.module.scss";
 
-const Steps = ({ step }) => {
+const Steps = ({ step, setStep }) => {
   return (
     <div className={styles.steps}>
       <span
@@ -9,6 +9,7 @@ const Steps = ({ step }) => {
           background: "#000000",
           color: "#ffffff",
         }}
+        onClick={() => setStep(1)}
       >
         1
       </span>
@@ -34,6 +35,7 @@ const Steps = ({ step }) => {
               : "#000000"
           }`,
         }}
+        onClick={() => setStep(2)}
       >
         2
       </span>
@@ -53,6 +55,7 @@ const Steps = ({ step }) => {
             step === 3 || step === 4 || step === 5 ? "#ffffff" : "#000000"
           }`,
         }}
+        onClick={() => setStep(3)}
       >
         3
       </span>
@@ -66,6 +69,7 @@ const Steps = ({ step }) => {
           background: `${step === 4 || step === 5 ? "#000000" : "#ffffff"}`,
           color: `${step === 4 || step === 5 ? "#ffffff" : "#000000"}`,
         }}
+        onClick={() => setStep(4)}
       >
         4
       </span>

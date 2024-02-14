@@ -59,7 +59,7 @@ const Navbar = () => {
           <Link to="/test">Take the test</Link>
         </ul>
       </div>
-      <div className={`themeBox ${theme === "dark" ? "bgDark" : ""}`}>
+      <div className="themeBox">
         <FaSun onClick={() => handleClick("light")} />
         <div className={`ball ${theme === "dark" ? "moveRight" : ""}`} />
         <FaMoon onClick={() => handleClick("dark")} />

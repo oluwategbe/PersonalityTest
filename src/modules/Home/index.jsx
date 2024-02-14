@@ -1,4 +1,4 @@
-// import * as React from "react";
+import * as React from "react";
 import { AiOutlineDoubleRight } from "react-icons/ai";
 import { chartOptions } from "../../utils/data";
 import Layout from "./../../components/layout/index";
@@ -7,12 +7,36 @@ import "./index.scss";
 import ReactECharts from "echarts-for-react";
 import { FaSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { ThemeContext } from "../../context";
 
 const Home = () => {
+  const { theme } = React.useContext(ThemeContext);
+  const option = {
+    title: {
+      text: "Rarity Chart for the 16 personalities (over 100%)",
+      left: "center",
+      top: "top",
+      textStyle: {
+        fontSize: 20,
+        color: theme === "light" ? "#4e4e4e" : "#a7a7a7",
+      },
+    },
+    legend: {
+      left: "left",
+      animation: true,
+      width: "80%",
+      orient: "vertical",
+      textStyle: {
+        fontSize: "12",
+        color: theme === "light" ? "#4e4e4e" : "#a7a7a7",
+      },
+    },
+    ...chartOptions,
+  };
   return (
     <Layout>
       <Hero />
-      <div className="homepage">
+      <div className={`homepage ${theme === "dark" ? "dark" : ""}`}>
         <div className="briefSummary">
           <h1>How it works</h1>
           <p>
@@ -89,7 +113,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="takeTestSection">
+      <div className={`takeTestSection ${theme === "dark" ? "dark" : ""}`}>
         <div className="homeQuote">
           <p>
             “It&apos;s beauty that captures your attention; personality that
@@ -98,7 +122,7 @@ const Home = () => {
           <h5>— Oscar Wilde</h5>
         </div>
       </div>
-      <div className="breakDown">
+      <div className={`breakDown ${theme === "dark" ? "dark" : ""}`}>
         <h1>The Myers - Briggs preference pairs</h1>
         <h3>How you direct and receive energy</h3>
         <section className="section eiSection">
@@ -106,7 +130,7 @@ const Home = () => {
             <h2>Extroversion</h2>
             <div className="box">E</div>
             <p>
-              Extraverts are fueled by social interaction and thrive in lively
+              Extroverts are fueled by social interaction and thrive in lively
               environments. Known for their expressive and outgoing nature, they
               enjoy group activities and easily exhibit enthusiasm.
             </p>
@@ -198,7 +222,7 @@ const Home = () => {
           </div>
         </section>
       </div>
-      <div className="takeTestSection2">
+      <div className={`takeTestSection2 ${theme === "dark" ? "dark" : ""}`}>
         <div className="homeQuote">
           <p>
             “You don&apos;t have to be someone else to achieve greatness in
@@ -208,7 +232,7 @@ const Home = () => {
           <h5>— Anonymous</h5>
         </div>
       </div>
-      <div className="totalRarity">
+      <div className={`totalRarity ${theme === "dark" ? "dark" : ""}`}>
         <h1>Rarity</h1>
         <p>
           The rarest personality type is{" "}
@@ -221,11 +245,11 @@ const Home = () => {
           </Link>{" "}
         </p>
         <ReactECharts
-          option={chartOptions}
+          option={option}
           style={{ height: "500px", width: "100%" }}
         />
       </div>
-      <div className="takeTestSection3">
+      <div className={`takeTestSection3 ${theme === "dark" ? "dark" : ""}`}>
         <div className="takeTest">
           <h3>Wanna discover your personality? Get Started Now</h3>
           <Link to={"/test"}>

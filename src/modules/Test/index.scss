@@ -3,14 +3,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 10%;
+  padding: var(--section-padding);
   .testhero{
-    background: white;
+    background: var(--bg);
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
-    padding: 3rem 0;
+    padding-bottom:2rem;
     .tHero{
       background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/images/personality3.jpg");
       background-position: center;
@@ -22,6 +22,7 @@
       height: 70vh;
       border-radius: 20px;
       position: relative;
+      color: var(--text-color-2);
       .text{
         display: flex;
         flex-direction: column;
@@ -29,11 +30,9 @@
         text-align: center;
         h1{
           font-size:24px;
-          color: white;
         }
         h2{
           font-size: 16px;
-          color: white;
         }
       }
     }
@@ -49,17 +48,16 @@
       flex-direction: column;
       align-items: center;
       border: none;
-      color: #4e4e4e;
+      color: var(--text-color-1);
       padding: 1rem;
       border-radius: 1rem;
       flex: 1;
       gap: 0.7rem;
       transition: background 0.3s ease;
       text-align: center;
-      border: 1px solid #a0a0a0;
+      border: 1px solid var(--border-color-1);
       svg{
         font-size: 40px;
-        color: #4e4e4e;
       }
       &:nth-child(1){
         background: #a1c5f9;
@@ -99,6 +97,8 @@
       }
       p{
         font-size: 14px;
+        text-align: center;
+        line-height: 20px;
       }
     }
   }

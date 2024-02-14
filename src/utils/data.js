@@ -2043,28 +2043,9 @@ export const personalityData = [
     ],
   },
 ];
-
 export const chartOptions = {
   tooltip: {
     trigger: "item",
-  },
-  title: {
-    text: "Rarity Chart for the 16 personalities (over 100%)",
-    left: "center",
-    top: "top",
-    textStyle: {
-      fontSize: 20,
-    },
-  },
-  legend: {
-    left: "left",
-    animation: true,
-    width: "80%",
-    orient: "vertical",
-    textStyle: {
-      fontSize: "12",
-      color: "#222222",
-    },
   },
   series: [
     {

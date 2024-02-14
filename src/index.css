@@ -6,15 +6,52 @@
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
 }
+body {
+  background: var(--bg);
+}
 :root {
   --primary-color: #8855ff;
+  --primary-color2: #8855ff;
   --bg: #fff;
-  --section-padding: 4rem 10%;
   --secondary-bg: #f5f5f5;
+  --section-padding: 4rem 10%;
+  --celeb-bg: #fdf7ff;
+  --celeb-h3: #e9dbee;
   --text-color-1: #4e4e4e;
   --text-color-2: #fff;
+  --text-color-3: #4e4e4e;
   --border-color-1: #d3d3d3;
   --border-color-2: #e9e6e6;
+  --eColor: #ffa600;
+  --iColor: #73abff;
+  --sColor: #70ff70;
+  --nColor: #c7c700;
+  --tColor: #4144ff;
+  --fColor: #ff145a;
+  --jColor: #895fff;
+  --pColor: #009400;
+}
+.dark {
+  --primary-color: #512da3;
+  --primary-color2: #8855ff;
+  --bg: #0c0c0c;
+  --secondary-bg: #111111;
+  --section-padding: 4rem 10%;
+  --celeb-bg: #202020;
+  --celeb-h3: #2c2c2c;
+  --text-color-1: #a7a7a7;
+  --text-color-2: #dbdbdb;
+  --text-color-3: #eeeeee;
+  --border-color-1: #2b2b2b;
+  --border-color-2: #333333;
+  --eColor: #c27e00;
+  --iColor: #0e4fb1;
+  --sColor: #137e13;
+  --nColor: #888800;
+  --tColor: #2d2fa7;
+  --fColor: #970e37;
+  --jColor: #53379e;
+  --pColor: #1a581a;
 }
 @font-face {
   font-family: "Azonix";

@@ -27,7 +27,7 @@
     justify-content: center;
     padding: var(--section-padding);
     .sHero{
-      height: 80vh;
+      height: 70vh;
       width: 100%;
       border-radius: 10px;
       background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("/images/personality4.jpg");
@@ -49,7 +49,7 @@
         h2{
           font-size: 24px;
           font-family: "Azonix";
-          color: var(--primary-color);
+          color: var(--primary-color2);
           transition: transform 0.5s ease-in-out;
           position: relative;
           width: fit-content;
@@ -86,10 +86,13 @@
     background: var(--bg);
     color: var(--text-color-1);
     position: relative;
-    h3{
-      font-size: 150px;
-      color: var(--text-color-2);
-    }
+    // h3{
+    //   font-size: 150px;
+    //   color: var(--text-color-2);
+    // }
+    // h3.dark{
+    //   color: #1d1d1d;
+    // }
     .header{
       display: flex;
       align-items: center;
@@ -104,15 +107,18 @@
       box-shadow: 3px 5px 10px 0px rgba(12, 12, 12, 0.726);
     }
   }
-  .cards{
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/personality5.jpg");
-    background-size: cover;
-    background-blend-mode: darken;
-    background-attachment: fixed;
-    padding: 2rem;
-    margin: 0 10% 2rem;
-    position: relative;
-    border-radius: 20px;
+  .cardSection{
+    padding: 0 10% 2rem;
+    background: var(--bg);
+    .cards{
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/personality5.jpg");
+      background-size: cover;
+      background-blend-mode: darken;
+      background-attachment: fixed;
+      padding: 2rem;
+      position: relative;
+      border-radius: 20px;
+    }
   }
   .rarity{
     padding: 3rem 10%;
@@ -120,7 +126,7 @@
     flex-direction: column;
     gap: 1.5rem;
     position: relative;
-    background: var(--bg);
+    background: var(--secondary-bg);
     color: var(--text-color-1);
     .header{
       display: flex;
@@ -135,12 +141,15 @@
       top: 2%;
       font-size: 200px;
       letter-spacing: 70px;
-      color: #f5f5f5;
+      color: #e6e6e6;
+    }
+    h3.dark{
+      color: #181818;
     }
     .rarityText{
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      gap: 3rem;
       text-align: left;
       z-index: 1;
       div{
@@ -176,7 +185,7 @@
     flex-direction: column;
     padding: var(--section-padding);
     gap: 2rem;
-    background: #f5f5f5;
+    background: var(--bg);
     position: relative;
     h1{
       color: var(--text-color-1);
@@ -247,6 +256,19 @@
           color: #e0f1ff;
         }
       }
+      .strength.dark{
+        background: #003342;
+        color: #ddf3ff;
+        &:hover{
+          background: #015169;
+          h3{
+            color: #015169;
+          }
+        }
+        h3{
+          color: #004357;
+        }
+      }
       .weakness{
         background: #fde9d4;
         color: #a11300;
@@ -262,9 +284,22 @@
           background: #a11300;
         }
         h3{
-          font-size: 70px;
+          font-size: 80px;
           letter-spacing: 5px;
           color: #fffcf8;;
+        }
+      }
+      .weakness.dark{
+        background: #700d00;
+        color: #fff5f0;
+        &:hover{
+          background: #8d1000;
+          h3{
+            color: #8d1000;
+          }
+        }
+        h3{
+          color: #8b1000;
         }
       }
     }
@@ -278,7 +313,7 @@
     padding: var(--section-padding);
     gap: 2rem;
     position: relative;
-    background: var(--bg);
+    background: var(--secondary-bg);
     color: var(--text-color-1);
     .header{
       display: flex;
@@ -320,13 +355,13 @@
     gap: 1rem;
     flex-direction: column;
     position: relative;
-    background: #fdf7ff;
+    background: var(--celeb-bg);
     color: var(--text-color-1);
     h3{
       top: 6%;
       font-size: 150px;
       letter-spacing: 30px;
-      color: #e9dbee;
+      color: var(--celeb-h3);
     }
     .header{
       display: flex;
