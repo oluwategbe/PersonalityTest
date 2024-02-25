@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
+import { ThemeContext } from "../../context";
 import "./index.scss";
-import React from "react";
+import * as React from "react";
 
 const ScoreCard = ({
   title,
@@ -12,6 +13,7 @@ const ScoreCard = ({
 }) => {
   const [left, setLeft] = React.useState(0);
   const [right, setRight] = React.useState(0);
+  const { theme } = React.useContext(ThemeContext);
   React.useEffect(() => {
     if (isNaN(leftScore)) {
       setLeft(50);
@@ -25,17 +27,23 @@ const ScoreCard = ({
   }, [leftScore, rightScore]);
 
   return (
-    <div className="scoreCard">
+    <div className={`scoreCard ${theme === "dark" ? "dark" : ""}`}>
       <div className="text">
         <h3>{title}</h3>
         <h4>{desc}</h4>
       </div>
       <div className="card">
-        <div className="cardLeft cardChild" style={{ width: `${left}%` }}>
+        <div
+          className={`cardLeft cardChild ${theme === "dark" ? "dark" : ""}`}
+          style={{ width: `${left}%` }}
+        >
           <span>{left}%</span>
           <p>{leftTitle}</p>
         </div>
-        <div className="cardRight cardChild" style={{ width: `${right}%` }}>
+        <div
+          className={`cardRight cardChild ${theme === "dark" ? "dark" : ""}`}
+          style={{ width: `${right}%` }}
+        >
           <p>{rightTitle}</p>
           <span>{right}%</span>
         </div>

@@ -1,3 +1,4 @@
+import * as React from "react";
 import { Link, useParams } from "react-router-dom";
 // import * as React from "react";
 import "./index.scss";
@@ -5,11 +6,13 @@ import Layout from "../../../components/layout";
 import { useLocation } from "react-router-dom";
 import { personalityTypes } from "../../../utils/data";
 import ScoreCard from "../../../components/ScoreCard";
+import { ThemeContext } from "../../../context";
 // import { FaSpinner } from "react-icons/fa";
 
 const Results = () => {
   const { personality } = useParams();
   const location = useLocation();
+  const { theme } = React.useContext(ThemeContext);
   const { totalEIScore, totalSIScore, totalTFScore, totalJPScore, gender } =
     location.state || {};
   const personalityData = personalityTypes.find(
@@ -31,7 +34,7 @@ const Results = () => {
 
   return (
     <Layout>
-      <div className="resultsPage">
+      <div className={`resultsPage ${theme === "dark" ? "dark" : ""}`}>
         {/* {isLoading ? (
           <div className="loading">
             <FaSpinner className="spinner" />

@@ -108,8 +108,8 @@
     }
   }
   .cardSection{
-    padding: 0 10% 2rem;
-    background: var(--bg);
+    padding: var(--section-padding);
+    background: var(--secondary-bg);
     .cards{
       background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/personality5.jpg");
       background-size: cover;
@@ -126,7 +126,7 @@
     flex-direction: column;
     gap: 1.5rem;
     position: relative;
-    background: var(--secondary-bg);
+    background: var(--bg);
     color: var(--text-color-1);
     .header{
       display: flex;
@@ -185,7 +185,7 @@
     flex-direction: column;
     padding: var(--section-padding);
     gap: 2rem;
-    background: var(--bg);
+    background: var(--secondary-bg);
     position: relative;
     h1{
       color: var(--text-color-1);
@@ -313,7 +313,7 @@
     padding: var(--section-padding);
     gap: 2rem;
     position: relative;
-    background: var(--secondary-bg);
+    background: var(--bg);
     color: var(--text-color-1);
     .header{
       display: flex;

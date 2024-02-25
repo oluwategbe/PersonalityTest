@@ -45,7 +45,7 @@
       }
       p{
         font-size: 20px;
-        font-weight: 600;
+        font-weight: 500;
         width: 70%;
         text-align: center;
         color: var(--text-color-1);
@@ -72,7 +72,7 @@
           display: inline-block;
           cursor: pointer;
           border-radius: 50%;
-          background: white;
+          background: var(--bg);
           transition: background 0.3s ease;
         }
         .span-0, .span-1, .span-2{
@@ -168,6 +168,7 @@
       }
       .btnBlack{
         background-color: black;
+        border: 1px solid white;
         color: white;
         transition: background 0.3s ease;
         &:hover{

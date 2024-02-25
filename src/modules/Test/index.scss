@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: column;
   padding: var(--section-padding);
+  background: var(--bg);
   .testhero{
     background: var(--bg);
     display: flex;
@@ -99,6 +100,40 @@
         font-size: 14px;
         text-align: center;
         line-height: 20px;
+      }
+    }
+    .card.dark{
+      &:nth-child(1){
+        background: #0045a5;
+        color: #a0c8ff;
+        &:hover{
+          background: #045ad3;
+        }
+        svg{
+          path{
+            stroke: #a0c8ff
+          }
+        }
+      }
+      &:nth-child(2){
+        background: #860101;
+        color: #fd8f8f;
+        svg{
+          color: #fd8f8f;
+        }
+        &:hover{
+          background: #b10d0d;
+        }
+      }
+      &:nth-child(3){
+        background: #008800;
+        color: #94ff94;
+        svg{
+          color: #94ff94;
+        }
+        &:hover{
+          background: #03b403;
+        }
       }
     }
   }

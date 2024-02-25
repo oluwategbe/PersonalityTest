@@ -8,6 +8,7 @@ import Step5 from "../components/Steps/Step5";
 import { getPersonality } from "../../../utils/getPersonality";
 import { useNavigate } from "react-router-dom";
 import Steps from "./Steps";
+import { ThemeContext } from "../../../context";
 
 const Questions = () => {
   const [eiScores, setEIScores] = React.useState({});
@@ -15,7 +16,10 @@ const Questions = () => {
   const [tfScores, setTFScores] = React.useState({});
   const [jpScores, setJPScores] = React.useState({});
   const [gender, setGender] = React.useState("Male");
-  const [step, setStep] = React.useState(5);
+  const [step, setStep] = React.useState(1);
+
+  const { theme } = React.useContext(ThemeContext);
+
   const navigate = useNavigate();
   const handleSubmit = () => {
     const totalEIScore = Object.values(eiScores).reduce(
@@ -52,7 +56,7 @@ const Questions = () => {
   };
 
   return (
-    <div className="questions">
+    <div className={`questions ${theme === "dark" ? "dark" : ""}`}>
       <div className="topContainer">
         <Steps step={step} setStep={setStep} />
       </div>

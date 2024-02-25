@@ -22,14 +22,6 @@ const Step5 = ({ gender, setGender, setStep, handleSubmit }) => {
         N.B: This is just to determine your personality image{" "}
         <FaRegFaceSmileBeam />
       </h2>
-      {/* <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-        <label htmlFor="gender">Please select your gender:</label>
-        <select onChange={handleChange}>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-          <option value="others">Others</option>
-        </select>
-      </div> */}
       <CustomSelect options={["Male", "Female"]} onChange={handleChange} />
       <div className="buttonContainer">
         <button onClick={handlePrevious} type="button" className="btnBlack">

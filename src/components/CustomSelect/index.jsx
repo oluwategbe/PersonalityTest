@@ -2,11 +2,13 @@
 import * as React from "react";
 import { FaChevronDown } from "react-icons/fa";
 import "./index.css";
+import { ThemeContext } from "../../context";
 
 const CustomSelect = ({ options, onChange }) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const [selectedOption, setSelectedOption] = React.useState(options[0]);
   const selectRef = React.useRef(null);
+  const { theme } = React.useContext(ThemeContext);
   const handleOptionClick = (option) => {
     setSelectedOption(option);
     onChange(option);
@@ -25,7 +27,10 @@ const CustomSelect = ({ options, onChange }) => {
   }, []);
 
   return (
-    <div className="custom-select" ref={selectRef}>
+    <div
+      className={`custom-select ${theme === "dark" ? "dark" : ""}`}
+      ref={selectRef}
+    >
       <label htmlFor="gender">Please select your gender:</label>
       <div className="selected-option" onClick={() => setIsOpen(!isOpen)}>
         {selectedOption}

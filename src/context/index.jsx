@@ -7,7 +7,18 @@ export const ThemeContext = React.createContext({
 
 // eslint-disable-next-line react/prop-types
 function ThemeContextProvider({ children }) {
-  const [theme, setTheme] = React.useState("light");
+  const [theme, setThemeState] = React.useState(() => {
+    // Retrieve the theme preference from local storage
+    const savedTheme = localStorage.getItem("theme");
+    // If there's a saved theme preference, return it; otherwise, return "light"
+    return savedTheme ? savedTheme : "light";
+  });
+  // Update the theme preference in local storage and state
+  const setTheme = (newTheme) => {
+    localStorage.setItem("theme", newTheme);
+    setThemeState(newTheme);
+  };
+
   const value = {
     theme: theme,
     setTheme: setTheme,

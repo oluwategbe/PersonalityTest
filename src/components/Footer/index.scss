@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   background: var(--bg);
+  border-top: 1px solid var(--border-color-1);
   .foot{
     display: grid;
     grid-template-columns: 4fr 1.2fr 1fr 2fr;
@@ -42,9 +43,8 @@
       flex-direction: column;
       gap: 1rem;
       h1{
-        font-size: 20px;
-        font-weight: 600;
         font-family: "Azonix";
+        text-align: left;
       }
     }
     .quickLinks, .footerLinks{
