@@ -332,6 +332,25 @@
 .takeTestSection3{
   background: var(--secondary-bg);
   padding: var(--section-padding);
+  button{
+    svg{
+      font-size: 20px;
+      transition: transform 0.3s ease;
+    }
+    &:hover{
+      svg{
+        animation: moveIcon 1s infinite alternate;
+      }
+    }
+  }
+}
+@keyframes moveIcon {
+  0% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
 }
 .takeTestSection2{
   background: var(--secondary-bg);

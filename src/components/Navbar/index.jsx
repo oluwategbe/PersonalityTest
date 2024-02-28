@@ -5,7 +5,7 @@ import * as React from "react";
 import { minidata } from "../../utils/data";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { ThemeContext } from "./../../context/index";
-import { AnimatedWord, RevealY } from "../../utils/animatedText";
+import { AnimatedWord, NavRevealY, RevealY } from "../../utils/animatedText";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
@@ -32,17 +32,14 @@ const Navbar = () => {
   return (
     <div className={`navbar ${theme === "dark" ? "dark" : ""}`}>
       <Link to="/">
-        <AnimatedWord text="PersonalitySphere" className="logo" />
+        <AnimatedWord once={true} text="PersonalitySphere" className="logo" />
       </Link>
       <div className="navItems">
         <ul>
-          <RevealY style={{ width: "fit-content" }} delay={1}>
+          <NavRevealY once={true} style={{ width: "fit-content" }} delay={1}>
             <Link to="/">Home</Link>
-          </RevealY>
-          <RevealY
-            style={{ width: "fit-content", overflow: "visible" }}
-            delay={1.2}
-          >
+          </NavRevealY>
+          <RevealY once={true} style={{ width: "fit-content" }} delay={1.2}>
             <div className="navDrop" onClick={(e) => e.stopPropagation()}>
               <Link to="/personalities">Personalities</Link>
               {open ? (
@@ -65,9 +62,9 @@ const Navbar = () => {
               )}
             </div>
           </RevealY>
-          <RevealY style={{ width: "fit-content" }} delay={1.4}>
+          <NavRevealY once={true} style={{ width: "fit-content" }} delay={1.4}>
             <Link to="/test">Take the test</Link>
-          </RevealY>
+          </NavRevealY>
         </ul>
       </div>
       <div style={{ overflow: "hidden" }}>

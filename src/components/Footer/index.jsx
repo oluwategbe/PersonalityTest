@@ -3,7 +3,7 @@ import "./index.scss";
 import * as React from "react";
 import { minidata } from "../../utils/data";
 import { ThemeContext } from "../../context";
-import { Reveal, RevealY } from "../../utils/animatedText";
+import { NavRevealY, Reveal, RevealY } from "../../utils/animatedText";
 
 const Footer = () => {
   const { theme } = React.useContext(ThemeContext);
@@ -31,44 +31,44 @@ const Footer = () => {
           <Reveal>
             <h2>References</h2>
           </Reveal>
-          <RevealY delay={0.5}>
+          <NavRevealY delay={0.5}>
             <Link target="_blank" to="https://www.16personalities.com/">
               16 Personalities
             </Link>
-          </RevealY>
-          <RevealY delay={0.8}>
+          </NavRevealY>
+          <NavRevealY delay={0.8}>
             <Link
               target="_blank"
               to="https://www.truity.com/blog/page/16-personality-types-myers-briggs"
             >
               Truity
             </Link>
-          </RevealY>
-          <RevealY delay={1}>
+          </NavRevealY>
+          <NavRevealY delay={1}>
             <Link target="_blank" to="https://www.themyersbriggs.com/">
               The Myers-Briggs Company
             </Link>
-          </RevealY>
+          </NavRevealY>
         </div>
         <div className="quickLinks">
           <Reveal>
             <h2>Links</h2>
           </Reveal>
-          <RevealY delay={0.5}>
+          <NavRevealY delay={0.5}>
             <Link to="/">Home</Link>
-          </RevealY>
-          <RevealY delay={0.8}>
+          </NavRevealY>
+          <NavRevealY delay={0.8}>
             <Link to="/personalities">Personalities</Link>
-          </RevealY>
-          <RevealY delay={1}>
+          </NavRevealY>
+          <NavRevealY delay={1}>
             <Link to="/test">Take the test</Link>
-          </RevealY>
+          </NavRevealY>
         </div>
         <div className="footerLinks">
           <Reveal>
             <h2>Personalities</h2>
           </Reveal>
-          <div>
+          <div className="personLink">
             {minidata.map((d, i) => (
               <RevealY key={i} delay={0.1 * i}>
                 <React.Fragment>

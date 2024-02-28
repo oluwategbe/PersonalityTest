@@ -22,7 +22,7 @@
     transition: transform 0.5s ease;
     position: relative;
     &:hover{
-      transform: translateY(-5px);
+      transform: translateY(-5px) !important;
       color: var(--primary-color);;
     }
     &:after {

@@ -2,11 +2,16 @@
 import * as React from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 
-export const AnimatedWord = ({ text, el: Wrapper = "p", className }) => {
+export const AnimatedWord = ({
+  text,
+  el: Wrapper = "p",
+  className,
+  once = true,
+}) => {
   const ref = React.useRef(null);
   //amount :0.5 means that at least half of the element should be in view
   //once: truee, do it once
-  const isInview = useInView(ref, { once: true });
+  const isInview = useInView(ref, { once: once });
   const defaultVariants = {
     hidden: {
       opacity: 0,
@@ -145,6 +150,168 @@ export const RevealY = ({
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: once });
   const mainControls = useAnimation();
+  const [overflowVisible, setOverflowVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    } else {
+      mainControls.start("hidden");
+    }
+  }, [isInView, mainControls]);
+
+  const handleAnimationComplete = () => {
+    setOverflowVisible(true);
+  };
+
+  return (
+    <div
+      ref={ref}
+      style={{
+        position: "relative",
+        overflow: overflowVisible ? "visible" : "hidden",
+        width: "100%",
+        ...style,
+      }}
+      className={className}
+    >
+      <motion.div
+        variants={{
+          hidden: { y: "100%", opacity: 0 },
+          visible: {
+            y: 0,
+            opacity: 1,
+            transition: { delay: delay, type: "spring", bounce: 0.5 },
+          },
+        }}
+        initial="hidden"
+        animate={mainControls}
+        exit={{ y: "100%" }}
+        transition={{ duration: duration, delay: 0.2 }}
+        onAnimationComplete={handleAnimationComplete}
+      >
+        {children}
+      </motion.div>
+    </div>
+  );
+};
+export const PersonalityRevealY = ({
+  children,
+  delay = 0,
+  className = "",
+  style = "",
+  once = false,
+  duration = 0.5,
+}) => {
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: once });
+  const mainControls = useAnimation();
+  const [overflowVisible, setOverflowVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    } else {
+      mainControls.start("hidden");
+    }
+  }, [isInView, mainControls]);
+
+  const handleAnimationComplete = () => {
+    setOverflowVisible(true);
+  };
+
+  return (
+    <div
+      ref={ref}
+      style={{
+        position: "relative",
+        overflow: overflowVisible ? "visible" : "hidden",
+        width: "100%",
+        ...style,
+      }}
+      className={className}
+    >
+      <motion.div
+        variants={{
+          hidden: { y: "100%", opacity: 0 },
+          visible: {
+            y: 0,
+            opacity: 1,
+            transition: { delay: delay, type: "spring", bounce: 0.5 },
+          },
+        }}
+        initial="hidden"
+        animate={mainControls}
+        exit={{ y: "100%" }}
+        transition={{ duration: duration, delay: 0.2 }}
+        onAnimationComplete={handleAnimationComplete}
+      >
+        {children}
+      </motion.div>
+    </div>
+  );
+};
+export const OtherRevealY = ({
+  children,
+  delay = 0,
+  className = "",
+  style = "",
+  once = false,
+  duration = 0.5,
+}) => {
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: once });
+  const mainControls = useAnimation();
+
+  React.useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    } else {
+      mainControls.start("hidden");
+    }
+  }, [isInView, mainControls]);
+
+  return (
+    <div
+      ref={ref}
+      style={{
+        position: "relative",
+        overflow: "hidden",
+        width: "100%",
+        ...style,
+      }}
+      className={className}
+    >
+      <motion.div
+        variants={{
+          hidden: { y: "100%", opacity: 0 },
+          visible: {
+            y: 0,
+            opacity: 1,
+            transition: { delay: delay, type: "spring", bounce: 0.4 },
+          },
+        }}
+        initial="hidden"
+        animate={mainControls}
+        exit={{ y: "100%" }}
+        transition={{ duration: duration, delay: 0.2 }}
+      >
+        {children}
+      </motion.div>
+    </div>
+  );
+};
+export const NavRevealY = ({
+  children,
+  delay = 0,
+  className = "",
+  style = "",
+  once = false,
+  duration = 0.5,
+}) => {
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: once });
+  const mainControls = useAnimation();
 
   React.useEffect(() => {
     if (isInView) {
@@ -170,7 +337,6 @@ export const RevealY = ({
           hidden: { y: 75, opacity: 0 },
           visible: {
             y: 0,
-
             opacity: 1,
             transition: { delay: delay, type: "spring", bounce: 0.5 },
           },
@@ -180,7 +346,7 @@ export const RevealY = ({
         exit={{ y: 75 }}
         transition={{ duration: duration, delay: 0.2 }}
       >
-        {children}
+        <div style={{ display: "flex" }}>{children}</div>
       </motion.div>
     </div>
   );
@@ -293,7 +459,7 @@ export const ScaleXY = ({ children, once = false }) => {
 };
 export const RevealLeft = ({ children, className = "", bg = "" }) => {
   const ref = React.useRef(null);
-  const isInView = useInView(ref);
+  const isInView = useInView(ref, { once: true });
   const slideControls = useAnimation();
   React.useEffect(() => {
     if (isInView) {
@@ -304,16 +470,15 @@ export const RevealLeft = ({ children, className = "", bg = "" }) => {
   }, [isInView, slideControls]);
   return (
     <motion.div ref={ref} className={className}>
-      {children}
       <motion.div
         variants={{
           hidden: {
-            right: 0,
+            right: "100%",
           },
           visible: {
             ease: [0.1, 0.5, 0.22, 0.3],
-            right: "100%",
-            transition: { duration: 1.5 },
+            right: 0,
+            transition: { duration: 1 },
           },
         }}
         initial="hidden"
@@ -324,15 +489,16 @@ export const RevealLeft = ({ children, className = "", bg = "" }) => {
           bottom: 0,
           left: 0,
           background: bg,
-          zIndex: 20,
         }}
-      ></motion.div>
+      >
+        {children}
+      </motion.div>
     </motion.div>
   );
 };
 export const RevealRight = ({ children, className = "", bg = "" }) => {
   const ref = React.useRef(null);
-  const isInView = useInView(ref);
+  const isInView = useInView(ref, { once: true });
   const slideControls = useAnimation();
   React.useEffect(() => {
     if (isInView) {
@@ -343,15 +509,14 @@ export const RevealRight = ({ children, className = "", bg = "" }) => {
   }, [isInView, slideControls]);
   return (
     <motion.div ref={ref} className={className}>
-      {children}
       <motion.div
         variants={{
           hidden: {
-            left: 0,
+            left: "100%",
           },
           visible: {
             ease: [0.1, 0.5, 0.22, 0.3],
-            left: "100%",
+            left: 0,
             transition: { duration: 1.5 },
           },
         }}
@@ -364,9 +529,10 @@ export const RevealRight = ({ children, className = "", bg = "" }) => {
           left: 0,
           right: 0,
           background: bg,
-          zIndex: 20,
         }}
-      ></motion.div>
+      >
+        {children}
+      </motion.div>
     </motion.div>
   );
 };
@@ -397,6 +563,15 @@ export const ShakeButton = ({
         delay: delay,
       },
     },
+    hover: {
+      rotate: [0, -10, 0, 10, 0, -10, 0, 10, 0, -10, 0, 10, 0],
+      scale: 1.2,
+      transition: {
+        duration: 1,
+        ease: [0.1, 0.4, 0.22, 1],
+        delay: 0,
+      },
+    },
   };
 
   React.useEffect(() => {
@@ -409,7 +584,27 @@ export const ShakeButton = ({
 
   return (
     <div ref={ref} style={{ position: "relative", ...className }}>
-      <motion.div variants={qupteVar} initial="hidden" animate={mainControls}>
+      <motion.div
+        whileHover="hover"
+        variants={qupteVar}
+        initial="hidden"
+        animate={mainControls}
+      >
+        {/* <motion.div
+          style={{
+            position: "absolute",
+            top: "0",
+            bottom: "0",
+            borderRadius: "10px",
+            background: "var(--primary-color)"
+          }}
+          animate={{
+            scaleX: [1, 1.2],
+            scaleY: [1, 1.5],
+            opacity: [0.4, 0],
+          }}
+          transition={{ repeat: Infinity, duration: 3 }}
+        ></motion.div> */}
         {children}
       </motion.div>
     </div>

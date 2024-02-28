@@ -4,6 +4,13 @@ import Layout from "../../components/layout";
 import { ThemeContext } from "../../context";
 import { personalityData } from "../../utils/data";
 import "./index.scss";
+import {
+  OtherRevealY,
+  PersonalityRevealY,
+  RevealLeft,
+  RevealRight,
+  RevealY,
+} from "../../utils/animatedText";
 
 const Personalities = () => {
   const { theme } = React.useContext(ThemeContext);
@@ -16,26 +23,39 @@ const Personalities = () => {
       <div className={`personalitiesPage ${theme === "dark" ? "dark" : ""}`}>
         <div className="personalityHero">
           <div className="personalityHeroSection">
-            <h1>Myers & Briggs&apos; 16 Personality Types</h1>
-            <p>
-              In order to better understand people&apos;s common similarities
-              and differences, Isabel Briggs Myers and her mother Katharine
-              Briggs built on the work of psychologist Carl Jung to develop a
-              system of categorizing human behavior. They landed on four key
-              dimensions that people could express as preferences in the way
-              they manage their energy, process information, make decisions, and
-              structure their day-to-day lives. Each of these preferences is
-              represented by a letter, and together these preferences, denoted
-              by four letters, make up your Myers Briggs personality type.
-              <br />
-              <br />
-              The 16 personalities grouped accordingly are shown below:
-            </p>
+            <OtherRevealY once={true}>
+              <h1>Myers & Briggs&apos; 16 Personality Types</h1>
+            </OtherRevealY>
+            <OtherRevealY once={true} delay={0.5}>
+              <p>
+                In order to better understand people&apos;s common similarities
+                and differences, Isabel Briggs Myers and her mother Katharine
+                Briggs built on the work of psychologist Carl Jung to develop a
+                system of categorizing human behavior. They landed on four key
+                dimensions that people could express as preferences in the way
+                they manage their energy, process information, make decisions,
+                and structure their day-to-day lives. Each of these preferences
+                is represented by a letter, and together these preferences,
+                denoted by four letters, make up your Myers Briggs personality
+                type.
+                <br />
+              </p>
+            </OtherRevealY>
+            <OtherRevealY once={true} delay={1}>
+              <p style={{ textAlign: "left", width: "100%" }}>
+                The 16 personalities grouped accordingly are shown below:
+              </p>
+            </OtherRevealY>
           </div>
         </div>
         <div className="personalities">
           <div className={`analysts group ${theme === "dark" ? "dark" : ""}`}>
-            <h4>Analysts</h4>
+            <PersonalityRevealY
+              // style={{ position: "absolute", top: "-8%" }}
+              className="analysth4"
+            >
+              <h4>Analysts</h4>
+            </PersonalityRevealY>
             {analysts?.map((p) => (
               <PersonalityCard
                 key={p?.personality}
