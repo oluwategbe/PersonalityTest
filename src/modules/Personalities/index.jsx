@@ -4,13 +4,7 @@ import Layout from "../../components/layout";
 import { ThemeContext } from "../../context";
 import { personalityData } from "../../utils/data";
 import "./index.scss";
-import {
-  OtherRevealY,
-  PersonalityRevealY,
-  RevealLeft,
-  RevealRight,
-  RevealY,
-} from "../../utils/animatedText";
+import { OtherRevealY, PersonalityRevealH4Y } from "../../utils/animatedText";
 
 const Personalities = () => {
   const { theme } = React.useContext(ThemeContext);
@@ -18,6 +12,7 @@ const Personalities = () => {
   const diplomats = personalityData?.filter((p) => p?.group === "Diplomats");
   const sentinels = personalityData?.filter((p) => p?.group === "Sentinels");
   const explorers = personalityData?.filter((p) => p?.group === "Explorers");
+
   return (
     <Layout>
       <div className={`personalitiesPage ${theme === "dark" ? "dark" : ""}`}>
@@ -50,43 +45,48 @@ const Personalities = () => {
         </div>
         <div className="personalities">
           <div className={`analysts group ${theme === "dark" ? "dark" : ""}`}>
-            <PersonalityRevealY
-              // style={{ position: "absolute", top: "-8%" }}
-              className="analysth4"
-            >
-              <h4>Analysts</h4>
-            </PersonalityRevealY>
-            {analysts?.map((p) => (
+            <PersonalityRevealH4Y className="analysth4 groupH4" once={true}>
+              Analysts
+            </PersonalityRevealH4Y>
+            {analysts?.map((p, i) => (
               <PersonalityCard
-                key={p?.personality}
+                key={i}
+                index={i}
                 title={p?.title}
                 personality={p?.personality}
                 desc={p?.short_desc}
                 picture={p?.pic}
+                delay={i * 0.25}
                 color={theme === "light" ? "purple" : "#d799ee"}
                 box={theme === "light" ? "#ae6ca8" : "#200d1f"}
               />
             ))}
           </div>
           <div className={`diplomats group ${theme === "dark" ? "dark" : ""}`}>
-            <h4>Diplomats</h4>
-            {diplomats?.map((p) => (
+            <PersonalityRevealH4Y className="analysth4 groupH4" once={true}>
+              Diplomats
+            </PersonalityRevealH4Y>
+            {diplomats?.map((p, i) => (
               <PersonalityCard
-                key={p?.personality}
+                key={i}
                 title={p?.title}
                 personality={p?.personality}
                 desc={p?.short_desc}
                 picture={p?.pic}
+                delay={i * 0.25}
                 color={theme === "light" ? "green" : "#9df770"}
                 box={theme === "light" ? "#8fc9a6" : "#1a502d "}
               />
             ))}
           </div>
           <div className={`sentinels group ${theme === "dark" ? "dark" : ""}`}>
-            <h4>Sentinels</h4>
-            {sentinels?.map((p) => (
+            <PersonalityRevealH4Y className="analysth4 groupH4" once={true}>
+              Sentinels
+            </PersonalityRevealH4Y>
+            {sentinels?.map((p, i) => (
               <PersonalityCard
-                key={p?.personality}
+                key={i}
+                delay={i * 0.25}
                 title={p?.title}
                 personality={p?.personality}
                 desc={p?.short_desc}
@@ -97,10 +97,13 @@ const Personalities = () => {
             ))}
           </div>
           <div className={`explorers group ${theme === "dark" ? "dark" : ""}`}>
-            <h4>Explorers</h4>
-            {explorers?.map((p) => (
+            <PersonalityRevealH4Y className="analysth4 groupH4" once={true}>
+              Explorers
+            </PersonalityRevealH4Y>
+            {explorers?.map((p, i) => (
               <PersonalityCard
-                key={p?.personality}
+                key={i}
+                delay={i * 0.25}
                 title={p?.title}
                 personality={p?.personality}
                 desc={p?.short_desc}

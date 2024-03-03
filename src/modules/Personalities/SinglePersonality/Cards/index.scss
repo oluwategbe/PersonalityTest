@@ -17,7 +17,7 @@
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(10px);
     z-index: 1;
-    width: 45%;
+    // width: 45%;
     transition: display 0.3s ease-in-out;
     cursor: pointer;
     transition: background 0.5s ease-in-out;
@@ -73,34 +73,34 @@
   .ei{
     position: relative;
     box-shadow: 3px 5px 10px 0px rgb(255 251 0 / 90%);
-    background: rgb(255 249 0 / 20%);
+    background: #fff90033;
 
     &:hover{
-      background: rgb(255 249 0 / 50%);
+      background: #fff90080;
     }
   }
   .ns{
     align-self: flex-end;
-    background: rgb(127 245 195 / 20%);
-    box-shadow: 3px 5px 10px 0px rgb(0 255 102 / 90%);
+    background: #7ff5c333;
+    box-shadow: 3px 5px 10px 0px #00ff66e6;
     &:hover{
-      background: rgb(0 255 102 / 50%);
+      background: #00ff6680;
     }
   }
   .tf{
     position: relative;
-    box-shadow: 3px 5px 10px 0px rgb(0 110 255 / 90%);
-    background: rgb(0 127 255 / 20%);
+    box-shadow: 3px 5px 10px 0px #006effe6;
+    background: #007fff33;
     &:hover{
-      background: rgb(0 127 255 / 50%);
+      background: #007fff80;
     }
   }
   .jp{
     align-self: flex-end;
-    box-shadow: 3px 5px 10px 0px rgb(255 0 0 / 90%);
-    background: rgb(255 0 0 / 20%);
+    box-shadow: 3px 5px 10px 0px #ff0000e6;
+    background: #ff000033;
     &:hover{
-      background: rgb(255 0 0 / 50%);
+      background: #ff000080;
     }
   }
 }

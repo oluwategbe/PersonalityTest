@@ -92,13 +92,15 @@ const Home = () => {
               personality type.
             </p>
           </Reveal>
-          <Reveal>
-            <Link to={"/test"}>
-              <button>
-                Take the test
-                <AiOutlineDoubleRight />
-              </button>
-            </Link>
+          <Reveal style={{ overflow: "visible" }}>
+            <ShakeButton delay={1} style={{ width: "fit-content" }}>
+              <Link to={"/test"}>
+                <button>
+                  Take the test
+                  <AiOutlineDoubleRight />
+                </button>
+              </Link>
+            </ShakeButton>
           </Reveal>
         </div>
         <div className="right">
@@ -343,11 +345,11 @@ const Home = () => {
       <div className={`takeTestSection3 ${theme === "dark" ? "dark" : ""}`}>
         <Reveal once={true} delay={0}>
           <div className="takeTest">
-            <RevealY delay={1} once={true}>
+            <RevealY delay={0.5} once={true}>
               <h3>Wanna discover your personality? Get Started Now</h3>
             </RevealY>{" "}
             <ShakeButton
-              delay={1.3}
+              delay={0.8}
               style={{ display: "flex", justifyContent: "center" }}
             >
               <Link to={"/test"}>

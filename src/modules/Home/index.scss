@@ -34,6 +34,23 @@
         }
       }
     }
+    button:hover {
+      background: var(--primary-color);
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+    }
+    button{
+      svg{
+        font-size: 20px;
+        transition: transform 0.3s ease;
+      }
+      &:hover{
+        svg{
+          animation: moveIcon 1s infinite alternate;
+          animation-delay: 1.2s;
+        }
+      }
+    }
   }
   .right{
     flex: 1;
@@ -340,6 +357,7 @@
     &:hover{
       svg{
         animation: moveIcon 1s infinite alternate;
+        animation-delay: 1.2s;
       }
     }
   }

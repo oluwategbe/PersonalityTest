@@ -10,13 +10,6 @@ import { ThemeContext } from "../../context";
 const Test = () => {
   const { theme } = React.useContext(ThemeContext);
 
-  React.useEffect(() => {
-    window.scrollTo({
-      behavior: "smooth",
-      top: 0,
-    });
-  }, []);
-
   return (
     <Layout>
       <div className={`test ${theme === "dark" ? "dark" : ""}`}>

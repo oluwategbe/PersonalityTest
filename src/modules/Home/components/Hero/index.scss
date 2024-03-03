@@ -44,6 +44,7 @@
         &:hover{
           svg{
             animation: moveIcon 1s infinite alternate;
+            animation-delay: 1.2s;
           }
         }
       }

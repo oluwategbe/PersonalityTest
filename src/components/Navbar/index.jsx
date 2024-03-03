@@ -39,7 +39,11 @@ const Navbar = () => {
           <NavRevealY once={true} style={{ width: "fit-content" }} delay={1}>
             <Link to="/">Home</Link>
           </NavRevealY>
-          <RevealY once={true} style={{ width: "fit-content" }} delay={1.2}>
+          <RevealY
+            once={true}
+            style={{ width: "fit-content", padding: "2px 0" }}
+            delay={1.2}
+          >
             <div className="navDrop" onClick={(e) => e.stopPropagation()}>
               <Link to="/personalities">Personalities</Link>
               {open ? (

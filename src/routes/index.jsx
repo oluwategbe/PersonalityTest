@@ -1,9 +1,11 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import { Fragment, Suspense } from "react";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter, useLocation } from "react-router-dom";
 import BaseRoutes from "./base.js";
 import { ToastContainer } from "react-toastify";
 import AuthGuard from "./AuthGuard.jsx";
 import Loader from "./../components/Loader/index";
+import { AnimatePresence } from "framer-motion";
 
 const renderRoute = ({ component: Component, ...route }) => {
   const { useAuth } = route;
@@ -13,7 +15,8 @@ const renderRoute = ({ component: Component, ...route }) => {
       path={route.path}
       element={
         <Fragment>
-          <Suspense fallback={<Loader />}>
+          {/* fallback={<Loader />} */}
+          <Suspense>
             {useAuth ? (
               <AuthGuard>
                 <Component />
@@ -28,11 +31,28 @@ const renderRoute = ({ component: Component, ...route }) => {
     />
   );
 };
+const AppRoutes = () => {
+  const location = useLocation();
+  const handleExitComplete = () => {
+    window.scrollTo({
+      behavior: "smooth",
+      top: 0,
+    });
+  };
+
+  return (
+    <AnimatePresence wait="true" onExitComplete={handleExitComplete}>
+      <Routes key={location.pathname} location={location}>
+        {BaseRoutes.map((route) => renderRoute(route))}
+      </Routes>
+    </AnimatePresence>
+  );
+};
 
 const RoutesWrapper = () => {
   return (
     <BrowserRouter>
-      <Routes>{BaseRoutes.map((route) => renderRoute(route))}</Routes>
+      <AppRoutes />
     </BrowserRouter>
   );
 };

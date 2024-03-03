@@ -1,4 +1,5 @@
 .singlePersonality{
+  overflow: hidden;
   h1{
     font-size: 24px;
     text-align: left;
@@ -86,13 +87,6 @@
     background: var(--bg);
     color: var(--text-color-1);
     position: relative;
-    // h3{
-    //   font-size: 150px;
-    //   color: var(--text-color-2);
-    // }
-    // h3.dark{
-    //   color: #1d1d1d;
-    // }
     .header{
       display: flex;
       align-items: center;
@@ -104,6 +98,7 @@
       z-index: 1;
     }
     .fact{
+      margin-top: 2rem;
       box-shadow: 3px 5px 10px 0px rgba(12, 12, 12, 0.726);
     }
   }
@@ -141,7 +136,7 @@
       top: 2%;
       font-size: 200px;
       letter-spacing: 70px;
-      color: #e6e6e6;
+      color: #f3f3f3;
     }
     h3.dark{
       color: #181818;
@@ -371,56 +366,6 @@
     }
     h1{
       margin-left: 2rem;
-    }
-    .carousel{
-      padding: 1rem;
-      button{
-        background: #b67f7f;
-        transition: background 0.3s ease;
-        padding: 0;
-        &:hover{
-          background: #af2121;
-        }
-        &:first-of-type{
-          left: 0;
-        }
-        &:last-child{
-          right: 0;
-        }
-      }
-      ul{
-        display: flex;
-        align-items: stretch;
-        li{
-          cursor: grab;
-          .carouselCard{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-            text-align: center;
-            padding: 1rem;
-            img{
-              height: 150px;
-              width: 150px;
-              border-radius: 50%;
-              object-fit: cover;
-              object-position: top center;
-            }
-            h2{
-              font-size: 18px;
-              font-weight: 600;
-            }
-            p{
-              font-size: 13px;
-              width: 90%;
-              line-height: 20px;
-              text-align: center;
-            }
-          }
-        }
-      }
     }
   }
 }

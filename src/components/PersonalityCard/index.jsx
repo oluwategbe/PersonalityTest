@@ -1,8 +1,18 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import "./index.scss";
+import { PersonalityRevealY, ScaleXY } from "../../utils/animatedText";
 
-const PersonalityCard = ({ title, personality, desc, picture, color, box }) => {
+const PersonalityCard = ({
+  title,
+  personality,
+  desc,
+  picture,
+  color,
+  box,
+  delay,
+  index,
+}) => {
   return (
     <div
       className="personalityCard"
@@ -12,10 +22,14 @@ const PersonalityCard = ({ title, personality, desc, picture, color, box }) => {
       }}
     >
       <Link to={`/personalities/${personality}`}>
-        <img src={picture} alt={title} />
-        <h2 style={{ color: `${color}` }}>{title}</h2>
-        <h3 style={{ color: `${color}` }}>{personality}</h3>
-        <p style={{ color: `${color}` }}>{desc}</p>
+        <ScaleXY delay={delay} once={true} index={index}>
+          <img src={picture} alt={title} />
+        </ScaleXY>
+        <PersonalityRevealY delay={1 * delay} once={true}>
+          <h2 style={{ color: `${color}` }}>{title}</h2>
+          <h3 style={{ color: `${color}` }}>{personality}</h3>
+          <p style={{ color: `${color}` }}>{desc}</p>
+        </PersonalityRevealY>
       </Link>
     </div>
   );

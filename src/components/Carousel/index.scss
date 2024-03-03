@@ -1,0 +1,82 @@
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  padding: 1rem;
+  .carousel-inner {
+    display: flex;
+    align-items: flex-start;
+    .carouselCard{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      text-align: center;
+      padding: 1rem;
+      flex: 0 0 calc(100% / 5); /* Initially show 5 items */
+      transition: all 0.5s ease;
+      img{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: top center;
+      }
+      h2{
+        font-size: 18px;
+        font-weight: 600;
+      }
+      p{
+        font-size: 13px;
+        width: 90%;
+        line-height: 20px;
+        text-align: center;
+      }
+    }
+  }
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 1rem;
+    background: #b67f7f;
+    transition: background 0.3s ease;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    &:hover{
+      background: #af2121;
+    }
+    svg{
+      font-size: 4rem;
+    }
+  }
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 0;
+  }
+}
+
+/* Adjust number of visible items based on screen size */
+@media (max-width: 1499px) {
+  .carouselCard {
+    flex: 0 0 calc(100% / 4); /* Show 4 items */
+  }
+}
+
+@media (max-width: 991px) {
+  .carouselCard {
+    flex: 0 0 calc(100% / 3); /* Show 3 items */
+  }
+}
+
+@media (max-width: 767px) {
+  .carouselCard {
+    flex: 0 0 calc(100% / 2); /* Show 2 items */
+  }
+}
