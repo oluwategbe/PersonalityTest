@@ -251,6 +251,53 @@ export const OtherRevealY = ({
     </div>
   );
 };
+export const TestRevealY = ({
+  children,
+  delay = 0,
+  className = "",
+  style = "",
+  once = false,
+  duration = 0.5,
+}) => {
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: once });
+  const mainControls = useAnimation();
+
+  React.useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    } else {
+      mainControls.start("hidden");
+    }
+  }, [isInView, mainControls]);
+
+  return (
+    <motion.div
+      ref={ref}
+      style={{
+        position: "relative",
+        overflow: "hidden",
+        width: "100%",
+        ...style,
+      }}
+      className={className}
+      variants={{
+        hidden: { y: "100%", opacity: 0 },
+        visible: {
+          y: 0,
+          opacity: 1,
+          transition: { delay: delay, type: "spring", bounce: 0.4 },
+        },
+      }}
+      initial="hidden"
+      animate={mainControls}
+      exit={{ y: "100%" }}
+      transition={{ duration: duration, delay: 0.2 }}
+    >
+      {children}
+    </motion.div>
+  );
+};
 export const NavRevealY = ({
   children,
   delay = 0,
@@ -407,6 +454,14 @@ export const SingleScaleX = ({ children, once = false, style = "" }) => {
         ease: [0.1, 0.4, 0.22, 1],
       },
     },
+    exit: {
+      scaleX: 0,
+      transition: {
+        duration: 0.5,
+        delay: 1,
+        ease: [0.1, 0.4, 0.22, 1],
+      },
+    },
   };
 
   React.useEffect(() => {
@@ -422,7 +477,12 @@ export const SingleScaleX = ({ children, once = false, style = "" }) => {
       ref={ref}
       style={{ position: "relative", overflow: "hidden", ...style }}
     >
-      <motion.div variants={qupteVar} initial="hidden" animate={mainControls}>
+      <motion.div
+        variants={qupteVar}
+        initial="hidden"
+        animate={mainControls}
+        exit="exit"
+      >
         {children}
       </motion.div>
     </div>
@@ -858,6 +918,62 @@ export const SlideRight = ({
       <motion.div
         variants={{
           hidden: { x: "100%", opacity: 0 },
+          visible: {
+            x: 0,
+            opacity: 1,
+            transition: { delay: delay, type: "spring", bounce: 0.3 },
+          },
+          exit: { opacity: 0 },
+        }}
+        initial="hidden"
+        animate={mainControls}
+        exit="exit"
+        transition={{ duration: duration, delay: 0.2 }}
+        onAnimationComplete={handleAnimationComplete}
+      >
+        {children}
+      </motion.div>
+    </div>
+  );
+};
+export const TestSlideLeft = ({
+  children,
+  delay = 0,
+  className = "",
+  style = "",
+  once = false,
+  duration = 0.5,
+}) => {
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: once });
+  const mainControls = useAnimation();
+  const [overflowVisible, setOverflowVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    } else {
+      mainControls.start("hidden");
+    }
+  }, [isInView, mainControls]);
+
+  const handleAnimationComplete = () => {
+    setOverflowVisible(true);
+  };
+
+  return (
+    <div
+      ref={ref}
+      style={{
+        position: "relative",
+        overflow: overflowVisible ? "visible" : "hidden",
+        ...style,
+      }}
+      className={className}
+    >
+      <motion.div
+        variants={{
+          hidden: { x: "-100%", opacity: 0 },
           visible: {
             x: 0,
             opacity: 1,

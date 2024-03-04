@@ -19,9 +19,20 @@ const TFQuestions = ({
     setSelectedOption(value);
     setSelectedClass(classValue);
     setActiveIndex(index + 1);
-    const webPartElement = document.getElementsByClassName(`quest-${index}`);
-    if (webPartElement) {
-      webPartElement[0].scrollIntoView({ behavior: "smooth", block: "start" });
+    // const webPartElement = document.getElementsByClassName(`quest-${index}`);
+    // if (webPartElement) {
+    //   webPartElement[0].scrollIntoView({ behavior: "smooth", block: "start" });
+    // }
+    if (index < 9) {
+      // Check if current question is not the last one
+      setActiveIndex(index + 1);
+      const webPartElement = document.getElementsByClassName(`quest-${index}`);
+      if (webPartElement.length > 0) {
+        webPartElement[0].scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
     }
   };
 

@@ -47,7 +47,7 @@ const Step1 = ({ setEIScores, eiScores, setStep, answered }) => {
           }`}
           disabled={Object.values(eiScores).length < 10}
         >
-          Next{" "}
+          Next
         </button>
       </div>
     </>

@@ -31,6 +31,7 @@ body {
   --fColor: #ff145a;
   --jColor: #895fff;
   --pColor: #009400;
+  --results-bg: #bebebe;
 }
 .dark {
   --primary-color: #512da3;

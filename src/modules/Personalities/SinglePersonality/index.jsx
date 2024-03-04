@@ -5,7 +5,7 @@ import { personalityData } from "./../../../utils/data";
 import Layout from "./../../../components/layout/index";
 import Cards from "./Cards";
 import { MdCircle, MdSquare } from "react-icons/md";
-import Carouse from "./Carousel";
+// import Carouse from "./Carousel";
 import ReactECharts from "echarts-for-react";
 import { ThemeContext } from "../../../context";
 import {

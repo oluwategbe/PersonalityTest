@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import CustomSelect from "../../../../components/CustomSelect";
+import { RevealY } from "../../../../utils/animatedText";
 import "../../Questions/index.scss";
 import { FaRegFaceSmileBeam } from "react-icons/fa6";
 
@@ -18,10 +19,12 @@ const Step5 = ({ gender, setGender, setStep, handleSubmit }) => {
 
   return (
     <div className="lastStep">
-      <h2>
-        N.B: This is just to determine your personality image{" "}
-        <FaRegFaceSmileBeam />
-      </h2>
+      <RevealY delay={0.5} once={true}>
+        <h2>
+          N.B: This is just to determine your personality image{" "}
+          <FaRegFaceSmileBeam />
+        </h2>
+      </RevealY>
       <CustomSelect options={["Male", "Female"]} onChange={handleChange} />
       <div className="buttonContainer">
         <button onClick={handlePrevious} type="button" className="btnBlack">

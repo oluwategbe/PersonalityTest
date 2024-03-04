@@ -84,3 +84,26 @@
 
   }
 }
+.resultWait {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--results-bg);
+}
+.progressBar {
+  height: 4px;
+  width: 100%;
+  background-color: #ccc;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 5s;
+}
+.calculationText {
+  margin-bottom: 10px; /* Add some space below the text */
+}

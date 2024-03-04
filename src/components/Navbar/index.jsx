@@ -29,6 +29,11 @@ const Navbar = () => {
     setTheme(title);
   };
 
+  const toggleSwitch = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+  };
+
   return (
     <div className={`navbar ${theme === "dark" ? "dark" : ""}`}>
       <Link to="/">
@@ -77,10 +82,15 @@ const Navbar = () => {
           animate={{ x: 0 }}
           transition={{ duration: 0.5, delay: 2 }}
           className="themeBox"
+          onClick={toggleSwitch}
         >
-          <FaSun onClick={() => handleClick("light")} />
-          <div className={`ball ${theme === "dark" ? "moveRight" : ""}`} />
-          <FaMoon onClick={() => handleClick("dark")} />
+          <FaSun />
+          <motion.div
+            layout
+            transition={spring}
+            className={`ball ${theme === "dark" ? "moveRight" : ""}`}
+          />
+          <FaMoon />
         </motion.div>
       </div>
     </div>
@@ -88,3 +98,9 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+const spring = {
+  type: "spring",
+  stiffness: 700,
+  damping: 30,
+};
