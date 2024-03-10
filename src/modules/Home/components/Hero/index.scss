@@ -6,7 +6,6 @@
   justify-content: center;
   padding: 4rem 10%;
   .heroBox{
-    height: 70vh;
     border-radius: 10px;
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("/images/personality2.jpg");
     background-position: center;
@@ -51,12 +50,125 @@
     }
   }
 }
-
 @keyframes moveIcon {
   0% {
     transform: translateX(10px);
   }
   100% {
     transform: translateX(-10px);
+  }
+}
+@media (min-width: 1600px){
+  .hero{
+    height:calc(100vh - 2rem);
+    .heroBox{
+      gap: 3rem;
+      .quote{
+        gap: 2rem;
+        h1{
+          font-size: 28px;
+        }
+        h5{
+          font-size: 20px;
+        }
+      }
+      a{
+        button{
+          svg{
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1400px) and (max-width: 1600px){
+  .hero{
+    height:calc(100vh - 2rem);
+    .heroBox{
+      gap: 3rem;
+      .quote{
+        gap: 2rem;
+        h1{
+          font-size: 24px;
+        }
+        h5{
+          font-size: 15px;
+        }
+      }
+      a{
+        button{
+          svg{
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 998px){
+  .hero{
+    height:calc(100vh - 4rem);
+    padding: 3rem 7%;
+    .heroBox{
+      gap: 1.5rem;
+      .quote{
+        gap: 0.5rem;
+        h1{
+          font-size: 16px;
+        }
+      }
+      a{
+        button{
+          svg{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px){
+  .hero{
+    padding: 3rem 5%;
+    .heroBox{
+      gap: 1.5rem;
+      .quote{
+        gap: 0.5rem;
+        h1{
+          font-size: 16px;
+        }
+      }
+      a{
+        button{
+          svg{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 560px){
+  .hero{
+    height: 80vh;
+    padding: 1.5rem 5%;
+    .heroBox{
+      gap: 1.5rem;
+      .quote{
+        gap: 0.5rem;
+        width: 70%;
+        h1{
+          font-size: 14px;
+        }
+      }
+      a{
+        button{
+          svg{
+            font-size: 11px;
+          }
+        }
+      }
+    }
   }
 }

@@ -150,3 +150,140 @@ ul {
 .scrollTop svg {
   color: black;
 }
+@media (min-width: 1600px) {
+  .logo {
+    font-size: 28px !important;
+  }
+  button {
+    padding: 2rem;
+    gap: 20px;
+    font-size: 24px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 24px;
+    line-height: 50px;
+  }
+  .scrollTop {
+    bottom: 3rem;
+    right: 3rem;
+    height: 70px;
+    width: 70px;
+    padding: 0;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1600px) {
+  .logo {
+    font-size: 24px !important;
+  }
+  button {
+    padding: 2rem;
+    gap: 16px;
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .scrollTop {
+    bottom: 3rem;
+    right: 3rem;
+    height: 70px;
+    width: 70px;
+    padding: 0;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 998px) {
+  :root {
+    --section-padding: 3rem 7%;
+  }
+  .dark {
+    --section-padding: 3rem 7%;
+  }
+  .logo {
+    font-size: 15px !important;
+  }
+  button {
+    padding: 0.8rem;
+    font-size: 13px;
+  }
+  h1 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 13px;
+    line-height: 25px;
+  }
+  .scrollTop {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 2rem 5%;
+  }
+  .dark {
+    --section-padding: 2rem 5%;
+  }
+  .logo {
+    font-size: 16px !important;
+  }
+  button {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 12px;
+    line-height: 25px;
+  }
+  .scrollTop {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 560px) {
+  :root {
+    --section-padding: 1rem 5%;
+  }
+  .dark {
+    --section-padding: 1rem 5%;
+  }
+  .logo {
+    font-size: 14px !important;
+  }
+  button {
+    padding: 0.8rem;
+    font-size: 11px;
+  }
+  h1 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .scrollTop {
+    bottom: 1rem;
+    right: 1rem;
+    height: 30px;
+    width: 30px;
+  }
+}

@@ -44,7 +44,12 @@ const Hero = () => {
   const { theme } = React.useContext(ThemeContext);
   return (
     <motion.div className={`hero ${theme === "dark" ? "dark" : ""}`}>
-      <motion.div variants={divVar} initial="initial" animate="animate">
+      <motion.div
+        style={{ height: "100%", width: "100%" }}
+        variants={divVar}
+        initial="initial"
+        animate="animate"
+      >
         <div className="heroBox">
           <div className="quote">
             <div style={{ overflow: "hidden" }}>

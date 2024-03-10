@@ -413,3 +413,59 @@
     }
   }
 }
+@media (max-width: 998px){
+
+}
+@media (max-width: 768px){
+  .homepage{
+    flex-direction: column;
+    padding: 2rem 5%;
+    gap: 2rem;
+    .briefSummary{
+      flex: 1.5;
+      padding: 2rem;
+      gap: 1rem;
+      border-radius: 10px;
+      ul{
+        gap: 20px;
+        margin: 10px 0;
+        li{
+          gap: 10px;
+          div{
+            min-height: 10px;
+            min-width: 10px;
+          }
+        }
+      }
+      button{
+        svg{
+          font-size: 20px;
+        }
+      }
+    }
+    .right{
+      gap: 2rem;
+      .classification, .toNote{
+        gap: 1rem;
+        padding: 2rem;
+        border-radius: 10px;
+      }
+      .classification{
+        ul{
+          gap: 1.5rem;
+          li{
+            gap: 5px;
+            div{
+              min-height: 10px;
+              min-width: 10px;
+            }
+            p{
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

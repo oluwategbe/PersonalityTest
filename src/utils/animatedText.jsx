@@ -363,6 +363,134 @@ export const NavRevealY = ({
     </div>
   );
 };
+export const MobileNavRevealY = ({
+  children,
+  delay = 0,
+  className = "",
+  style = "",
+  once = false,
+  duration = 0.5,
+  exitDelay = 0,
+}) => {
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: once });
+  const mainControls = useAnimation();
+  const [overflowVisible, setOverflowVisible] = React.useState(false);
+
+  const handleAnimationComplete = () => {
+    setOverflowVisible(true);
+  };
+  React.useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    } else {
+      mainControls.start("hidden");
+    }
+  }, [isInView, mainControls]);
+
+  return (
+    <div
+      ref={ref}
+      style={{
+        position: "relative",
+        overflow: "hidden",
+        width: "100%",
+        ...style,
+      }}
+      className={className}
+    >
+      <motion.div
+        variants={{
+          hidden: { y: 75, opacity: 0 },
+          visible: {
+            y: 0,
+            opacity: 1,
+            transition: { delay: delay, type: "spring", bounce: 0.5 },
+          },
+          exit: {
+            y: -75,
+            transition: { delay: exitDelay, type: "spring", bounce: 0.2 },
+          },
+        }}
+        initial="hidden"
+        animate={mainControls}
+        exit="exit"
+        transition={{ duration: duration, delay: 0.2 }}
+        onAnimationComplete={handleAnimationComplete}
+        style={{
+          position: "relative",
+          overflow: overflowVisible ? "visible" : "hidden",
+          width: "100%",
+          ...style,
+        }}
+      >
+        <div style={{ display: "flex" }}>{children}</div>
+      </motion.div>
+    </div>
+  );
+};
+export const MobileRevealY = ({
+  children,
+  delay = 0,
+  className = "",
+  style = "",
+  once = false,
+  duration = 0.5,
+  exitDelay = 0,
+}) => {
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: once });
+  const mainControls = useAnimation();
+  const [overflowVisible, setOverflowVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    } else {
+      mainControls.start("hidden");
+    }
+  }, [isInView, mainControls]);
+
+  const handleAnimationComplete = () => {
+    setOverflowVisible(true);
+  };
+
+  return (
+    <div
+      ref={ref}
+      style={{
+        position: "relative",
+        overflow: overflowVisible ? "visible" : "hidden",
+        width: "100%",
+        ...style,
+      }}
+      className={className}
+    >
+      <motion.div
+        variants={{
+          hidden: { y: "100%", opacity: 0 },
+          visible: {
+            y: 0,
+            opacity: 1,
+            transition: { delay: delay, type: "spring", bounce: 0.5 },
+          },
+          exit: {
+            y: -75,
+            opacity: 0,
+            transition: { delay: exitDelay, type: "spring", bounce: 0.2 },
+          },
+        }}
+        initial="hidden"
+        animate={mainControls}
+        exit="exit"
+        transition={{ duration: duration, delay: 0.2 }}
+        onAnimationComplete={handleAnimationComplete}
+      >
+        {children}
+      </motion.div>
+    </div>
+  );
+};
 export const StaggerChild = ({ children, delay }) => {
   const ref = React.useRef(null);
   const isInView = useInView(ref);
@@ -546,6 +674,54 @@ export const ScaleXY = ({ children, once = false, delay = 0.5, index }) => {
         {children}
       </motion.div>
     </div>
+  );
+};
+export const ScaleY = ({
+  children,
+  once = false,
+  delay = 0.5,
+  className = "",
+}) => {
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: once });
+  const mainControls = useAnimation();
+  const qupteVar = {
+    hidden: {
+      scaleY: 0,
+      transition: {
+        duration: 5,
+        ease: [0.1, 0.4, 0.22, 1],
+      },
+    },
+    visible: {
+      scaleY: 1,
+      transition: {
+        duration: 1,
+        ease: [0.1, 0.4, 0.22, 1],
+        delay: delay,
+      },
+    },
+    exit: { scaleY: 0, transition: { delay: 0.8, duration: 0.5 } },
+  };
+
+  React.useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    } else {
+      mainControls.start("hidden");
+    }
+  }, [isInView, mainControls]);
+  return (
+    <motion.div
+      ref={ref}
+      variants={qupteVar}
+      initial="hidden"
+      exit="exit"
+      animate={mainControls}
+      className={className}
+    >
+      {children}
+    </motion.div>
   );
 };
 export const RevealLeft = ({
@@ -926,6 +1102,61 @@ export const SlideRight = ({
             transition: { delay: delay, type: "spring", bounce: 0.3 },
           },
           exit: { opacity: 0 },
+        }}
+        initial="hidden"
+        animate={mainControls}
+        exit="exit"
+        transition={{ duration: duration, delay: 0.2 }}
+        onAnimationComplete={handleAnimationComplete}
+      >
+        {children}
+      </motion.div>
+    </div>
+  );
+};
+export const MobileNavSlideRight = ({
+  children,
+  delay = 0,
+  className = "",
+  style = "",
+  once = true,
+  duration = 0.5,
+}) => {
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: once });
+  const mainControls = useAnimation();
+  const [overflowVisible, setOverflowVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    } else {
+      mainControls.start("hidden");
+    }
+  }, [isInView, mainControls]);
+
+  const handleAnimationComplete = () => {
+    setOverflowVisible(true);
+  };
+
+  return (
+    <div
+      ref={ref}
+      style={{
+        overflow: overflowVisible ? "visible" : "hidden",
+        ...style,
+      }}
+      className={className}
+    >
+      <motion.div
+        variants={{
+          hidden: { x: "100%", opacity: 0 },
+          visible: {
+            x: 0,
+            opacity: 1,
+            transition: { delay: delay, type: "spring", bounce: 0.3 },
+          },
+          exit: { x: 75 },
         }}
         initial="hidden"
         animate={mainControls}
