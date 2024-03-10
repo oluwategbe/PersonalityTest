@@ -4,8 +4,8 @@ import { Routes, Route, BrowserRouter, useLocation } from "react-router-dom";
 import BaseRoutes from "./base.js";
 import { ToastContainer } from "react-toastify";
 import AuthGuard from "./AuthGuard.jsx";
-import Loader from "./../components/Loader/index";
 import { AnimatePresence } from "framer-motion";
+import { MdOutlineArrowUpward } from "react-icons/md";
 
 const renderRoute = ({ component: Component, ...route }) => {
   const { useAuth } = route;
@@ -15,7 +15,6 @@ const renderRoute = ({ component: Component, ...route }) => {
       path={route.path}
       element={
         <Fragment>
-          {/* fallback={<Loader />} */}
           <Suspense>
             {useAuth ? (
               <AuthGuard>
@@ -40,11 +39,21 @@ const AppRoutes = () => {
     });
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <AnimatePresence wait="true" onExitComplete={handleExitComplete}>
       <Routes key={location.pathname} location={location}>
         {BaseRoutes.map((route) => renderRoute(route))}
       </Routes>
+      <div className="scrollTop" onClick={scrollToTop}>
+        <MdOutlineArrowUpward />
+      </div>
     </AnimatePresence>
   );
 };

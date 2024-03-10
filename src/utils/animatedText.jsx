@@ -829,6 +829,7 @@ export const SlideLeft = ({
   style = "",
   once = true,
   duration = 0.5,
+  width = "45%",
 }) => {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: once });
@@ -853,7 +854,7 @@ export const SlideLeft = ({
       style={{
         position: "relative",
         overflow: overflowVisible ? "visible" : "hidden",
-        width: "45%",
+        width: width,
         ...style,
       }}
       className={className}
@@ -886,6 +887,7 @@ export const SlideRight = ({
   style = "",
   once = true,
   duration = 0.5,
+  width = "45%",
 }) => {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: once });
@@ -910,7 +912,7 @@ export const SlideRight = ({
       style={{
         position: "relative",
         overflow: overflowVisible ? "visible" : "hidden",
-        width: "45%",
+        width: width,
         ...style,
       }}
       className={className}

@@ -1,13 +1,18 @@
 import * as React from "react";
 import { Link, useParams } from "react-router-dom";
-// import * as React from "react";
 import "./index.scss";
 import Layout from "../../../components/layout";
 import { useLocation } from "react-router-dom";
 import { personalityTypes } from "../../../utils/data";
 import ScoreCard from "../../../components/ScoreCard";
 import { ThemeContext } from "../../../context";
-import { motion } from "framer-motion";
+import ResultWait from "./ResultWait";
+import {
+  RevealY,
+  ShakeButton,
+  SlideLeft,
+  SlideRight,
+} from "../../../utils/animatedText";
 
 const Results = () => {
   const { personality } = useParams();
@@ -16,120 +21,105 @@ const Results = () => {
   const { totalEIScore, totalSIScore, totalTFScore, totalJPScore, gender } =
     location.state || {};
   const personalityData = personalityTypes.find(
-    (p) => p?.personality === personality
+    (p) => p?.personality?.toLowerCase() === personality?.toLowerCase()
   );
   const extrovertScore = (totalEIScore / 10).toFixed(0);
   const intuitionScore = (totalSIScore / 10).toFixed(0);
   const feelingScore = (totalTFScore / 10).toFixed(0);
   const perceivingScore = (totalJPScore / 10).toFixed(0);
 
-  // const [isLoading, setIsLoading] = React.useState(true);
-
-  // React.useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setIsLoading(false);
-  //   }, 2000);
-  //   return () => clearTimeout(timer);
-  // }, []);
-  const [progress, setProgress] = React.useState(0);
   const [showExit, setShowExit] = React.useState(false);
 
-  React.useEffect(() => {
-    const timer = setTimeout(() => {
-      setProgress(100);
-      setShowExit(true);
-    }, 400000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  const variants = {
-    initial: {
-      scaleY: 1,
-    },
-    animate: {
-      scaleY: 0,
-      transition: { duration: 2, ease: [0.22, 1, 0.36, 1] },
-    },
-    exit: { scaleX: 0, scaleY: 0, transition: { delay: 5 } },
-  };
   return (
     <>
-      <div
-        className="resultWait"
-        // variants={variants}
-        // initial="initial"
-        // animate="animate"
-        // exit="exit"
-      >
-        <div className="calculationText">Calculating your result...</div>
-        <div
-          className="progressBar"
-          style={{ transform: `scaleX(${progress / 100})` }}
-        />
+      <div className={`${theme === "dark" ? "dark" : ""}`}>
+        <ResultWait showExit={showExit} setShowExit={setShowExit} />
       </div>
       {showExit && (
         <Layout>
           <div className={`resultsPage ${theme === "dark" ? "dark" : ""}`}>
             <div className="modal">
               <div className="title">
-                <h2>Congratulations! Your Personality Type is:</h2>
-                <h1>
-                  {personality} - {personalityData?.title}
-                </h1>
+                <RevealY once={true}>
+                  <h2>Congratulations! Your Personality Type is:</h2>
+                </RevealY>
+                <RevealY delay={1.5} once={true}>
+                  <h1>
+                    {personality} - {personalityData?.title}
+                  </h1>
+                </RevealY>
               </div>
               <div className="modal-bottom">
                 <div className="imgBox">
-                  <img
-                    src={
-                      gender?.toLowerCase() === "male"
-                        ? personalityData?.male
-                        : personalityData?.female
-                    }
-                    alt="image"
-                  />
+                  <SlideLeft width="100%" delay={1.6}>
+                    <img
+                      src={
+                        gender?.toLowerCase() === "male"
+                          ? personalityData?.male
+                          : personalityData?.female
+                      }
+                      alt="image"
+                    />
+                  </SlideLeft>
                 </div>
                 <div className="scores">
-                  <ScoreCard
-                    title="Energy"
-                    desc="This trait describes how you gain energy, your preference in interacting with people and the environment"
-                    leftTitle="Extraverted"
-                    leftScore={extrovertScore || 50}
-                    rightTitle="Introverted"
-                    rightScore={100 - extrovertScore}
-                  />
-                  <ScoreCard
-                    title="Mind"
-                    desc="This trait describes your preferred method of obtaining information from the environment"
-                    leftTitle="Sensing"
-                    leftScore={100 - intuitionScore}
-                    rightTitle="Intuitive"
-                    rightScore={intuitionScore}
-                  />
-                  <ScoreCard
-                    title="Nature"
-                    desc="This trait describes how you make decisions and cope with emotions, people's values and the needs of others"
-                    leftTitle="Thinking"
-                    leftScore={100 - feelingScore}
-                    rightTitle="Feeling"
-                    rightScore={feelingScore}
-                  />
-                  <ScoreCard
-                    title="Tactics"
-                    desc="This trait reflects your approach to work, planning, organization and decision-making"
-                    leftTitle="Judging"
-                    leftScore={100 - perceivingScore}
-                    rightTitle="Perceiving"
-                    rightScore={perceivingScore}
-                  />
+                  <SlideLeft delay={1.7} width="100%">
+                    <ScoreCard
+                      title="Energy"
+                      desc="This trait describes how you gain energy, your preference in interacting with people and the environment"
+                      leftTitle="Extraverted"
+                      leftScore={extrovertScore || 50}
+                      rightTitle="Introverted"
+                      rightScore={100 - extrovertScore}
+                    />
+                  </SlideLeft>
+                  <SlideRight delay={2.0} width="100%">
+                    <ScoreCard
+                      title="Mind"
+                      desc="This trait describes your preferred method of obtaining information from the environment"
+                      leftTitle="Sensing"
+                      leftScore={100 - intuitionScore}
+                      rightTitle="Intuitive"
+                      rightScore={intuitionScore}
+                    />
+                  </SlideRight>
+                  <SlideLeft delay={2.3} width="100%">
+                    <ScoreCard
+                      title="Nature"
+                      desc="This trait describes how you make decisions and cope with emotions, people's values and the needs of others"
+                      leftTitle="Thinking"
+                      leftScore={100 - feelingScore}
+                      rightTitle="Feeling"
+                      rightScore={feelingScore}
+                    />
+                  </SlideLeft>
+                  <SlideRight delay={2.5} width="100%">
+                    <ScoreCard
+                      title="Tactics"
+                      desc="This trait reflects your approach to work, planning, organization and decision-making"
+                      leftTitle="Judging"
+                      leftScore={100 - perceivingScore}
+                      rightTitle="Perceiving"
+                      rightScore={perceivingScore}
+                    />
+                  </SlideRight>
                 </div>
               </div>
-              <div className="more">
-                <h2>Wanna learn more about your Personality?</h2>
-                <Link to={`/personalities/${personality}`}>
-                  <button>Read More</button>
-                </Link>
-              </div>
+              <RevealY delay={1} once={true}>
+                <div className="more">
+                  <h2>Wanna learn more about your Personality?</h2>
+                  <ShakeButton
+                    delay={1.3}
+                    style={{ display: "flex", justifyContent: "center" }}
+                  >
+                    <Link to={`/personalities/${personality}`}>
+                      <button className={`${theme === "dark" ? "dark" : ""}`}>
+                        Read More
+                      </button>
+                    </Link>
+                  </ShakeButton>
+                </div>
+              </RevealY>
             </div>
           </div>
         </Layout>

@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import "./index.scss";
-import { PersonalityRevealY, ScaleXY } from "../../utils/animatedText";
+import { PersonalityRevealY, SlideLeft } from "../../utils/animatedText";
 
 const PersonalityCard = ({
   title,
@@ -22,9 +22,9 @@ const PersonalityCard = ({
       }}
     >
       <Link to={`/personalities/${personality}`}>
-        <ScaleXY delay={delay} once={true} index={index}>
+        <SlideLeft width="100%" delay={delay} once={false} index={index}>
           <img src={picture} alt={title} />
-        </ScaleXY>
+        </SlideLeft>
         <PersonalityRevealY delay={1 * delay} once={true}>
           <h2 style={{ color: `${color}` }}>{title}</h2>
           <h3 style={{ color: `${color}` }}>{personality}</h3>

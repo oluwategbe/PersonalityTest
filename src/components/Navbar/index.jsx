@@ -25,10 +25,6 @@ const Navbar = () => {
     };
   }, []);
 
-  const handleClick = (title) => {
-    setTheme(title);
-  };
-
   const toggleSwitch = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
@@ -60,7 +56,10 @@ const Navbar = () => {
                 <div className="dropdown">
                   {minidata.map((d, i) => (
                     <React.Fragment key={i}>
-                      <Link to={`/personalities/${d?.personality}`}>
+                      <Link
+                        to={`/personalities/${d?.personality}`}
+                        onClick={() => setOpen(!open)}
+                      >
                         <p className={(i + 1) % 4 !== 0 ? "withLine" : ""}>
                           {d?.personality}
                         </p>

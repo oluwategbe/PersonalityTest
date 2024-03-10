@@ -31,7 +31,7 @@ body {
   --fColor: #ff145a;
   --jColor: #895fff;
   --pColor: #009400;
-  --results-bg: #bebebe;
+  --results-bg: #ffffff;
 }
 .dark {
   --primary-color: #512da3;
@@ -55,6 +55,7 @@ body {
   --fColor: #970e37;
   --jColor: #53379e;
   --pColor: #1a581a;
+  --results-bg: #0c0c0c;
 }
 @font-face {
   font-family: "Azonix";
@@ -126,4 +127,26 @@ p {
 }
 ul {
   list-style: none;
+}
+.scrollTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: var(--primary-color);
+  font-size: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+.scrollTop:hover {
+  transform: scale(1.2);
+}
+.scrollTop svg {
+  color: black;
 }

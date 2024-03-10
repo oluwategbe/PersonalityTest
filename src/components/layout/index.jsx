@@ -1,5 +1,5 @@
 import Footer from "../Footer";
-import Navbar from "./../Navbar/index";
+import Navbar from "../Navbar";
 
 // eslint-disable-next-line react/prop-types
 const Layout = ({ children }) => {

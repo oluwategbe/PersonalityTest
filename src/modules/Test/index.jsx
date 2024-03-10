@@ -6,7 +6,7 @@ import { TbReportAnalytics } from "react-icons/tb";
 import { FaPeopleGroup } from "react-icons/fa6";
 import Questions from "./Questions";
 import { ThemeContext } from "../../context";
-import { TestRevealY, RevealY, SingleScaleX } from "../../utils/animatedText";
+import { TestRevealY, RevealY, Reveal } from "../../utils/animatedText";
 
 const Test = () => {
   const { theme } = React.useContext(ThemeContext);
@@ -15,7 +15,7 @@ const Test = () => {
     <Layout>
       <div className={`test ${theme === "dark" ? "dark" : ""}`}>
         <div className="testhero">
-          <SingleScaleX style={{ width: "100%" }} once={true}>
+          <Reveal style={{ width: "100%" }} once={true}>
             <div className="tHero">
               <div className="text">
                 <RevealY delay={0.5} once={true}>
@@ -26,7 +26,7 @@ const Test = () => {
                 </RevealY>
               </div>
             </div>
-          </SingleScaleX>
+          </Reveal>
         </div>
         <div className="cards">
           {/* <div className={`card ${theme === "dark" ? "dark" : ""}`}> */}

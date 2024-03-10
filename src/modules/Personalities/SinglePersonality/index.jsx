@@ -10,10 +10,9 @@ import ReactECharts from "echarts-for-react";
 import { ThemeContext } from "../../../context";
 import {
   RevealY,
-  SingleScaleX,
-  ScaleXY,
   ScaleX,
   Reveal,
+  SlideRight,
 } from "../../../utils/animatedText";
 import Carousel from "../../../components/Carousel";
 
@@ -90,7 +89,7 @@ const SinglePersonality = () => {
     <Layout>
       <div className={`singlePersonality ${theme === "dark" ? "dark" : ""}`}>
         <div className="singlePersonalityHero">
-          <SingleScaleX style={{ width: "100%" }} once={true}>
+          <Reveal style={{ width: "100%" }} once={true}>
             <div className="sHero">
               <div className="heroText">
                 <RevealY delay={1} once={true}>
@@ -101,12 +100,12 @@ const SinglePersonality = () => {
                 </RevealY>
               </div>
               <div className="pic">
-                <ScaleXY delay={2} once={true}>
+                <SlideRight width="100%" delay={2}>
                   <img src={data?.pic} alt={data?.title} />
-                </ScaleXY>
+                </SlideRight>
               </div>
             </div>
-          </SingleScaleX>
+          </Reveal>
         </div>
         <div className="summary">
           <RevealY delay={0.5} once={true}>
@@ -223,9 +222,9 @@ const SinglePersonality = () => {
           <RevealY delay={0.5} once={true}>
             <p>{data?.career?.summary}</p>
           </RevealY>
-          <ScaleX once={true}>
+          <Reveal once={true}>
             <img src={data?.career?.pic} alt="Careers" />
-          </ScaleX>
+          </Reveal>
           <div className="opportunities">
             <RevealY once={true}>
               <h4>Popular {data?.personality} jobs:</h4>
