@@ -84,36 +84,6 @@
     .foot{
       grid-gap: 4rem;
       a{
-        font-size: 24px;
-      }
-      .heading{ 
-        gap: 2rem;
-      }
-      .footerLinks{
-        .quickLinks, .footerPLinks{
-          gap: 2rem;
-          h2{
-            font-size: 26px;
-          }
-        }
-        .footerPLinks{
-          .personLink{
-            grid-gap: 2rem;
-          }
-        }
-      }
-    }
-    .copy{
-      padding: 2rem 0;
-      font-size: 24px;
-    }
-  }
-}
-@media (min-width: 1400px) and (max-width: 1600px){
-  .footer{
-    .foot{
-      grid-gap: 3rem;
-      a{
         font-size: 20px;
       }
       .heading{ 
@@ -134,8 +104,38 @@
       }
     }
     .copy{
-      padding: 1.5rem 0;
+      padding: 2rem 0;
       font-size: 20px;
+    }
+  }
+}
+@media (min-width: 1400px) and (max-width: 1600px){
+  .footer{
+    .foot{
+      grid-gap: 3rem;
+      a{
+        font-size: 18px;
+      }
+      .heading{ 
+        gap: 2rem;
+      }
+      .footerLinks{
+        .quickLinks, .footerPLinks{
+          gap: 2rem;
+          h2{
+            font-size: 20px;
+          }
+        }
+        .footerPLinks{
+          .personLink{
+            grid-gap: 2rem;
+          }
+        }
+      }
+    }
+    .copy{
+      padding: 1.5rem 0;
+      font-size: 18px;
     }
   }
 }
@@ -179,20 +179,52 @@
 @media (max-width: 560px){
   .footer{
     .foot{
+      gap: 1rem;
+      .heading{
+        gap: 0.5rem;
+      }
       a{
-        font-size: 11px;
+        font-size: 10px;
       }
       .footerLinks{
         grid-template-columns: 1fr 1fr 1.5fr;
         .quickLinks, .footerPLinks{
+          gap: 0.1rem;
           h2{
-            font-size: 14px;
+            font-size: 11px;
           }
         }
       }
     }
     .copy{
       font-size: 11px;
+    }
+  }
+}
+@media (max-width: 400px){
+  .footer{
+    .foot{
+      a{
+        font-size: 8px;
+        padding: 0;
+      }
+      .footerLinks{
+        grid-template-columns: 1fr 1fr 1.5fr;
+        .quickLinks, .footerPLinks{
+          h2{
+            font-size: 9px;
+          }
+        }
+        .footerPLinks{
+          .personLink{
+            grid-gap: 0.1rem;
+          }
+        }
+      }
+    }
+    .copy{
+      padding: 0.3rem 0;
+      font-size: 7px;
     }
   }
 }

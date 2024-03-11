@@ -90,6 +90,7 @@
       }
     }
     .toNote{
+      justify-content: center;
       p{
         span{
           font-weight: 700;
@@ -104,11 +105,11 @@
   align-items: center;
   background: #272727;
   color: white;
-  padding: 2rem 10%;
+  padding: 1.5rem 10%;
   gap: 20px;
   font-style: italic;
   p{
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
   }
   h5{
@@ -126,11 +127,10 @@
   color: var(--text-color-1);
   background: var(--secondary-bg);
   h1{
-    font-size: 24px;
-    // margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
   h3{
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
   }
   section{
@@ -139,6 +139,7 @@
     gap: 1rem;
     align-items: center;
     margin-bottom: 3rem;
+    overflow: hidden;
     h2{
       font-size: 20px;
       font-weight: 200;
@@ -147,9 +148,8 @@
       padding: 1rem;
       flex: 1;
       cursor: pointer;
-      border: 3px solid var(--border-color-1);
+      border: 3px dashed var(--border-color-1);
       border-top: none !important;
-      border-style: dashed;
       height: 175px;
       display: flex;
       flex-direction: column;
@@ -175,7 +175,7 @@
           top: 55px;  
           opacity: 1;
           position: absolute;
-          transition: all 1s ease-in-out, color 0.1s ease-in-out;
+          transition: all 0.5s ease-in-out, color 0.1s ease-in-out;
           transition-delay: 0.2s;
         }
       }
@@ -183,8 +183,9 @@
         position: absolute;
         top: 60px;
         transition: all 0.5s ease-in-out;
-        font-size: 28px;
-        font-weight: 400;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
       }
       p{
         opacity: 0;
@@ -344,7 +345,7 @@
 }
 .takeTestSection{
   background: var(--bg);
-  padding: var(--section-padding);
+  padding: 0 10% 3rem;
 }
 .takeTestSection3{
   background: var(--secondary-bg);
@@ -402,39 +403,494 @@
   color: var(--text-color-1);
   background: var(--bg);
   h1{
-    font-size: 24px;
     margin-bottom: 1rem;
   }
   p{
-    font-size: 16px;
+    text-align: center;
     span{
       font-weight: 700;
       color: var(--primary-color);;
     }
   }
 }
-@media (max-width: 998px){
+@media (min-width: 1600px){
+  .homepage{
+    padding: 6rem 10%;
+    gap: 3rem;
+    .briefSummary{
+      padding: 3rem;
+      gap: 2rem;
+      ul{
+        gap: 1rem;
+        margin: 10px 0;
+        li{
+          gap: 10px;
+          font-size: 22px;
+          div{
+            min-height: 20px;
+            min-width: 20px;
+          }
+        }
+      }
+    }
+    .right{
+      gap: 3rem;
+      .classification, .toNote{
+        gap: 2rem;
+        padding: 3rem;
+      }
+      .classification{
+        ul{
+          gap: 2rem;
+          li{
+            gap: 20px;
+            div{
+              min-height: 15px;
+              min-width: 15px;
+            }
+            p{
+              font-size: 20px;
+              line-height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .homeQuote{
+    p{
+      font-size: 20px;
+    }
+    h5{
+      font-size: 12px;
+      width: 90%;
+    }
+  }
+  .breakDown{
+    gap: 3rem;
+    h1{
+      font-size: 24px;
+    }
+    h3{
+      font-size: 22px;
+    }
+    section{
+      gap: 2rem;
+      h2{
+        font-size: 24px;
+      }
+      .bLeft, .bRight{
+        padding: 2rem;
+        height: 250px;
+        &:hover{
+          h2{
+            top: 20px;
+          }
+          p{
+            font-size: 22px;
+            line-height: 30px;
+            width: calc(100% - 150px);
+            top: 70px;  
+          }
+        }
+        h2{
+          top: 100px;
+          font-size: 24px;
+        }
+        p{
+          margin-top: -10px;
+          font-size: 15px;
+          line-height: 25px;
+        }
+        .box{
+          top: 80px;
+          height: 80px;
+          width: 80px;
+          padding: 20px;
+          font-size: 32px;
+        }
+      }
+      .bLeft{
+        h2{
+          padding-right: 130px;
+        }
+        &:hover h2{
+          left: 30px;
+        }
+        &:hover p{
+          right: 120px;
+        }
+      }
+      .bRight{
+        h2{
+          padding-left: 130px;
+        }
+        &:hover h2{
+          right: 30px;
+        }
+        &:hover p{
+          left: 120px;
+        }
+      }
+    }
+  }
+  .takeTestSection2{
+    padding: 0 10% 6rem;
+  }
+  .totalRarity{
+    gap: 2rem;
+    h1{
+      margin-bottom: 1rem;
+    }
+  }
+}
+@media (min-width: 1400px) and (max-width: 1600px){
+  .homepage{
+    padding: 5rem 10%;
+    gap: 2rem;
+    .briefSummary{
+      padding: 2rem;
+      gap: 2rem;
+      ul{
+        gap: 1rem;
+        margin: 7px 0;
+        li{
+          gap: 10px;
+          font-size: 20px;
+          div{
+            min-height: 20px;
+            min-width: 20px;
+          }
+        }
+      }
+    }
+    .right{
+      gap: 2rem;
+      .classification, .toNote{
+        gap: 2rem;
+        padding: 2rem;
+      }
+      .classification{
+        ul{
+          gap: 1.7rem;
+          li{
+            gap: 20px;
+            div{
+              min-height: 15px;
+              min-width: 15px;
+            }
+            p{
+              font-size: 18px;
+              line-height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .homeQuote{
+    p{
+      font-size: 18px;
+    }
+    h5{
+      font-size: 11px;
+      width: 90%;
+    }
+  }
+  .breakDown{
+    gap: 2rem;
+    h1{
+      font-size: 22px;
+    }
+    h3{
+      font-size: 20px;
+    }
+    section{
+      gap: 1.5rem;
+      h2{
+        font-size: 22px;
+      }
+      .bLeft, .bRight{
+        padding: 2rem;
+        height: 240px;
+        &:hover{
+          h2{
+            top: 15px;
+          }
+          p{
+            font-size: 18px;
+            line-height: 30px;
+            width: calc(100% - 150px);
+            top: 60px;  
+          }
+        }
+        h2{
+          top: 90px;
+          font-size: 24px;
+        }
+        p{
+          margin-top: -10px;
+          font-size: 15px;
+          line-height: 25px;
+        }
+        .box{
+          top: 70px;
+          height: 80px;
+          width: 80px;
+          padding: 20px;
+          font-size: 32px;
+        }
+      }
+      .bLeft{
+        h2{
+          padding-right: 130px;
+        }
+        &:hover h2{
+          left: 10px;
+        }
+        &:hover p{
+          right: 140px;
+        }
+      }
+      .bRight{
+        h2{
+          padding-left: 130px;
+        }
+        &:hover h2{
+          right: 10px;
+        }
+        &:hover p{
+          left: 140px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 998px) and (max-width: 1400px){
+  .breakDown{
+    gap: 1.5rem;
+    h1{
+      font-size: 18px;
+    }
+    h3{
+      font-size: 16px;
+    }
+    section{
+      gap: 1rem;
+      h2{
+        font-size: 18px;
+      }
+      .bLeft, .bRight{
+        padding: 1.5rem;
+        height: 220px;
+        &:hover{
+          h2{
+            top: 10px;
+          }
+          p{
+            font-size: 16px;
+            line-height: 25px;
+            width: calc(100% - 120px);
+            top: 50px;  
+          }
+        }
+        h2{
+          top: 95px;
+          font-size: 22px;
+        }
+        p{
+          margin-top: -10px;
+          font-size: 15px;
+          line-height: 25px;
+        }
+        .box{
+          top: 80px;
+          height: 60px;
+          width: 60px;
+          padding: 20px;
+          font-size: 32px;
+        }
+      }
+      .bLeft{
+        h2{
+          padding-right: 100px;
+        }
+        &:hover h2{
+          left: 10px;
+        }
+        &:hover p{
+          right: 110px;
+        }
+      }
+      .bRight{
+        h2{
+          padding-left: 100px;
+        }
+        &:hover h2{
+          right: 10px;
+        }
+        &:hover p{
+          left: 110px;
+        }
+      }
+    }
+  }
+  .totalRarity{
+    h1{
+      margin-bottom: 0;
+    }
+  }
+}
 
+@media (min-width: 768px) and (max-width: 998px){
+  .homepage{
+    padding: 1.5rem 7%;
+    gap: 1.5rem;
+    .briefSummary{
+      padding: 1.5rem;
+      gap: 0rem;
+      ul{
+        gap: 10px;
+        margin: 0;
+        li{
+          font-size: 14px;
+          div{
+            min-height: 7px;
+            min-width: 7px;
+          }
+        }
+      }
+    }
+    .right{
+      gap: 1.5rem;
+      .classification, .toNote{
+        gap: 1rem;
+        padding: 1.5rem;
+      }
+      .classification{
+        ul{
+          gap: 1rem;
+          li{
+            gap: 5px;
+            div{
+              min-height: 7px;
+              min-width: 7px;
+            }
+            p{
+              font-size: 13px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+      .toNote{
+        p{
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  .takeTestSection{
+    padding: 0 7% 2rem;
+  }
+  .homeQuote{
+    padding: 1rem;
+    gap: 10px;
+    p{
+      font-size: 15px;
+    }
+    h5{
+      font-size: 10px;
+      width: 85%;
+    }
+  }
+  .breakDown{
+    gap: 1rem;
+    h1{
+      font-size: 16px;
+      margin-bottom: 1rem;
+    }
+    h3{
+      font-size: 13px;
+    }
+    section{
+      gap: 1rem;
+      margin-bottom: 2rem;
+      width: 100%;
+      h2{
+        font-size: 16px;
+      }
+      .bLeft, .bRight{
+        padding: 1rem;
+        height: 150px;
+        &:hover{
+          h2{
+            top: 8px;
+          }
+          p{
+            width: calc(100% - 100px);
+            top: 38px;  
+          }
+        }
+        h2{
+          top: 53px;
+          font-size: 16px;
+        }
+        p{
+          margin-top: -10px;
+          font-size: 12px;
+          line-height: 20px;
+        }
+        .box{
+          top: 40px;
+          height: 50px;
+          width: 50px;
+          padding: 20px;
+          font-size: 30px;
+        }
+      }
+      .bLeft{
+        h2{
+          padding-right: 80px;
+        }
+        &:hover h2{
+          left: 19px;
+        }
+        &:hover p{
+          right: 80px;
+        }
+      }
+      .bRight{
+        h2{
+          padding-left: 80px;
+        }
+        &:hover h2{
+          right: 19px;
+        }
+        &:hover p{
+          left: 80px;
+        }
+      }
+    }
+  }
+  .takeTestSection2{
+    padding: 0 7% 2rem;
+  }
+  .totalRarity{
+    gap: 1rem;
+    h1{
+      margin-bottom: 0;
+    }
+  }
 }
 @media (max-width: 768px){
   .homepage{
     flex-direction: column;
-    padding: 2rem 5%;
-    gap: 2rem;
+    padding: 5%;
     .briefSummary{
-      flex: 1.5;
-      padding: 2rem;
-      gap: 1rem;
-      border-radius: 10px;
       ul{
-        gap: 20px;
-        margin: 10px 0;
         li{
-          gap: 10px;
-          div{
-            min-height: 10px;
-            min-width: 10px;
-          }
+          font-size: 13px;
         }
       }
       button{
@@ -444,13 +900,14 @@
       }
     }
     .right{
-      gap: 2rem;
+      flex-direction: row;
       .classification, .toNote{
         gap: 1rem;
-        padding: 2rem;
+        padding: 1.5rem;
         border-radius: 10px;
       }
       .classification{
+        flex: 3;
         ul{
           gap: 1.5rem;
           li{
@@ -460,10 +917,560 @@
               min-width: 10px;
             }
             p{
-              font-size: 14px;
+              font-size: 12px;
               line-height: 20px;
             }
           }
+        }
+      }
+      .toNote{
+        flex: 1;
+        p{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .takeTestSection{
+    padding: 0 5% 5%;
+  }
+  .homeQuote{
+    padding: 1rem;
+    gap: 10px;
+    p{
+      font-size: 13px;
+    }
+    h5{
+      font-size: 8px;
+      width: 85%;
+    }
+  }
+  .breakDown{
+    gap: 1rem;
+    h1{
+      font-size: 15px;
+      margin-bottom: 1rem;
+    }
+    h3{
+      font-size: 12px;
+    }
+    section{
+      gap: 0.7rem;
+      margin-bottom: 1rem;
+      width: 100%;
+      h2{
+        font-size: 15px;
+      }
+      .bLeft, .bRight{
+        padding: 1rem;
+        height: 157px;
+        &:hover{
+          h2{
+            top: 6px;
+          }
+          p{
+            width: calc(100% - 100px);
+            top: 33px;  
+          }
+        }
+        h2{
+          top: 57px;
+          font-size: 14px;
+        }
+        p{
+          margin-top: -10px;
+          font-size: 11px;
+          line-height: 17px;
+        }
+        .box{
+          top: 45px;
+          height: 50px;
+          width: 50px;
+          padding: 20px;
+          font-size: 24px;
+        }
+      }
+      .bLeft{
+        h2{
+          padding-right: 80px;
+        }
+        &:hover h2{
+          left: 19px;
+        }
+        &:hover p{
+          right: 80px;
+        }
+      }
+      .bRight{
+        h2{
+          padding-left: 80px;
+        }
+        &:hover h2{
+          right: 19px;
+        }
+        &:hover p{
+          left: 80px;
+        }
+      }
+    }
+  }
+  .takeTestSection2{
+    padding: 0 5% 5%;
+  }
+  .totalRarity{
+    gap: 1rem;
+    h1{
+      margin-bottom: 0;
+    }
+  }
+}
+@media (max-width: 560px){
+  .homepage{
+    gap: 1rem;
+    padding: 0 5% 3%;
+    .briefSummary{
+      padding: 1rem;
+      ul{
+        margin: 0;
+        li{
+          font-size: 12px;
+        }
+      }
+      button{
+        svg{
+          font-size: 15px;
+        }
+      }
+    }
+    .right{
+      flex-direction: column;
+      gap: 1rem;
+      .classification, .toNote{
+        gap: 1rem;
+        padding: 1rem;
+      }
+      .classification{
+        flex: 2.5;
+        ul{
+          gap: 0.7rem;
+          li{
+            gap: 5px;
+            div{
+              min-height: 10px;
+              min-width: 10px;
+            }
+            p{
+              font-size: 12px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+      .toNote{
+        flex: 1;
+        p{
+          font-size: 12px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  .homeQuote{
+    padding: 0.7rem;
+    gap: 7px;
+    p{
+      font-size: 12px;
+    }
+    h5{
+      font-size: 8px;
+      width: 90%;
+    }
+  }
+  .takeTestSection{
+    padding: 0 5% 5%;
+  }
+  .breakDown{
+    gap: 1rem;
+    h1{
+      font-size: 14px;
+      margin-bottom: 1rem;
+    }
+    section{
+      gap: 0.5rem;
+      h2{
+        font-size: 15px;
+      }
+      .bLeft, .bRight{
+        height: 150px;
+        border-width: 2px;
+        &:hover{
+          h2{
+            top: 4px;
+          }
+          p{
+            width: calc(100% - 80px);
+            top: 30px;  
+          }
+        }
+        h2{
+          top: 63px;
+          font-size: 14px;
+        }
+        p{
+          font-size: 11px;
+        }
+        .box{
+          top: 50px;
+          height: 45px;
+          width: 45px;
+          padding: 20px;
+          font-size: 24px;
+        }
+      }
+      .bLeft{
+        h2{
+          padding-right: 80px;
+        }
+        &:hover h2{
+          left: 10px;
+        }
+        &:hover p{
+          right: 70px;
+        }
+      }
+      .bRight{
+        h2{
+          padding-left: 80px;
+        }
+        &:hover h2{
+          right: 10px;
+        }
+        &:hover p{
+          left: 70px;
+        }
+      }
+    }
+  }
+  .totalRarity{
+    gap: 0.7rem;
+  }
+}
+@media (max-width: 535px){
+  .breakDown{
+    section{
+      .bLeft, .bRight{
+        height: 140px;
+        padding: 0.5rem;
+        &:hover{
+          h2{
+            top: 4px;
+          }
+          p{
+            width: calc(100% - 70px);
+            top: 30px;  
+          }
+        }
+        h2{
+          top: 55px;
+          font-size: 13px;
+        }
+        p{
+          font-size: 10px;
+          line-height: 15px;
+        }
+        .box{
+          top: 40px;
+          height: 45px;
+          width: 45px;
+          padding: 20px;
+          font-size: 24px;
+        }
+      }
+      .bLeft{
+        h2{
+          padding-right: 60px;
+        }
+        &:hover h2{
+          left: 10px;
+        }
+        &:hover p{
+          right: 60px;
+        }
+      }
+      .bRight{
+        h2{
+          padding-left: 60px;
+        }
+        &:hover h2{
+          right: 8px;
+        }
+        &:hover p{
+          left: 60px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 470px){
+  .breakDown{
+    section{
+      gap: 0.3rem;
+      h2{
+        font-size: 13px;
+      }
+      .bLeft, .bRight{
+        height: 150px;
+        padding: 0.5rem;
+        &:hover{
+          h2{
+            top: 2px;
+          }
+          p{
+            width: calc(100% - 70px);
+            top: 27px;  
+          }
+        }
+        h2{
+          top: 55px;
+          font-size: 12px;
+        }
+        p{
+          font-size: 10px;
+          line-height: 13px;
+        }
+        .box{
+          top: 40px;
+          height: 45px;
+          width: 45px;
+          padding: 20px;
+          font-size: 24px;
+        }
+      }
+      .bLeft{
+        h2{
+          padding-right: 60px;
+        }
+        &:hover h2{
+          left: 10px;
+        }
+        &:hover p{
+          right: 60px;
+        }
+      }
+      .bRight{
+        h2{
+          padding-left: 60px;
+        }
+        &:hover h2{
+          right: 8px;
+        }
+        &:hover p{
+          left: 60px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px){
+  .homepage{
+    gap: 0.6rem;
+    padding: 3%;
+    .briefSummary{
+      gap: 0.7rem;
+      padding: 0.5rem;
+      border-radius: 5px;
+      ul{
+        gap: 10px;
+        li{
+          font-size: 10px;
+          gap: 5px;
+          div{
+            min-height: 5px;
+            min-width: 5px;
+          }
+          span{
+            font-size: 9px;
+          }
+        }
+      }
+      button{
+        svg{
+          font-size: 10px;
+        }
+      }
+    }
+    .right{
+      gap: 0.6rem;
+      .classification, .toNote{
+        padding: 0.5rem;
+        border-radius: 5px;
+      }
+      .classification{
+        gap: 0.5rem;
+        ul{
+          gap: 0.3rem;
+          li{
+            div{
+              min-height: 5px;
+              min-width: 5px;
+            }
+            p{  
+              font-size: 8px;
+            }
+          }
+        }
+      }
+      .toNote{
+        p{
+          font-size: 8px;
+          line-height: 12px;
+        }
+      }
+    }
+  }
+  .homeQuote{
+    padding: 0.5rem;
+    gap: 2px;
+    p{
+      font-size: 7px;
+      line-height: 12px;
+    }
+    h5{
+      font-size: 5px;
+    }
+  }
+  .breakDown{
+    gap: 0.5rem;
+    h1{
+      font-size: 10px;
+    }
+    h3{
+      font-size: 8px;
+    }
+    section{
+      gap: 0.3rem;
+      h2{
+        font-size: 10px;
+      }
+      .bLeft, .bRight{
+        height: 95px;
+        padding: 0.3rem;
+        border-width: 1px;
+        &:hover{
+          h2{
+            top: 2px;
+          }
+          p{
+            width: calc(100% - 50px);
+            top: 22px;  
+          }
+        }
+        h2{
+          top: 43px;
+          font-size: 8px;
+        }
+        p{
+          font-size:7px;
+          line-height: 12px;
+        }
+        .box{
+          top: 35px;
+          height: 30px;
+          width: 30px;
+          padding: 7px;
+          font-size: 14px;
+          border-radius: 5px;
+        }
+      }
+      .bLeft{
+        h2{
+          padding-right: 45px;
+        }
+        &:hover h2{
+          left: 5px;
+        }
+        &:hover p{
+          right: 45px;
+        }
+      }
+      .bRight{
+        h2{
+          padding-left: 45px;
+        }
+        &:hover h2{
+          right: 5px;
+        }
+        &:hover p{
+          left: 45px;
+        }
+      }
+    }
+  }
+  .takeTestSection{
+    padding: 0 3% 4%;
+  }
+  .takeTestSection2{
+    padding: 0 3% 5%;
+  }
+  .totalRarity{
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 350px){
+  .breakDown{
+    section{
+      gap: 0.3rem;
+      h2{
+        font-size: 13px;
+      }
+      .bLeft, .bRight{
+        height: 150px;
+        padding: 0.5rem;
+        &:hover{
+          h2{
+            top: 2px;
+          }
+          p{
+            width: calc(100% - 60px);
+            top: 27px;  
+          }
+        }
+        h2{
+          top: 70px;
+          font-size: 10px;
+        }
+        p{
+          font-size: 8px;
+          line-height: 12px;
+        }
+        .box{
+          top: 60px;
+          height: 35px;
+          width: 35px;
+          padding: 10px;
+          font-size: 16px;
+        }
+      }
+      .bLeft{
+        h2{
+          padding-right: 50px;
+        }
+        &:hover h2{
+          left: 10px;
+        }
+        &:hover p{
+          right: 50px;
+        }
+      }
+      .bRight{
+        h2{
+          padding-left: 50px;
+        }
+        &:hover h2{
+          right: 8px;
+        }
+        &:hover p{
+          left: 50px;
         }
       }
     }

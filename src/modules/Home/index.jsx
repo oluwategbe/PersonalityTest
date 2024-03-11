@@ -19,13 +19,63 @@ import {
 
 const Home = () => {
   const { theme } = React.useContext(ThemeContext);
+  const screenWidth = window.innerWidth;
+  let fontSize = 12;
+  if (screenWidth >= 1600) {
+    fontSize = 24;
+  } else if (screenWidth >= 1400) {
+    fontSize = 20;
+  } else if (screenWidth >= 998) {
+    fontSize = 14;
+  } else if (screenWidth >= 768) {
+    fontSize = 13;
+  } else if (screenWidth >= 560) {
+    fontSize = 12;
+  } else if (screenWidth >= 400) {
+    fontSize = 10;
+  } else if (screenWidth < 400) {
+    fontSize = 7;
+  }
+
+  let legendFontSize = 12;
+  if (screenWidth >= 1600) {
+    legendFontSize = 20;
+  } else if (screenWidth >= 1400) {
+    legendFontSize = 14;
+  } else if (screenWidth >= 998) {
+    legendFontSize = 10;
+  } else if (screenWidth >= 768) {
+    legendFontSize = 9;
+  } else if (screenWidth >= 560) {
+    legendFontSize = 8;
+  } else if (screenWidth >= 400) {
+    legendFontSize = 7;
+  } else if (screenWidth < 400) {
+    legendFontSize = 4;
+  }
+
+  let chartHeight = "400";
+  if (screenWidth >= 1600) {
+    chartHeight = "700";
+  } else if (screenWidth >= 1400) {
+    chartHeight = "600";
+  } else if (screenWidth >= 998) {
+    chartHeight = "400";
+  } else if (screenWidth >= 768) {
+    chartHeight = "330";
+  } else if (screenWidth >= 560) {
+    chartHeight = "270";
+  } else if (screenWidth <= 400) {
+    chartHeight = "180";
+  }
+
   const option = {
     title: {
       text: "Rarity Chart for the 16 personalities (over 100%)",
       left: "center",
       top: "top",
       textStyle: {
-        fontSize: 18,
+        fontSize: fontSize,
         color: theme === "light" ? "#4e4e4e" : "#a7a7a7",
       },
     },
@@ -34,8 +84,9 @@ const Home = () => {
       top: "center",
       animation: true,
       orient: "vertical",
+      itemWidth: 15,
       textStyle: {
-        fontSize: "12",
+        fontSize: legendFontSize,
         color: theme === "light" ? "#4e4e4e" : "#a7a7a7",
       },
     },
@@ -171,7 +222,7 @@ const Home = () => {
         </ScaleX>
       </div>
       <div className={`breakDown ${theme === "dark" ? "dark" : ""}`}>
-        <RevealY once={true} className={{ marginBottom: "4rem" }}>
+        <RevealY once={true}>
           <h1>The Myers - Briggs preference pairs</h1>
         </RevealY>
         <RevealY once={true}>
@@ -339,7 +390,7 @@ const Home = () => {
         <Reveal style={{ width: "100%" }} delay={1} once={true}>
           <ReactECharts
             option={option}
-            style={{ height: "400px", width: "100%" }}
+            style={{ height: `${chartHeight}px`, width: "100%" }}
           />
         </Reveal>
       </div>

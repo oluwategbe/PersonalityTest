@@ -17,6 +17,7 @@
     border: 1px solid var(--border-color-1);
     color: var(--text-color-2);
     gap: 2rem;
+    height: 100%;
     .quote{
       display: flex;
       flex-direction: column;
@@ -60,22 +61,23 @@
 }
 @media (min-width: 1600px){
   .hero{
-    height:calc(100vh - 2rem);
+    padding: 6rem 10%;
+    height:calc(100vh - 7rem);
     .heroBox{
       gap: 3rem;
       .quote{
         gap: 2rem;
         h1{
-          font-size: 28px;
+          font-size: 24px;
         }
         h5{
-          font-size: 20px;
+          font-size: 18px;
         }
       }
       a{
         button{
           svg{
-            font-size: 24px;
+            font-size: 22px;
           }
         }
       }
@@ -84,13 +86,14 @@
 }
 @media (min-width: 1400px) and (max-width: 1600px){
   .hero{
-    height:calc(100vh - 2rem);
+    padding: 5rem 10%;
+    height:calc(100vh - 5rem);
     .heroBox{
       gap: 3rem;
       .quote{
         gap: 2rem;
         h1{
-          font-size: 24px;
+          font-size: 22px;
         }
         h5{
           font-size: 15px;
@@ -109,7 +112,7 @@
 @media (max-width: 998px){
   .hero{
     height:calc(100vh - 4rem);
-    padding: 3rem 7%;
+    padding: 7%;
     .heroBox{
       gap: 1.5rem;
       .quote{
@@ -130,7 +133,7 @@
 }
 @media (max-width: 768px){
   .hero{
-    padding: 3rem 5%;
+    padding: 5%;
     .heroBox{
       gap: 1.5rem;
       .quote{
@@ -151,21 +154,51 @@
 }
 @media (max-width: 560px){
   .hero{
-    height: 80vh;
-    padding: 1.5rem 5%;
+    height:calc(100vh - 3rem);
+    padding: 5%;
     .heroBox{
       gap: 1.5rem;
       .quote{
         gap: 0.5rem;
         width: 70%;
         h1{
-          font-size: 14px;
+          font-size: 11px;
+        }
+        h5{
+          font-size: 8px;
         }
       }
       a{
         button{
           svg{
             font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px){
+  .hero{
+    height:calc(100vh - 2.5rem);
+    padding: 3%;
+    .heroBox{
+      gap: 1.5rem;
+      border-radius: 10px;
+      .quote{
+        gap: 0.3rem;
+        width: 80%;
+        h1{
+          font-size: 10px;
+        }
+        h5{
+          font-size: 6px;
+        }
+      }
+      a{
+        button{
+          svg{
+            font-size: 9px;
           }
         }
       }

@@ -2043,6 +2043,24 @@ export const personalityData = [
     ],
   },
 ];
+const screenWidth = window.innerWidth;
+let emphasisFontSize = "14";
+
+if (screenWidth >= 1600) {
+  emphasisFontSize = "18px";
+} else if (screenWidth >= 1400) {
+  emphasisFontSize = "16px";
+} else if (screenWidth >= 998) {
+  emphasisFontSize = "14px";
+} else if (screenWidth >= 768) {
+  emphasisFontSize = "12px";
+} else if (screenWidth >= 560) {
+  emphasisFontSize = "10px";
+} else if (screenWidth >= 400) {
+  emphasisFontSize = "8px";
+} else if (screenWidth < 400) {
+  emphasisFontSize = "7px";
+}
 export const chartOptions = {
   tooltip: {
     trigger: "item",
@@ -2064,13 +2082,8 @@ export const chartOptions = {
       emphasis: {
         label: {
           show: true,
-          fontSize: "14",
+          fontSize: emphasisFontSize,
           fontWeight: "bold",
-        },
-        itemStyle: {
-          shadowBlur: 10,
-          shadowOffsetX: 0,
-          shadowColor: "rgba(0, 0, 0, 0.5)",
         },
       },
       color: [
