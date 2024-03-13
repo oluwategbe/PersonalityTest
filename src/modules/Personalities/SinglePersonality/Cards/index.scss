@@ -11,7 +11,7 @@
   .card{
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 3px 5px 10px 0px rgba(172, 172, 172, 0.904);
     background: rgba(0, 0, 0, 0.521);
     backdrop-filter: blur(3px);
@@ -26,7 +26,7 @@
     .h2Box{
       padding: 1rem;
       border-bottom: 1px solid grey;
-      border-radius: 20px;
+      border-radius: 10px;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
       h2{
@@ -40,8 +40,8 @@
     }
     .pBox{
       padding: 1rem;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
       transition: display 1s ease;
       p{
         opacity: 1;
@@ -51,24 +51,6 @@
         text-align: justify;
       }
     }
-  }
-  .circle{
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    background: linear-gradient(#f00, #f0f);
-    border-radius: 50%;
-    left: 10%;
-    top: 5%;
-  }
-  .circle2{
-    position: absolute;
-    height: 150px;
-    width: 150px;
-    background: linear-gradient(#2196f3, #e91e63);
-    border-radius: 50%;
-    right: 7%;
-    bottom: 15%;
   }
   .ei{
     position: relative;
@@ -101,6 +83,140 @@
     background: #ff000033;
     &:hover{
       background: #ff000080;
+    }
+  }
+}
+@media (min-width: 1600px){
+  .letterCards{
+    h1{
+      margin-bottom: 4rem;
+    }
+    .card{
+      .h2Box{
+        padding: 2rem;
+        h2{
+          font-size: 26px;
+        }
+      }
+      .pBox{
+        padding: 2rem;
+        p{
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1400px) and (max-width: 1600px){
+  .letterCards{
+    h1{
+      margin-bottom: 3rem;
+    }
+    .card{
+      .h2Box{
+        padding: 1.5rem;
+        h2{
+          font-size: 24px;
+        }
+      }
+      .pBox{
+        padding: 1.5rem;
+        p{
+          font-size: 18px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 998px){
+  .letterCards{
+    h1{
+      margin-bottom: 2rem;
+    }
+    .card{
+      .h2Box{
+        padding: 1rem;
+        h2{
+          font-size: 16px;
+        }
+      }
+      .pBox{
+        padding: 1rem;
+        p{
+          font-size: 12px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px){
+  .letterCards{
+    h1{
+      margin-bottom: 1.5rem;
+    }
+    .card{
+      .h2Box{
+        padding: 0.7rem;
+        h2{
+          font-size: 14px;
+        }
+      }
+      .pBox{
+        padding: 0.7rem;
+        p{
+          font-size: 10px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 560px){
+  .letterCards{
+    gap: 2rem;
+    h1{
+      margin-bottom: 0;
+    }
+    .card{
+      .h2Box{
+        padding: 0.5rem;
+        h2{
+          font-size: 13px;
+        }
+      }
+      .pBox{
+        padding: 0.5rem;
+        p{
+          font-size: 10px;
+          line-height: 12px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px){
+  .letterCards{
+    gap: 1.5rem;
+    h1{
+      margin-bottom: 0;
+    }
+    .card{
+      .h2Box{
+        padding: 0.5rem;
+        h2{
+          font-size: 12px;
+        }
+      }
+      .pBox{
+        padding: 0.5rem;
+        p{
+          font-size: 10px;
+          line-height: 12px;
+        }
+      }
     }
   }
 }

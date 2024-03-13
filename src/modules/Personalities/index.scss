@@ -11,12 +11,9 @@
       color: var(--text-color-1);
       align-items: center;
       border: 1px solid var(--border-color-1);
-      border-top-left-radius: 0.5rem;
-      border-top-right-radius: 0.5rem;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
       border-bottom: none;
-      h1{
-        font-size: 20px;
-      }
       p{
         text-align: justify;
       }
@@ -25,6 +22,7 @@
   .personalities{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     .group{
       display: flex;
       align-items: stretch;
@@ -32,7 +30,7 @@
       gap: 2rem;
       padding: 5% 10%;
       position: relative;
-      min-height: 80vh;
+      min-height: 70vh;
       .groupH4{
         position: absolute;
         top: -4%;
@@ -94,6 +92,304 @@
       background-color: #ceb02e;
       h4{
         color: #e2c233;
+      }
+    }
+  }
+}
+@media (min-width: 1600px){
+  .personalitiesPage{
+    .personalityHero{
+      padding: 6rem 10% 0;
+      .personalityHeroSection{
+        gap: 2rem;
+        padding: 4rem 10%;
+      }
+    }
+    .personalities{
+      .group{
+        min-height: 70vh;
+        gap: 2rem;
+        h4{
+          position: absolute;
+          left: 10%;
+          font-size: 210px !important;
+          letter-spacing: 40px;
+        }
+      }
+      .analysts{
+        h4{
+          font-size: 220px !important;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1400px) and (max-width: 1600px){
+  .personalitiesPage{
+    .personalityHero{
+      padding: 4rem 10% 0;
+      .personalityHeroSection{
+        gap: 1rem;
+        padding: 2rem 10%;
+      }
+    }
+    .personalities{
+      .group{
+        min-height: 70vh;
+        padding: 7% 10%;
+        gap: 2rem;
+        h4{
+          position: absolute;
+          left: 10%;
+          font-size: 210px !important;
+          letter-spacing: 40px;
+        }
+      }
+      .analysts{
+        h4{
+          font-size: 220px !important;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px){
+  .personalitiesPage{
+    .personalityHero{
+      padding: 4rem 10% 0;
+      .personalityHeroSection{
+        gap: 1rem;
+        padding: 2rem 10%;
+      }
+    }
+    .personalities{
+      .group{
+        min-height: 70vh;
+        gap: 1.5rem;
+        padding: 8% 10%;
+        .groupH4{
+          top: 0;
+        }
+        h4{
+          position: absolute;
+          left: 10%;
+          font-size: 160px !important;
+          letter-spacing: 40px;
+        }
+      }
+      .analysts{
+        h4{
+          font-size: 180px !important;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 998px) and (max-width: 1200px){
+  .personalitiesPage{
+    .personalities{
+      .group{
+        min-height: 65vh;
+        padding: 6% 10%;
+        gap: 1rem;
+        .groupH4{
+          top: -2%;
+        }
+        h4{
+          position: absolute;
+          left: 10%;
+          font-size: 130px !important;
+          letter-spacing: 40px;
+        }
+      }
+      .analysts{
+        h4{
+          font-size: 150px !important;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 998px){
+  .personalitiesPage{
+    .personalityHero{
+      padding: 3rem 7% 0;
+      .personalityHeroSection{
+        gap: 1rem;
+        padding: 2rem 7%;
+      }
+    }
+    .personalities{
+      overflow: hidden;
+      .group{
+        min-height: 60vh;
+        gap: 1rem;
+        padding: 10% 7%;
+        .groupH4{
+          top: 2%;
+        }
+        h4{
+          position: absolute;
+          left: 7%;
+          font-size: 110px !important;
+          letter-spacing: 35px;
+        }
+      }
+      .analysts{
+        h4{
+          font-size: 120px !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px){
+  .personalitiesPage{
+    .personalityHero{
+      padding: 2rem 5% 0;
+      .personalityHeroSection{
+        gap: 0.8rem;
+        padding: 1.5rem 5%;
+      }
+    }
+    .personalities{
+      .group{
+        gap: 1rem;
+        padding: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .groupH4{
+          top: -3%;
+        }
+        h4{
+          position: absolute;
+          left: 5%;
+          font-size: 100px !important;
+          letter-spacing: 20px;
+        }
+      }
+      .analysts{
+        h4{
+          font-size: 120px !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 650px){
+  .personalitiesPage{
+    .personalities{
+      .group{
+        gap: 1rem;
+        padding: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .groupH4{
+          top: -3%;
+        }
+        h4{
+          position: absolute;
+          left: 5%;
+          font-size: 90px !important;
+          letter-spacing: 17px;
+        }
+      }
+      .analysts{
+        h4{
+          font-size: 110px !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 560px){
+  .personalitiesPage{
+    .personalityHero{
+      padding: 2rem 5% 0;
+      .personalityHeroSection{
+        gap: 0.5rem;
+        padding: 1rem 5%;
+      }
+    }
+    .personalities{
+      .group{
+        gap: 0.7rem;
+        padding: 5%;
+        .groupH4{
+          top: -3%;
+        }
+        h4{
+          position: absolute;
+          left: 5%;
+          font-size: 80px !important;
+          letter-spacing: 15px;
+        }
+      }
+      .analysts{
+        h4{
+          font-size: 100px !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px){
+  .personalitiesPage{
+    .personalityHero{
+      padding: 2rem 5% 0;
+      .personalityHeroSection{
+        gap: 0.5rem;
+        padding: 1rem 5%;
+      }
+    }
+    .personalities{
+      .group{
+        gap: 0.7rem;
+        padding: 5%;
+        .groupH4{
+          top: -2.5%;
+        }
+        h4{
+          position: absolute;
+          left: 5%;
+          font-size: 65px !important;
+          letter-spacing: 15px;
+        }
+      }
+      .analysts{
+        h4{
+          font-size: 85px !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px){
+  .personalitiesPage{
+    .personalityHero{
+      padding: 2rem 4% 0;
+      .personalityHeroSection{
+        gap: 1rem;
+        padding: 1rem 5%;
+      }
+    }
+    .personalities{
+      .group{
+        padding: 4%;
+        .groupH4{
+          top: -2%;
+        }
+        h4{
+          position: absolute;
+          left: 4%;
+          font-size: 50px !important;
+          letter-spacing: 12px;
+        }
+      }
+      .analysts{
+        h4{
+          font-size: 65px !important;
+        }
       }
     }
   }

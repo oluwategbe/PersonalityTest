@@ -29,12 +29,13 @@ const divVar = {
     scaleX: 1,
     transition: {
       duration: 1,
+      delay: 0.5,
     },
   },
   exit: {
-    scaleY: 0,
+    opacity: 0,
     transition: {
-      duration: 0.5,
+      duration: 1,
       ease: [0.22, 1, 0.36, 0],
     },
   },

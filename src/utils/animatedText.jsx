@@ -138,6 +138,7 @@ export const Reveal = ({ children, style = "", delay = 0.5, once = false }) => {
         animate={mainControls}
         exit="exit"
         transition={{ duration: 0.5, delay: delay }}
+        style={{ height: "100%" }}
       >
         {children}
       </motion.div>
@@ -741,7 +742,11 @@ export const RevealLeft = ({
     }
   }, [isInView, slideControls]);
   return (
-    <motion.div ref={ref} className={className}>
+    <motion.div
+      ref={ref}
+      className={className}
+      exit={{ opacity: 0, transition: { duration: 1 } }}
+    >
       <motion.div
         variants={{
           hidden: {
@@ -762,6 +767,7 @@ export const RevealLeft = ({
           left: 0,
           background: bg,
         }}
+        exit="exit"
       ></motion.div>
       {children}
     </motion.div>
@@ -779,7 +785,11 @@ export const RevealRight = ({ children, className = "", bg = "" }) => {
     }
   }, [isInView, slideControls]);
   return (
-    <motion.div ref={ref} className={className}>
+    <motion.div
+      ref={ref}
+      className={className}
+      exit={{ opacity: 0, transition: { duration: 1 } }}
+    >
       <motion.div
         variants={{
           hidden: {
@@ -945,7 +955,6 @@ export const PersonalityRevealY = ({
   children,
   delay = 0,
   className = "",
-  style = "",
   once = false,
   duration = 0.5,
 }) => {
@@ -968,7 +977,6 @@ export const PersonalityRevealY = ({
         overflow: "hidden",
         width: "100%",
         padding: "10px 0",
-        ...style,
       }}
       className={className}
     >
@@ -990,7 +998,7 @@ export const PersonalityRevealY = ({
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          gap: "0.5rem",
+          gap: "0.3rem",
         }}
       >
         {children}

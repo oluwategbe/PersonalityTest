@@ -89,7 +89,7 @@ const SinglePersonality = () => {
     <Layout>
       <div className={`singlePersonality ${theme === "dark" ? "dark" : ""}`}>
         <div className="singlePersonalityHero">
-          <Reveal style={{ width: "100%" }} once={true}>
+          <Reveal style={{ width: "100%", height: "100%" }} once={true}>
             <div className="sHero">
               <div className="heroText">
                 <RevealY delay={1} once={true}>

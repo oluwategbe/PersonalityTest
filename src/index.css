@@ -183,7 +183,7 @@ ul {
     font-size: 22px !important;
   }
   button {
-    padding: 2rem;
+    padding: 1.5rem;
     gap: 16px;
     font-size: 18px;
   }
@@ -214,21 +214,20 @@ ul {
     --section-padding: 7%;
   }
   .logo {
-    font-size: 16px !important;
+    font-size: 20px !important;
   }
   button {
-    padding: 0.8rem;
-    font-size: 13px;
-  }
-  h1 {
     font-size: 16px;
   }
+  h1 {
+    font-size: 20px;
+  }
   p {
-    font-size: 13px;
+    font-size: 16px;
     line-height: 25px;
   }
   a {
-    font-size: 13px;
+    font-size: 16px;
   }
   .scrollTop {
     bottom: 1.5rem;
@@ -236,7 +235,7 @@ ul {
     height: 40px;
     width: 40px;
     padding: 0;
-    font-size: 1rem;
+    font-size: 18px;
   }
 }
 @media (max-width: 768px) {
@@ -247,20 +246,19 @@ ul {
     --section-padding: 5%;
   }
   .logo {
-    font-size: 16px !important;
+    font-size: 18px !important;
   }
   button {
-    font-size: 12px;
+    font-size: 14px;
   }
   h1 {
-    font-size: 16px;
+    font-size: 18px;
   }
   p {
-    font-size: 12px;
-    line-height: 25px;
+    font-size: 14px;
   }
   a {
-    font-size: 12px;
+    font-size: 14px;
   }
   .scrollTop {
     bottom: 1rem;
@@ -268,7 +266,7 @@ ul {
     height: 30px;
     width: 30px;
     padding: 0;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media (max-width: 560px) {
@@ -279,22 +277,22 @@ ul {
     --section-padding: 5%;
   }
   .logo {
-    font-size: 12px !important;
+    font-size: 16px !important;
   }
   button {
-    padding: 0.6rem;
-    font-size: 10px;
+    padding: 1rem;
+    font-size: 14px;
     gap: 6px;
   }
   h1 {
-    font-size: 12px;
+    font-size: 16px;
   }
   p {
-    font-size: 10px;
+    font-size: 14px;
     line-height: 20px;
   }
   a {
-    font-size: 10px;
+    font-size: 14px;
   }
   .scrollTop {
     bottom: 0.7rem;
@@ -306,35 +304,50 @@ ul {
 }
 @media (max-width: 400px) {
   :root {
-    --section-padding: 3%;
+    --section-padding: 4%;
   }
   .dark {
-    --section-padding: 3%;
+    --section-padding: 4%;
   }
   .logo {
-    font-size: 10px !important;
+    font-size: 14px !important;
   }
   button {
-    padding: 0.4rem;
+    padding: 0.7rem;
     border-radius: 5px;
-    font-size: 8px;
+    font-size: 12px;
     gap: 5px;
   }
   h1 {
-    font-size: 10px;
+    font-size: 14px;
   }
   p {
-    font-size: 8px;
+    font-size: 12px;
     line-height: 15px;
   }
   a {
-    font-size: 8px;
+    font-size: 12px;
   }
   .scrollTop {
-    bottom: 0.3rem;
-    right: 0.3rem;
-    height: 20px;
-    width: 20px;
-    font-size: 10px;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    height: 30px;
+    width: 30px;
+    font-size: 12px;
   }
+}
+
+@media (min-width: 1600px) {
+}
+@media (min-width: 1400px) and (max-width: 1600px) {
+}
+@media (min-width: 998px) and (max-width: 1200px) {
+}
+@media (min-width: 768px) and (max-width: 998px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 560px) {
+}
+@media (max-width: 400px) {
 }

@@ -229,9 +229,6 @@
   .navbar{
     padding: 2rem 10%;
     .navItems{
-      a{
-        font-size: 20px;
-      }
       ul{
         gap: 6rem;
       }
@@ -246,7 +243,6 @@
         grid-gap: 3rem;
         bottom: -27rem;
         p{
-          font-size: 20px;
           &.withLine {
             &:after {
               right: -1.5rem;
@@ -287,9 +283,6 @@
   .navbar{
     padding: 1.5rem 10%;
     .navItems{
-      a{
-        font-size: 18px;
-      }
       ul{
         gap: 3rem;
       }
@@ -304,7 +297,6 @@
         bottom: -18rem;
         grid-gap: 2rem;
         p{
-          font-size: 18px;
           &.withLine {
             &:after {
               right: -1rem;
@@ -344,13 +336,7 @@
 @media (max-width: 998px){
   .navbar{
     padding: 1rem 7%;
-    .logo{
-      font-size: 15px;
-    }
     .navItems{
-      a{
-        font-size: 13px;
-      }
       ul{
         gap: 1.5rem;
       }
@@ -427,7 +413,7 @@
 }
 @media (max-width: 400px){
   .navbar{
-    padding: 0.5rem 3%;
+    padding: 0.5rem 4%;
     .barContainer{
       gap: 0.5rem;
       .themeBox{

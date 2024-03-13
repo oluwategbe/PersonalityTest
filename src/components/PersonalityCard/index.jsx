@@ -25,7 +25,7 @@ const PersonalityCard = ({
         <SlideLeft width="100%" delay={delay} once={false} index={index}>
           <img src={picture} alt={title} />
         </SlideLeft>
-        <PersonalityRevealY delay={1 * delay} once={true}>
+        <PersonalityRevealY className="cardGap" delay={1 * delay} once={true}>
           <h2 style={{ color: `${color}` }}>{title}</h2>
           <h3 style={{ color: `${color}` }}>{personality}</h3>
           <p style={{ color: `${color}` }}>{desc}</p>

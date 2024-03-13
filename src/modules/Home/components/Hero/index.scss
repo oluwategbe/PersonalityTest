@@ -68,7 +68,7 @@
       .quote{
         gap: 2rem;
         h1{
-          font-size: 24px;
+          font-size: 28px;
         }
         h5{
           font-size: 18px;
@@ -89,14 +89,14 @@
     padding: 5rem 10%;
     height:calc(100vh - 5rem);
     .heroBox{
-      gap: 3rem;
+      gap: 2rem;
       .quote{
         gap: 2rem;
         h1{
-          font-size: 22px;
+          font-size: 26px;
         }
         h5{
-          font-size: 15px;
+          font-size: 16px;
         }
       }
       a{
@@ -114,10 +114,13 @@
     height:calc(100vh - 4rem);
     padding: 7%;
     .heroBox{
-      gap: 1.5rem;
+      gap: 2.5rem;
       .quote{
-        gap: 0.5rem;
+        gap: 1rem;
         h1{
+          font-size: 24px;
+        }
+        h5{
           font-size: 16px;
         }
       }
@@ -135,11 +138,14 @@
   .hero{
     padding: 5%;
     .heroBox{
-      gap: 1.5rem;
+      gap: 2.5rem;
       .quote{
-        gap: 0.5rem;
+        gap: 0.7rem;
         h1{
-          font-size: 16px;
+          font-size: 22px;
+        }
+        h5{
+          font-size: 14px;
         }
       }
       a{
@@ -157,21 +163,21 @@
     height:calc(100vh - 3rem);
     padding: 5%;
     .heroBox{
-      gap: 1.5rem;
+      gap: 2.3rem;
       .quote{
         gap: 0.5rem;
-        width: 70%;
+        width: 80%;
         h1{
-          font-size: 11px;
+          font-size: 18px;
         }
         h5{
-          font-size: 8px;
+          font-size: 12px;
         }
       }
       a{
         button{
           svg{
-            font-size: 11px;
+            font-size: 12px;
           }
         }
       }
@@ -180,25 +186,25 @@
 }
 @media (max-width: 400px){
   .hero{
-    height:calc(100vh - 2.5rem);
-    padding: 3%;
+    height:calc(100vh - 2.2rem);
+    padding: 4%;
     .heroBox{
-      gap: 1.5rem;
+      gap: 2rem;
       border-radius: 10px;
       .quote{
         gap: 0.3rem;
         width: 80%;
         h1{
-          font-size: 10px;
+          font-size: 16px;
         }
         h5{
-          font-size: 6px;
+          font-size: 10px;
         }
       }
       a{
         button{
           svg{
-            font-size: 9px;
+            font-size: 12px;
           }
         }
       }

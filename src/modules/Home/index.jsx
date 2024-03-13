@@ -32,7 +32,7 @@ const Home = () => {
   } else if (screenWidth >= 560) {
     fontSize = 12;
   } else if (screenWidth >= 400) {
-    fontSize = 10;
+    fontSize = 9;
   } else if (screenWidth < 400) {
     fontSize = 7;
   }
@@ -43,15 +43,15 @@ const Home = () => {
   } else if (screenWidth >= 1400) {
     legendFontSize = 14;
   } else if (screenWidth >= 998) {
-    legendFontSize = 10;
+    legendFontSize = 12;
   } else if (screenWidth >= 768) {
-    legendFontSize = 9;
+    legendFontSize = 10;
   } else if (screenWidth >= 560) {
     legendFontSize = 8;
   } else if (screenWidth >= 400) {
     legendFontSize = 7;
   } else if (screenWidth < 400) {
-    legendFontSize = 4;
+    legendFontSize = 5;
   }
 
   let chartHeight = "400";
@@ -66,14 +66,14 @@ const Home = () => {
   } else if (screenWidth >= 560) {
     chartHeight = "270";
   } else if (screenWidth <= 400) {
-    chartHeight = "180";
+    chartHeight = "220";
   }
 
   const option = {
     title: {
       text: "Rarity Chart for the 16 personalities (over 100%)",
       left: "center",
-      top: "top",
+      top: "bottom",
       textStyle: {
         fontSize: fontSize,
         color: theme === "light" ? "#4e4e4e" : "#a7a7a7",
@@ -84,7 +84,10 @@ const Home = () => {
       top: "center",
       animation: true,
       orient: "vertical",
-      itemWidth: 15,
+      itemWidth: 10,
+      itemHeight: 10,
+      padding: 2,
+      itemGap: 5,
       textStyle: {
         fontSize: legendFontSize,
         color: theme === "light" ? "#4e4e4e" : "#a7a7a7",
@@ -236,12 +239,15 @@ const Home = () => {
             <h2>Extroversion</h2>
             <div className="box">E</div>
             <p>
-              Extroverts are fueled by social interaction and thrive in lively
-              environments. Known for their expressive and outgoing nature, they
-              enjoy group activities and easily exhibit enthusiasm.
+              Extroverts are fueled by social interaction and connecting with
+              others. They thrive in lively, vibrant environments and are known
+              for their expressive and outgoing nature. They enjoy group
+              activities and effortlessly exhibit enthusiasm.
             </p>
           </RevealLeft>
-          <h2>or</h2>
+          <Reveal>
+            <h2>or</h2>
+          </Reveal>
           <RevealRight
             className="bRight"
             bg={theme === "dark" ? "#0e4fb1" : "#73abff"}
@@ -249,9 +255,10 @@ const Home = () => {
             <div className="box">I</div>
             <h2>Introversion</h2>
             <p>
-              Introverts thrive in quiet or small group settings, valuing
-              introspection and meaningful social connections. They recharge
-              alone and may feel drained by excessive socializing.
+              Introverts thrive in quiet environments or small group settings,
+              placing great value on introspection, deep thought, and building
+              meaningful social connections. They cherish moments of solitude,
+              and may feel drained by excessive socializing.
             </p>
           </RevealRight>
         </section>
@@ -272,7 +279,9 @@ const Home = () => {
               are very pragmatic and down-to-earth.
             </p>
           </RevealLeft>
-          <h2>or</h2>
+          <Reveal>
+            <h2>or</h2>
+          </Reveal>
           <RevealRight
             className="bRight"
             bg={theme === "dark" ? "#888800" : "#c7c700"}
@@ -306,7 +315,9 @@ const Home = () => {
               emotions.
             </p>
           </RevealLeft>
-          <h2>or</h2>
+          <Reveal>
+            <h2>or</h2>
+          </Reveal>
           <RevealRight
             className="bRight"
             bg={theme === "dark" ? "#970e37" : "#ff145a"}
@@ -338,7 +349,9 @@ const Home = () => {
               predictability, and closure in decision-making.
             </p>
           </RevealLeft>
-          <h2>or</h2>
+          <Reveal>
+            <h2>or</h2>
+          </Reveal>
           <RevealRight
             className="bRight"
             bg={theme === "dark" ? "#1a581a" : "#009400"}
@@ -384,13 +397,16 @@ const Home = () => {
             , while the most common type is{" "}
             <Link to={"/personalities/ISTJ"}>
               <span>ISTJ (Logistician)</span>
-            </Link>{" "}
+            </Link>
           </p>
         </Reveal>
         <Reveal style={{ width: "100%" }} delay={1} once={true}>
           <ReactECharts
             option={option}
-            style={{ height: `${chartHeight}px`, width: "100%" }}
+            style={{
+              height: `${chartHeight}px`,
+              width: "100%",
+            }}
           />
         </Reveal>
       </div>
@@ -398,7 +414,7 @@ const Home = () => {
         <Reveal once={true} delay={0}>
           <div className="takeTest">
             <RevealY delay={0.5} once={true}>
-              <h3>Wanna discover your personality? Get Started Now</h3>
+              <h1>Wanna discover your personality? Get Started Now</h1>
             </RevealY>{" "}
             <ShakeButton
               delay={0.8}

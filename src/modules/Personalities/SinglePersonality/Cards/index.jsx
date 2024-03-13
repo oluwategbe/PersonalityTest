@@ -6,10 +6,15 @@ const Cards = ({ personality }) => {
   const [firstLetter, secondLetter, thirdLetter, fourthLetter] = [
     ...personality,
   ];
+  const screenWidth = window.innerWidth;
+  let width = "45%";
+  if (screenWidth <= 560) {
+    width = "60%";
+  }
   return (
     <div className="letterCards">
       <h1>What the letters mean</h1>
-      <SlideLeft>
+      <SlideLeft width={width}>
         <div className="ei card">
           <div className="h2Box">
             <RevealY delay={0.5} once={true}>
@@ -24,14 +29,14 @@ const Cards = ({ personality }) => {
             <RevealY delay={0.7} once={true}>
               <p>
                 {firstLetter === "E"
-                  ? "Extraverted individuals are often outgoing, social, and energized by engaging with others. They typically enjoy the hustle and bustle of social gatherings, seeking stimulation and deriving energy from interaction, whether in lively parties or group activities."
-                  : "Introverted individuals tend to be more reflective and inward-focused, finding solace and rejuvenation in moments of solitude or in-depth personal contemplation, often preferring smaller, more intimate gatherings over large social events."}
+                  ? "Extroverts are fueled by social interaction and connecting with others. They thrive in lively, vibrant environments and are known for their expressive and outgoing nature. They enjoy group activities and effortlessly exhibit enthusiasm."
+                  : "Introverts thrive in quiet environments or small group settings, placing great value on introspection, deep thought, and building meaningful social connections. They cherish moments of solitude, and may feel drained by excessive socializing."}
               </p>
             </RevealY>
           </div>
         </div>
       </SlideLeft>
-      <SlideRight style={{ alignSelf: "flex-end" }}>
+      <SlideRight style={{ alignSelf: "flex-end" }} width={width}>
         <div className="ns card">
           <div className="h2Box">
             <RevealY delay={0.5} once={true}>
@@ -44,14 +49,14 @@ const Cards = ({ personality }) => {
             <RevealY delay={0.7} once={true}>
               <p>
                 {secondLetter === "N"
-                  ? "Intuitive individuals are characterized by their imaginative and future-oriented mindset. They are drawn to possibilities, patterns, and innovative ideas, often relying on their instincts and creativity to navigate the world. They enjoy exploring new concepts and envisioning potential outcomes."
-                  : "Sensing individuals are grounded in the present moment and rely on tangible and concrete information. They are detail-oriented, practical, and observant, focusing on what is directly evident in their surroundings. Sensing individuals often appreciate hands-on experiences and value a realistic and pragmatic approach to problem-solving."}
+                  ? "Intuitives value theories, patterns, and future prospects, embracing creativity and imagination. They explore abstract concepts and potential outcomes with curiosity and open-mindedness, prioritizing future potentials over present stability."
+                  : "Sensors rely on their senses for information, emphasizing practicality and hands-on learning. They prioritize reality and facts, enjoying tangible experiences and focusing on details. They are very pragmatic and down-to-earth."}
               </p>
             </RevealY>
           </div>
         </div>
       </SlideRight>
-      <SlideLeft>
+      <SlideLeft width={width}>
         <div className="tf card">
           <div className="h2Box">
             <RevealY delay={0.5} once={true}>
@@ -62,17 +67,16 @@ const Cards = ({ personality }) => {
           </div>
           <div className="pBox">
             <RevealY delay={0.7} once={true}>
-              {" "}
               <p>
                 {thirdLetter === "T"
-                  ? "Thinking individuals base their decisions on logic, objective analysis, and rationality. They prioritize fairness and consistency, often setting aside personal emotions to make impartial judgments. They approach problem-solving by evaluating facts and evidence, aiming for an objective and systematic outcome."
-                  : "Feeling individuals make decisions based on personal values, empathy, and consideration for others. They prioritize harmony and understanding, often taking into account the emotional impact of choices on themselves and those around them. Feeling individuals value relationships and often seek consensus to ensure decisions align with their values and the feelings of others."}
+                  ? "Thinkers rely on logic and reason, prioritizing objective data and facts. They maintain consistency and logic in their decision-making, and often masking their emotions. They emphasize objectivity and rationality, giving precedence to logic over emotions."
+                  : "Feelers prioritize decisions based on emotions and values, considering how their choices impact people. They are sensitive and empathetic, prioritizing social relationships, cooperation and emotional well-being."}
               </p>
             </RevealY>
           </div>
         </div>
       </SlideLeft>
-      <SlideRight style={{ alignSelf: "flex-end" }}>
+      <SlideRight style={{ alignSelf: "flex-end" }} width={width}>
         <div className="jp card">
           <div className="h2Box">
             <RevealY delay={0.5} once={true}>
@@ -83,11 +87,10 @@ const Cards = ({ personality }) => {
           </div>
           <div className="pBox">
             <RevealY delay={0.7} once={true}>
-              {" "}
               <p>
                 {fourthLetter === "J"
-                  ? "Judging individuals prefer structure, organization, and planning in their lives. They are decisive and seek closure, often making decisions promptly. They appreciate routine and order, and they tend to be goal-oriented, planning their activities in advance. Judging individuals find satisfaction in completing tasks and prefer a planned and organized approach to life."
-                  : "Perceiving individuals enjoy flexibility, spontaneity, and adaptability. They are open-minded and prefer to go with the flow, often keeping their options open. Perceiving individuals are more comfortable with uncertainty and are adaptable to change. They enjoy exploring new possibilities and tend to postpone decision-making, embracing a more relaxed and spontaneous approach to life."}
+                  ? "Judgers value structure and organization, preferring planned outcomes and disliking surprises. They are decisive, thorough, and highly organized individuals who prioritize clarity, predictability, and closure in decision-making."
+                  : "Perceivers value flexibility and openness, enjoying spontaneity and the freedom to change course. They are very adaptable and open-minded individuals. They excel in improvisation and seizing opportunities, preferring a flexible and relaxed approach to decision-making."}
               </p>
             </RevealY>
           </div>

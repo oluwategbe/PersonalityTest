@@ -43,3 +43,195 @@
     }
   }
 }
+
+@media (min-width: 1600px) {
+  .personalityCard{
+    padding: 2rem;
+    &:hover{
+      transform: translateY(-50px);
+    }
+    a{
+      gap: 1.5rem;
+      img{
+        max-height: 300px;
+        min-height: 300px;
+      }
+      h2{
+        font-size: 28px;
+      }
+      h3{
+        font-size: 26px;
+      }
+      p{
+        font-size: 22px;
+        line-height: 35px;
+      }
+    }
+  }
+}
+@media (min-width: 1400px) and (max-width: 1600px) {
+  .personalityCard{
+    padding: 1.5rem;
+    &:hover{
+      transform: translateY(-50px);
+    }
+    a{
+      gap: 1.5rem;
+      img{
+        max-height: 280px;
+        min-height: 280px;
+      }
+      h2{
+        font-size: 24px;
+      }
+      h3{
+        font-size: 22px;
+      }
+      p{
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .personalityCard{
+    padding: 1rem;
+    &:hover{
+      transform: translateY(-30px);
+    }
+    a{
+      gap: 1.5rem;
+      img{
+        max-height: 250px;
+        min-height: 250px;
+      }
+      h2{
+        font-size: 22px;
+      }
+      h3{
+        font-size: 20px;
+      }
+      p{
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+  }
+}
+@media (min-width: 998px) and (max-width: 1200px) {
+  .personalityCard{
+    padding: 0.7rem;
+    a{
+      gap: 1rem;
+      img{
+        max-height: 220px;
+        min-height: 220px;
+      }
+      h2{
+        font-size: 20px;
+      }
+      h3{
+        font-size: 18px;
+      }
+      p{
+        font-size: 16px;
+        line-height: 25px;
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 998px) {
+  .personalityCard{
+    padding: 0.5rem;
+    a{
+      gap: 0.5rem;
+      img{
+        max-height: 200px;
+        min-height: 200px;
+      }
+      h2{
+        font-size: 18px;
+      }
+      h3{
+        font-size: 16px;
+      }
+      p{
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .personalityCard{
+    padding: 0.5rem;
+    a{
+      gap: 1rem;
+      img{
+        max-height: 150px;
+        min-height: 150px;
+      }
+      h2{
+        font-size: 16px;
+      }
+      h3{
+        font-size: 14px;
+      }
+      p{
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+  }
+}
+@media (max-width: 560px) {
+  .personalityCard{
+    padding: 0.5rem;
+    a{
+      gap: 0.5rem;
+      img{
+        max-height: 120px;
+        min-height: 120px;
+      }
+      h2{
+        font-size: 14px;
+      }
+      h3{
+        font-size: 13px;
+      }
+      p{
+        font-size: 11px;
+        line-height: 12px;
+      }
+      .cardGap{
+        padding: 0 !important;
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .personalityCard{
+    padding: 0.3rem;
+    a{
+      gap: 0.3rem;
+      img{
+        max-height: 100px;
+        min-height: 100px;
+      }
+      h2{
+        font-size: 12px;
+      }
+      h3{
+        font-size: 11px;
+      }
+      p{
+        font-size: 9.5px;
+        line-height: 10px;
+      }
+      .cardGap{
+        padding: 0 !important;
+      }
+    }
+  }
+}
