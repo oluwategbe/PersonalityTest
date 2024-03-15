@@ -472,9 +472,9 @@ export const personalityData = [
       "Natural, strong-willed leaders who take charge of situations and achieve goals.",
     long_desc:
       "Commanders are bold, decisive, and charismatic leaders known for their visionary approach. They thrive on challenges and have a natural ability to rally people behind shared goals. These strategic thinkers excel at problem-solving and enjoy conceptualizing long-term plans to drive change. Competitive and quick-witted, they prefer focusing on the future and abstract ideas over present details. While successful in corporate settings due to their leadership skills, their direct and sometimes blunt communication style can be perceived as harsh. Their emotional distance might lead to clashes in professional settings, emphasizing efficiency over emotional expressions. To maximize their potential, Commanders need to recognize and value the contributions of their teams while fostering emotionally healthy relationships.",
-    fact: "ENTJS make decisions quickly, are very career-focused, and fit well into the corporate world.",
+    fact: "ENTJs make decisions quickly, are very career-focused, and fit well into the corporate world.",
     fact2:
-      "The ENTJ thrives in jobs that are complex and require clear strategies for goals. In relationships, they can set high expectations for their loved ones and can be sometimes domineering.",
+      "ENTJs thrive in jobs that are complex and require clear strategies for goals. In relationships, they can set high expectations for their loved ones and can be sometimes domineering.",
     strengths: [
       {
         title: "Efficient",

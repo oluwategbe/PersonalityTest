@@ -28,13 +28,80 @@ const SinglePersonality = () => {
   ];
   const rarity = data?.rarity?.value;
   const factColor = groupColors?.find((g) => g?.group === data?.group);
+  const screenWidth = window.innerWidth;
+  let fontSize = 12;
+  if (screenWidth >= 1600) {
+    fontSize = 24;
+  } else if (screenWidth >= 1400) {
+    fontSize = 20;
+  } else if (screenWidth >= 998) {
+    fontSize = 14;
+  } else if (screenWidth >= 768) {
+    fontSize = 13;
+  } else if (screenWidth >= 560) {
+    fontSize = 12;
+  } else if (screenWidth >= 400) {
+    fontSize = 11;
+  } else if (screenWidth < 400) {
+    fontSize = 9;
+  }
+
+  let legendFontSize = 12;
+  if (screenWidth >= 1600) {
+    legendFontSize = 20;
+  } else if (screenWidth >= 1400) {
+    legendFontSize = 18;
+  } else if (screenWidth >= 998) {
+    legendFontSize = 16;
+  } else if (screenWidth >= 768) {
+    legendFontSize = 14;
+  } else if (screenWidth >= 560) {
+    legendFontSize = 12;
+  } else if (screenWidth >= 400) {
+    legendFontSize = 11;
+  } else if (screenWidth < 400) {
+    legendFontSize = 9;
+  }
+
+  let emphasisFontSize = "14";
+  if (screenWidth >= 1600) {
+    emphasisFontSize = "18px";
+  } else if (screenWidth >= 1400) {
+    emphasisFontSize = "16px";
+  } else if (screenWidth >= 998) {
+    emphasisFontSize = "14px";
+  } else if (screenWidth >= 768) {
+    emphasisFontSize = "12px";
+  } else if (screenWidth >= 560) {
+    emphasisFontSize = "10px";
+  } else if (screenWidth >= 400) {
+    emphasisFontSize = "8px";
+  } else if (screenWidth < 400) {
+    emphasisFontSize = "7px";
+  }
+
+  let chartHeight = "400";
+  if (screenWidth >= 1600) {
+    chartHeight = "700";
+  } else if (screenWidth >= 1400) {
+    chartHeight = "600";
+  } else if (screenWidth >= 998) {
+    chartHeight = "400";
+  } else if (screenWidth >= 768) {
+    chartHeight = "330";
+  } else if (screenWidth >= 560) {
+    chartHeight = "270";
+  } else if (screenWidth <= 400) {
+    chartHeight = "220";
+  }
+
   const option = {
     title: {
       text: `Rarity Chart for ${data?.personality} personality (over 100%)`,
       left: "center",
-      top: "top",
+      top: "bottom",
       textStyle: {
-        fontSize: 20,
+        fontSize: fontSize,
         color: theme === "light" ? "#4e4e4e" : "#a7a7a7",
       },
     },
@@ -43,10 +110,15 @@ const SinglePersonality = () => {
     },
     legend: {
       left: "left",
-      top: "center",
+      top: "top",
+      animation: true,
       orient: "vertical",
+      itemWidth: 15,
+      itemHeight: 15,
+      padding: 2,
+      itemGap: 5,
       textStyle: {
-        fontSize: "16",
+        fontSize: legendFontSize,
         color: theme === "light" ? "#4e4e4e" : "#a7a7a7",
       },
     },
@@ -72,7 +144,7 @@ const SinglePersonality = () => {
         emphasis: {
           label: {
             show: true,
-            fontSize: "14",
+            fontSize: emphasisFontSize,
             fontWeight: "bold",
           },
         },
@@ -134,7 +206,7 @@ const SinglePersonality = () => {
           </div>
         </div>
         <div className="rarity">
-          <RevealY once={true}>
+          <RevealY once={true} style={{ zIndex: "1" }}>
             <div className="header">
               <h1>How frequent is {data?.personality}</h1>
               <div className="line"></div>
@@ -154,7 +226,10 @@ const SinglePersonality = () => {
               <Reveal delay={1.5} once={true}>
                 <ReactECharts
                   option={option}
-                  style={{ height: "400px", width: "100%" }}
+                  style={{
+                    height: `${chartHeight}px`,
+                    width: "100%",
+                  }}
                 />
               </Reveal>
             </div>
@@ -198,7 +273,7 @@ const SinglePersonality = () => {
               ))}
             </div>
           </div>
-          <ScaleX style={{ marginTop: "2rem" }}>
+          <ScaleX style={{ marginTop: "1.5rem" }}>
             <div
               className="fact"
               style={{ borderLeft: `7px solid ${factColor?.color}` }}

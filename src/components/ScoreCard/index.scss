@@ -29,6 +29,7 @@
       padding: 0rem 0.2rem;
       cursor: pointer;
       color: var(--text-color-4);
+      min-width: 2%;
       span{
         display: flex;
         justify-content: center;
@@ -39,12 +40,14 @@
         width: 22px;
         font-size: 9px;
         font-weight: 800;
+        position: absolute;
       }
       p{
         text-transform: uppercase;
         font-size: 11px;
         font-weight: 700;
         z-index: 1;
+        position: relative;
       }
     }
     .cardLeft{
@@ -55,6 +58,9 @@
       transition: background 0.3s ease;
       &:hover{
         background: #f86565;
+      }
+      p{
+        left: 2rem;
       }
     }
     .cardLeft.dark{
@@ -72,11 +78,267 @@
       &:hover{
         background: #9d7aff;
       }
+      p{
+        right: 2rem;
+      }
     }
     .cardRight.dark{
       background: #5a33c4;
       &:hover{
         background: #6d44df;
+      }
+    }
+  }
+}
+@media (min-width: 1600px){
+  .scoreCard{
+    gap: 1rem;
+    .text{
+      display: flex;
+      gap: 0.5rem;
+      h3{
+        font-size: 18px;
+      }
+      h4{
+        font-size: 16px;
+      }
+    }
+    .card{
+      .cardChild{
+        gap: 10px;
+        padding: 0.3rem 0.5rem;
+        span{
+          height: 35px;
+          width: 35px;
+          font-size: 14px;
+        }
+        p{
+          font-size: 16px;
+        }
+      }
+      .cardLeft{
+        border-top-left-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+        p{
+          left: 3rem;
+        }
+      }
+      .cardRight{
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        p{
+          right: 3rem;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1400px) and (max-width: 1600px){
+  .scoreCard{
+    gap: 0.7rem;
+    .text{
+      display: flex;
+      gap: 0.3rem;
+      h3{
+        font-size: 16px;
+      }
+      h4{
+        font-size: 14px;
+      }
+    }
+    .card{
+      .cardChild{
+        gap: 7px;
+        padding: 0.2rem 0.4rem;
+        span{
+          height: 30px;
+          width: 30px;
+          font-size: 12px;
+        }
+        p{
+          font-size: 14px;
+        }
+      }
+      .cardLeft{
+        border-top-left-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+        p{
+          left: 2.5rem;
+        }
+      }
+      .cardRight{
+        border-top-right-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        p{
+          right: 2.5rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 998px){
+  .scoreCard{
+    gap: 0.2rem;
+    .text{
+      gap: 0.2rem;
+      h3{
+        font-size: 12px;
+      }
+      h4{
+        font-size: 10px;
+      }
+    }
+    .card{
+      .cardChild{
+        gap: 5px;
+        padding: 0rem 0.1rem;
+        span{
+          height: 22px;
+          width: 22px;
+          font-size: 9px;
+        }
+        p{
+          font-size: 11px;
+        }
+      }
+      .cardLeft{
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        p{
+          left: 2rem;
+        }
+      }
+      .cardRight{
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        p{
+          right: 2rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px){
+  .scoreCard{
+    gap: 0.2rem;
+    .text{
+      gap: 0.2rem;
+      h3{
+        font-size: 12px;
+      }
+      h4{
+        font-size: 10px;
+      }
+    }
+    .card{
+      .cardChild{
+        gap: 5px;
+        padding: 0rem 0.1rem;
+        span{
+          height: 17px;
+          width: 17px;
+          font-size: 8px;
+        }
+        p{
+          font-size: 10px;
+        }
+      }
+      .cardLeft{
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        p{
+          left: 2rem;
+        }
+      }
+      .cardRight{
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        p{
+          right: 2rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 560px){
+  .scoreCard{
+    gap: 0.1rem;
+    .text{
+      gap: 0.1rem;
+      h3{
+        font-size: 10px;
+      }
+      h4{
+        font-size: 9px;
+      }
+    }
+    .card{
+      .cardChild{
+        padding: 0rem 0.1rem;
+        span{
+          height: 17px;
+          width: 17px;
+          font-size: 7px;
+        }
+        p{
+          font-size: 9px;
+        }
+      }
+      .cardLeft{
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        p{
+          left: 1.2rem;
+        }
+      }
+      .cardRight{
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        p{
+          right: 1.2rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px){
+  .scoreCard{
+    gap: 0.1rem;
+    .text{
+      gap: 0.1rem;
+      h3{
+        font-size: 10px;
+      }
+      h4{
+        font-size: 9px;
+      }
+    }
+    .card{
+      .cardChild{
+        padding: 0rem 0.1rem;
+        span{
+          height: 17px;
+          width: 17px;
+          font-size: 7px;
+        }
+        p{
+          font-size: 9px;
+          line-height: 20px;
+        }
+      }
+      .cardLeft{
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        p{
+          left: 1.2rem;
+        }
+      }
+      .cardRight{
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        p{
+          right: 1.2rem;
+        }
       }
     }
   }

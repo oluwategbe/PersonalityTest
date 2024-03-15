@@ -45,7 +45,7 @@ function ResultWait({ showExit, setShowExit }) {
       style={{ display: showExit ? "none" : "" }}
     >
       <RevealY delay={1} style={{ width: "fit-content" }}>
-        <div className="calculationText">Calculating your result...</div>
+        <p className="calculationText">Calculating your result...</p>
       </RevealY>
       <RevealY delay={1.5} style={{ width: "fit-content" }}>
         <div className="progressBar">

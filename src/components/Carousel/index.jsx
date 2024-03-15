@@ -25,9 +25,9 @@ const Carousel = ({ data }) => {
       return 4;
     } else if (screenWidth >= 768) {
       return 3;
-    } else {
+    } else if (screenWidth >= 560) {
       return 2;
-    }
+    } else return 1;
   };
 
   const getVisibleData = () => {

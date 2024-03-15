@@ -10,13 +10,15 @@
   padding: 1rem;
   background-color: var(--bg);
   border: 1px solid var(--border-color-1);
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   color: var(--text-color-1);
+  font-size: 18px;
 }
 label {
   margin-bottom: 1rem;
   color: var(--text-color-1);
+  font-size: 18px;
 }
 .options {
   position: absolute;
@@ -32,7 +34,100 @@ label {
   padding: 1rem;
   color: var(--text-color-1);
   cursor: pointer;
+  font-size: 18px;
 }
 .options li:hover {
   background-color: var(--border-color-1);
+}
+@media (min-width: 1600px) {
+  .custom-select {
+    width: 500px;
+  }
+  .selected-option {
+    padding: 2rem;
+    font-size: 22px;
+  }
+  label {
+    margin-bottom: 2rem;
+    font-size: 22px;
+  }
+  .options li {
+    padding: 2rem;
+    font-size: 22px;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1600px) {
+  .custom-select {
+    width: 400px;
+  }
+  .selected-option {
+    padding: 1.5rem;
+    font-size: 20px;
+  }
+  label {
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+  }
+  .options li {
+    padding: 1.5rem;
+    font-size: 20px;
+  }
+}
+@media (max-width: 998px) {
+  .custom-select {
+    width: 250px;
+  }
+  .selected-option {
+    font-size: 16px;
+  }
+  label {
+    font-size: 16px;
+  }
+  .options li {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .custom-select {
+    width: 220px;
+  }
+  .selected-option {
+    font-size: 14px;
+  }
+  label {
+    font-size: 14px;
+  }
+  .options li {
+    font-size: 14px;
+  }
+}
+@media (max-width: 560px) {
+  .custom-select {
+    width: 200px;
+  }
+  .selected-option {
+    font-size: 13px;
+  }
+  label {
+    font-size: 13px;
+  }
+  .options li {
+    font-size: 13px;
+  }
+}
+@media (max-width: 400px) {
+  .custom-select {
+    width: 200px;
+  }
+  .selected-option {
+    font-size: 12px;
+    padding: 0.7rem;
+  }
+  label {
+    font-size: 12px;
+  }
+  .options li {
+    font-size: 12px;
+    padding: 0.7rem;
+  }
 }

@@ -15,7 +15,7 @@ const Test = () => {
     <Layout>
       <div className={`test ${theme === "dark" ? "dark" : ""}`}>
         <div className="testhero">
-          <Reveal style={{ width: "100%" }} once={true}>
+          <Reveal style={{ width: "100%", height: "100%" }} once={true}>
             <div className="tHero">
               <div className="text">
                 <RevealY delay={0.5} once={true}>

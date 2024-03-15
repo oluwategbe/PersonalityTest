@@ -76,7 +76,52 @@
 }
 
 @media (max-width: 767px) {
-  .carouselCard {
-    flex: 0 0 calc(100% / 2); /* Show 2 items */
+  .carousel {
+    .carousel-inner {
+      .carouselCard {
+        flex: 0 0 calc(100% / 2); /* Show 2 items */
+        h2{
+          font-size: 16px;
+        }
+        p{
+          font-size: 12px;
+          line-height: 15px;
+        }
+      }
+    }
+    button {
+      padding: 0;
+      height: 45px;
+      width: 45px;
+      svg{
+        font-size: 2rem;
+      }
+    }
+  }
+}
+@media (max-width: 560px) {
+  .carousel {
+    .carousel-inner {
+      .carouselCard {
+        flex: 0 0 calc(100% / 1); /* Show 1 items */
+        gap: 1rem;
+        h2{
+          font-size: 14px;
+        }
+        p{
+          font-size: 12px;
+          line-height: 15px;
+          width: 70%;
+        }
+      }
+    }
+    button {
+      padding: 0;
+      height: 40px;
+      width: 40px;
+      svg{
+        font-size: 1rem;
+      }
+    }
   }
 }

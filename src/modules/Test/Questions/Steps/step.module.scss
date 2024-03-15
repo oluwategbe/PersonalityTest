@@ -20,7 +20,122 @@
     }
   }
   .stepsLine{
-    width: 170px;
+    width: 130px;
     height: 2px;
+  }
+}
+@media (min-width: 1600px){
+  .steps{
+    span{
+      height: 50px;
+      width: 50px;
+    }
+    .stepsLine{
+      width: 250px;
+      height: 2px;
+    }
+  }
+}
+@media (min-width: 1400px) and (max-width: 1600px){
+  .steps{
+    span{
+      height: 50px;
+      width: 50px;
+    }
+    .stepsLine{
+      width: 170px;
+      height: 2px;
+    }
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px){
+  .steps{
+    span{
+      height: 50px;
+      width: 50px;
+    }
+    .stepsLine{
+      width: 130px;
+      height: 2px;
+    }
+  }
+}
+@media (min-width: 998px) and (max-width: 1200px){
+  .steps{
+    span{
+      height: 40px;
+      width: 40px;
+    }
+    .stepsLine{
+      width: 120px;
+      height: 2px;
+    }
+  }
+}
+@media (max-width: 998px){
+  .steps{
+    span{
+      height: 35px;
+      width: 35px;
+      font-size: 14px;
+    }
+    .stepsLine{
+      width: 100px;
+      height: 2px;
+    }
+  }
+}
+@media (max-width: 768px){
+  .steps{
+    span{
+      height: 30px;
+      width: 30px;
+      font-size: 12px;
+    }
+    .stepsLine{
+      width: 80px;
+      height: 1px;
+    }
+  }
+}
+@media (max-width: 640px){
+  .steps{
+    span{
+      height: 25px;
+      width: 25px;
+      font-size: 10px;
+    }
+    .stepsLine{
+      width: 60px;
+      height: 1px;
+    }
+  }
+}
+@media (max-width: 560px){
+  .steps{
+    gap: 0.5rem;
+    span{
+      height: 20px;
+      width: 20px;
+      font-size: 8px;
+    }
+    .stepsLine{
+      width: 50px;
+      height: 1px;
+    }
+  }
+}
+@media (max-width: 400px){
+  .steps{
+    gap: 0.3rem;
+    span{
+      height: 20px;
+      width: 20px;
+      font-size: 8px;
+    }
+    .stepsLine{
+      width: 40px;
+      height: 1px;
+    }
   }
 }

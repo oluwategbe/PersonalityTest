@@ -105,11 +105,11 @@ const Results = () => {
                   </SlideRight>
                 </div>
               </div>
-              <RevealY delay={1} once={true}>
+              <RevealY delay={2.7} once={true}>
                 <div className="more">
                   <h2>Wanna learn more about your Personality?</h2>
                   <ShakeButton
-                    delay={1.3}
+                    delay={3.0}
                     style={{ display: "flex", justifyContent: "center" }}
                   >
                     <Link to={`/personalities/${personality}`}>
