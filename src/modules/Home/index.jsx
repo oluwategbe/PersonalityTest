@@ -16,9 +16,28 @@ import {
   ShakeButton,
   StaggerChild,
 } from "../../utils/animatedText";
+import { FaRegHandPointDown } from "react-icons/fa";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 const Home = () => {
   const { theme } = React.useContext(ThemeContext);
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: false });
+  const mainControls = useAnimation();
+
+  React.useEffect(() => {
+    let timer;
+    if (isInView) {
+      mainControls.start("visible");
+      timer = setTimeout(() => {
+        mainControls.start("hidden");
+      }, 4000);
+    }
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [isInView, mainControls]);
+
   const screenWidth = window.innerWidth;
   let fontSize = 12;
   if (screenWidth >= 1600) {
@@ -232,6 +251,24 @@ const Home = () => {
           <h3>How you direct and receive energy</h3>
         </RevealY>
         <section className="section eiSection">
+          <motion.div
+            ref={ref}
+            className="point"
+            variants={{
+              hidden: { x: "100%", opacity: 0 },
+              visible: {
+                x: 0,
+                opacity: 1,
+                transition: { type: "spring", bounce: 0.5 },
+              },
+              exit: { opacity: 0 },
+            }}
+            initial="hidden"
+            animate={mainControls}
+          >
+            <p>Tap and Hold</p>
+            <FaRegHandPointDown />
+          </motion.div>
           <RevealLeft
             className="bLeft"
             bg={theme === "dark" ? "#c27e00" : "#ffa600"}

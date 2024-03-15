@@ -1,9 +1,9 @@
 import * as React from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, Navigate, useParams } from "react-router-dom";
 import "./index.scss";
 import Layout from "../../../components/layout";
 import { useLocation } from "react-router-dom";
-import { personalityTypes } from "../../../utils/data";
+import { personalities, personalityTypes } from "../../../utils/data";
 import ScoreCard from "../../../components/ScoreCard";
 import { ThemeContext } from "../../../context";
 import ResultWait from "./ResultWait";
@@ -16,8 +16,12 @@ import {
 
 const Results = () => {
   const { personality } = useParams();
-  const location = useLocation();
   const { theme } = React.useContext(ThemeContext);
+  const location = useLocation();
+  const [showExit, setShowExit] = React.useState(false);
+  if (!personalities.includes(personality)) {
+    return <Navigate to="/not-found" replace />;
+  }
   const { totalEIScore, totalSIScore, totalTFScore, totalJPScore, gender } =
     location.state || {};
   const personalityData = personalityTypes.find(
@@ -27,8 +31,6 @@ const Results = () => {
   const intuitionScore = (totalSIScore / 10).toFixed(0);
   const feelingScore = (totalTFScore / 10).toFixed(0);
   const perceivingScore = (totalJPScore / 10).toFixed(0);
-
-  const [showExit, setShowExit] = React.useState(false);
 
   return (
     <>
@@ -109,7 +111,7 @@ const Results = () => {
                 <div className="more">
                   <h2>Wanna learn more about your Personality?</h2>
                   <ShakeButton
-                    delay={3.0}
+                    delay={2.8}
                     style={{ display: "flex", justifyContent: "center" }}
                   >
                     <Link to={`/personalities/${personality}`}>

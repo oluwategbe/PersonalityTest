@@ -6,7 +6,6 @@ import { RevealY } from "../../utils/animatedText";
 
 const Carousel = ({ data }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
   const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
   }, [data.length]);
@@ -43,7 +42,7 @@ const Carousel = ({ data }) => {
   const visibleData = getVisibleData();
 
   useEffect(() => {
-    const interval = setInterval(nextSlide, 3000); // Automatic slide change every 3 seconds
+    const interval = setInterval(nextSlide, 4000); // Automatic slide change every 3 seconds
     return () => clearInterval(interval);
   }, [currentIndex, nextSlide]); // Restart the interval when currentIndex changes
 

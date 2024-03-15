@@ -16,7 +16,7 @@ const Questions = () => {
   const [tfScores, setTFScores] = React.useState({});
   const [jpScores, setJPScores] = React.useState({});
   const [gender, setGender] = React.useState("Male");
-  const [step, setStep] = React.useState(5);
+  const [step, setStep] = React.useState(1);
 
   const { theme } = React.useContext(ThemeContext);
 

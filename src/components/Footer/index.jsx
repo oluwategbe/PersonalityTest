@@ -69,15 +69,15 @@ const Footer = () => {
             </Reveal>
             <div className="personLink">
               {minidata.map((d, i) => (
-                <RevealY key={i} delay={0.1 * i} once={true}>
-                  <React.Fragment>
+                <React.Fragment key={i}>
+                  <RevealY delay={0.1 * i} once={true}>
                     <Link to={`/personalities/${d?.personality}`}>
                       <p className={(i + 1) % 4 !== 0 ? "withLine" : ""}>
                         {d?.personality}
                       </p>
                     </Link>
-                  </React.Fragment>
-                </RevealY>
+                  </RevealY>
+                </React.Fragment>
               ))}
             </div>
           </div>

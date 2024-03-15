@@ -198,6 +198,35 @@
       }
       .footerLinks{
         grid-template-columns: 1.2fr 1fr 1.5fr;
+        grid-gap: 0.5rem;
+        .quickLinks, .footerPLinks{
+          h2{
+            font-size: 13px;
+          }
+        }
+        .footerPLinks{
+          .personLink{
+            grid-gap: 0.1rem;
+          }
+        }
+      }
+    }
+    .copy{
+      padding: 0.3rem 0;
+      font-size: 7px;
+    }
+  }
+}
+@media (max-width: 300px){
+  .footer{
+    .foot{
+      a{
+        padding: 0;
+      }
+      .footerLinks{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
         .quickLinks, .footerPLinks{
           h2{
             font-size: 13px;

@@ -238,6 +238,20 @@
     }
   }
   .eiSection{
+    position: relative;
+    .point{
+      position: absolute;
+      right: 1rem;
+      top: 0;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      svg{
+        font-size: 2rem;
+        color: var(--primary-color);
+        animation: moveUpDown 1s ease-in-out infinite alternate;
+      }
+    }
     .bLeft{
       &:hover{
         background: var(--eColor);
@@ -360,7 +374,14 @@
     }
   }
 }
-
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
 @keyframes moveIcon {
   0% {
     transform: translateX(10px);
@@ -410,6 +431,7 @@
     }
   }
 }
+
 @media (min-width: 1600px){
   .homepage{
     padding: 6rem 10%;
@@ -1060,6 +1082,11 @@
         }
       }
     }
+    .eiSection{
+      .point{
+        display: flex;
+      }
+    }
   }
   .takeTestSection2{
     padding: 0 5% 5%;
@@ -1073,6 +1100,13 @@
   .takeTest{
     gap: 1.5rem;
     height: 30vh;
+  }
+}
+@media (max-width: 670px){
+  .point{
+    svg{
+      font-size: 1.5rem !important;
+    }
   }
 }
 @media (max-width: 560px){
@@ -1196,6 +1230,11 @@
         }
       }
     }
+    .point{
+      svg{
+      font-size: 1rem !important;
+    }
+  }
   }
   .totalRarity{
     gap: 0.7rem;

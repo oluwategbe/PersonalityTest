@@ -1,7 +1,7 @@
 import * as React from "react";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import "./index.scss";
-import { personalityData } from "./../../../utils/data";
+import { personalities, personalityData } from "./../../../utils/data";
 import Layout from "./../../../components/layout/index";
 import Cards from "./Cards";
 import { MdCircle, MdSquare } from "react-icons/md";
@@ -19,6 +19,9 @@ import Carousel from "../../../components/Carousel";
 const SinglePersonality = () => {
   const { personality } = useParams();
   const { theme } = React.useContext(ThemeContext);
+  if (!personalities.includes(personality)) {
+    return <Navigate to="/not-found" replace />;
+  }
   const data = personalityData?.find((p) => p?.personality === personality);
   const groupColors = [
     { group: "Analysts", color: "#7b3894" },
@@ -128,15 +131,6 @@ const SinglePersonality = () => {
         type: "pie",
         radius: ["30%", "80%"],
         avoidLabelOverlap: false,
-        itemStyle: {
-          borderRadius: 5,
-          borderWidth: 0,
-          emphasis: {
-            shadowBlur: 10,
-            shadowOffsetX: 0,
-            shadowColor: "rgba(0, 0, 0, 0.5)",
-          },
-        },
         label: {
           show: false,
           position: "center",
@@ -146,6 +140,13 @@ const SinglePersonality = () => {
             show: true,
             fontSize: emphasisFontSize,
             fontWeight: "bold",
+          },
+          itemStyle: {
+            borderRadius: 5,
+            borderWidth: 0,
+            shadowBlur: 10,
+            shadowOffsetX: 0,
+            shadowColor: "rgba(0, 0, 0, 0.5)",
           },
         },
         color: ["#0059ff", "#ffb3b3"],

@@ -1,9 +1,15 @@
 import { Route, Routes } from "react-router-dom";
 import { lazy } from "react";
-// import { useContext } from "react";
-// import { AuthContext } from "../context";
 
 const paths = [
+  {
+    path: "*",
+    element: lazy(() => import("../modules/NotFound")),
+  },
+  {
+    path: "/not-found",
+    element: lazy(() => import("../modules/NotFound")),
+  },
   {
     path: "",
     element: lazy(() => import("../modules/Home")),

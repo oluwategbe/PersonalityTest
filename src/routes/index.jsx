@@ -9,6 +9,7 @@ import { MdOutlineArrowUpward } from "react-icons/md";
 
 const renderRoute = ({ component: Component, ...route }) => {
   const { useAuth } = route;
+
   return (
     <Route
       key={route.path}

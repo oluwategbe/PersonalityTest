@@ -3,7 +3,7 @@
   overflow: hidden;
   position: relative;
   margin: auto;
-  padding: 1rem;
+  padding: 1rem 1rem 0;
   .carousel-inner {
     display: flex;
     align-items: flex-start;
@@ -11,12 +11,13 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       gap: 0.5rem;
       text-align: center;
-      padding: 1rem;
+      padding: 0.5rem;
       flex: 0 0 calc(100% / 5); /* Initially show 5 items */
       transition: all 0.5s ease;
+      min-height: 360px;
       img{
         height: 150px;
         width: 150px;
@@ -31,7 +32,7 @@
       p{
         font-size: 13px;
         width: 90%;
-        line-height: 20px;
+        line-height: 18px;
         text-align: center;
       }
     }
@@ -69,49 +70,109 @@
   }
 }
 
-@media (max-width: 991px) {
-  .carouselCard {
-    flex: 0 0 calc(100% / 3); /* Show 3 items */
-  }
-}
-
-@media (max-width: 767px) {
-  .carousel {
-    .carousel-inner {
+@media (max-width: 998px) {
+  .carousel{
+    .carousel-inner{
       .carouselCard {
-        flex: 0 0 calc(100% / 2); /* Show 2 items */
+        flex: 0 0 calc(100% / 3); /* Show 3 items */
+        min-height: 330px;
+        img{
+          height: 140px;
+          width: 140px;
+        }
         h2{
           font-size: 16px;
-        }
-        p{
-          font-size: 12px;
-          line-height: 15px;
         }
       }
     }
     button {
-      padding: 0;
-      height: 45px;
-      width: 45px;
+      padding: 0.5rem;
+      height: 40px;
+      width: 40px;
       svg{
-        font-size: 2rem;
+        font-size: 1rem;
       }
     }
   }
 }
-@media (max-width: 560px) {
+
+@media (max-width: 768px) {
   .carousel {
     .carousel-inner {
       .carouselCard {
-        flex: 0 0 calc(100% / 1); /* Show 1 items */
-        gap: 1rem;
+        flex: 0 0 calc(100% / 2); /* Show 2 items */
+        min-height: 280px;
         h2{
           font-size: 14px;
         }
         p{
           font-size: 12px;
           line-height: 15px;
-          width: 70%;
+          width: 80%;
+        }
+        img{
+          height: 120px;
+          width: 120px;
+        }
+      }
+    }
+    button {
+      padding: 0;
+      height: 35px;
+      width: 35px;
+      svg{
+        font-size: 1rem;
+      }
+    }
+  }
+}
+// @media (max-width: 560px) {
+//   .carousel {
+//     .carousel-inner {
+//       .carouselCard {
+//         flex: 0 0 calc(100% / 1); /* Show 1 items */
+//         min-height: 230px;
+//         h2{
+//           font-size: 12px;
+//         }
+//         p{
+//           font-size: 10px;
+//           line-height: 13px;
+//           width: 70%;
+//         }
+//         img{
+//           height: 100px;
+//           width: 100px;
+//         }
+//       }
+//     }
+//     button {
+//       padding: 0;
+//       height: 40px;
+//       width: 40px;
+//       svg{
+//         font-size: 1rem;
+//       }
+//     }
+//   }
+// }
+@media (max-width: 560px) {
+  .carousel {
+    .carousel-inner {
+      .carouselCard {
+        flex: 0 0 calc(100% / 1); /* Show 1 item */
+        min-height: 245px;
+        h2{
+          font-size: 14px;
+        }
+        p{
+          font-size: 12px;
+          line-height: 13px;
+          width: 80%;
+        }
+        img{
+          height: 140px;
+          width: 140px;
         }
       }
     }

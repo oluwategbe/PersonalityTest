@@ -858,6 +858,26 @@
         font-size: 13px;
       }
     }
+    .rarity{
+      gap: 1rem;
+      h3{
+        font-size: 140px;
+        letter-spacing: 40px;
+        left: 5%;
+      }
+      .rarityText{
+        gap: 2rem;
+        div{
+          gap: 1rem;
+        }
+        h2{
+          font-size: 14px;
+        }
+        h4{
+          font-size: 12px;
+        }
+      }
+    }
     .celebs{
       padding: 2rem 7%;
       gap: 1rem;
