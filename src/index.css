@@ -246,27 +246,27 @@ ul {
     --section-padding: 5%;
   }
   .logo {
-    font-size: 18px !important;
+    font-size: 20px !important;
   }
   button {
-    font-size: 14px;
-  }
-  h1 {
     font-size: 18px;
   }
+  h1 {
+    font-size: 20px;
+  }
   p {
-    font-size: 14px;
+    font-size: 18px;
   }
   a {
-    font-size: 14px;
+    font-size: 18px;
   }
   .scrollTop {
     bottom: 1rem;
     right: 1rem;
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
     padding: 0;
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media (max-width: 560px) {
@@ -277,29 +277,29 @@ ul {
     --section-padding: 5%;
   }
   .logo {
-    font-size: 16px !important;
+    font-size: 18px !important;
   }
   button {
     padding: 1rem;
-    font-size: 14px;
+    font-size: 16px;
     gap: 6px;
   }
   h1 {
-    font-size: 16px;
+    font-size: 18px;
   }
   p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
   }
   a {
-    font-size: 14px;
+    font-size: 16px;
   }
   .scrollTop {
     bottom: 0.7rem;
     right: 0.7rem;
-    height: 25px;
-    width: 25px;
-    font-size: 12px;
+    height: 40px;
+    width: 40px;
+    font-size: 16px;
   }
 }
 @media (max-width: 400px) {
@@ -310,11 +310,42 @@ ul {
     --section-padding: 4%;
   }
   .logo {
+    font-size: 16px !important;
+  }
+  button {
+    padding: 1rem;
+    font-size: 14px;
+    gap: 5px;
+  }
+  h1 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 15px;
+  }
+  a {
+    font-size: 13px;
+  }
+  .scrollTop {
+    bottom: 0.5rem;
+    right: 0.5rem;
+    height: 30px;
+    width: 30px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 350px) {
+  :root {
+    --section-padding: 3%;
+  }
+  .dark {
+    --section-padding: 3%;
+  }
+  .logo {
     font-size: 14px !important;
   }
   button {
-    padding: 0.7rem;
-    border-radius: 5px;
     font-size: 12px;
     gap: 5px;
   }
@@ -334,39 +365,5 @@ ul {
     height: 30px;
     width: 30px;
     font-size: 12px;
-  }
-}
-@media (max-width: 350px) {
-  :root {
-    --section-padding: 3%;
-  }
-  .dark {
-    --section-padding: 3%;
-  }
-  .logo {
-    font-size: 12px !important;
-  }
-  button {
-    padding: 0.7rem;
-    border-radius: 5px;
-    font-size: 10px;
-    gap: 5px;
-  }
-  h1 {
-    font-size: 12px;
-  }
-  p {
-    font-size: 10px;
-    line-height: 15px;
-  }
-  a {
-    font-size: 10px;
-  }
-  .scrollTop {
-    bottom: 0.3rem;
-    right: 0.3rem;
-    height: 27px;
-    width: 27px;
-    font-size: 10px;
   }
 }

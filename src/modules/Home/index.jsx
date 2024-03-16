@@ -45,15 +45,15 @@ const Home = () => {
   } else if (screenWidth >= 1400) {
     fontSize = 20;
   } else if (screenWidth >= 998) {
-    fontSize = 14;
+    fontSize = 18;
   } else if (screenWidth >= 768) {
-    fontSize = 13;
+    fontSize = 16;
   } else if (screenWidth >= 560) {
-    fontSize = 12;
+    fontSize = 14;
   } else if (screenWidth >= 400) {
-    fontSize = 9;
+    fontSize = 12;
   } else if (screenWidth < 400) {
-    fontSize = 7;
+    fontSize = 10;
   }
 
   let legendFontSize = 12;
@@ -62,15 +62,15 @@ const Home = () => {
   } else if (screenWidth >= 1400) {
     legendFontSize = 14;
   } else if (screenWidth >= 998) {
-    legendFontSize = 12;
+    legendFontSize = 18;
   } else if (screenWidth >= 768) {
-    legendFontSize = 10;
+    legendFontSize = 16;
   } else if (screenWidth >= 560) {
-    legendFontSize = 8;
+    legendFontSize = 12;
   } else if (screenWidth >= 400) {
-    legendFontSize = 7;
+    legendFontSize = 10;
   } else if (screenWidth < 400) {
-    legendFontSize = 5;
+    legendFontSize = 8;
   }
 
   let chartHeight = "400";
