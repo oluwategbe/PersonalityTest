@@ -105,11 +105,10 @@
     padding: var(--section-padding);
     background: var(--secondary-bg);
     .cards{
-      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/personality5.jpg");
+      // background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/personality5.jpg");
       background-size: cover;
       background-blend-mode: darken;
       background-attachment: fixed;
-      padding: 2rem;
       position: relative;
       border-radius: 10px;
     }
@@ -170,7 +169,6 @@
     box-shadow: 3px 5px 10px 0px rgb(196 196 196 / 40%);
     color: var(--text-color-2);
     p{
-      font-size: 14px;
       text-align: center;
     }
   }
@@ -396,11 +394,6 @@
         margin-top: 2rem;
       }
     }
-    .cardSection{
-      .cards{
-        padding: 4rem;
-      }
-    }
     .rarity{
       gap: 3rem;
       .header{
@@ -465,9 +458,6 @@
     .fact{
       padding: 2rem;
       margin: 2rem 0;
-      p{
-        font-size: 16px;
-      }
     }
     .careers{
       gap: 3rem;
@@ -530,11 +520,6 @@
       }
       .fact{
         margin-top: 2rem;
-      }
-    }
-    .cardSection{
-      .cards{
-        padding: 3rem;
       }
     }
     .rarity{
@@ -601,9 +586,6 @@
     .fact{
       padding: 2rem;
       margin: 2rem 0;
-      p{
-        font-size: 15px;
-      }
     }
     .careers{
       gap: 2.5rem;
@@ -854,9 +836,6 @@
     .fact{
       padding: 1.5rem;
       margin: 1rem 0;
-      p{
-        font-size: 13px;
-      }
     }
     .rarity{
       gap: 1rem;
@@ -919,11 +898,6 @@
       }
       .fact{
         margin-top: 1rem;
-        padding: 1.5rem;
-      }
-    }
-    .cardSection{
-      .cards{
         padding: 1.5rem;
       }
     }
@@ -994,9 +968,6 @@
     .fact{
       padding: 1.5rem;
       margin: 1rem 0;
-      p{
-        font-size: 13px;
-      }
     }
     .careers{
       gap: 1.5rem;
@@ -1023,6 +994,7 @@
       padding: 2rem 7%;
       gap: 1rem;
       h3{
+        left: 5%;
         font-size: 80px;
         letter-spacing: 20px;
       }
@@ -1061,11 +1033,6 @@
       }
       .fact{
         margin-top: 0;
-        padding: 1rem;
-      }
-    }
-    .cardSection{
-      .cards{
         padding: 1rem;
       }
     }
@@ -1135,10 +1102,6 @@
     .fact{
       padding: 1rem;
       margin: 0;
-      p{
-        font-size: 12px;
-        line-height: 20px;
-      }
     }
     .careers{
       gap: 1rem;  
@@ -1162,6 +1125,7 @@
       gap: 1rem;
       h3{
         top: 8%;
+        left: 5%;
         font-size: 70px;
         letter-spacing: 20px;
       }
@@ -1209,10 +1173,10 @@
           gap: 1rem;
         }
         h2{
-          font-size: 12px;
+          font-size: 14px;
         }
         h4{
-          font-size: 10px;
+          font-size: 12px;
         }
       }
     }
@@ -1240,10 +1204,10 @@
             .point{
               gap: 0.3rem;
               h4{
-                font-size: 14px;
+                font-size: 16px;
               }
               p{
-                font-size: 12px;
+                font-size: 14px;
               }
             }
           }
@@ -1263,9 +1227,126 @@
     .fact{
       padding: 1rem;
       margin: 0;
-      p{
-        font-size: 10px;
-        line-height: 15px;
+    }
+    .careers{
+      gap: 1rem;  
+      .opportunities{
+        margin-left: 0;
+        gap: 1.2rem;
+        h4{
+          font-size: 16px;
+        }
+        ul{
+          font-size: 14px;
+          gap: 10px;
+          li{
+            gap: 5px;
+          }
+        } 
+      }
+    }
+    .celebs{
+      padding: 1rem 5%;
+      gap: 0;
+      h3{
+        top: 10%;
+        left: 5%;
+        font-size: 55px;
+        letter-spacing: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 400px){
+  .singlePersonality{
+    .singlePersonalityHero{
+      height:calc(100vh - 4rem);
+      .sHero{
+        height: 100%;
+        gap: 1rem;
+        padding: 1rem;
+        .heroText{
+          gap: 1rem;
+          h1{
+            font-size: 22px;
+          }
+          h2{
+            font-size: 12px;
+            padding: 1rem 0;
+          }
+        }
+        .pic{
+          img{
+            max-width: 150px;
+          }
+        }
+      }
+    }
+    .strengths{
+      gap: 1.5rem;
+      h1{
+        gap: 0.5rem;
+      }
+      .section{
+        flex-direction: column;
+        gap: 1.5rem;
+        .each{
+          gap: 1.5rem;
+          padding: 1.5rem 1rem;
+          border-radius: 10px;
+          h3{
+            letter-spacing: 5px;
+          }
+          .strength-child{
+            gap: 5px;
+            svg{
+              width: 10px;
+              height: 10px;
+            }
+            .point{
+              gap: 0.3rem;
+              h4{
+                font-size: 16px;
+              }
+              p{
+                font-size: 14px;
+              }
+            }
+          }
+          h3{
+            font-size: 60px;
+            letter-spacing: 7px;
+          }
+        }
+        .weakness{
+          h3{
+            font-size: 50px;
+            letter-spacing: 7px;
+          }
+        }
+      }
+    }
+    .fact{
+      padding: 1rem;
+      margin: 0;
+    }
+    .rarity{
+      gap: 1rem;
+      h3{
+        font-size: 60px;
+        letter-spacing: 30px;
+      }
+      .rarityText{
+        gap: 1rem;
+        div{
+          gap: 1rem;
+        }
+        h2{
+          font-size: 14px;
+        }
+        h4{
+          font-size: 12px;
+        }
       }
     }
     .careers{
@@ -1286,73 +1367,61 @@
       }
     }
     .celebs{
-      padding: 1rem 5%;
+      padding: 1rem 4%;
       gap: 0;
       h3{
-        top: 10%;
-        font-size: 55px;
+        top: 7%;
+        left: 4%;
+        font-size: 50px;
         letter-spacing: 10px;
       }
     }
   }
 }
-@media (max-width: 400px){
+@media (max-width: 350px){
   .singlePersonality{
-    .singlePersonalityHero{
-      height:calc(100vh - 3rem);
-      .sHero{
-        height: 100%;
-        gap: 1rem;
-        padding: 1rem;
-        .heroText{
-          gap: 1rem;
-          h1{
-            font-size: 22px;
-          }
-          h2{
-            font-size: 12px;
-            padding: 1rem 0;
-          }
-        }
-        .pic{
-          img{
-            max-width: 200px;
-          }
-        }
+    .strengths{
+      gap: 1.5rem;
+      h1{
+        gap: 0.5rem;
       }
-    }
-    .fact{
-      padding: 1rem;
-      margin: 0;
-      p{
-        font-size: 9px;
-        line-height: 10px;
-      }
-    }
-    .careers{
-      gap: 1rem;  
-      .opportunities{
-        margin-left: 0;
-        gap: 1rem;
-        h4{
-          font-size: 12px;
-        }
-        ul{
-          font-size: 11px;
-          gap: 10px;
-          li{
+      .section{
+        flex-direction: column;
+        gap: 1.5rem;
+        .each{
+          gap: 1.5rem;
+          padding: 1.5rem 1rem;
+          border-radius: 10px;
+          h3{
+            letter-spacing: 5px;
+          }
+          .strength-child{
             gap: 5px;
+            svg{
+              width: 10px;
+              height: 10px;
+            }
+            .point{
+              gap: 0.3rem;
+              h4{
+                font-size: 16px;
+              }
+              p{
+                font-size: 14px;
+              }
+            }
           }
-        } 
-      }
-    }
-    .celebs{
-      padding: 1rem 4%;
-      gap: 0;
-      h3{
-        top: 7%;
-        font-size: 50px;
-        letter-spacing: 10px;
+          h3{
+            font-size: 50px;
+            letter-spacing: 7px;
+          }
+        }
+        .weakness{
+          h3{
+            font-size: 40px;
+            letter-spacing: 7px;
+          }
+        }
       }
     }
   }

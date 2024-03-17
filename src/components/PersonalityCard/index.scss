@@ -165,12 +165,33 @@
 }
 @media (max-width: 768px) {
   .personalityCard{
-    padding: 0.5rem;
     a{
       gap: 1rem;
       img{
         max-height: 150px;
         min-height: 150px;
+      }
+      h2{
+        font-size: 18px;
+      }
+      h3{
+        font-size: 16px;
+      }
+      p{
+        font-size: 14px;
+        line-height: 15px;
+      }
+    }
+  }
+}
+@media (max-width: 560px) {
+  .personalityCard{
+    padding: 1rem;
+    a{
+      gap: 1rem;
+      img{
+        max-height: 120px;
+        min-height: 120px;
       }
       h2{
         font-size: 16px;
@@ -180,29 +201,6 @@
       }
       p{
         font-size: 12px;
-        line-height: 15px;
-      }
-    }
-  }
-}
-@media (max-width: 560px) {
-  .personalityCard{
-    padding: 0.5rem;
-    a{
-      gap: 0.5rem;
-      img{
-        max-height: 120px;
-        min-height: 120px;
-      }
-      h2{
-        font-size: 14px;
-      }
-      h3{
-        font-size: 13px;
-      }
-      p{
-        font-size: 11px;
-        line-height: 12px;
       }
       .cardGap{
         padding: 0 !important;
@@ -212,22 +210,10 @@
 }
 @media (max-width: 400px) {
   .personalityCard{
-    padding: 0.3rem;
     a{
-      gap: 0.3rem;
       img{
         max-height: 100px;
         min-height: 100px;
-      }
-      h2{
-        font-size: 12px;
-      }
-      h3{
-        font-size: 11px;
-      }
-      p{
-        font-size: 9.5px;
-        line-height: 10px;
       }
       .cardGap{
         padding: 0 !important;

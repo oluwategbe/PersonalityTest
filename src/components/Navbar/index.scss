@@ -361,7 +361,7 @@
 }
 @media (max-width: 768px){
   .navbar{
-    padding: 1rem 5%;
+    padding: 1.5rem 5%;
     .navItems{
       display: none;
     }
@@ -382,24 +382,24 @@
 }
 @media (max-width: 560px){
   .navbar{
-    padding: 0.5rem 5%;
+    padding: 1.2rem 5%;
     .navDrop{
       gap: 0.2rem;
     }
     .barContainer{
-      gap: 1rem;
+      gap: 1.2rem;
       .themeBox{
-        height: 19px;
-        width: 40px;
+        height: 25px;
+        width: 55px;
         border-radius: 20px;
         padding: 0 3px;
         .ball{
-          height: 17px;
-          width: 17px;
+          height: 23px;
+          width: 23px;
           border-radius: 20px;  
         }
         svg{
-          font-size: 0.6rem;
+          font-size: 1.2rem;
         }
       }
     }
@@ -407,7 +407,7 @@
       .mobileNav{
         width: 100vw;
         svg{
-          font-size: 10px;
+          font-size: 12px;
         }
       }
       .closeNav{
@@ -429,29 +429,29 @@
 }
 @media (max-width: 400px){
   .navbar{
-    padding: 0.5rem 4%;
+    padding: 1rem 4%;
     .barContainer{
-      gap: 0.5rem;
+      gap: 1rem;
       .themeBox{
-        height: 17px;
-        width: 37px;
+        height: 22px;
+        width: 50px;
         border-radius: 20px;
         padding: 0 3px;
         .ball{
-          height: 15px;
-          width: 15px;
+          height: 20px;
+          width: 20px;
           border-radius: 20px;  
         }
         svg{
-          font-size: 0.6rem;
+          font-size: 1rem;
         }
       }
       .bars{
-        gap: 4px;
-        width: 27px;
+        gap: 6px;
+        width: 35px;
         span{
           height: 2px;
-          width: 19px;
+          width: 25px;
         }
       }
     }
@@ -464,7 +464,7 @@
           font-size: 10px;
         }
         p.withLine::after{
-          right: -0.5rem;
+          right: -0.6rem;
           height: 10px;
         }
       }

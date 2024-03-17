@@ -30,7 +30,7 @@
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
       h2{
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 600;
         position: relative;
       }
@@ -46,9 +46,9 @@
       p{
         opacity: 1;
         transition: opacity 0.5s;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 20px;
-        text-align: left;
+        text-align: justify;
       }
     }
   }
@@ -139,13 +139,13 @@
       .h2Box{
         padding: 1rem;
         h2{
-          font-size: 16px;
+          font-size: 18px;
         }
       }
       .pBox{
         padding: 1rem;
         p{
-          font-size: 12px;
+          font-size: 16px;
           line-height: 20px;
         }
       }
@@ -159,15 +159,15 @@
     }
     .card{
       .h2Box{
-        padding: 0.7rem;
+        padding: 1rem;
         h2{
-          font-size: 14px;
+          font-size: 18px;
         }
       }
       .pBox{
-        padding: 0.7rem;
+        padding: 1rem;
         p{
-          font-size: 10px;
+          font-size: 16px;
           line-height: 15px;
         }
       }
@@ -182,16 +182,16 @@
     }
     .card{
       .h2Box{
-        padding: 0.5rem;
+        padding: 1rem;
         h2{
-          font-size: 13px;
+          font-size: 16px;
         }
       }
       .pBox{
-        padding: 0.5rem;
+        padding: 1rem;
         p{
-          font-size: 10px;
-          line-height: 12px;
+          font-size: 14px;
+          line-height: 15px;
         }
       }
     }
@@ -205,16 +205,16 @@
     }
     .card{
       .h2Box{
-        padding: 0.5rem;
+        padding: 1rem;
         h2{
-          font-size: 12px;
+          font-size: 14px;
         }
       }
       .pBox{
-        padding: 0.5rem;
+        padding: 1rem;
         p{
-          font-size: 10px;
-          line-height: 12px;
+          font-size: 12px;
+          line-height: 15px;
         }
       }
     }

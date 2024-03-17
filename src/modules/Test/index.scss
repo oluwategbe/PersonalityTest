@@ -11,7 +11,7 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 8rem);
+    height: calc(100vh - 10rem);
     margin-bottom: 2rem;
     .tHero{
       background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/images/personality3.jpg");
@@ -30,11 +30,8 @@
         flex-direction: column;
         gap: 2rem;
         text-align: center;
-        h1{
-          font-size:24px;
-        }
         h2{
-          font-size: 16px;
+          font-size: 18px;
         }
       }
     }
@@ -53,7 +50,7 @@
       padding: 1rem;
       border-radius: 10px;
       flex: 1;
-      gap: 0.7rem;
+      gap: 1rem;
       transition: background 0.3s ease;
       text-align: center;
       border: 1px solid var(--border-color-1);
@@ -97,7 +94,7 @@
         font-weight: 500;
       }
       p{
-        font-size: 14px;
+        font-size: 16px;
         text-align: center;
         line-height: 20px;
       }
@@ -146,9 +143,6 @@
       .tHero{
         .text{
           gap: 4rem;
-          h1{
-            font-size:28px;
-          }
           h2{
             font-size: 20px;
           }
@@ -182,9 +176,6 @@
       .tHero{
         .text{
           gap: 3rem;
-          h1{
-            font-size:26px;
-          }
           h2{
             font-size: 18px;
           }
@@ -213,16 +204,13 @@
 @media (max-width: 998px){
   .test{
     .testhero{
-      height: calc(100vh - 9rem);
+      height: calc(100vh - 10rem);
       margin-bottom: 2rem;
       .tHero{
         .text{
           gap: 2rem;
-          h1{
-            font-size:22px;
-          }
           h2{
-            font-size: 14px;
+            font-size: 18px;
           }
         }
       }
@@ -236,10 +224,10 @@
           font-size: 35px;
         }
         h2{
-          font-size: 16px;
+          font-size: 18px;
         }
         p{
-          font-size: 13px;
+          font-size: 16px;
           line-height: 20px;
         }
       }
@@ -249,16 +237,13 @@
 @media (max-width: 768px){
   .test{
     .testhero{
-      height: calc(100vh - 6rem);
+      height: calc(100vh - 9rem);
       margin-bottom: 1.5rem;
       .tHero{
         .text{
           gap: 1.5rem;
-          h1{
-            font-size:18px;
-          }
           h2{
-            font-size: 14px;
+            font-size: 18px;
           }
         }
       }
@@ -271,7 +256,77 @@
         padding: 0.5rem;
         gap: 0.5rem;
         svg{
+          font-size: 35px;
+        }
+        h2{
+          font-size: 18px;
+        }
+        p{
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+      .card:last-child{
+        left: 50%;
+      }
+    }
+  }
+}
+@media (max-width: 560px){
+  .test{
+    .testhero{
+      height: calc(100vh - 8rem);
+      margin-bottom: 2rem;
+      .tHero{
+        .text{
+          gap: 1rem;
+          h2{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .cards{
+      gap: 1rem;
+      flex-wrap: wrap;
+      .card{
+        padding: 1rem 0.5rem;
+        gap: 1rem;
+        svg{
           font-size: 30px;
+        }
+        h2{
+          font-size: 16px;
+        }
+        p{
+          font-size: 14px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px){
+  .test{
+    .testhero{
+      height: calc(100vh - 7rem);
+      margin-bottom: 1.5rem;
+      .tHero{
+        .text{
+          gap: 1rem;
+          h2{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .cards{
+      gap: 1rem;
+      .card{
+        padding: 1rem 0.5rem;
+        gap: 0.5rem;
+        svg{
+          font-size: 25px;
         }
         h2{
           font-size: 14px;
@@ -284,112 +339,11 @@
     }
   }
 }
-@media (max-width: 560px){
-  .test{
-    .testhero{
-      height: calc(100vh - 5rem);
-      margin-bottom: 2rem;
-      .tHero{
-        .text{
-          gap: 1rem;
-          h1{
-            font-size:16px;
-          }
-          h2{
-            font-size: 12px;
-          }
-        }
-      }
-    }
-    .cards{
-      gap: 1rem;
-      flex-wrap: wrap;
-      .card{
-        padding: 0.3rem;
-        gap: 0.5rem;
-        svg{
-          font-size: 25px;
-        }
-        h2{
-          font-size: 12px;
-        }
-        p{
-          font-size: 10px;
-          line-height: 15px;
-        }
-      }
-    }
-  }
-}
-@media (max-width: 480px){
-  .test{
-    .testhero{
-      height: calc(100vh - 5rem);
-      margin-bottom: 2rem;
-      .tHero{
-        .text{
-          gap: 1rem;
-          h1{
-            font-size:16px;
-          }
-          h2{
-            font-size: 12px;
-          }
-        }
-      }
-    }
-    .cards{
-      gap: 1rem;
-      .card{
-        padding: 0.3rem;
-        gap: 0.5rem;
-        svg{
-          font-size: 20px;
-        }
-        h2{
-          font-size: 10px;
-        }
-        p{
-          font-size: 8px;
-          line-height: 12px;
-        }
-      }
-    }
-  }
-}
 @media (max-width: 400px){
   .test{
     .testhero{
-      height: calc(100vh - 4rem);
+      height: calc(100vh - 5.5rem);
       margin-bottom: 1rem;
-      .tHero{
-        .text{
-          gap: 1rem;
-          h1{
-            font-size:16px;
-          }
-          h2{
-            font-size: 12px;
-          }
-        }
-      }
-    }
-    .cards{
-      gap: 0.5rem;
-      .card{
-        padding: 0.5 0.1rem;
-        gap: 0.3rem;
-        svg{
-          font-size: 20px;
-        }
-        h2{
-          font-size: 10px;
-        }
-        p{
-          font-size: 8px;
-          line-height: 12px;
-        }
-      }
     }
   }
 }

@@ -36,51 +36,51 @@ const SinglePersonality = () => {
   if (screenWidth >= 1600) {
     fontSize = 24;
   } else if (screenWidth >= 1400) {
-    fontSize = 20;
+    fontSize = 22;
   } else if (screenWidth >= 998) {
-    fontSize = 14;
+    fontSize = 20;
   } else if (screenWidth >= 768) {
-    fontSize = 13;
+    fontSize = 18;
   } else if (screenWidth >= 560) {
-    fontSize = 12;
+    fontSize = 16;
   } else if (screenWidth >= 400) {
-    fontSize = 11;
+    fontSize = 14;
   } else if (screenWidth < 400) {
-    fontSize = 9;
+    fontSize = 12;
   }
 
   let legendFontSize = 12;
   if (screenWidth >= 1600) {
-    legendFontSize = 20;
+    legendFontSize = 24;
   } else if (screenWidth >= 1400) {
-    legendFontSize = 18;
+    legendFontSize = 22;
   } else if (screenWidth >= 998) {
-    legendFontSize = 16;
+    legendFontSize = 20;
   } else if (screenWidth >= 768) {
-    legendFontSize = 14;
+    legendFontSize = 18;
   } else if (screenWidth >= 560) {
-    legendFontSize = 12;
+    legendFontSize = 16;
   } else if (screenWidth >= 400) {
-    legendFontSize = 11;
+    legendFontSize = 14;
   } else if (screenWidth < 400) {
-    legendFontSize = 9;
+    legendFontSize = 12;
   }
 
   let emphasisFontSize = "14";
   if (screenWidth >= 1600) {
-    emphasisFontSize = "18px";
+    emphasisFontSize = "20px";
   } else if (screenWidth >= 1400) {
-    emphasisFontSize = "16px";
+    emphasisFontSize = "18px";
   } else if (screenWidth >= 998) {
-    emphasisFontSize = "14px";
+    emphasisFontSize = "16px";
   } else if (screenWidth >= 768) {
-    emphasisFontSize = "12px";
+    emphasisFontSize = "14px";
   } else if (screenWidth >= 560) {
-    emphasisFontSize = "10px";
+    emphasisFontSize = "12px";
   } else if (screenWidth >= 400) {
-    emphasisFontSize = "8px";
+    emphasisFontSize = "10px";
   } else if (screenWidth < 400) {
-    emphasisFontSize = "7px";
+    emphasisFontSize = "8px";
   }
 
   let chartHeight = "400";
@@ -91,11 +91,11 @@ const SinglePersonality = () => {
   } else if (screenWidth >= 998) {
     chartHeight = "400";
   } else if (screenWidth >= 768) {
-    chartHeight = "330";
+    chartHeight = "350";
   } else if (screenWidth >= 560) {
-    chartHeight = "270";
+    chartHeight = "300";
   } else if (screenWidth <= 400) {
-    chartHeight = "220";
+    chartHeight = "250";
   }
 
   const option = {

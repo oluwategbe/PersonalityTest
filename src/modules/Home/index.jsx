@@ -22,7 +22,7 @@ import { motion, useAnimation, useInView } from "framer-motion";
 const Home = () => {
   const { theme } = React.useContext(ThemeContext);
   const ref = React.useRef(null);
-  const isInView = useInView(ref, { once: false });
+  const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
 
   React.useEffect(() => {
@@ -66,11 +66,11 @@ const Home = () => {
   } else if (screenWidth >= 768) {
     legendFontSize = 16;
   } else if (screenWidth >= 560) {
-    legendFontSize = 12;
+    legendFontSize = 14;
   } else if (screenWidth >= 400) {
-    legendFontSize = 10;
+    legendFontSize = 12;
   } else if (screenWidth < 400) {
-    legendFontSize = 8;
+    legendFontSize = 10;
   }
 
   let chartHeight = "400";
@@ -83,9 +83,9 @@ const Home = () => {
   } else if (screenWidth >= 768) {
     chartHeight = "330";
   } else if (screenWidth >= 560) {
-    chartHeight = "270";
+    chartHeight = "300";
   } else if (screenWidth <= 400) {
-    chartHeight = "220";
+    chartHeight = "250";
   }
 
   const option = {
@@ -266,21 +266,23 @@ const Home = () => {
             initial="hidden"
             animate={mainControls}
           >
-            <p>Tap and Hold</p>
+            <p>Tap</p>
             <FaRegHandPointDown />
           </motion.div>
           <RevealLeft
             className="bLeft"
             bg={theme === "dark" ? "#c27e00" : "#ffa600"}
           >
-            <h2>Extroversion</h2>
+            <div className="text">
+              <h2>Extroversion</h2>
+              <p>
+                Extroverts are fueled by social interaction and connecting with
+                others. They thrive in lively, vibrant environments and are
+                known for their expressive and outgoing nature. They enjoy group
+                activities and effortlessly exhibit enthusiasm.
+              </p>
+            </div>
             <div className="box">E</div>
-            <p>
-              Extroverts are fueled by social interaction and connecting with
-              others. They thrive in lively, vibrant environments and are known
-              for their expressive and outgoing nature. They enjoy group
-              activities and effortlessly exhibit enthusiasm.
-            </p>
           </RevealLeft>
           <Reveal>
             <h2>or</h2>
@@ -290,13 +292,15 @@ const Home = () => {
             bg={theme === "dark" ? "#0e4fb1" : "#73abff"}
           >
             <div className="box">I</div>
-            <h2>Introversion</h2>
-            <p>
-              Introverts thrive in quiet environments or small group settings,
-              placing great value on introspection, deep thought, and building
-              meaningful social connections. They cherish moments of solitude,
-              and may feel drained by excessive socializing.
-            </p>
+            <div className="text">
+              <h2>Introversion</h2>
+              <p>
+                Introverts thrive in quiet environments or small group settings,
+                placing great value on introspection, deep thought, and building
+                meaningful social connections. They cherish moments of solitude,
+                and may feel drained by excessive socializing.
+              </p>
+            </div>
           </RevealRight>
         </section>
         <RevealY delay={0.5} once={true}>
@@ -307,14 +311,17 @@ const Home = () => {
             className="bLeft"
             bg={theme === "dark" ? "#137e13" : "#70ff70"}
           >
-            <h2>Sensing</h2>
+            <div className="text">
+              <h2>Sensing</h2>
+
+              <p>
+                Sensors rely on their senses for information, emphasizing
+                practicality and hands-on learning. They prioritize reality and
+                facts, enjoying tangible experiences and focusing on details.
+                They are very pragmatic and down-to-earth.
+              </p>
+            </div>
             <div className="box">S</div>
-            <p>
-              Sensors rely on their senses for information, emphasizing
-              practicality and hands-on learning. They prioritize reality and
-              facts, enjoying tangible experiences and focusing on details. They
-              are very pragmatic and down-to-earth.
-            </p>
           </RevealLeft>
           <Reveal>
             <h2>or</h2>
@@ -324,14 +331,16 @@ const Home = () => {
             bg={theme === "dark" ? "#888800" : "#c7c700"}
           >
             <div className="box">N</div>
-            <h2>Intuition</h2>
-            <p>
-              Intuitives value theories, patterns, and future prospects,
-              embracing creativity and imagination. They explore abstract
-              concepts and potential outcomes with curiosity and
-              open-mindedness, prioritizing future potentials over present
-              stability.
-            </p>
+            <div className="text">
+              <h2>Intuition</h2>
+              <p>
+                Intuitives value theories, patterns, and future prospects,
+                embracing creativity and imagination. They explore abstract
+                concepts and potential outcomes with curiosity and
+                open-mindedness, prioritizing future potentials over present
+                stability.
+              </p>
+            </div>
           </RevealRight>
         </section>
         <RevealY delay={0.5} once={true}>
@@ -342,15 +351,18 @@ const Home = () => {
             className="bLeft"
             bg={theme === "dark" ? "#2d2fa7" : "#4144ff"}
           >
-            <h2>Thinking</h2>
+            <div className="text">
+              <h2>Thinking</h2>
+
+              <p>
+                Thinkers rely on logic and reason, prioritizing objective data
+                and facts. They maintain consistency and logic in their
+                decision-making, and often masking their emotions. They
+                emphasize objectivity and rationality, giving precedence to
+                logic over emotions.
+              </p>
+            </div>
             <div className="box">T</div>
-            <p>
-              Thinkers rely on logic and reason, prioritizing objective data and
-              facts. They maintain consistency and logic in their
-              decision-making, and often masking their emotions. They emphasize
-              objectivity and rationality, giving precedence to logic over
-              emotions.
-            </p>
           </RevealLeft>
           <Reveal>
             <h2>or</h2>
@@ -360,13 +372,15 @@ const Home = () => {
             bg={theme === "dark" ? "#970e37" : "#ff145a"}
           >
             <div className="box">F</div>
-            <h2>Feeling</h2>
-            <p>
-              Feelers prioritize decisions based on emotions and values,
-              considering how their choices impact people. They are sensitive
-              and empathetic, prioritizing social relationships, cooperation and
-              emotional well-being.
-            </p>
+            <div className="text">
+              <h2>Feeling</h2>
+              <p>
+                Feelers prioritize decisions based on emotions and values,
+                considering how their choices impact people. They are sensitive
+                and empathetic, prioritizing social relationships, cooperation
+                and emotional well-being.
+              </p>
+            </div>
           </RevealRight>
         </section>
         <RevealY delay={0.5} once={true}>
@@ -377,14 +391,17 @@ const Home = () => {
             className="bLeft"
             bg={theme === "dark" ? "#53379e" : "#895fff"}
           >
-            <h2>Judging</h2>
+            <div className="text">
+              <h2>Judging</h2>
+
+              <p>
+                Judgers value structure and organization, preferring planned
+                outcomes and disliking surprises. They are decisive, thorough,
+                and highly organized individuals who prioritize clarity,
+                predictability, and closure in decision-making.
+              </p>
+            </div>
             <div className="box">J</div>
-            <p>
-              Judgers value structure and organization, preferring planned
-              outcomes and disliking surprises. They are decisive, thorough, and
-              highly organized individuals who prioritize clarity,
-              predictability, and closure in decision-making.
-            </p>
           </RevealLeft>
           <Reveal>
             <h2>or</h2>
@@ -394,14 +411,16 @@ const Home = () => {
             bg={theme === "dark" ? "#1a581a" : "#009400"}
           >
             <div className="box">P</div>
-            <h2>Perceiving</h2>
-            <p>
-              Perceivers value flexibility and openness, enjoying spontaneity
-              and the freedom to change course. They are very adaptable and
-              open-minded individuals. They excel in improvisation and seizing
-              opportunities, preferring a flexible and relaxed approach to
-              decision-making.
-            </p>
+            <div className="text">
+              <h2>Perceiving</h2>
+              <p>
+                Perceivers value flexibility and openness, enjoying spontaneity
+                and the freedom to change course. They are very adaptable and
+                open-minded individuals. They excel in improvisation and seizing
+                opportunities, preferring a flexible and relaxed approach to
+                decision-making.
+              </p>
+            </div>
           </RevealRight>
         </section>
       </div>

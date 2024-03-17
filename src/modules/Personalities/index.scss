@@ -254,7 +254,7 @@
     }
     .personalities{
       .group{
-        gap: 1rem;
+        gap: 1.5rem;
         padding: 5%;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -280,12 +280,12 @@
   .personalitiesPage{
     .personalities{
       .group{
-        gap: 1rem;
+        gap: 1.5rem;
         padding: 5%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         .groupH4{
-          top: -3%;
+          top: -2%;
         }
         h4{
           position: absolute;
@@ -313,10 +313,10 @@
     }
     .personalities{
       .group{
-        gap: 0.7rem;
+        gap: 1rem;
         padding: 5%;
         .groupH4{
-          top: -3%;
+          top: -1%;
         }
         h4{
           position: absolute;
@@ -344,10 +344,9 @@
     }
     .personalities{
       .group{
-        gap: 0.7rem;
         padding: 5%;
         .groupH4{
-          top: -2.5%;
+          top: 0%;
         }
         h4{
           position: absolute;
@@ -377,7 +376,7 @@
       .group{
         padding: 4%;
         .groupH4{
-          top: -2%;
+          top: -1.5%;
         }
         h4{
           position: absolute;

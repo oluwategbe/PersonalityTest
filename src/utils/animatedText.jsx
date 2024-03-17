@@ -998,7 +998,7 @@ export const PersonalityRevealY = ({
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          gap: "0.3rem",
+          gap: "1rem",
         }}
       >
         {children}

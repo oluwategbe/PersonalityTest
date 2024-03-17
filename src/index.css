@@ -116,6 +116,7 @@ h1 {
   font-size: 18px;
   font-weight: 600;
   text-align: center;
+  text-transform: uppercase;
 }
 h3 {
   text-align: center;
@@ -322,10 +323,9 @@ ul {
   }
   p {
     font-size: 14px;
-    line-height: 15px;
   }
   a {
-    font-size: 13px;
+    font-size: 14px;
   }
   .scrollTop {
     bottom: 0.5rem;
@@ -354,7 +354,6 @@ ul {
   }
   p {
     font-size: 12px;
-    line-height: 15px;
   }
   a {
     font-size: 12px;

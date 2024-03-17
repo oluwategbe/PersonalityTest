@@ -5,8 +5,8 @@
   align-items: center;
   width: 100%;
   span{
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -27,8 +27,8 @@
 @media (min-width: 1600px){
   .steps{
     span{
-      height: 50px;
-      width: 50px;
+      height: 70px;
+      width: 70px;
     }
     .stepsLine{
       width: 250px;
@@ -39,8 +39,8 @@
 @media (min-width: 1400px) and (max-width: 1600px){
   .steps{
     span{
-      height: 50px;
-      width: 50px;
+      height: 60px;
+      width: 60px;
     }
     .stepsLine{
       width: 170px;
@@ -51,8 +51,8 @@
 @media (min-width: 1200px) and (max-width: 1400px){
   .steps{
     span{
-      height: 50px;
-      width: 50px;
+      height: 55px;
+      width: 55px;
     }
     .stepsLine{
       width: 130px;
@@ -63,21 +63,8 @@
 @media (min-width: 998px) and (max-width: 1200px){
   .steps{
     span{
-      height: 40px;
-      width: 40px;
-    }
-    .stepsLine{
-      width: 120px;
-      height: 2px;
-    }
-  }
-}
-@media (max-width: 998px){
-  .steps{
-    span{
-      height: 35px;
-      width: 35px;
-      font-size: 14px;
+      height: 50px;
+      width: 50px;
     }
     .stepsLine{
       width: 100px;
@@ -85,15 +72,28 @@
     }
   }
 }
-@media (max-width: 768px){
+@media (max-width: 998px){
   .steps{
     span{
-      height: 30px;
-      width: 30px;
-      font-size: 12px;
+      height: 45px;
+      width: 45px;
+      font-size: 18px;
     }
     .stepsLine{
       width: 80px;
+      height: 2px;
+    }
+  }
+}
+@media (max-width: 768px){
+  .steps{
+    span{
+      height: 40px;
+      width: 40px;
+      font-size: 16px;
+    }
+    .stepsLine{
+      width: 60px;
       height: 1px;
     }
   }
@@ -101,12 +101,12 @@
 @media (max-width: 640px){
   .steps{
     span{
-      height: 25px;
-      width: 25px;
-      font-size: 10px;
+      height: 35px;
+      width: 35px;
+      font-size: 16px;
     }
     .stepsLine{
-      width: 60px;
+      width: 50px;
       height: 1px;
     }
   }
@@ -115,12 +115,12 @@
   .steps{
     gap: 0.5rem;
     span{
-      height: 20px;
-      width: 20px;
-      font-size: 8px;
+      height: 30px;
+      width: 30px;
+      font-size: 14px;
     }
     .stepsLine{
-      width: 50px;
+      width: 40px;
       height: 1px;
     }
   }
@@ -129,12 +129,12 @@
   .steps{
     gap: 0.3rem;
     span{
-      height: 20px;
-      width: 20px;
-      font-size: 8px;
+      height: 25px;
+      width: 25px;
+      font-size: 12px;
     }
     .stepsLine{
-      width: 40px;
+      width: 30px;
       height: 1px;
     }
   }

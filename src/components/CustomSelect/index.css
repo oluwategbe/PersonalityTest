@@ -13,12 +13,12 @@
   border-radius: 10px;
   cursor: pointer;
   color: var(--text-color-1);
-  font-size: 18px;
+  font-size: 20px;
 }
 label {
   margin-bottom: 1rem;
   color: var(--text-color-1);
-  font-size: 18px;
+  font-size: 20px;
 }
 .options {
   position: absolute;
@@ -34,7 +34,7 @@ label {
   padding: 1rem;
   color: var(--text-color-1);
   cursor: pointer;
-  font-size: 18px;
+  font-size: 20px;
 }
 .options li:hover {
   background-color: var(--border-color-1);
@@ -78,13 +78,13 @@ label {
     width: 250px;
   }
   .selected-option {
-    font-size: 16px;
+    font-size: 18px;
   }
   label {
-    font-size: 16px;
+    font-size: 18px;
   }
   .options li {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media (max-width: 768px) {
@@ -92,42 +92,42 @@ label {
     width: 220px;
   }
   .selected-option {
-    font-size: 14px;
+    font-size: 18px;
   }
   label {
-    font-size: 14px;
+    font-size: 18px;
   }
   .options li {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 @media (max-width: 560px) {
   .custom-select {
-    width: 200px;
+    width: 250px;
   }
   .selected-option {
-    font-size: 13px;
+    font-size: 16px;
   }
   label {
-    font-size: 13px;
+    font-size: 16px;
   }
   .options li {
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 @media (max-width: 400px) {
   .custom-select {
-    width: 200px;
+    width: 220px;
   }
   .selected-option {
-    font-size: 12px;
-    padding: 0.7rem;
+    font-size: 14px;
+    padding: 1rem;
   }
   label {
-    font-size: 12px;
+    font-size: 14px;
   }
   .options li {
-    font-size: 12px;
-    padding: 0.7rem;
+    font-size: 14px;
+    padding: 1rem;
   }
 }
