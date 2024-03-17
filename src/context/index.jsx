@@ -11,7 +11,7 @@ function ThemeContextProvider({ children }) {
     // Retrieve the theme preference from local storage
     const savedTheme = localStorage.getItem("theme");
     // If there's a saved theme preference, return it; otherwise, return "light"
-    return savedTheme ? savedTheme : "light";
+    return savedTheme ? savedTheme : "dark";
   });
   // Update the theme preference in local storage and state
   const setTheme = (newTheme) => {

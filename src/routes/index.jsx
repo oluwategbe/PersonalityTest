@@ -6,6 +6,7 @@ import { ToastContainer } from "react-toastify";
 import AuthGuard from "./AuthGuard.jsx";
 import { AnimatePresence } from "framer-motion";
 import { MdOutlineArrowUpward } from "react-icons/md";
+import Loader from "./../components/Loader";
 
 const renderRoute = ({ component: Component, ...route }) => {
   const { useAuth } = route;
@@ -16,7 +17,7 @@ const renderRoute = ({ component: Component, ...route }) => {
       path={route.path}
       element={
         <Fragment>
-          <Suspense>
+          <Suspense fallback={<Loader />}>
             {useAuth ? (
               <AuthGuard>
                 <Component />
