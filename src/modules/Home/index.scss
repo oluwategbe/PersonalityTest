@@ -415,6 +415,10 @@
       }
     }
   }
+  h2{
+    font-size: 18px;
+    text-align: center;
+  }
 }
 @keyframes moveUpDown {
   0% {
@@ -766,6 +770,11 @@
       margin-bottom: 0;
     }
   }
+  .takeTestSection3{
+    h2{
+      font-size: 16px;
+    }
+  }
 }
 @media (min-width: 768px) and (max-width: 998px){  
   .homepage{
@@ -1036,6 +1045,11 @@
     gap: 1.5rem;
     height: 30vh;
   }
+  .takeTestSection3{
+    h2{
+      font-size: 16px;
+    }
+  }
 }
 @media (max-width: 670px){
   .point{
@@ -1198,6 +1212,9 @@
         font-size: 16px;
       }
     }
+    h2{
+      font-size: 15px;
+    }
   }
 }
 
@@ -1254,7 +1271,7 @@
     }
   }
   .homeQuote{
-    margin-top: 2rem;
+    margin: 1rem 0;
     padding: 1rem;
     gap: 7px;
     h5{
@@ -1357,6 +1374,9 @@
       svg{
         font-size: 14px;
       }
+    }
+    h2{
+      font-size: 14px;
     }
   }
 }

@@ -100,7 +100,7 @@ const Home = () => {
     },
     legend: {
       left: "left",
-      top: "center",
+      top: "top",
       animation: true,
       orient: "vertical",
       itemWidth: 10,
@@ -470,7 +470,7 @@ const Home = () => {
         <Reveal once={true} delay={0}>
           <div className="takeTest">
             <RevealY delay={0.5} once={true}>
-              <h1>Wanna discover your personality? Get Started Now</h1>
+              <h2>Wanna discover your personality? Get Started Now</h2>
             </RevealY>{" "}
             <ShakeButton
               delay={0.8}

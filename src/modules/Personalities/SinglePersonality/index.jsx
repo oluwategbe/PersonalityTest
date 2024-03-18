@@ -165,10 +165,14 @@ const SinglePersonality = () => {
           <Reveal style={{ width: "100%", height: "100%" }} once={true}>
             <div className="sHero">
               <div className="heroText">
-                <RevealY delay={1} once={true}>
+                <RevealY delay={1} once={true} style={{ width: "fit-content" }}>
                   <h1>{personality}</h1>
                 </RevealY>
-                <RevealY delay={1.5} once={true}>
+                <RevealY
+                  delay={1.5}
+                  once={true}
+                  style={{ width: "fit-content" }}
+                >
                   <h2 className="title">The {data?.title}</h2>
                 </RevealY>
               </div>

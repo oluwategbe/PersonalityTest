@@ -1,8 +1,11 @@
 import { SlideLeft, SlideRight } from "../../../../utils/animatedText";
 import "./index.scss";
+import { ThemeContext } from "./../../../../context/index";
+import * as React from "react";
 
 // eslint-disable-next-line react/prop-types
 const Cards = ({ personality }) => {
+  const { theme } = React.useContext(ThemeContext);
   const [firstLetter, secondLetter, thirdLetter, fourthLetter] = [
     ...personality,
   ];
@@ -15,7 +18,7 @@ const Cards = ({ personality }) => {
     <div className="letterCards">
       <h1>What the letters mean</h1>
       <SlideLeft width={width}>
-        <div className="ei card">
+        <div className={`ei card ${theme === "dark" ? "dark" : ""}`}>
           <div className="h2Box">
             <h2>
               {firstLetter === "E" ? "Extraverted ( E )" : "Introverted ( I )"}
@@ -31,7 +34,7 @@ const Cards = ({ personality }) => {
         </div>
       </SlideLeft>
       <SlideRight style={{ alignSelf: "flex-end" }} width={width}>
-        <div className="ns card">
+        <div className={`ns card ${theme === "dark" ? "dark" : ""}`}>
           <div className="h2Box">
             <h2>
               {secondLetter === "N" ? "Intuitive ( N )" : "Sensing ( S )"}
@@ -47,7 +50,7 @@ const Cards = ({ personality }) => {
         </div>
       </SlideRight>
       <SlideLeft width={width}>
-        <div className="tf card">
+        <div className={`tf card ${theme === "dark" ? "dark" : ""}`}>
           <div className="h2Box">
             <h2>{thirdLetter === "T" ? "Thinking ( T )" : "Feeling ( F )"}</h2>
           </div>
@@ -61,7 +64,7 @@ const Cards = ({ personality }) => {
         </div>
       </SlideLeft>
       <SlideRight style={{ alignSelf: "flex-end" }} width={width}>
-        <div className="jp card">
+        <div className={`jp card ${theme === "dark" ? "dark" : ""}`}>
           <div className="h2Box">
             <h2>
               {fourthLetter === "J" ? "Judging ( J )" : "Perceiving ( P )"}

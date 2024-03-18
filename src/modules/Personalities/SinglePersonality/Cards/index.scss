@@ -4,9 +4,11 @@
   height: fit-content;
   gap: 1rem;
   color: #ffffff;
+  padding: 2rem 0;
   h1{
     margin-bottom: 3rem;
     text-align: center;
+    color: var(--text-color-1);
   }
   .card{
     display: flex;
@@ -33,6 +35,7 @@
         font-size: 18px;
         font-weight: 600;
         position: relative;
+        color: var(--text-color-4);
       }
     }
     h2:hover .pBox{
@@ -49,10 +52,11 @@
         font-size: 16px;
         line-height: 20px;
         text-align: justify;
+        color: var(--text-color-4);
       }
     }
   }
-  .ei{
+  .ei.dark{
     position: relative;
     box-shadow: 3px 5px 10px 0px rgb(255 251 0 / 90%);
     background: #fff90033;
@@ -61,7 +65,16 @@
       background: #fff90080;
     }
   }
-  .ns{
+  .ei{
+    position: relative;
+    box-shadow: 3px 5px 10px 0px rgb(203 198 6);
+    background: #fffb00e6;
+
+    &:hover{
+      background: #fffc4de6;
+    }
+  }
+  .ns.dark{
     align-self: flex-end;
     background: #7ff5c333;
     box-shadow: 3px 5px 10px 0px #00ff66e6;
@@ -69,7 +82,23 @@
       background: #00ff6680;
     }
   }
+  .ns{
+    align-self: flex-end;
+    background: #00ff6680;
+    box-shadow: 3px 5px 10px 0px rgb(0 216 86 / 90%);
+    &:hover{
+      background: #43fd8e80;
+    }
+  }
   .tf{
+    position: relative;
+    box-shadow: 3px 5px 10px 0px rgb(34 126 248 / 90%);
+    background: #007fff80;
+    &:hover{
+      background: #3797f880;
+    }
+  }
+  .tf.dark{
     position: relative;
     box-shadow: 3px 5px 10px 0px #006effe6;
     background: #007fff33;
@@ -77,12 +106,20 @@
       background: #007fff80;
     }
   }
-  .jp{
+  .jp.dark{
     align-self: flex-end;
     box-shadow: 3px 5px 10px 0px #ff0000e6;
     background: #ff000033;
     &:hover{
       background: #ff000080;
+    }
+  }
+  .jp{
+    align-self: flex-end;
+    box-shadow: 3px 5px 10px 0px rgb(224 62 62 / 90%);
+    background: #ff000080;
+    &:hover{
+      background: #ff393980;
     }
   }
 }

@@ -38,10 +38,13 @@
       gap: 2rem;
       color: var(--text-color-2);
       border: 1px solid var(--border-color-1);
+      padding: 3rem;
       .heroText{
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        flex: 1;
+        align-items: flex-end;
         h1{
           font-size: 48px;
           font-weight: 700;
@@ -69,6 +72,7 @@
         }
       }
       .pic{
+        flex: 1;
         img{
           max-height: 300px;
           object-fit: contain;
@@ -304,6 +308,8 @@
     display: flex;
     flex-direction: column;
     padding: var(--section-padding);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     gap: 2rem;
     position: relative;
     background: var(--bg);
@@ -1008,6 +1014,7 @@
       .sHero{
         height: 100%;
         gap: 1rem;
+        padding: 2rem;
         .heroText{
           gap: 1rem;
           h1{
@@ -1139,6 +1146,7 @@
       .sHero{
         height: 100%;
         gap: 1rem;
+        padding: 1rem;
         .heroText{
           gap: 1rem;
           h1{
@@ -1147,6 +1155,11 @@
           h2{
             font-size: 12px;
             padding: 1rem 0;
+          }
+        }
+        .pic{
+          img{
+            max-height: 170px;
           }
         }
       }
@@ -1163,6 +1176,11 @@
     }
     .rarity{
       gap: 1rem;
+      .header{
+        .line{
+          width: 70px;
+        }
+      }
       h3{
         font-size: 70px;
         letter-spacing: 30px;
@@ -1230,6 +1248,11 @@
     }
     .careers{
       gap: 1rem;  
+      .header{
+        .line{
+          width: 70px;
+        }
+      }
       .opportunities{
         margin-left: 0;
         gap: 1.2rem;
@@ -1248,6 +1271,11 @@
     .celebs{
       padding: 1rem 5%;
       gap: 0;
+      .header{
+        .line{
+          width: 70px;
+        }
+      }
       h3{
         top: 10%;
         left: 5%;
@@ -1370,7 +1398,7 @@
       padding: 1rem 4%;
       gap: 0;
       h3{
-        top: 7%;
+        top: 8%;
         left: 4%;
         font-size: 50px;
         letter-spacing: 10px;

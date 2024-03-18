@@ -13,7 +13,7 @@ const EIQuestions = ({
   const options = [100, 83, 66, 50, 33, 16, 0];
   const [selectedOption, setSelectedOption] = React.useState(null);
   const [selectedClass, setSelectedClass] = React.useState(null);
-
+  console.log({ index });
   const handleClick = (value, title, classValue) => {
     setEIScores({ ...eiScores, [title]: value });
     setSelectedOption(value);
