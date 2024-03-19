@@ -10,7 +10,7 @@ const EIQuestions = ({
   index,
   setActiveIndex,
 }) => {
-  const options = [100, 83, 66, 50, 33, 16, 0];
+  const options = [100, 83, 66, 50, 33, 17, 0];
   const [selectedOption, setSelectedOption] = React.useState(null);
   const [selectedClass, setSelectedClass] = React.useState(null);
   const screenWidth = window.innerWidth;

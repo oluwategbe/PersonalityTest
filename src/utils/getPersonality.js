@@ -1,8 +1,8 @@
 export const getPersonality = (ei, si, tf, jp) => {
-  const eiLetter = ei > 350 ? "E" : "I";
-  const siLetter = si > 350 ? "S" : "N";
-  const tfLetter = tf > 350 ? "T" : "F";
-  const jpLetter = jp > 350 ? "J" : "P";
+  const eiLetter = ei >= 350 ? "E" : "I";
+  const siLetter = si >= 350 ? "N" : "S";
+  const tfLetter = tf >= 350 ? "F" : "T";
+  const jpLetter = jp >= 350 ? "P" : "J";
 
   return `${eiLetter}${siLetter}${tfLetter}${jpLetter}`;
 };
