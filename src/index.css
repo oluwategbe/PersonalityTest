@@ -9,7 +9,7 @@
 body {
   background: var(--bg);
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 15px;
 }
 ::-webkit-scrollbar-track {
@@ -18,7 +18,7 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: var(--primary-color);
   border-radius: 1rem;
-}
+} */
 :root {
   --primary-color: #8855ff;
   --primary-color2: #8855ff;
