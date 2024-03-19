@@ -74,7 +74,7 @@ const Results = () => {
                     <ScoreCard
                       title="Energy"
                       desc="This trait describes how you gain energy, your preference in interacting with people and the environment"
-                      leftTitle="Extraverted"
+                      leftTitle="Extroverted"
                       leftScore={extrovertPercent || 50}
                       rightTitle="Introverted"
                       rightScore={100 - extrovertPercent}

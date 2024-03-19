@@ -21,7 +21,7 @@ const Cards = ({ personality }) => {
         <div className={`ei card ${theme === "dark" ? "dark" : ""}`}>
           <div className="h2Box">
             <h2>
-              {firstLetter === "E" ? "Extraverted ( E )" : "Introverted ( I )"}
+              {firstLetter === "E" ? "Extroverted ( E )" : "Introverted ( I )"}
             </h2>
           </div>
           <div className="pBox">
