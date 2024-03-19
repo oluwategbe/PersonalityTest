@@ -9,7 +9,7 @@ const Step4 = ({ setJPScores, jpScores, setStep, answered, all }) => {
   const arr = Array(jpQuestions.length - 1).fill(false);
   const trueArr = Array(jpQuestions.length).fill(true);
   const [answeredQuestions, setAnsweredQuestions] = React.useState(
-    answered === 10 ? trueArr : [true, ...arr]
+    answered === 7 ? trueArr : [true, ...arr]
   );
   const handleAnswer = (index) => {
     const updatedQuestions = answeredQuestions.map((answered, i) =>
@@ -27,7 +27,7 @@ const Step4 = ({ setJPScores, jpScores, setStep, answered, all }) => {
   };
 
   const handleNext = () => {
-    if (all !== 30) {
+    if (all !== 21) {
       swal({
         text: "Please fill the other sections",
         icon: "warning",
@@ -63,9 +63,9 @@ const Step4 = ({ setJPScores, jpScores, setStep, answered, all }) => {
           onClick={handleNext}
           type="button"
           className={`btnYellow ${
-            Object.values(jpScores).length < 10 ? "disabledButton" : ""
+            Object.values(jpScores).length < 7 ? "disabledButton" : ""
           }`}
-          disabled={Object.values(jpScores).length < 10}
+          disabled={Object.values(jpScores).length < 7}
         >
           Next
         </button>

@@ -8,7 +8,7 @@ const Step3 = ({ setTFScores, tfScores, setStep, answered }) => {
   const arr = Array(tfQuestions.length - 1).fill(false);
   const trueArr = Array(tfQuestions.length).fill(true);
   const [answeredQuestions, setAnsweredQuestions] = React.useState(
-    answered === 10 ? trueArr : [true, ...arr]
+    answered === 7 ? trueArr : [true, ...arr]
   );
 
   const handleAnswer = (index) => {
@@ -55,9 +55,9 @@ const Step3 = ({ setTFScores, tfScores, setStep, answered }) => {
           onClick={handleNext}
           type="button"
           className={`btnYellow ${
-            Object.values(tfScores).length < 10 ? "disabledButton" : ""
+            Object.values(tfScores).length < 7 ? "disabledButton" : ""
           }`}
-          disabled={Object.values(tfScores).length < 10}
+          disabled={Object.values(tfScores).length < 7}
         >
           Next{" "}
         </button>

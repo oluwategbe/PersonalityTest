@@ -266,7 +266,8 @@
           line-height: 20px;
         }
       }
-      .card:last-child{
+      .card:nth-child(3){
+        position: relative;
         left: 50%;
       }
     }

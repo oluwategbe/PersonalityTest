@@ -32,6 +32,11 @@ const Results = () => {
   const feelingScore = (totalTFScore / 10).toFixed(0);
   const perceivingScore = (totalJPScore / 10).toFixed(0);
 
+  const extrovertPercent = ((extrovertScore / 70) * 100).toFixed(0);
+  const intuitionPercent = ((intuitionScore / 70) * 100).toFixed(0);
+  const feelingPercent = ((feelingScore / 70) * 100).toFixed(0);
+  const perceivingPercent = ((perceivingScore / 70) * 100).toFixed(0);
+
   return (
     <>
       <div className={`${theme === "dark" ? "dark" : ""}`}>
@@ -70,9 +75,9 @@ const Results = () => {
                       title="Energy"
                       desc="This trait describes how you gain energy, your preference in interacting with people and the environment"
                       leftTitle="Extraverted"
-                      leftScore={extrovertScore || 50}
+                      leftScore={extrovertPercent || 50}
                       rightTitle="Introverted"
-                      rightScore={100 - extrovertScore}
+                      rightScore={100 - extrovertPercent}
                     />
                   </SlideLeft>
                   <SlideRight delay={2.0} width="100%">
@@ -80,9 +85,9 @@ const Results = () => {
                       title="Mind"
                       desc="This trait describes your preferred method of obtaining information from the environment"
                       leftTitle="Sensing"
-                      leftScore={100 - intuitionScore}
+                      leftScore={100 - intuitionPercent}
                       rightTitle="Intuitive"
-                      rightScore={intuitionScore}
+                      rightScore={intuitionPercent}
                     />
                   </SlideRight>
                   <SlideLeft delay={2.3} width="100%">
@@ -90,9 +95,9 @@ const Results = () => {
                       title="Nature"
                       desc="This trait describes how you make decisions and cope with emotions, people's values and the needs of others"
                       leftTitle="Thinking"
-                      leftScore={100 - feelingScore}
+                      leftScore={100 - feelingPercent}
                       rightTitle="Feeling"
-                      rightScore={feelingScore}
+                      rightScore={feelingPercent}
                     />
                   </SlideLeft>
                   <SlideRight delay={2.5} width="100%">
@@ -100,9 +105,9 @@ const Results = () => {
                       title="Tactics"
                       desc="This trait reflects your approach to work, planning, organization and decision-making"
                       leftTitle="Judging"
-                      leftScore={100 - perceivingScore}
+                      leftScore={100 - perceivingPercent}
                       rightTitle="Perceiving"
-                      rightScore={perceivingScore}
+                      rightScore={perceivingPercent}
                     />
                   </SlideRight>
                 </div>

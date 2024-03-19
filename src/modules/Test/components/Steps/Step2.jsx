@@ -8,7 +8,7 @@ const Step2 = ({ setSIScores, siScores, setStep, answered }) => {
   const arr = Array(siQuestions.length - 1).fill(false);
   const trueArr = Array(siQuestions.length).fill(true);
   const [answeredQuestions, setAnsweredQuestions] = React.useState(
-    answered === 10 ? trueArr : [true, ...arr]
+    answered === 7 ? trueArr : [true, ...arr]
   );
 
   const handleAnswer = (index) => {
@@ -54,9 +54,9 @@ const Step2 = ({ setSIScores, siScores, setStep, answered }) => {
           onClick={handleNext}
           type="button"
           className={`btnYellow ${
-            Object.values(siScores).length < 10 ? "disabledButton" : ""
+            Object.values(siScores).length < 7 ? "disabledButton" : ""
           }`}
-          disabled={Object.values(siScores).length < 10}
+          disabled={Object.values(siScores).length < 7}
         >
           Next{" "}
         </button>

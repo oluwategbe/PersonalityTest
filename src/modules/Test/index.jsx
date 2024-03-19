@@ -6,7 +6,7 @@ import { TbReportAnalytics } from "react-icons/tb";
 import { FaPeopleGroup } from "react-icons/fa6";
 import Questions from "./Questions";
 import { ThemeContext } from "../../context";
-import { TestRevealY, RevealY, Reveal } from "../../utils/animatedText";
+import { RevealY, Reveal } from "../../utils/animatedText";
 
 const Test = () => {
   const { theme } = React.useContext(ThemeContext);
@@ -30,43 +30,31 @@ const Test = () => {
         </div>
         <div className="cards">
           {/* <div className={`card ${theme === "dark" ? "dark" : ""}`}> */}
-          <TestRevealY
-            delay={0.5}
-            once={true}
-            className={`card ${theme === "dark" ? "dark" : ""}`}
-          >
+          <div className={`card ${theme === "dark" ? "dark" : ""}`}>
             <GrTest />
             <h2>Complete the test</h2>
             <p>Answer the questions honestly to find out your personality.</p>
-          </TestRevealY>
+          </div>
           {/* </div> */}
           {/* <div className={`card ${theme === "dark" ? "dark" : ""}`}> */}
-          <TestRevealY
-            delay={1}
-            once={true}
-            className={`card ${theme === "dark" ? "dark" : ""}`}
-          >
+          <div className={`card ${theme === "dark" ? "dark" : ""}`}>
             <TbReportAnalytics />
             <h2>View Detailed results</h2>
             <p>
               Complete the test and view your personality based on your provided
               answers.
             </p>
-          </TestRevealY>
+          </div>
           {/* </div> */}
           {/* <div className={`card ${theme === "dark" ? "dark" : ""}`}> */}
-          <TestRevealY
-            delay={1.5}
-            once={true}
-            className={`card ${theme === "dark" ? "dark" : ""}`}
-          >
+          <div className={`card ${theme === "dark" ? "dark" : ""}`}>
             <FaPeopleGroup />
             <h2>Check out other personalities</h2>
             <p>
               Explore the summary, rarity, careers and known celebrities of
               other personalities.
             </p>
-          </TestRevealY>
+          </div>
           {/* </div> */}
         </div>
         <Questions />

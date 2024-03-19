@@ -7,7 +7,7 @@ const Step1 = ({ setEIScores, eiScores, setStep, answered }) => {
   const arr = Array(eiQuestions.length - 1).fill(false);
   const trueArr = Array(eiQuestions.length).fill(true);
   const [answeredQuestions, setAnsweredQuestions] = React.useState(
-    answered === 10 ? trueArr : [true, ...arr]
+    answered === 7 ? trueArr : [true, ...arr]
   );
 
   const handleAnswer = (index) => {
@@ -43,9 +43,9 @@ const Step1 = ({ setEIScores, eiScores, setStep, answered }) => {
           onClick={handleNext}
           type="button"
           className={`btnYellow half ${
-            Object.values(eiScores).length < 10 ? "disabledButton" : ""
+            Object.values(eiScores).length < 7 ? "disabledButton" : ""
           }`}
-          disabled={Object.values(eiScores).length < 10}
+          disabled={Object.values(eiScores).length < 7}
         >
           Next
         </button>
