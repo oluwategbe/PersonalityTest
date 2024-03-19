@@ -108,7 +108,7 @@ const Personalities = () => {
                 personality={p?.personality}
                 desc={p?.short_desc}
                 picture={p?.pic}
-                color={theme === "light" ? "#966f03" : "#faf5df"}
+                color={theme === "light" ? "#966f03" : "#ffffff"}
                 box={theme === "light" ? "#dcc366" : "#ad981e "}
               />
             ))}

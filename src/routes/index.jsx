@@ -10,7 +10,12 @@ import Loader from "./../components/Loader";
 
 const renderRoute = ({ component: Component, ...route }) => {
   const { useAuth } = route;
-
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <Route
       key={route.path}
@@ -21,9 +26,17 @@ const renderRoute = ({ component: Component, ...route }) => {
             {useAuth ? (
               <AuthGuard>
                 <Component />
+                <div className="scrollTop" onClick={scrollToTop}>
+                  <MdOutlineArrowUpward />
+                </div>
               </AuthGuard>
             ) : (
-              <Component />
+              <>
+                <Component />
+                <div className="scrollTop" onClick={scrollToTop}>
+                  <MdOutlineArrowUpward />
+                </div>
+              </>
             )}
           </Suspense>
           <ToastContainer />
@@ -41,21 +54,11 @@ const AppRoutes = () => {
     });
   };
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <AnimatePresence wait="true" onExitComplete={handleExitComplete}>
       <Routes key={location.pathname} location={location}>
         {BaseRoutes.map((route) => renderRoute(route))}
       </Routes>
-      <div className="scrollTop" onClick={scrollToTop}>
-        <MdOutlineArrowUpward />
-      </div>
     </AnimatePresence>
   );
 };

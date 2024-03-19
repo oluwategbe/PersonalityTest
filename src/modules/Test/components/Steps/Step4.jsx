@@ -3,14 +3,14 @@ import JPQuestions from "../QuestionComponents/JPQuestions";
 import { jpQuestions } from "../../Questions/questions";
 import "../../index.scss";
 import React from "react";
+import swal from "sweetalert";
 
-const Step4 = ({ setJPScores, jpScores, setStep, answered }) => {
+const Step4 = ({ setJPScores, jpScores, setStep, answered, all }) => {
   const arr = Array(jpQuestions.length - 1).fill(false);
   const trueArr = Array(jpQuestions.length).fill(true);
   const [answeredQuestions, setAnsweredQuestions] = React.useState(
     answered === 10 ? trueArr : [true, ...arr]
   );
-
   const handleAnswer = (index) => {
     const updatedQuestions = answeredQuestions.map((answered, i) =>
       i === index ? true : answered
@@ -27,6 +27,14 @@ const Step4 = ({ setJPScores, jpScores, setStep, answered }) => {
   };
 
   const handleNext = () => {
+    if (all !== 30) {
+      swal({
+        text: "Please fill the other sections",
+        icon: "warning",
+        dangerMode: true,
+      });
+      return;
+    }
     setStep((prev) => prev + 1);
     const webPartElement = document.getElementsByClassName(`topContainer`);
     if (webPartElement) {
@@ -59,7 +67,7 @@ const Step4 = ({ setJPScores, jpScores, setStep, answered }) => {
           }`}
           disabled={Object.values(jpScores).length < 10}
         >
-          Next{" "}
+          Next
         </button>
       </div>
     </>

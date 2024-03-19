@@ -91,6 +91,11 @@ const Questions = () => {
             jpScores={jpScores}
             setStep={setStep}
             answered={Object.values(jpScores).length}
+            all={
+              Object.values(eiScores).length +
+              Object.values(siScores).length +
+              Object.values(tfScores).length
+            }
             handleSubmit={handleSubmit}
           />
         )}
