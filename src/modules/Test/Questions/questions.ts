@@ -14,7 +14,7 @@ export const eiQuestions = [
   {title: "In your social circle, you are often the one who contacts your friends and initiates activities"},
   {title: "After a long and exhausting week, a lively social event is just what you need"},
   // {title: "You would love a job that requires you to work with many people most of the time"},
-  {title: "You tend to avoid drawing attention to yourself"},
+  {title: "You enjoy being the center of attention"},
 ]
 
 export const siQuestions = [
