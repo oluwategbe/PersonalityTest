@@ -7,6 +7,8 @@ import AuthGuard from "./AuthGuard.jsx";
 import { AnimatePresence } from "framer-motion";
 import { MdOutlineArrowUpward } from "react-icons/md";
 import Loader from "./../components/Loader";
+import Navbar from "../components/Navbar/index.jsx";
+import Footer from "../components/Footer/index.jsx";
 
 const renderRoute = ({ component: Component, ...route }) => {
   const { useAuth } = route;
@@ -22,23 +24,21 @@ const renderRoute = ({ component: Component, ...route }) => {
       path={route.path}
       element={
         <Fragment>
-          <Suspense fallback={<Loader />}>
-            {useAuth ? (
-              <AuthGuard>
-                <Component />
-                <div className="scrollTop" onClick={scrollToTop}>
-                  <MdOutlineArrowUpward />
-                </div>
-              </AuthGuard>
-            ) : (
-              <>
-                <Component />
-                <div className="scrollTop" onClick={scrollToTop}>
-                  <MdOutlineArrowUpward />
-                </div>
-              </>
-            )}
-          </Suspense>
+          {useAuth ? (
+            <AuthGuard>
+              <Component />
+              <div className="scrollTop" onClick={scrollToTop}>
+                <MdOutlineArrowUpward />
+              </div>
+            </AuthGuard>
+          ) : (
+            <>
+              <Component />
+              <div className="scrollTop" onClick={scrollToTop}>
+                <MdOutlineArrowUpward />
+              </div>
+            </>
+          )}
           <ToastContainer />
         </Fragment>
       }
@@ -66,7 +66,11 @@ const AppRoutes = () => {
 const RoutesWrapper = () => {
   return (
     <BrowserRouter>
-      <AppRoutes />
+      <Suspense fallback={<Loader />}>
+        <Navbar />
+        <AppRoutes />
+        <Footer />
+      </Suspense>
     </BrowserRouter>
   );
 };

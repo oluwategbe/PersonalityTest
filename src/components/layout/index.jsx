@@ -1,13 +1,8 @@
-import Footer from "../Footer";
-import Navbar from "../Navbar";
-
 // eslint-disable-next-line react/prop-types
 const Layout = ({ children }) => {
   return (
     <div className="appContainer">
-      <Navbar />
       <div className="pageCTX">{children}</div>
-      <Footer />
     </div>
   );
 };
