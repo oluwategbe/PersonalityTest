@@ -45,9 +45,7 @@ const Personalities = () => {
         </div>
         <div className="personalities">
           <div className={`analysts group ${theme === "dark" ? "dark" : ""}`}>
-            <PersonalityRevealH4Y className="analysth4 groupH4" once={true}>
-              Analysts
-            </PersonalityRevealH4Y>
+            <h4 className="analysth4 groupH4">Analysts</h4>
             {analysts?.map((p, i) => (
               <PersonalityCard
                 key={i}
