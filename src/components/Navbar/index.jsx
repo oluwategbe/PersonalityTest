@@ -125,7 +125,9 @@ const Navbar = () => {
                   delay={1}
                   exitDelay={0.2}
                 >
-                  <Link to="/">Home</Link>
+                  <Link onClick={() => setNavOpen(false)} to="/">
+                    Home
+                  </Link>
                 </MobileNavRevealY>
                 <MobileRevealY
                   style={{
@@ -137,7 +139,9 @@ const Navbar = () => {
                   exitDelay={0.4}
                 >
                   <div className="navDrop" onClick={(e) => e.stopPropagation()}>
-                    <Link to="/personalities">Personalities</Link>
+                    <Link onClick={() => setNavOpen(false)} to="/personalities">
+                      Personalities
+                    </Link>
                     {open ? (
                       <IoIosArrowUp onClick={() => setOpen(!open)} />
                     ) : (
@@ -151,7 +155,7 @@ const Navbar = () => {
                               <React.Fragment key={i}>
                                 <Link
                                   to={`/personalities/${d?.personality}`}
-                                  onClick={() => setOpen(!open)}
+                                  onClick={() => setNavOpen(false)}
                                 >
                                   <p
                                     className={
@@ -174,7 +178,9 @@ const Navbar = () => {
                   delay={1.4}
                   exitDelay={0.6}
                 >
-                  <Link to="/test">Take the test</Link>
+                  <Link onClick={() => setNavOpen(false)} to="/test">
+                    Take the test
+                  </Link>
                 </MobileNavRevealY>
               </ul>
               <MobileNavSlideRight className="cancel" delay={1.5}>
