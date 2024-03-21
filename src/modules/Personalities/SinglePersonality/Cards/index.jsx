@@ -1,4 +1,4 @@
-import { SlideLeft, SlideRight } from "../../../../utils/animatedText";
+import { Reveal, SlideLeft, SlideRight } from "../../../../utils/animatedText";
 import "./index.scss";
 import { ThemeContext } from "./../../../../context/index";
 import * as React from "react";
@@ -16,7 +16,9 @@ const Cards = ({ personality }) => {
   }
   return (
     <div className="letterCards">
-      <h1>What the letters mean</h1>
+      <Reveal>
+        <h1>What the letters mean</h1>
+      </Reveal>
       <SlideLeft width={width}>
         <div className={`ei card ${theme === "dark" ? "dark" : ""}`}>
           <div className="h2Box">
